@@ -2,10 +2,9 @@ const express = require('express')
 const path = require('path')
 
 const app = express()
-const port = 3000
 
 app.use(express.static(path.join(__dirname, 'static')))
 
-app.listen(port, () => {
-  console.log(`Listening at ${port}`) // eslint-disable-line no-console
+app.listen(3000, () => {
+  console.log('Listening at 3000') // eslint-disable-line no-console
 })

@@ -1,0 +1,13 @@
+{
+  "name": "@ui-parts/styles",
+  "version": "0.2.0",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@types/styled-system": "^5.1.10",
+    "styled-system": "^5.1.5"
+  },
+  "peerDependencies": {
+    "styled-system": "^5.1.5"
+  }
+}

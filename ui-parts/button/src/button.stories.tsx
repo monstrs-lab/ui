@@ -6,7 +6,11 @@ import mdx                   from './button.docs.mdx'
 import { createBaseStyles }  from './base'
 import { createShapeStyles } from './shape'
 
-export const Native = () => <button type='button'>Button</button>
+export const Native = ({ children }) => <button type='button'>{children}</button>
+
+Native.args = {
+  children: 'Кнопка',
+}
 
 export default {
   title: 'Components/Button',
@@ -26,19 +30,41 @@ Base.args = {
   children: 'Кнопка',
 }
 
-const ShapeButton = styled.button(createBaseStyles(), createShapeStyles('small', 24))
+const SmallShapeButton = styled.button(createBaseStyles(), createShapeStyles('small', 24))
+const NormalShapeButton = styled.button(createBaseStyles(), createShapeStyles('normal', 36))
+const LargeShapeButton = styled.button(createBaseStyles(), createShapeStyles('large', 48))
 
-export const Shape = ({ children, equal, round, rounding, offset, fill }) => (
-  <ShapeButton equal={equal} round={round} rounding={rounding} offset={offset} fill={fill}>
-    {children}
-  </ShapeButton>
-)
+const shapeSizeButtons = {
+  small: SmallShapeButton,
+  normal: NormalShapeButton,
+  large: LargeShapeButton,
+}
+
+export const Shape = ({ children, size, equal, round, rounding, offset, fill }) => {
+  const ShapeSizeButton = shapeSizeButtons[size] || NormalShapeButton
+
+  return (
+    <ShapeSizeButton equal={equal} round={round} rounding={rounding} offset={offset} fill={fill}>
+      {children}
+    </ShapeSizeButton>
+  )
+}
 
 Shape.args = {
   children: 'Кнопка',
+  size: 'normal',
   fill: false,
   equal: false,
   round: false,
   rounding: 0,
   offset: 0,
+}
+
+Shape.argTypes = {
+  size: {
+    control: {
+      type: 'select',
+      options: ['small', 'normal', 'large'],
+    },
+  },
 }

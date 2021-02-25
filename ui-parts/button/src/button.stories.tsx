@@ -1,10 +1,11 @@
-import React                 from 'react'
-import styled                from '@emotion/styled'
+import React                      from 'react'
+import styled                     from '@emotion/styled'
 
 // @ts-ignore
-import mdx                   from './button.docs.mdx'
-import { createBaseStyles }  from './base'
-import { createShapeStyles } from './shape'
+import mdx                        from './button.docs.mdx'
+import { createBaseStyles }       from './base'
+import { createShapeStyles }      from './shape'
+import { createAppearanceStyles } from './appearance'
 
 export const Native = ({ children }) => <button type='button'>{children}</button>
 
@@ -65,6 +66,55 @@ Shape.argTypes = {
     control: {
       type: 'select',
       options: ['small', 'normal', 'large'],
+    },
+  },
+}
+
+const PrimaryAppearanceButton = styled.button(
+  createBaseStyles(),
+  createShapeStyles('normal', 32),
+  createAppearanceStyles('white', 'blue', 'blue')
+)
+
+const SecondaryAppearanceButton = styled.button(
+  createBaseStyles(),
+  createShapeStyles('normal', 32),
+  createAppearanceStyles('white', 'gray', 'gray')
+)
+const DangerAppearanceButton = styled.button(
+  createBaseStyles(),
+  createShapeStyles('normal', 32),
+  createAppearanceStyles('white', 'red', 'red')
+)
+const LinkAppearanceButton = styled.button(
+  createBaseStyles(),
+  createShapeStyles('normal', 32),
+  createAppearanceStyles('blue', 'transparent', 'transparent')
+)
+
+const appearanceButtons = {
+  primary: PrimaryAppearanceButton,
+  secondary: SecondaryAppearanceButton,
+  danger: DangerAppearanceButton,
+  link: LinkAppearanceButton,
+}
+
+export const Appearance = ({ children, variant, ghost }) => {
+  const AppearanceButton = appearanceButtons[variant] || PrimaryAppearanceButton
+  return <AppearanceButton ghost={ghost}>{children}</AppearanceButton>
+}
+
+Appearance.args = {
+  children: 'Кнопка',
+  variant: 'primary',
+  ghost: false,
+}
+
+Appearance.argTypes = {
+  variant: {
+    control: {
+      type: 'radio',
+      options: ['primary', 'secondary', 'danger', 'link'],
     },
   },
 }

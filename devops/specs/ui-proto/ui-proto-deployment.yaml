@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ui-proto
+  namespace: ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ui-proto
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: ui-proto
+    spec:
+      containers:
+      - name: ui-proto
+        image: eu.gcr.io/the-mesh-254617/ui-design-ui-proto:114ef22-1614329543718 # {"$imagepolicy": "flux-system:ui-proto-design"}
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
+          name: http
+          protocol: TCP

@@ -33,14 +33,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "@ui-parts/styles",
         "reference": "workspace:ui-parts/styles"
+      },
+      {
+        "name": "@ui-proto/button",
+        "reference": "workspace:ui-proto/button"
+      },
+      {
+        "name": "@ui-proto/design",
+        "reference": "workspace:ui-proto/design"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
-      ["@ui-parts/button", ["virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#workspace:ui-parts/button", "workspace:ui-parts/button"]],
+      ["@ui-parts/button", ["virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#workspace:ui-parts/button", "virtual:f76877f8b79328bdc70d1b80fcd54687ff1663cdd24da34fd5298382bc8e0b6cfea93ceb0532b480be102b40b3294efae4a14dd4b1ddff1ed2b464c40e23731b#workspace:ui-parts/button", "workspace:ui-parts/button"]],
       ["@ui-parts/design", ["workspace:ui-parts/design"]],
       ["@ui-parts/styles", ["virtual:0f28b29452f75af425ac1de20e34c0eb4d391e1c3fbcd723b0bdcf6bd26230bd66de7da865a00f475c98cd52de7e26d0818a74efd455814586cb09d4fc1fb896#workspace:ui-parts/styles", "workspace:ui-parts/styles"]],
+      ["@ui-proto/button", ["virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/button", "workspace:ui-proto/button"]],
+      ["@ui-proto/design", ["workspace:ui-proto/design"]],
       ["telemetry", ["workspace:."]]
     ],
     "fallbackPool": [
@@ -8505,6 +8515,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
+        ["virtual:f76877f8b79328bdc70d1b80fcd54687ff1663cdd24da34fd5298382bc8e0b6cfea93ceb0532b480be102b40b3294efae4a14dd4b1ddff1ed2b464c40e23731b#workspace:ui-parts/button", {
+          "packageLocation": "./.yarn/$$virtual/@ui-parts-button-virtual-4828a16960/1/ui-parts/button/",
+          "packageDependencies": [
+            ["@ui-parts/button", "virtual:f76877f8b79328bdc70d1b80fcd54687ff1663cdd24da34fd5298382bc8e0b6cfea93ceb0532b480be102b40b3294efae4a14dd4b1ddff1ed2b464c40e23731b#workspace:ui-parts/button"],
+            ["@emotion/styled", "virtual:0f28b29452f75af425ac1de20e34c0eb4d391e1c3fbcd723b0bdcf6bd26230bd66de7da865a00f475c98cd52de7e26d0818a74efd455814586cb09d4fc1fb896#npm:10.0.27"],
+            ["@emotion/styled-base", "virtual:0f28b29452f75af425ac1de20e34c0eb4d391e1c3fbcd723b0bdcf6bd26230bd66de7da865a00f475c98cd52de7e26d0818a74efd455814586cb09d4fc1fb896#npm:10.0.31"],
+            ["@mdx-js/react", "virtual:0f28b29452f75af425ac1de20e34c0eb4d391e1c3fbcd723b0bdcf6bd26230bd66de7da865a00f475c98cd52de7e26d0818a74efd455814586cb09d4fc1fb896#npm:1.6.22"],
+            ["@storybook/addon-docs", "virtual:0f28b29452f75af425ac1de20e34c0eb4d391e1c3fbcd723b0bdcf6bd26230bd66de7da865a00f475c98cd52de7e26d0818a74efd455814586cb09d4fc1fb896#npm:6.1.20"],
+            ["@types/emotion__styled", null],
+            ["@types/react", "npm:17.0.2"],
+            ["@types/styled-system", "npm:5.1.10"],
+            ["@types/styled-tools", null],
+            ["@ui-parts/styles", "virtual:0f28b29452f75af425ac1de20e34c0eb4d391e1c3fbcd723b0bdcf6bd26230bd66de7da865a00f475c98cd52de7e26d0818a74efd455814586cb09d4fc1fb896#workspace:ui-parts/styles"],
+            ["core-js", "npm:3.9.0"],
+            ["react", "npm:17.0.1"],
+            ["styled-system", "npm:5.1.5"],
+            ["styled-tools", "npm:1.7.2"]
+          ],
+          "packagePeers": [
+            "@emotion/styled",
+            "@types/emotion__styled",
+            "@types/react",
+            "@types/styled-system",
+            "@types/styled-tools",
+            "react",
+            "styled-system",
+            "styled-tools"
+          ],
+          "linkType": "SOFT",
+        }],
         ["workspace:ui-parts/button", {
           "packageLocation": "./ui-parts/button/",
           "packageDependencies": [
@@ -8573,6 +8613,79 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/styled-system", "npm:5.1.10"],
             ["core-js", "npm:3.9.0"],
             ["styled-system", "npm:5.1.5"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@ui-proto/button", [
+        ["virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/button", {
+          "packageLocation": "./.yarn/$$virtual/@ui-proto-button-virtual-3e9d1f7e8d/1/ui-proto/button/",
+          "packageDependencies": [
+            ["@ui-proto/button", "virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/button"],
+            ["@emotion/styled", "virtual:0f28b29452f75af425ac1de20e34c0eb4d391e1c3fbcd723b0bdcf6bd26230bd66de7da865a00f475c98cd52de7e26d0818a74efd455814586cb09d4fc1fb896#npm:10.0.27"],
+            ["@emotion/styled-base", "virtual:0f28b29452f75af425ac1de20e34c0eb4d391e1c3fbcd723b0bdcf6bd26230bd66de7da865a00f475c98cd52de7e26d0818a74efd455814586cb09d4fc1fb896#npm:10.0.31"],
+            ["@mdx-js/react", "virtual:0f28b29452f75af425ac1de20e34c0eb4d391e1c3fbcd723b0bdcf6bd26230bd66de7da865a00f475c98cd52de7e26d0818a74efd455814586cb09d4fc1fb896#npm:1.6.22"],
+            ["@storybook/addon-docs", "virtual:0f28b29452f75af425ac1de20e34c0eb4d391e1c3fbcd723b0bdcf6bd26230bd66de7da865a00f475c98cd52de7e26d0818a74efd455814586cb09d4fc1fb896#npm:6.1.20"],
+            ["@types/emotion__styled", null],
+            ["@types/react", "npm:17.0.2"],
+            ["@types/styled-system", "npm:5.1.10"],
+            ["@types/styled-tools", null],
+            ["@ui-parts/button", "virtual:f76877f8b79328bdc70d1b80fcd54687ff1663cdd24da34fd5298382bc8e0b6cfea93ceb0532b480be102b40b3294efae4a14dd4b1ddff1ed2b464c40e23731b#workspace:ui-parts/button"],
+            ["core-js", "npm:3.9.0"],
+            ["react", "npm:17.0.1"],
+            ["styled-system", "npm:5.1.5"],
+            ["styled-tools", "npm:1.7.2"]
+          ],
+          "packagePeers": [
+            "@types/emotion__styled",
+            "@types/react",
+            "@types/styled-tools",
+            "react"
+          ],
+          "linkType": "SOFT",
+        }],
+        ["workspace:ui-proto/button", {
+          "packageLocation": "./ui-proto/button/",
+          "packageDependencies": [
+            ["@ui-proto/button", "workspace:ui-proto/button"],
+            ["@emotion/styled", "virtual:0f28b29452f75af425ac1de20e34c0eb4d391e1c3fbcd723b0bdcf6bd26230bd66de7da865a00f475c98cd52de7e26d0818a74efd455814586cb09d4fc1fb896#npm:10.0.27"],
+            ["@emotion/styled-base", "virtual:0f28b29452f75af425ac1de20e34c0eb4d391e1c3fbcd723b0bdcf6bd26230bd66de7da865a00f475c98cd52de7e26d0818a74efd455814586cb09d4fc1fb896#npm:10.0.31"],
+            ["@mdx-js/react", "virtual:0f28b29452f75af425ac1de20e34c0eb4d391e1c3fbcd723b0bdcf6bd26230bd66de7da865a00f475c98cd52de7e26d0818a74efd455814586cb09d4fc1fb896#npm:1.6.22"],
+            ["@storybook/addon-docs", "virtual:0f28b29452f75af425ac1de20e34c0eb4d391e1c3fbcd723b0bdcf6bd26230bd66de7da865a00f475c98cd52de7e26d0818a74efd455814586cb09d4fc1fb896#npm:6.1.20"],
+            ["@types/react", "npm:17.0.2"],
+            ["@types/styled-system", "npm:5.1.10"],
+            ["@ui-parts/button", "virtual:f76877f8b79328bdc70d1b80fcd54687ff1663cdd24da34fd5298382bc8e0b6cfea93ceb0532b480be102b40b3294efae4a14dd4b1ddff1ed2b464c40e23731b#workspace:ui-parts/button"],
+            ["core-js", "npm:3.9.0"],
+            ["react", "npm:17.0.1"],
+            ["styled-system", "npm:5.1.5"],
+            ["styled-tools", "npm:1.7.2"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@ui-proto/design", [
+        ["workspace:ui-proto/design", {
+          "packageLocation": "./ui-proto/design/",
+          "packageDependencies": [
+            ["@ui-proto/design", "workspace:ui-proto/design"],
+            ["@babel/core", "npm:7.13.1"],
+            ["@storybook/addon-actions", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#npm:6.1.19"],
+            ["@storybook/addon-docs", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#npm:6.1.19"],
+            ["@storybook/addon-essentials", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#npm:6.1.19"],
+            ["@storybook/addon-links", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#npm:6.1.19"],
+            ["@storybook/react", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#npm:6.1.19"],
+            ["@types/express", "npm:4.17.11"],
+            ["@types/react", "npm:17.0.2"],
+            ["@types/react-dom", "npm:17.0.1"],
+            ["@ui-proto/button", "virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/button"],
+            ["babel-loader", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#npm:8.2.2"],
+            ["core-js", "npm:3.9.0"],
+            ["express", "npm:4.17.1"],
+            ["react", "npm:17.0.1"],
+            ["react-dom", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#npm:17.0.1"],
+            ["react-is", "npm:17.0.1"],
+            ["typescript", "patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"],
+            ["webpack", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#npm:5.24.1"]
           ],
           "linkType": "SOFT",
         }]

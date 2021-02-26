@@ -1,10 +1,9 @@
 {
-  "name": "@ui-parts/button",
-  "version": "0.2.0",
+  "name": "@ui-proto/button",
+  "version": "0.1.0",
   "license": "MIT",
-  "main": "src/index.ts",
   "dependencies": {
-    "@ui-parts/styles": "workspace:0.2.0"
+    "@ui-parts/button": "workspace:0.2.0"
   },
   "devDependencies": {
     "@emotion/styled": "^10.0.27",

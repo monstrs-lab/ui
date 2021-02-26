@@ -31,9 +31,9 @@ Base.args = {
   children: 'Кнопка',
 }
 
-const SmallShapeButton = styled.button(createBaseStyles(), createShapeStyles('small', 24))
-const NormalShapeButton = styled.button(createBaseStyles(), createShapeStyles('normal', 36))
-const LargeShapeButton = styled.button(createBaseStyles(), createShapeStyles('large', 48))
+const SmallShapeButton = styled.button(createBaseStyles(), createShapeStyles({ size: 24 }))
+const NormalShapeButton = styled.button(createBaseStyles(), createShapeStyles({ size: 36 }))
+const LargeShapeButton = styled.button(createBaseStyles(), createShapeStyles({ size: 48 }))
 
 const shapeSizeButtons = {
   small: SmallShapeButton,
@@ -72,24 +72,36 @@ Shape.argTypes = {
 
 const PrimaryAppearanceButton = styled.button(
   createBaseStyles(),
-  createShapeStyles('normal', 32),
-  createAppearanceStyles('white', 'blue', 'blue')
+  createShapeStyles({ size: 36 }),
+  createAppearanceStyles({
+    fontColor: 'white',
+    backgroundColor: 'blue',
+  })
 )
 
 const SecondaryAppearanceButton = styled.button(
   createBaseStyles(),
-  createShapeStyles('normal', 32),
-  createAppearanceStyles('white', 'gray', 'gray')
+  createShapeStyles({ size: 36 }),
+  createAppearanceStyles({
+    fontColor: 'white',
+    backgroundColor: 'gray',
+  })
 )
 const DangerAppearanceButton = styled.button(
   createBaseStyles(),
-  createShapeStyles('normal', 32),
-  createAppearanceStyles('white', 'red', 'red')
+  createShapeStyles({ size: 36 }),
+  createAppearanceStyles({
+    fontColor: 'white',
+    backgroundColor: 'red',
+  })
 )
 const LinkAppearanceButton = styled.button(
   createBaseStyles(),
-  createShapeStyles('normal', 32),
-  createAppearanceStyles('blue', 'transparent', 'transparent')
+  createShapeStyles({ size: 36 }),
+  createAppearanceStyles({
+    fontColor: 'blue',
+    backgroundColor: 'transparent',
+  })
 )
 
 const appearanceButtons = {

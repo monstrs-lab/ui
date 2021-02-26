@@ -6,6 +6,7 @@ import { combine }                 from '@ui-parts/styles'
 
 import { ButtonShapeRoudingProps } from './shape.interfaces'
 import { ButtonShapeOffsetProps }  from './shape.interfaces'
+import { ButtonShapeStyles }       from './shape.interfaces'
 
 export const createBaseShapeStyles: styleFn = (
   size: number,
@@ -42,14 +43,13 @@ export const createRoundingStyles: styleFn = (size: number, defaultRounding: num
 
 export const createRoundStyles: styleFn = () => ifProp('round', { borderRadius: '50%' })
 
-export const createShapeStyles = (
-  name: string,
-  size: number,
-  fontSize?: number | Function,
-  fontWeight?: string | Function,
-  offsetRatio: number = 0.5,
-  rounding: number = 0
-): styleFn =>
+export const createShapeStyles = ({
+  size,
+  fontSize,
+  fontWeight,
+  offsetRatio = 0.5,
+  rounding = 0,
+}: ButtonShapeStyles): styleFn =>
   execAndSerialize(
     combine(
       createBaseShapeStyles(size, fontSize, fontWeight),

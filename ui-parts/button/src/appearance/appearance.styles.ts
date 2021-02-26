@@ -1,8 +1,10 @@
-import { styleFn }          from 'styled-system'
-import { ifProp }           from 'styled-tools'
+import { styleFn }                from 'styled-system'
+import { ifProp }                 from 'styled-tools'
 
-import { execAndSerialize } from '@ui-parts/styles'
-import { combine }          from '@ui-parts/styles'
+import { execAndSerialize }       from '@ui-parts/styles'
+import { combine }                from '@ui-parts/styles'
+
+import { ButtonAppearanceStyles } from './appearance.interfaces'
 
 export const createColorStyles: styleFn = (
   color: string,
@@ -20,16 +22,18 @@ export const createGhostStyles: styleFn = (color: string) =>
     color,
   })
 
-export const createAppearanceStyles = (
-  color: string | Function,
-  backgroundColor: string | Function,
-  borderColor?: string | Function
-): styleFn =>
+export const createAppearanceStyles = ({
+  fontColor,
+  backgroundColor,
+  borderColor,
+}: ButtonAppearanceStyles): styleFn =>
   execAndSerialize(
     combine(
-      createColorStyles(color, backgroundColor, borderColor || backgroundColor),
+      createColorStyles(fontColor, backgroundColor, borderColor || backgroundColor),
       createGhostStyles(
-        (borderColor || backgroundColor) !== 'transparent' ? borderColor || backgroundColor : color
+        (borderColor || backgroundColor) !== 'transparent'
+          ? borderColor || backgroundColor
+          : fontColor
       )
     )
   )

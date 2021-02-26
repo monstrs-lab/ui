@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: ui-parts
-        image: eu.gcr.io/the-mesh-254617/ui-design-ui-parts:eec7f63-1614244396988 # {"$imagepolicy": "flux-system:ui-parts-design"}
+        image: eu.gcr.io/the-mesh-254617/ui-design-ui-parts:114ef22-1614329543718 # {"$imagepolicy": "flux-system:ui-parts-design"}
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000

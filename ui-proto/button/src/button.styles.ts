@@ -4,11 +4,14 @@ import { createBaseStyles }       from '@ui-parts/button'
 import { createShapeStyles }      from '@ui-parts/button'
 import { createAppearanceStyles } from '@ui-parts/button'
 
-const smallNormalSizeStyles = createShapeStyles('normal', 24, 11, 'normal', 0.5, 6)
-const shapeNormalSizeStyles = createShapeStyles('normal', 32, 12, 'normal', 0.5, 6)
-const largeNormalSizeStyles = createShapeStyles('normal', 48, 14, 'normal', 0.5, 6)
+const smallNormalSizeStyles = createShapeStyles({ size: 24, fontSize: 11, rounding: 6 })
+const shapeNormalSizeStyles = createShapeStyles({ size: 32, fontSize: 12, rounding: 6 })
+const largeNormalSizeStyles = createShapeStyles({ size: 48, fontSize: 14, rounding: 6 })
 
-const appearancePrimaryStyles = createAppearanceStyles('white', 'black', 'black')
+const appearancePrimaryStyles = createAppearanceStyles({
+  fontColor: 'white',
+  backgroundColor: 'black',
+})
 
 export const baseStyles = createBaseStyles()
 

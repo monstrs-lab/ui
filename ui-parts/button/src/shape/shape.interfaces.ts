@@ -11,3 +11,11 @@ export interface ButtonShapeProps extends ButtonShapeRoudingProps, ButtonShapeOf
   equal?: boolean
   round?: boolean
 }
+
+export interface ButtonShapeStyles {
+  size: number
+  fontSize?: number | Function
+  fontWeight?: string | Function
+  rounding?: number
+  offsetRatio?: number
+}

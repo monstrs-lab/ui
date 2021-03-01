@@ -130,3 +130,166 @@ Appearance.argTypes = {
     },
   },
 }
+
+export const Playground = ({
+  children,
+  size,
+  fontSize,
+  fontWeight,
+  shapeRounding,
+  offsetRatio,
+  fontColor,
+  backgroundColor,
+  borderColor,
+  ghostBorderWidth,
+  fill,
+  equal,
+  round,
+  rounding,
+  offset,
+  ghost,
+}) => {
+  const PlaygroundButton = styled.button(
+    createBaseStyles(),
+    createShapeStyles({ size, fontSize, fontWeight, rounding: shapeRounding, offsetRatio }),
+    createAppearanceStyles({
+      fontColor,
+      backgroundColor,
+      borderColor,
+      ghostBorderWidth,
+    })
+  )
+
+  return (
+    <PlaygroundButton
+      fill={fill}
+      equal={equal}
+      round={round}
+      rounding={rounding}
+      offset={offset}
+      ghost={ghost}
+    >
+      {children}
+    </PlaygroundButton>
+  )
+}
+
+Playground.args = {
+  children: 'Кнопка',
+  size: 36,
+  fontSize: 12,
+  fontWeight: 'normal',
+  shapeRounding: 0,
+  offsetRatio: 0.5,
+  fontColor: 'white',
+  backgroundColor: 'blue',
+  borderColor: 'blue',
+  ghostBorderWidth: 1,
+  fill: false,
+  equal: false,
+  round: false,
+  rounding: 0,
+  offset: 0,
+  ghost: false,
+}
+
+Playground.argTypes = {
+  children: {
+    table: {
+      category: 'Content',
+    },
+  },
+  size: {
+    table: {
+      category: 'Representation',
+      subcategory: 'Shape',
+    },
+  },
+  fontSize: {
+    table: {
+      category: 'Representation',
+      subcategory: 'Shape',
+    },
+  },
+  fontWeight: {
+    table: {
+      category: 'Representation',
+      subcategory: 'Shape',
+    },
+  },
+  shapeRounding: {
+    table: {
+      category: 'Representation',
+      subcategory: 'Shape',
+    },
+  },
+  offsetRatio: {
+    table: {
+      category: 'Representation',
+      subcategory: 'Shape',
+    },
+  },
+  fontColor: {
+    control: 'color',
+    table: {
+      category: 'Representation',
+      subcategory: 'Appearance',
+    },
+  },
+  backgroundColor: {
+    control: 'color',
+    table: {
+      category: 'Representation',
+      subcategory: 'Appearance',
+    },
+  },
+  borderColor: {
+    control: 'color',
+    table: {
+      category: 'Representation',
+      subcategory: 'Appearance',
+    },
+  },
+  ghostBorderWidth: {
+    table: {
+      category: 'Representation',
+      subcategory: 'Appearance',
+    },
+  },
+  fill: {
+    table: {
+      category: 'Modifiers',
+      subcategory: 'Shape',
+    },
+  },
+  equal: {
+    table: {
+      category: 'Modifiers',
+      subcategory: 'Shape',
+    },
+  },
+  round: {
+    table: {
+      category: 'Modifiers',
+      subcategory: 'Shape',
+    },
+  },
+  rounding: {
+    table: {
+      category: 'Modifiers',
+      subcategory: 'Shape',
+    },
+  },
+  offset: {
+    table: {
+      category: 'Modifiers',
+      subcategory: 'Shape',
+    },
+  },
+  ghost: {
+    table: {
+      category: 'Modifiers',
+      subcategory: 'Appearance',
+    },
+  },
+}

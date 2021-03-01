@@ -195,101 +195,133 @@ Playground.args = {
 
 Playground.argTypes = {
   children: {
+    name: 'Контент',
+    description: 'Внутренний контент кнопки',
     table: {
-      category: 'Content',
+      category: 'Контент',
     },
   },
   size: {
+    name: 'Размер',
+    description: 'Высота',
     table: {
-      category: 'Representation',
-      subcategory: 'Shape',
+      category: 'Представление',
+      subcategory: 'Форма',
     },
   },
   fontSize: {
+    name: 'Размер шрифта',
+    description: 'Размер шрифта текста',
     table: {
-      category: 'Representation',
-      subcategory: 'Shape',
+      category: 'Представление',
+      subcategory: 'Форма',
     },
   },
   fontWeight: {
+    name: 'Насыщенность шрифта',
+    description: 'Насыщенность шрифта текста',
     table: {
-      category: 'Representation',
-      subcategory: 'Shape',
+      category: 'Представление',
+      subcategory: 'Форма',
     },
   },
   shapeRounding: {
+    name: 'Скругление',
+    description: 'Скругление углов кнопки',
     table: {
-      category: 'Representation',
-      subcategory: 'Shape',
+      category: 'Представление',
+      subcategory: 'Форма',
     },
   },
   offsetRatio: {
+    name: 'Отступы',
+    description: 'Соотношение высоты к размеру отступов',
     table: {
-      category: 'Representation',
-      subcategory: 'Shape',
+      category: 'Представление',
+      subcategory: 'Форма',
     },
   },
   fontColor: {
+    name: 'Цвет текста',
+    description: 'Цвет текста',
     control: 'color',
     table: {
-      category: 'Representation',
-      subcategory: 'Appearance',
+      category: 'Представление',
+      subcategory: 'Внешний вид',
     },
   },
   backgroundColor: {
+    name: 'Цвет заливки',
+    description: 'Цвет текста',
     control: 'color',
     table: {
-      category: 'Representation',
-      subcategory: 'Appearance',
+      category: 'Представление',
+      subcategory: 'Внешний вид',
     },
   },
   borderColor: {
+    name: 'Цвет обводки',
+    description: 'Цвет обводки',
     control: 'color',
     table: {
-      category: 'Representation',
-      subcategory: 'Appearance',
+      category: 'Представление',
+      subcategory: 'Внешний вид',
     },
   },
   ghostBorderWidth: {
+    name: 'Ширина обводки',
+    description: 'Ширина обводки',
     table: {
-      category: 'Representation',
-      subcategory: 'Appearance',
+      category: 'Представление',
+      subcategory: 'Внешний вид',
     },
   },
   fill: {
+    name: 'Во всю ширину',
+    description: 'Делает кнопку во всю ширину контейнера',
     table: {
-      category: 'Modifiers',
-      subcategory: 'Shape',
+      category: 'Модификаторы',
+      subcategory: 'Форма',
     },
   },
   equal: {
+    name: 'Равная',
+    description: 'Ширина равна высоте',
     table: {
-      category: 'Modifiers',
-      subcategory: 'Shape',
+      category: 'Модификаторы',
+      subcategory: 'Форма',
     },
   },
   round: {
+    name: 'Круглая',
+    description: 'Делает кнопку кнурглой',
     table: {
-      category: 'Modifiers',
-      subcategory: 'Shape',
+      category: 'Модификаторы',
+      subcategory: 'Форма',
     },
   },
   rounding: {
+    name: 'Скругление',
+    description: 'Устанавливает величину скругления',
     table: {
-      category: 'Modifiers',
-      subcategory: 'Shape',
+      category: 'Модификаторы',
+      subcategory: 'Форма',
     },
   },
   offset: {
+    name: 'Отступы',
+    description: 'Устанавливает величину отступов от края до контента',
     table: {
-      category: 'Modifiers',
-      subcategory: 'Shape',
+      category: 'Модификаторы',
+      subcategory: 'Форма',
     },
   },
   ghost: {
+    name: 'Прозрачная',
+    description: 'Прозрачная',
     table: {
-      category: 'Modifiers',
-      subcategory: 'Appearance',
+      category: 'Модификаторы',
+      subcategory: 'Внешний вид',
     },
   },
 }

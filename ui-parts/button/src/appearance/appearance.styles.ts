@@ -16,9 +16,10 @@ export const createColorStyles: styleFn = (
   color,
 })
 
-export const createGhostStyles: styleFn = (color: string) =>
+export const createGhostStyles: styleFn = (color: string, borderWidth = 1) =>
   ifProp('ghost', {
     backgroundColor: 'transparent',
+    borderWidth,
     color,
   })
 
@@ -26,6 +27,7 @@ export const createAppearanceStyles = ({
   fontColor,
   backgroundColor,
   borderColor,
+  ghostBorderWidth,
 }: ButtonAppearanceStyles): styleFn =>
   execAndSerialize(
     combine(
@@ -33,7 +35,8 @@ export const createAppearanceStyles = ({
       createGhostStyles(
         (borderColor || backgroundColor) !== 'transparent'
           ? borderColor || backgroundColor
-          : fontColor
+          : fontColor,
+        ghostBorderWidth
       )
     )
   )

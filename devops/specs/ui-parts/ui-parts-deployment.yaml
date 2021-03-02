@@ -19,10 +19,10 @@ spec:
         app: ui-parts
     spec:
       containers:
-      - name: ui-parts
-        image: eu.gcr.io/the-mesh-254617/ui-design-ui-parts:8e3cfe8-1614669152082 # {"$imagepolicy": "flux-system:ui-parts-design"}
-        imagePullPolicy: IfNotPresent
-        ports:
-        - containerPort: 3000
-          name: http
-          protocol: TCP
+        - name: ui-parts
+          image: eu.gcr.io/the-mesh-254617/ui-design-ui-parts:8e3cfe8-1614669152082 # {"$imagepolicy": "flux-system:ui-parts-design"}
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
+              name: http
+              protocol: TCP

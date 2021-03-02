@@ -31,10 +31,10 @@ import { Appearance } from './button.stories'
   <Shape size='small'>маленькая</Shape>
   <Shape size='normal'>стандартная</Shape>
   <Shape size='large'>большая</Shape>
-  <Shape equal size='normal'>
+  <Shape shape='square' size='normal'>
     С
   </Shape>
-  <Shape equal round size='normal'>
+  <Shape shape='circle' size='normal'>
     К
   </Shape>
   <Shape size='normal' rounding={12}>
@@ -77,13 +77,13 @@ HTML-элемент `<button>` создает кликабельную кноп�
 Устанавливает высоту кнопки, равную его ширине, независимо от размера.
 
 <Preview>
-  <Shape equal size='small'>
+  <Shape shape='square' size='small'>
     М
   </Shape>
-  <Shape equal size='normal'>
+  <Shape shape='square' size='normal'>
     С
   </Shape>
-  <Shape equal size='large'>
+  <Shape shape='square' size='large'>
     Б
   </Shape>
 </Preview>
@@ -119,7 +119,7 @@ HTML-элемент `<button>` создает кликабельную кноп�
 Возможность сделать кнопку круглой.
 
 <Preview>
-  <Shape equal round size='normal'>
+  <Shape shape='circle' size='normal'>
     К
   </Shape>
 </Preview>

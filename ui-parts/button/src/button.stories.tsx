@@ -116,15 +116,15 @@ const appearanceButtons = {
   link: LinkAppearanceButton,
 }
 
-export const Appearance = ({ children, variant, ghost }) => {
+export const Appearance = ({ children, variant, inverted }) => {
   const AppearanceButton = appearanceButtons[variant] || PrimaryAppearanceButton
-  return <AppearanceButton ghost={ghost}>{children}</AppearanceButton>
+  return <AppearanceButton inverted={inverted}>{children}</AppearanceButton>
 }
 
 Appearance.args = {
   children: 'Кнопка',
   variant: 'primary',
-  ghost: false,
+  inverted: false,
 }
 
 Appearance.argTypes = {
@@ -146,12 +146,12 @@ export const Playground = ({
   fontColor,
   backgroundColor,
   borderColor,
-  ghostBorderWidth,
+  invertedBorderWidth,
   shape,
   fill,
   rounding,
   offset,
-  ghost,
+  inverted,
 }) => {
   const PlaygroundButton = styled.button(
     createBaseStyles(),
@@ -160,12 +160,18 @@ export const Playground = ({
       fontColor,
       backgroundColor,
       borderColor,
-      ghostBorderWidth,
+      invertedBorderWidth,
     })
   )
 
   return (
-    <PlaygroundButton fill={fill} shape={shape} rounding={rounding} offset={offset} ghost={ghost}>
+    <PlaygroundButton
+      fill={fill}
+      shape={shape}
+      rounding={rounding}
+      offset={offset}
+      inverted={inverted}
+    >
       {children}
     </PlaygroundButton>
   )
@@ -181,12 +187,12 @@ Playground.args = {
   fontColor: 'white',
   backgroundColor: 'blue',
   borderColor: 'blue',
-  ghostBorderWidth: 1,
+  invertedBorderWidth: 1,
   shape: 'rectangle',
   fill: false,
   rounding: 0,
   offset: 0,
-  ghost: false,
+  inverted: false,
 }
 
 Playground.argTypes = {
@@ -264,7 +270,7 @@ Playground.argTypes = {
       subcategory: 'Внешний вид',
     },
   },
-  ghostBorderWidth: {
+  invertedBorderWidth: {
     name: 'Ширина обводки',
     description: 'Ширина обводки',
     table: {
@@ -308,9 +314,9 @@ Playground.argTypes = {
       subcategory: 'Форма',
     },
   },
-  ghost: {
-    name: 'Прозрачная',
-    description: 'Прозрачная',
+  inverted: {
+    name: 'Инвертированная',
+    description: 'Прозрачная заливка, с обводкой и текстом одного цвета',
     table: {
       category: 'Модификаторы',
       subcategory: 'Внешний вид',

@@ -16,8 +16,8 @@ export const createColorStyles: styleFn = (
   color,
 })
 
-export const createGhostStyles: styleFn = (color: string, borderWidth = 1) =>
-  ifProp('ghost', {
+export const createInvertedStyles: styleFn = (color: string, borderWidth = 1) =>
+  ifProp('inverted', {
     backgroundColor: 'transparent',
     borderWidth,
     color,
@@ -27,16 +27,16 @@ export const createAppearanceStyles = ({
   fontColor,
   backgroundColor,
   borderColor,
-  ghostBorderWidth,
+  invertedBorderWidth,
 }: ButtonAppearanceStyles): styleFn =>
   execAndSerialize(
     combine(
       createColorStyles(fontColor, backgroundColor, borderColor || backgroundColor),
-      createGhostStyles(
+      createInvertedStyles(
         (borderColor || backgroundColor) !== 'transparent'
           ? borderColor || backgroundColor
           : fontColor,
-        ghostBorderWidth
+        invertedBorderWidth
       )
     )
   )

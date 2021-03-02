@@ -11,7 +11,7 @@ const largeNormalSizeStyles = createShapeStyles({ size: 48, fontSize: 14, roundi
 const appearancePrimaryStyles = createAppearanceStyles({
   backgroundColor: prop('theme.colors.button.primary.fill'),
   fontColor: 'white',
-  ghostBorderWidth: 2,
+  invertedBorderWidth: 2,
 })
 
 export const baseStyles = createBaseStyles()

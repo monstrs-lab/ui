@@ -1,5 +1,6 @@
 import { styleFn }                 from 'styled-system'
 import { ifProp }                  from 'styled-tools'
+import { prop, switchProp }        from 'styled-tools'
 
 import { execAndSerialize }        from '@ui-parts/styles'
 import { combine }                 from '@ui-parts/styles'
@@ -27,9 +28,6 @@ export const createOffsetStyles: styleFn = (size: number, ratio: number) =>
     }
   )
 
-export const createEqualStyles: styleFn = (size: number) =>
-  ifProp('equal', { padding: 0, width: size })
-
 export const createFillStyles: styleFn = () => ifProp('fill', { width: '100%' })
 
 export const createRoundingStyles: styleFn = (size: number, defaultRounding: number) =>
@@ -41,7 +39,23 @@ export const createRoundingStyles: styleFn = (size: number, defaultRounding: num
     { borderRadius: defaultRounding }
   )
 
-export const createRoundStyles: styleFn = () => ifProp('round', { borderRadius: '50%' })
+export const createPatternStyles: styleFn = (size: number) =>
+  switchProp(prop('shape', 'rectangle'), {
+    rectangle: {
+      height: size,
+    },
+    square: {
+      padding: 0,
+      width: size,
+      height: size,
+    },
+    circle: {
+      padding: 0,
+      width: size,
+      height: size,
+      borderRadius: '50%',
+    },
+  })
 
 export const createShapeStyles = ({
   size,
@@ -54,9 +68,8 @@ export const createShapeStyles = ({
     combine(
       createBaseShapeStyles(size, fontSize, fontWeight),
       createOffsetStyles(size, offsetRatio),
-      createEqualStyles(size),
-      createFillStyles(),
       createRoundingStyles(size, rounding),
-      createRoundStyles()
+      createFillStyles(),
+      createPatternStyles(size)
     )
   )

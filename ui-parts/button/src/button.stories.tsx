@@ -41,11 +41,11 @@ const shapeSizeButtons = {
   large: LargeShapeButton,
 }
 
-export const Shape = ({ children, size, equal, round, rounding, offset, fill }) => {
+export const Shape = ({ children, size, shape, rounding, offset, fill }) => {
   const ShapeSizeButton = shapeSizeButtons[size] || NormalShapeButton
 
   return (
-    <ShapeSizeButton equal={equal} round={round} rounding={rounding} offset={offset} fill={fill}>
+    <ShapeSizeButton shape={shape} rounding={rounding} offset={offset} fill={fill}>
       {children}
     </ShapeSizeButton>
   )
@@ -54,9 +54,8 @@ export const Shape = ({ children, size, equal, round, rounding, offset, fill }) 
 Shape.args = {
   children: 'Кнопка',
   size: 'normal',
+  shape: 'rectangle',
   fill: false,
-  equal: false,
-  round: false,
   rounding: 0,
   offset: 0,
 }
@@ -64,8 +63,14 @@ Shape.args = {
 Shape.argTypes = {
   size: {
     control: {
-      type: 'select',
+      type: 'inline-radio',
       options: ['small', 'normal', 'large'],
+    },
+  },
+  shape: {
+    control: {
+      type: 'inline-radio',
+      options: ['rectangle', 'square', 'circle'],
     },
   },
 }
@@ -142,9 +147,8 @@ export const Playground = ({
   backgroundColor,
   borderColor,
   ghostBorderWidth,
+  shape,
   fill,
-  equal,
-  round,
   rounding,
   offset,
   ghost,
@@ -161,14 +165,7 @@ export const Playground = ({
   )
 
   return (
-    <PlaygroundButton
-      fill={fill}
-      equal={equal}
-      round={round}
-      rounding={rounding}
-      offset={offset}
-      ghost={ghost}
-    >
+    <PlaygroundButton fill={fill} shape={shape} rounding={rounding} offset={offset} ghost={ghost}>
       {children}
     </PlaygroundButton>
   )
@@ -185,9 +182,8 @@ Playground.args = {
   backgroundColor: 'blue',
   borderColor: 'blue',
   ghostBorderWidth: 1,
+  shape: 'rectangle',
   fill: false,
-  equal: false,
-  round: false,
   rounding: 0,
   offset: 0,
   ghost: false,
@@ -284,20 +280,16 @@ Playground.argTypes = {
       subcategory: 'Форма',
     },
   },
-  equal: {
-    name: 'Равная',
-    description: 'Ширина равна высоте',
+  shape: {
+    name: 'Форма',
+    description: 'Форма кнопки',
     table: {
       category: 'Модификаторы',
       subcategory: 'Форма',
     },
-  },
-  round: {
-    name: 'Круглая',
-    description: 'Делает кнопку кнурглой',
-    table: {
-      category: 'Модификаторы',
-      subcategory: 'Форма',
+    control: {
+      type: 'inline-radio',
+      options: ['rectangle', 'square', 'circle'],
     },
   },
   rounding: {

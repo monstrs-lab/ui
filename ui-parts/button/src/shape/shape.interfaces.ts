@@ -1,3 +1,5 @@
+export type ButtonShapeType = 'rectangle' | 'square' | 'circle'
+
 export interface ButtonShapeRoudingProps {
   rounding?: number | boolean
 }
@@ -7,9 +9,8 @@ export interface ButtonShapeOffsetProps {
 }
 
 export interface ButtonShapeProps extends ButtonShapeRoudingProps, ButtonShapeOffsetProps {
+  shape?: ButtonShapeType
   fill?: boolean
-  equal?: boolean
-  round?: boolean
 }
 
 export interface ButtonShapeStyles {

@@ -1,11 +1,13 @@
-import React                      from 'react'
-import styled                     from '@emotion/styled'
+import React                         from 'react'
+import styled                        from '@emotion/styled'
+
+import { fontNames, useGoogleFonts } from '@ui-parts/design-fonts'
 
 // @ts-ignore
-import mdx                        from './button.docs.mdx'
-import { createBaseStyles }       from './base'
-import { createShapeStyles }      from './shape'
-import { createAppearanceStyles } from './appearance'
+import mdx                           from './button.docs.mdx'
+import { createBaseStyles }          from './base'
+import { createShapeStyles }         from './shape'
+import { createAppearanceStyles }    from './appearance'
 
 export const Native = ({ children }) => <button type='button'>{children}</button>
 
@@ -139,6 +141,7 @@ Appearance.argTypes = {
 export const Playground = ({
   children,
   size,
+  fontFamily,
   fontSize,
   fontWeight,
   shapeRounding,
@@ -153,9 +156,18 @@ export const Playground = ({
   offset,
   inverted,
 }) => {
+  useGoogleFonts(fontFamily, fontWeight)
+
   const PlaygroundButton = styled.button(
     createBaseStyles(),
-    createShapeStyles({ size, fontSize, fontWeight, rounding: shapeRounding, offsetRatio }),
+    createShapeStyles({
+      size,
+      fontFamily,
+      fontSize,
+      fontWeight,
+      rounding: shapeRounding,
+      offsetRatio,
+    }),
     createAppearanceStyles({
       fontColor,
       backgroundColor,
@@ -180,8 +192,9 @@ export const Playground = ({
 Playground.args = {
   children: 'Кнопка',
   size: 36,
+  fontFamily: 'Roboto',
+  fontWeight: 400,
   fontSize: 12,
-  fontWeight: 'normal',
   shapeRounding: 0,
   offsetRatio: 0.5,
   fontColor: 'white',
@@ -211,17 +224,33 @@ Playground.argTypes = {
       subcategory: 'Форма',
     },
   },
-  fontSize: {
-    name: 'Размер шрифта',
-    description: 'Размер шрифта текста',
+  fontFamily: {
+    name: 'Шрифт',
+    description: 'Шрифт',
     table: {
       category: 'Представление',
       subcategory: 'Форма',
+    },
+    control: {
+      type: 'select',
+      options: fontNames,
     },
   },
   fontWeight: {
     name: 'Насыщенность шрифта',
     description: 'Насыщенность шрифта текста',
+    table: {
+      category: 'Представление',
+      subcategory: 'Форма',
+    },
+    control: {
+      type: 'select',
+      options: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    },
+  },
+  fontSize: {
+    name: 'Размер шрифта',
+    description: 'Размер шрифта текста',
     table: {
       category: 'Представление',
       subcategory: 'Форма',

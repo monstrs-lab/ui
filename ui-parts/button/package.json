@@ -11,6 +11,7 @@
     "@emotion/styled-base": "^10.0.27",
     "@types/react": "^17.0.2",
     "@types/styled-system": "^5.1.10",
+    "@ui-parts/design-fonts": "workspace:0.0.1",
     "react": "^17.0.1",
     "styled-system": "^5.1.5",
     "styled-tools": "^1.7.2"

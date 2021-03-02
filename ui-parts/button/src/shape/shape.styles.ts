@@ -12,8 +12,9 @@ import { ButtonShapeStyles }       from './shape.interfaces'
 export const createBaseShapeStyles: styleFn = (
   size: number,
   fontSize: number | Function,
-  fontWeight: string | Function
-) => () => ({ height: size, fontSize, fontWeight })
+  fontWeight: string | Function,
+  fontFamily: string | Function
+) => () => ({ height: size, fontSize, fontWeight, fontFamily })
 
 export const createOffsetStyles: styleFn = (size: number, ratio: number) =>
   ifProp(
@@ -59,6 +60,7 @@ export const createPatternStyles: styleFn = (size: number) =>
 
 export const createShapeStyles = ({
   size,
+  fontFamily,
   fontSize,
   fontWeight,
   offsetRatio = 0.5,
@@ -66,7 +68,7 @@ export const createShapeStyles = ({
 }: ButtonShapeStyles): styleFn =>
   execAndSerialize(
     combine(
-      createBaseShapeStyles(size, fontSize, fontWeight),
+      createBaseShapeStyles(size, fontSize, fontWeight, fontFamily),
       createOffsetStyles(size, offsetRatio),
       createRoundingStyles(size, rounding),
       createFillStyles(),

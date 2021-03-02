@@ -43,6 +43,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:ui-parts/design"
       },
       {
+        "name": "@ui-parts/design-fonts",
+        "reference": "workspace:ui-parts/design-fonts"
+      },
+      {
         "name": "@ui-parts/styles",
         "reference": "workspace:ui-parts/styles"
       },
@@ -63,6 +67,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@ui-admin/theme", ["virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#workspace:ui-admin/theme", "workspace:ui-admin/theme"]],
       ["@ui-parts/button", ["virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#workspace:ui-parts/button", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#workspace:ui-parts/button", "workspace:ui-parts/button"]],
       ["@ui-parts/design", ["workspace:ui-parts/design"]],
+      ["@ui-parts/design-fonts", ["virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/design-fonts", "workspace:ui-parts/design-fonts"]],
       ["@ui-parts/styles", ["virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles", "workspace:ui-parts/styles"]],
       ["@ui-proto/button", ["virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/button", "workspace:ui-proto/button"]],
       ["@ui-proto/design", ["workspace:ui-proto/design"]],
@@ -8619,6 +8624,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.2"],
             ["@types/styled-system", "npm:5.1.10"],
             ["@types/styled-tools", null],
+            ["@ui-parts/design-fonts", "virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/design-fonts"],
             ["@ui-parts/styles", "virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles"],
             ["core-js", "npm:3.9.0"],
             ["react", "npm:17.0.1"],
@@ -8649,6 +8655,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.2"],
             ["@types/styled-system", "npm:5.1.10"],
             ["@types/styled-tools", null],
+            ["@ui-parts/design-fonts", "virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/design-fonts"],
             ["@ui-parts/styles", "virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles"],
             ["core-js", "npm:3.9.0"],
             ["react", "npm:17.0.1"],
@@ -8673,6 +8680,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/addon-docs", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:6.1.20"],
             ["@types/react", "npm:17.0.2"],
             ["@types/styled-system", "npm:5.1.10"],
+            ["@ui-parts/design-fonts", "virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/design-fonts"],
             ["@ui-parts/styles", "virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles"],
             ["core-js", "npm:3.9.0"],
             ["react", "npm:17.0.1"],
@@ -8705,6 +8713,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-is", "npm:17.0.1"],
             ["typescript", "patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"],
             ["webpack", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:5.24.1"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@ui-parts/design-fonts", [
+        ["virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/design-fonts", {
+          "packageLocation": "./.yarn/$$virtual/@ui-parts-design-fonts-virtual-e98168d978/1/ui-parts/design-fonts/",
+          "packageDependencies": [
+            ["@ui-parts/design-fonts", "virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/design-fonts"],
+            ["@types/react", "npm:17.0.2"],
+            ["core-js", "npm:3.9.0"],
+            ["google-fonts-complete", "npm:2.1.1"],
+            ["google-fonts-loader", "npm:1.0.0"],
+            ["react", "npm:17.0.1"]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
+          ],
+          "linkType": "SOFT",
+        }],
+        ["workspace:ui-parts/design-fonts", {
+          "packageLocation": "./ui-parts/design-fonts/",
+          "packageDependencies": [
+            ["@ui-parts/design-fonts", "workspace:ui-parts/design-fonts"],
+            ["core-js", "npm:3.9.0"],
+            ["google-fonts-complete", "npm:2.1.1"],
+            ["google-fonts-loader", "npm:1.0.0"],
+            ["react", "npm:17.0.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -16287,6 +16324,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["good-listener", "npm:1.2.2"],
             ["delegate", "npm:3.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["google-fonts-complete", [
+        ["npm:2.1.1", {
+          "packageLocation": "./.yarn/cache/google-fonts-complete-npm-2.1.1-5be3b4944d-c3cb691b83.zip/node_modules/google-fonts-complete/",
+          "packageDependencies": [
+            ["google-fonts-complete", "npm:2.1.1"],
+            ["postcss", "npm:7.0.35"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["google-fonts-loader", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/google-fonts-loader-npm-1.0.0-28f8c6262b-7c95d6ea93.zip/node_modules/google-fonts-loader/",
+          "packageDependencies": [
+            ["google-fonts-loader", "npm:1.0.0"]
           ],
           "linkType": "HARD",
         }]

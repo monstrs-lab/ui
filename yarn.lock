@@ -5267,6 +5267,7 @@ __metadata:
     "@emotion/styled-base": ^10.0.27
     "@types/react": ^17.0.2
     "@types/styled-system": ^5.1.10
+    "@ui-parts/design-fonts": "workspace:0.0.1"
     "@ui-parts/styles": "workspace:0.2.0"
     react: ^17.0.1
     styled-system: ^5.1.5
@@ -5276,6 +5277,18 @@ __metadata:
     react: ^17.0.1
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
+  languageName: unknown
+  linkType: soft
+
+"@ui-parts/design-fonts@workspace:0.0.1, @ui-parts/design-fonts@workspace:ui-parts/design-fonts":
+  version: 0.0.0-use.local
+  resolution: "@ui-parts/design-fonts@workspace:ui-parts/design-fonts"
+  dependencies:
+    google-fonts-complete: ^2.1.1
+    google-fonts-loader: ^1.0.0
+    react: ^17.0.1
+  peerDependencies:
+    react: ^17.0.1
   languageName: unknown
   linkType: soft
 
@@ -11529,6 +11542,22 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"google-fonts-complete@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "google-fonts-complete@npm:2.1.1"
+  dependencies:
+    postcss: ^7.0.18
+  checksum: c3cb691b830d93d7504d6526ec40a7d43d1cf0d4d0ce9d8279be7ed72a4d548040125f7f3e3e6b92f74fa654ec18b236272dbe9ceaa6e66d835be4263af2000f
+  languageName: node
+  linkType: hard
+
+"google-fonts-loader@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "google-fonts-loader@npm:1.0.0"
+  checksum: 7c95d6ea93fb1508f1b3953566a8dc910b01c34a03f26584b092a83e1ba9be05c33cdf0032aeaf16dd72e6beaea20a92ed6e208279d74c54a9218e1abe858df2
+  languageName: node
+  linkType: hard
+
 "got@npm:^11.7.0":
   version: 11.8.1
   resolution: "got@npm:11.8.1"
@@ -16112,7 +16141,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"postcss@npm:^7.0.0, postcss@npm:^7.0.14, postcss@npm:^7.0.26, postcss@npm:^7.0.32, postcss@npm:^7.0.5, postcss@npm:^7.0.6":
+"postcss@npm:^7.0.0, postcss@npm:^7.0.14, postcss@npm:^7.0.18, postcss@npm:^7.0.26, postcss@npm:^7.0.32, postcss@npm:^7.0.5, postcss@npm:^7.0.6":
   version: 7.0.35
   resolution: "postcss@npm:7.0.35"
   dependencies:

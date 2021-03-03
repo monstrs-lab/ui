@@ -8,6 +8,8 @@ import mdx                           from './button.docs.mdx'
 import { createBaseStyles }          from './base'
 import { createShapeStyles }         from './shape'
 import { createAppearanceStyles }    from './appearance'
+import { createContentStyles }       from './content'
+import { Content }                   from './content'
 
 export const Native = ({ children }) => <button type='button'>{children}</button>
 
@@ -140,12 +142,15 @@ Appearance.argTypes = {
 
 export const Playground = ({
   children,
+  childrenPrefix,
+  childrenSuffix,
   size,
   fontFamily,
   fontSize,
   fontWeight,
   shapeRounding,
   offsetRatio,
+  contentDivider,
   fontColor,
   backgroundColor,
   borderColor,
@@ -155,11 +160,13 @@ export const Playground = ({
   rounding,
   offset,
   inverted,
+  contentAlign,
 }) => {
   useGoogleFonts(fontFamily, fontWeight)
 
   const PlaygroundButton = styled.button(
     createBaseStyles(),
+    createContentStyles(),
     createShapeStyles({
       size,
       fontFamily,
@@ -183,20 +190,28 @@ export const Playground = ({
       rounding={rounding}
       offset={offset}
       inverted={inverted}
+      contentAlign={contentAlign}
     >
-      {children}
+      <Content divider={contentDivider}>
+        {childrenPrefix && <span>{childrenPrefix}</span>}
+        {children}
+        {childrenSuffix && <span>{childrenSuffix}</span>}
+      </Content>
     </PlaygroundButton>
   )
 }
 
 Playground.args = {
   children: 'Кнопка',
+  childrenPrefix: '',
+  childrenSuffix: '',
   size: 36,
   fontFamily: 'Roboto',
   fontWeight: 400,
   fontSize: 12,
   shapeRounding: 0,
   offsetRatio: 0.5,
+  contentDivider: 12,
   fontColor: 'white',
   backgroundColor: 'blue',
   borderColor: 'blue',
@@ -206,12 +221,27 @@ Playground.args = {
   rounding: 0,
   offset: 0,
   inverted: false,
+  contentAlign: 'center',
 }
 
 Playground.argTypes = {
   children: {
     name: 'Контент',
-    description: 'Внутренний контент кнопки',
+    description: 'Основной контент, описание',
+    table: {
+      category: 'Контент',
+    },
+  },
+  childrenPrefix: {
+    name: 'Контент слева',
+    description: 'Дополнительный контент слева, текст или иконка',
+    table: {
+      category: 'Контент',
+    },
+  },
+  childrenSuffix: {
+    name: 'Контент справа',
+    description: 'Дополнительный контент справа, текст или иконка',
     table: {
       category: 'Контент',
     },
@@ -254,6 +284,12 @@ Playground.argTypes = {
     table: {
       category: 'Представление',
       subcategory: 'Форма',
+    },
+    control: {
+      type: 'range',
+      min: 1,
+      max: 96,
+      step: 1,
     },
   },
   shapeRounding: {
@@ -307,6 +343,14 @@ Playground.argTypes = {
       subcategory: 'Внешний вид',
     },
   },
+  contentDivider: {
+    name: 'Отступы контента',
+    description: 'Отступы внутри контента',
+    table: {
+      category: 'Представление',
+      subcategory: 'Контент',
+    },
+  },
   fill: {
     name: 'Во всю ширину',
     description: 'Делает кнопку во всю ширину контейнера',
@@ -349,6 +393,18 @@ Playground.argTypes = {
     table: {
       category: 'Модификаторы',
       subcategory: 'Внешний вид',
+    },
+  },
+  contentAlign: {
+    name: 'Выравнивание контента',
+    description: 'Выравнивание контента',
+    table: {
+      category: 'Модификаторы',
+      subcategory: 'Контент',
+    },
+    control: {
+      type: 'select',
+      options: ['center', 'flex-start', 'flex-end', 'space-between', 'space-around'],
     },
   },
 }

@@ -19,10 +19,10 @@ spec:
         app: ui-admin
     spec:
       containers:
-        - name: ui-admin
-          image: eu.gcr.io/the-mesh-254617/ui-design-ui-admin:f51efe9-1614678794653 # {"$imagepolicy": "flux-system:ui-admin-design"}
-          imagePullPolicy: IfNotPresent
-          ports:
-            - containerPort: 3000
-              name: http
-              protocol: TCP
+      - name: ui-admin
+        image: eu.gcr.io/the-mesh-254617/ui-design-ui-admin:f51efe9-1614678794653 # {"$imagepolicy": "flux-system:ui-admin-design"}
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
+          name: http
+          protocol: TCP

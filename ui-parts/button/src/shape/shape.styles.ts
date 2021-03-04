@@ -6,7 +6,6 @@ import { execAndSerialize }        from '@ui-parts/styles'
 import { combine }                 from '@ui-parts/styles'
 
 import { ButtonShapeRoudingProps } from './shape.interfaces'
-import { ButtonShapeOffsetProps }  from './shape.interfaces'
 import { ButtonShapeStyles }       from './shape.interfaces'
 
 export const createBaseShapeStyles: styleFn = (
@@ -16,26 +15,18 @@ export const createBaseShapeStyles: styleFn = (
   fontFamily: string | Function
 ) => () => ({ height: size, fontSize, fontWeight, fontFamily })
 
-export const createOffsetStyles: styleFn = (size: number, ratio: number) =>
-  ifProp(
-    'offset',
-    ({ offset }: ButtonShapeOffsetProps) => ({
-      paddingLeft: offset,
-      paddingRight: offset,
-    }),
-    {
-      paddingLeft: size * ratio,
-      paddingRight: size * ratio,
-    }
-  )
+export const createPaddingStyles: styleFn = (paddingLeft, paddingRight) => () => ({
+  paddingLeft,
+  paddingRight,
+})
 
 export const createFillStyles: styleFn = () => ifProp('fill', { width: '100%' })
 
-export const createRoundingStyles: styleFn = (size: number, defaultRounding: number) =>
+export const createRoundingStyles: styleFn = (defaultRounding: number) =>
   ifProp(
     'rounding',
     ({ rounding }: ButtonShapeRoudingProps) => ({
-      borderRadius: rounding === true ? size : rounding,
+      borderRadius: rounding,
     }),
     { borderRadius: defaultRounding }
   )
@@ -49,6 +40,7 @@ export const createPatternStyles: styleFn = (size: number) =>
       padding: 0,
       width: size,
       height: size,
+      borderRadius: 0,
     },
     circle: {
       padding: 0,
@@ -63,14 +55,16 @@ export const createShapeStyles = ({
   fontFamily,
   fontSize,
   fontWeight,
-  offsetRatio = 0.5,
+  paddingLeft,
+  paddingRight,
+  paddingRatio = 0.5,
   rounding = 0,
 }: ButtonShapeStyles): styleFn =>
   execAndSerialize(
     combine(
       createBaseShapeStyles(size, fontSize, fontWeight, fontFamily),
-      createOffsetStyles(size, offsetRatio),
-      createRoundingStyles(size, rounding),
+      createPaddingStyles(paddingLeft || size * paddingRatio, paddingRight || size * paddingRatio),
+      createRoundingStyles(rounding),
       createFillStyles(),
       createPatternStyles(size)
     )

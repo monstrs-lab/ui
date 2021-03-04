@@ -4,11 +4,7 @@ export interface ButtonShapeRoudingProps {
   rounding?: number | boolean
 }
 
-export interface ButtonShapeOffsetProps {
-  offset?: number | boolean
-}
-
-export interface ButtonShapeProps extends ButtonShapeRoudingProps, ButtonShapeOffsetProps {
+export interface ButtonShapeProps extends ButtonShapeRoudingProps {
   shape?: ButtonShapeType
   fill?: boolean
 }
@@ -19,5 +15,7 @@ export interface ButtonShapeStyles {
   fontSize?: number | Function
   fontWeight?: string | number | Function
   rounding?: number
-  offsetRatio?: number
+  paddingLeft?: number
+  paddingRight?: number
+  paddingRatio?: number
 }

@@ -107,31 +107,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:7.13.1, @babel/core@npm:^7.13.1":
-  version: 7.13.1
-  resolution: "@babel/core@npm:7.13.1"
-  dependencies:
-    "@babel/code-frame": ^7.12.13
-    "@babel/generator": ^7.13.0
-    "@babel/helper-compilation-targets": ^7.13.0
-    "@babel/helper-module-transforms": ^7.13.0
-    "@babel/helpers": ^7.13.0
-    "@babel/parser": ^7.13.0
-    "@babel/template": ^7.12.13
-    "@babel/traverse": ^7.13.0
-    "@babel/types": ^7.13.0
-    convert-source-map: ^1.7.0
-    debug: ^4.1.0
-    gensync: ^1.0.0-beta.2
-    json5: ^2.1.2
-    lodash: ^4.17.19
-    semver: 7.0.0
-    source-map: ^0.5.0
-  checksum: 3adc8e8ce201f7e45a83c6715b11b353e5083339cf32dc84db10bda63b63e4cd785b57ee8d51e0e049a60ebbbf7cd45d594475b6511607b57917076fd5acd888
-  languageName: node
-  linkType: hard
-
-"@babel/core@npm:7.13.8, @babel/core@npm:^7.12.10":
+"@babel/core@npm:7.13.8, @babel/core@npm:^7.12.10, @babel/core@npm:^7.13.8":
   version: 7.13.8
   resolution: "@babel/core@npm:7.13.8"
   dependencies:
@@ -5127,7 +5103,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-admin/design@workspace:ui-admin/design"
   dependencies:
-    "@babel/core": ^7.13.1
+    "@babel/core": ^7.13.8
     "@storybook/addon-actions": 6.2.0-beta.8
     "@storybook/addon-docs": 6.2.0-beta.8
     "@storybook/addon-essentials": 6.2.0-beta.8
@@ -5145,7 +5121,7 @@ __metadata:
     react-dom: ^17.0.1
     react-is: ^17.0.1
     typescript: ^4.1.5
-    webpack: ^5.24.1
+    webpack: ^5.24.3
   languageName: unknown
   linkType: soft
 
@@ -5198,7 +5174,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-parts/design@workspace:ui-parts/design"
   dependencies:
-    "@babel/core": ^7.13.1
+    "@babel/core": ^7.13.8
     "@storybook/addon-actions": 6.2.0-beta.8
     "@storybook/addon-docs": 6.2.0-beta.8
     "@storybook/addon-essentials": 6.2.0-beta.8
@@ -5215,7 +5191,7 @@ __metadata:
     react-dom: ^17.0.1
     react-is: ^17.0.1
     typescript: ^4.1.5
-    webpack: ^5.24.1
+    webpack: ^5.24.3
   languageName: unknown
   linkType: soft
 
@@ -5254,7 +5230,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-proto/design@workspace:ui-proto/design"
   dependencies:
-    "@babel/core": ^7.13.1
+    "@babel/core": ^7.13.8
     "@storybook/addon-actions": 6.2.0-beta.8
     "@storybook/addon-docs": 6.2.0-beta.8
     "@storybook/addon-essentials": 6.2.0-beta.8
@@ -5271,7 +5247,7 @@ __metadata:
     react-dom: ^17.0.1
     react-is: ^17.0.1
     typescript: ^4.1.5
-    webpack: ^5.24.1
+    webpack: ^5.24.3
   languageName: unknown
   linkType: soft
 
@@ -19835,9 +19811,9 @@ typescript@^3.2.4:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.24.1":
-  version: 5.24.1
-  resolution: "webpack@npm:5.24.1"
+"webpack@npm:^5.24.3":
+  version: 5.24.3
+  resolution: "webpack@npm:5.24.3"
   dependencies:
     "@types/eslint-scope": ^3.7.0
     "@types/estree": ^0.0.46
@@ -19867,7 +19843,7 @@ typescript@^3.2.4:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 1e290ffe77504be99c677ff654f27fcca375a04bb2fd5d1a5d3146ab0082ecd02b992d78f5499b5119a8b5ae6bb247ea9d8f52fb793041af1a16d75c2a975677
+  checksum: 025181b6a4ba57caabd81047ab5751835a1b00e04cd15d3dca36e33f2034a194f73135b468da402001e5f9042bdad41d38587aec2a747b9fd7846044092655bb
   languageName: node
   linkType: hard
 

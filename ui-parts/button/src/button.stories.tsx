@@ -45,11 +45,11 @@ const shapeSizeButtons = {
   large: LargeShapeButton,
 }
 
-export const Shape = ({ children, size, shape, rounding, offset, fill }) => {
+export const Shape = ({ children, size, shape, rounding, fill }) => {
   const ShapeSizeButton = shapeSizeButtons[size] || NormalShapeButton
 
   return (
-    <ShapeSizeButton shape={shape} rounding={rounding} offset={offset} fill={fill}>
+    <ShapeSizeButton shape={shape} rounding={rounding} fill={fill}>
       {children}
     </ShapeSizeButton>
   )
@@ -61,7 +61,6 @@ Shape.args = {
   shape: 'rectangle',
   fill: false,
   rounding: 0,
-  offset: 0,
 }
 
 Shape.argTypes = {
@@ -149,7 +148,8 @@ export const Playground = ({
   fontSize,
   fontWeight,
   shapeRounding,
-  offsetRatio,
+  paddingLeft,
+  paddingRight,
   contentDivider,
   fontColor,
   backgroundColor,
@@ -158,7 +158,6 @@ export const Playground = ({
   shape,
   fill,
   rounding,
-  offset,
   inverted,
   contentAlign,
 }) => {
@@ -173,7 +172,8 @@ export const Playground = ({
       fontSize,
       fontWeight,
       rounding: shapeRounding,
-      offsetRatio,
+      paddingLeft,
+      paddingRight,
     }),
     createAppearanceStyles({
       fontColor,
@@ -188,7 +188,6 @@ export const Playground = ({
       fill={fill}
       shape={shape}
       rounding={rounding}
-      offset={offset}
       inverted={inverted}
       contentAlign={contentAlign}
     >
@@ -210,7 +209,8 @@ Playground.args = {
   fontWeight: 400,
   fontSize: 12,
   shapeRounding: 0,
-  offsetRatio: 0.5,
+  paddingLeft: 0,
+  paddingRight: 0,
   contentDivider: 12,
   fontColor: 'white',
   backgroundColor: 'blue',
@@ -219,7 +219,6 @@ Playground.args = {
   shape: 'rectangle',
   fill: false,
   rounding: 0,
-  offset: 0,
   inverted: false,
   contentAlign: 'center',
 }
@@ -300,9 +299,17 @@ Playground.argTypes = {
       subcategory: 'Форма',
     },
   },
-  offsetRatio: {
-    name: 'Отступы',
-    description: 'Соотношение высоты к размеру отступов',
+  paddingLeft: {
+    name: 'Отступ слева',
+    description: 'Отступ слева от края до контента',
+    table: {
+      category: 'Представление',
+      subcategory: 'Форма',
+    },
+  },
+  paddingRight: {
+    name: 'Отступ справа',
+    description: 'Отступ справа от края до контента',
     table: {
       category: 'Представление',
       subcategory: 'Форма',
@@ -374,14 +381,6 @@ Playground.argTypes = {
   rounding: {
     name: 'Скругление',
     description: 'Устанавливает величину скругления',
-    table: {
-      category: 'Модификаторы',
-      subcategory: 'Форма',
-    },
-  },
-  offset: {
-    name: 'Отступы',
-    description: 'Устанавливает величину отступов от края до контента',
     table: {
       category: 'Модификаторы',
       subcategory: 'Форма',

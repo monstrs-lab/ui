@@ -22,5 +22,8 @@
     "ui-admin/*",
     "ui-proto/*",
     "ui-parts/*"
-  ]
+  ],
+  "resolutions": {
+    "@storybook/addon-docs": "6.2.0-beta.8"
+  }
 }

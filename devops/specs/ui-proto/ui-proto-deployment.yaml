@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: ui-proto
-        image: eu.gcr.io/the-mesh-254617/ui-design-ui-proto:253188a-1614958216741 # {"$imagepolicy": "flux-system:ui-proto-design"}
+        image: eu.gcr.io/the-mesh-254617/ui-design-ui-proto:a1e4d9d-1614960434254 # {"$imagepolicy": "flux-system:ui-proto-design"}
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000

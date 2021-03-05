@@ -5137,7 +5137,7 @@ __metadata:
     react-dom: ^17.0.1
     react-is: ^17.0.1
     typescript: ^4.2.3
-    webpack: ^5.24.3
+    webpack: ^4.46.0
   languageName: unknown
   linkType: soft
 
@@ -5207,7 +5207,7 @@ __metadata:
     react-dom: ^17.0.1
     react-is: ^17.0.1
     typescript: ^4.2.3
-    webpack: ^5.24.3
+    webpack: ^4.46.0
   languageName: unknown
   linkType: soft
 
@@ -5263,7 +5263,7 @@ __metadata:
     react-dom: ^17.0.1
     react-is: ^17.0.1
     typescript: ^4.2.3
-    webpack: ^5.24.3
+    webpack: ^4.46.0
   languageName: unknown
   linkType: soft
 
@@ -9497,13 +9497,6 @@ __metadata:
   version: 0.3.26
   resolution: "es-module-lexer@npm:0.3.26"
   checksum: f6a6bfb5f38e7ecdb3fb5e530a9998dcf988356757460cb5f3b86240f6150bf5084aa651984a295d820c0532d097ab5296dad73f408f70e846ad566b733910fa
-  languageName: node
-  linkType: hard
-
-"es-module-lexer@npm:^0.4.0":
-  version: 0.4.0
-  resolution: "es-module-lexer@npm:0.4.0"
-  checksum: 41d29cc3eb7e648c535bba09e6511834cbb9d06ed4747972ad102e605e1134567a39a3b3f482b9148693a5a95caf7ffe828db9d8f1ede833b836a5d9593f1933
   languageName: node
   linkType: hard
 
@@ -19778,7 +19771,7 @@ typescript@^4.2.3:
   languageName: node
   linkType: hard
 
-"webpack@npm:4":
+"webpack@npm:4, webpack@npm:^4.46.0":
   version: 4.46.0
   resolution: "webpack@npm:4.46.0"
   dependencies:
@@ -19849,42 +19842,6 @@ typescript@^4.2.3:
   bin:
     webpack: bin/webpack.js
   checksum: d48f899f763cad84a0d9531f3d1af9478fcbe3776f17774ba5958eaa61961f3db794bb968b5f01f5814d425a6cbf4e6b4ec646ed8159a5857476b47133a0642d
-  languageName: node
-  linkType: hard
-
-"webpack@npm:^5.24.3":
-  version: 5.24.3
-  resolution: "webpack@npm:5.24.3"
-  dependencies:
-    "@types/eslint-scope": ^3.7.0
-    "@types/estree": ^0.0.46
-    "@webassemblyjs/ast": 1.11.0
-    "@webassemblyjs/wasm-edit": 1.11.0
-    "@webassemblyjs/wasm-parser": 1.11.0
-    acorn: ^8.0.4
-    browserslist: ^4.14.5
-    chrome-trace-event: ^1.0.2
-    enhanced-resolve: ^5.7.0
-    es-module-lexer: ^0.4.0
-    eslint-scope: ^5.1.1
-    events: ^3.2.0
-    glob-to-regexp: ^0.4.1
-    graceful-fs: ^4.2.4
-    json-parse-better-errors: ^1.0.2
-    loader-runner: ^4.2.0
-    mime-types: ^2.1.27
-    neo-async: ^2.6.2
-    schema-utils: ^3.0.0
-    tapable: ^2.1.1
-    terser-webpack-plugin: ^5.1.1
-    watchpack: ^2.0.0
-    webpack-sources: ^2.1.1
-  peerDependenciesMeta:
-    webpack-cli:
-      optional: true
-  bin:
-    webpack: bin/webpack.js
-  checksum: 025181b6a4ba57caabd81047ab5751835a1b00e04cd15d3dca36e33f2034a194f73135b468da402001e5f9042bdad41d38587aec2a747b9fd7846044092655bb
   languageName: node
   linkType: hard
 

@@ -5131,12 +5131,12 @@ __metadata:
     "@ui-admin/button": "workspace:0.1.0"
     "@ui-admin/theme": "workspace:0.1.0"
     babel-loader: ^8.2.2
-    core-js: ^3.9.0
+    core-js: ^3.9.1
     express: ^4.17.1
     react: ^17.0.1
     react-dom: ^17.0.1
     react-is: ^17.0.1
-    typescript: ^4.2.2
+    typescript: ^4.2.3
     webpack: ^5.24.3
   languageName: unknown
   linkType: soft
@@ -5201,12 +5201,12 @@ __metadata:
     "@types/react-dom": ^17.0.1
     "@ui-parts/button": "workspace:0.2.0"
     babel-loader: ^8.2.2
-    core-js: ^3.9.0
+    core-js: ^3.9.1
     express: ^4.17.1
     react: ^17.0.1
     react-dom: ^17.0.1
     react-is: ^17.0.1
-    typescript: ^4.2.2
+    typescript: ^4.2.3
     webpack: ^5.24.3
   languageName: unknown
   linkType: soft
@@ -5257,12 +5257,12 @@ __metadata:
     "@types/react-dom": ^17.0.1
     "@ui-proto/button": "workspace:0.1.0"
     babel-loader: ^8.2.2
-    core-js: ^3.9.0
+    core-js: ^3.9.1
     express: ^4.17.1
     react: ^17.0.1
     react-dom: ^17.0.1
     react-is: ^17.0.1
-    typescript: ^4.2.2
+    typescript: ^4.2.3
     webpack: ^5.24.3
   languageName: unknown
   linkType: soft
@@ -8309,14 +8309,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:*, core-js@npm:^3.0.4, core-js@npm:^3.6.5, core-js@npm:^3.9.0":
+"core-js@npm:*, core-js@npm:^3.0.4, core-js@npm:^3.6.5":
   version: 3.9.0
   resolution: "core-js@npm:3.9.0"
   checksum: c1711d5f60db480a561bba6a8ce02a0e8f4400c14b3c0eb728133be2ae30d74eb0bd20cd8154c3b0910ecc01bd07efa1efb04596f2c9432109dcbef268ef332d
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.8.2":
+"core-js@npm:^3.8.2, core-js@npm:^3.9.1":
   version: 3.9.1
   resolution: "core-js@npm:3.9.1"
   checksum: 3f360466246e816ff745f349bf0ea0c54bc3a05203638d84c5f0eae3583f07e7d848d6aa9b69c30467efb418e526bae034a6da50bcfda8b2cd413e5144cd1444
@@ -18425,11 +18425,11 @@ fsevents@^1.2.7:
     "@types/node": ^14.14.31
     "@yarnpkg/pnpify": ^2.4.0
     husky: 5.1.1
-    typescript: ^4.2.2
+    typescript: ^4.2.3
   dependenciesMeta:
-    "@storybook/core-client@6.2.0-beta.8":
+    "@storybook/core-client@6.2.0-beta.10":
       unplugged: true
-    "@storybook/router@6.2.0-beta.8":
+    "@storybook/router@6.2.0-beta.10":
       unplugged: true
   languageName: unknown
   linkType: soft
@@ -19063,13 +19063,13 @@ typescript@^3.2.4:
   languageName: node
   linkType: hard
 
-typescript@^4.2.2:
-  version: 4.2.2
-  resolution: "typescript@npm:4.2.2"
+typescript@^4.2.3:
+  version: 4.2.3
+  resolution: "typescript@npm:4.2.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: b2e3d5551a12c51b6b7a14f0e78d2664c136fab4dfb3eecaaf7a6e8e7e608f2cf43c6ebe81387d194db2588793b769720d2df523d445a1664b7585c5b9a85984
+  checksum: 06e8470f317db6f5e2fce809b20eb84a67a7d8179057abff36e5427bd1b891bd08e54581ff81f0fa36aef9b6d1eb0f54eaf6e2643c6dbd4e37a0adcc41eed256
   languageName: node
   linkType: hard
 
@@ -19093,13 +19093,13 @@ typescript@^4.2.2:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.2.2#builtin<compat/typescript>":
-  version: 4.2.2
-  resolution: "typescript@patch:typescript@npm%3A4.2.2#builtin<compat/typescript>::version=4.2.2&hash=a45b0e"
+"typescript@patch:typescript@^4.2.3#builtin<compat/typescript>":
+  version: 4.2.3
+  resolution: "typescript@patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: ea1f1b6be22c9e3348f61692719d3169dd4abaad34b2132edff44a8d5a748bde8f3116fa2fae41d61c92b3a7cf1c35d0c7276058b2f35196ff3cde3b7d57c84b
+  checksum: a8956044aabf730699bcc3c2475efdd3f35e509329325cf60b4989761d4c2188e2c474183e2cf92b8c201fcf976814a5a16f144508b2a832643c4f972d0ab803
   languageName: node
   linkType: hard
 

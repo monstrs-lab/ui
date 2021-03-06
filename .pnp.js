@@ -6369,14 +6369,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@storybook/core-client", [
         ["npm:6.2.0-beta.10", {
-          "packageLocation": "./.yarn/unplugged/@storybook-core-client-virtual-a0ffef0ac3/node_modules/@storybook/core-client/",
+          "packageLocation": "./.yarn/cache/@storybook-core-client-npm-6.2.0-beta.10-304b9a4b4c-e63f2ee5ab.zip/node_modules/@storybook/core-client/",
           "packageDependencies": [
             ["@storybook/core-client", "npm:6.2.0-beta.10"]
           ],
           "linkType": "SOFT",
         }],
         ["virtual:37bc621746eef91ab30bfa07ec154539deb368af1a7cc8fc1ac40a882f18af7e13588da556d1bbf4d2f296d0f61e7519acc8c5df1a6d3a09698eab012c74e6a5#npm:6.2.0-beta.10", {
-          "packageLocation": "./.yarn/unplugged/@storybook-core-client-virtual-8674fae437/node_modules/@storybook/core-client/",
+          "packageLocation": "./.yarn/$$virtual/@storybook-core-client-virtual-8674fae437/0/cache/@storybook-core-client-npm-6.2.0-beta.10-304b9a4b4c-e63f2ee5ab.zip/node_modules/@storybook/core-client/",
           "packageDependencies": [
             ["@storybook/core-client", "virtual:37bc621746eef91ab30bfa07ec154539deb368af1a7cc8fc1ac40a882f18af7e13588da556d1bbf4d2f296d0f61e7519acc8c5df1a6d3a09698eab012c74e6a5#npm:6.2.0-beta.10"],
             ["@storybook/addons", "virtual:594f41d81d418392a46ef2184595430ccecce07a52a9dde8e26f066705d63fff977d32de22e47cfe8e8a09ff56d23c66ba4b371bda314215edaac88b9ac9e261#npm:6.2.0-beta.10"],
@@ -6415,7 +6415,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }],
         ["virtual:709049e53731b6ef4bfef4b5270594e330b6b572166a46c65f87e213882f94b26b64cbca0d308678127ef894fccacbaaef91ffcf6236f4749fea789801a58357#npm:6.2.0-beta.10", {
-          "packageLocation": "./.yarn/unplugged/@storybook-core-client-virtual-40b80c7d5e/node_modules/@storybook/core-client/",
+          "packageLocation": "./.yarn/$$virtual/@storybook-core-client-virtual-40b80c7d5e/0/cache/@storybook-core-client-npm-6.2.0-beta.10-304b9a4b4c-e63f2ee5ab.zip/node_modules/@storybook/core-client/",
           "packageDependencies": [
             ["@storybook/core-client", "virtual:709049e53731b6ef4bfef4b5270594e330b6b572166a46c65f87e213882f94b26b64cbca0d308678127ef894fccacbaaef91ffcf6236f4749fea789801a58357#npm:6.2.0-beta.10"],
             ["@storybook/addons", "virtual:6b253e76ecc5105428e869e1c955d043f7e714d410cf0d7ca94e73e3c35b8b3c794f2734d0246441ba096ac1b999280448a254f511c4e5233a9aac290438ea67#npm:6.2.0-beta.10"],
@@ -6454,7 +6454,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }],
         ["virtual:91ea0c1a2ec4dfbdbfe225ef5a6107f463d92891c26c8fbb5b9077cadf400a8394cf352d2885aed67db77d43d4c52b3918971e17fefd2ed6d0400ec20f65b634#npm:6.2.0-beta.10", {
-          "packageLocation": "./.yarn/unplugged/@storybook-core-client-virtual-d3c45da72f/node_modules/@storybook/core-client/",
+          "packageLocation": "./.yarn/$$virtual/@storybook-core-client-virtual-d3c45da72f/0/cache/@storybook-core-client-npm-6.2.0-beta.10-304b9a4b4c-e63f2ee5ab.zip/node_modules/@storybook/core-client/",
           "packageDependencies": [
             ["@storybook/core-client", "virtual:91ea0c1a2ec4dfbdbfe225ef5a6107f463d92891c26c8fbb5b9077cadf400a8394cf352d2885aed67db77d43d4c52b3918971e17fefd2ed6d0400ec20f65b634#npm:6.2.0-beta.10"],
             ["@storybook/addons", "virtual:6b253e76ecc5105428e869e1c955d043f7e714d410cf0d7ca94e73e3c35b8b3c794f2734d0246441ba096ac1b999280448a254f511c4e5233a9aac290438ea67#npm:6.2.0-beta.10"],
@@ -6493,7 +6493,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }],
         ["virtual:a23349ea2a4b68acb17b59c7c961533e1fb98ab18f0bc6e28b074ef7d3bc39846f3bbe4ece78ca0e33c31c9762ef12bf39ce022250d0d97eb8177bd35a788423#npm:6.2.0-beta.10", {
-          "packageLocation": "./.yarn/unplugged/@storybook-core-client-virtual-a0ffef0ac3/node_modules/@storybook/core-client/",
+          "packageLocation": "./.yarn/$$virtual/@storybook-core-client-virtual-a0ffef0ac3/0/cache/@storybook-core-client-npm-6.2.0-beta.10-304b9a4b4c-e63f2ee5ab.zip/node_modules/@storybook/core-client/",
           "packageDependencies": [
             ["@storybook/core-client", "virtual:a23349ea2a4b68acb17b59c7c961533e1fb98ab18f0bc6e28b074ef7d3bc39846f3bbe4ece78ca0e33c31c9762ef12bf39ce022250d0d97eb8177bd35a788423#npm:6.2.0-beta.10"],
             ["@storybook/addons", "virtual:594f41d81d418392a46ef2184595430ccecce07a52a9dde8e26f066705d63fff977d32de22e47cfe8e8a09ff56d23c66ba4b371bda314215edaac88b9ac9e261#npm:6.2.0-beta.10"],
@@ -6532,7 +6532,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }],
         ["virtual:a5cdcd98b83f429033213f5dc9f5a0d794b9bc2e7b8669be7013dc97713a3886b1bc85d4f7f0b64ad286b461a22c61ddd5782119ce03e98a8de253aeb19f018c#npm:6.2.0-beta.10", {
-          "packageLocation": "./.yarn/unplugged/@storybook-core-client-virtual-6e67a5841c/node_modules/@storybook/core-client/",
+          "packageLocation": "./.yarn/$$virtual/@storybook-core-client-virtual-6e67a5841c/0/cache/@storybook-core-client-npm-6.2.0-beta.10-304b9a4b4c-e63f2ee5ab.zip/node_modules/@storybook/core-client/",
           "packageDependencies": [
             ["@storybook/core-client", "virtual:a5cdcd98b83f429033213f5dc9f5a0d794b9bc2e7b8669be7013dc97713a3886b1bc85d4f7f0b64ad286b461a22c61ddd5782119ce03e98a8de253aeb19f018c#npm:6.2.0-beta.10"],
             ["@storybook/addons", "virtual:594f41d81d418392a46ef2184595430ccecce07a52a9dde8e26f066705d63fff977d32de22e47cfe8e8a09ff56d23c66ba4b371bda314215edaac88b9ac9e261#npm:6.2.0-beta.10"],
@@ -6571,7 +6571,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }],
         ["virtual:a8957b6321efcb81c2a585d335f6683f78fdbdf0dbc64d71abef1ee662ace07a97fadc90d07a0c404a54499c2a28a1e0b7c93fca2c42538e2ef49504cb6b05cc#npm:6.2.0-beta.10", {
-          "packageLocation": "./.yarn/unplugged/@storybook-core-client-virtual-454a940c4c/node_modules/@storybook/core-client/",
+          "packageLocation": "./.yarn/$$virtual/@storybook-core-client-virtual-454a940c4c/0/cache/@storybook-core-client-npm-6.2.0-beta.10-304b9a4b4c-e63f2ee5ab.zip/node_modules/@storybook/core-client/",
           "packageDependencies": [
             ["@storybook/core-client", "virtual:a8957b6321efcb81c2a585d335f6683f78fdbdf0dbc64d71abef1ee662ace07a97fadc90d07a0c404a54499c2a28a1e0b7c93fca2c42538e2ef49504cb6b05cc#npm:6.2.0-beta.10"],
             ["@storybook/addons", "virtual:594f41d81d418392a46ef2184595430ccecce07a52a9dde8e26f066705d63fff977d32de22e47cfe8e8a09ff56d23c66ba4b371bda314215edaac88b9ac9e261#npm:6.2.0-beta.10"],
@@ -7155,14 +7155,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@storybook/router", [
         ["npm:6.2.0-beta.10", {
-          "packageLocation": "./.yarn/unplugged/@storybook-router-virtual-c011fcf24e/node_modules/@storybook/router/",
+          "packageLocation": "./.yarn/cache/@storybook-router-npm-6.2.0-beta.10-deb69c48d1-b17d559884.zip/node_modules/@storybook/router/",
           "packageDependencies": [
             ["@storybook/router", "npm:6.2.0-beta.10"]
           ],
           "linkType": "SOFT",
         }],
         ["virtual:5240c4b9a0659f0ac1e0f3151a881d35792645d4c168e4f456ea03f0a059ca8abc374a897173b74df54732b07f175b0db261c3202d46015eb10a8d2c500f20c3#npm:6.2.0-beta.10", {
-          "packageLocation": "./.yarn/unplugged/@storybook-router-virtual-c011fcf24e/node_modules/@storybook/router/",
+          "packageLocation": "./.yarn/$$virtual/@storybook-router-virtual-c011fcf24e/0/cache/@storybook-router-npm-6.2.0-beta.10-deb69c48d1-b17d559884.zip/node_modules/@storybook/router/",
           "packageDependencies": [
             ["@storybook/router", "virtual:5240c4b9a0659f0ac1e0f3151a881d35792645d4c168e4f456ea03f0a059ca8abc374a897173b74df54732b07f175b0db261c3202d46015eb10a8d2c500f20c3#npm:6.2.0-beta.10"],
             ["@reach/router", "virtual:c011fcf24e408b49b8d8c0398abce6f80ad4c1895832c203f653a9206d12fd7d95433752d1b9ff5ceeb90ac98da428447a86709a8b58792da0ad88edc23f9d2a#npm:1.3.4"],
@@ -7189,7 +7189,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }],
         ["virtual:c184c95fa595c12a7aa392b2fab6c99fa45e6ab4d2448e0075c1e0edbce6c7c3eaef93a6ff35c18b91ac423b1245f093316db2764d0c67eea5554e8a98528a9c#npm:6.2.0-beta.10", {
-          "packageLocation": "./.yarn/unplugged/@storybook-router-virtual-bedeb58892/node_modules/@storybook/router/",
+          "packageLocation": "./.yarn/$$virtual/@storybook-router-virtual-bedeb58892/0/cache/@storybook-router-npm-6.2.0-beta.10-deb69c48d1-b17d559884.zip/node_modules/@storybook/router/",
           "packageDependencies": [
             ["@storybook/router", "virtual:c184c95fa595c12a7aa392b2fab6c99fa45e6ab4d2448e0075c1e0edbce6c7c3eaef93a6ff35c18b91ac423b1245f093316db2764d0c67eea5554e8a98528a9c#npm:6.2.0-beta.10"],
             ["@reach/router", "virtual:bedeb58892925bee2c405f0a355b1a92229664b260e194517206569ec7dc0de20cad202c945c26aeb4bdfc00853c549bac4a1e77d21e8bcc0c19954009568e14#npm:1.3.4"],
@@ -8755,6 +8755,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:17.0.1"],
             ["react-is", "npm:17.0.1"],
+            ["string-replace-loader", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#npm:3.0.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
             ["webpack", "virtual:e86c8ebccd62589b6bc7870c6e889a7df22a6c35e4911aa8d630bb43a2d5fe7b9571e7d520335281ddb65981f2b194c445de9dd09a507064625055c2e049d629#npm:4.46.0"]
           ],
@@ -24086,6 +24087,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["loader-utils", "npm:2.0.0"],
             ["schema-utils", "npm:3.0.0"],
             ["webpack", "virtual:73e4f0c143bce97d2b0ad545ecfe10458ee97849895c642d1640f07762931a233c7e14c2204ad8898a8fc0d1abbbb40b1d84c623d15c8d170d7b33f998761e2d#npm:5.22.0"]
+          ],
+          "packagePeers": [
+            "@types/webpack",
+            "webpack"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#npm:3.0.1", {
+          "packageLocation": "./.yarn/$$virtual/string-replace-loader-virtual-49d9317713/0/cache/string-replace-loader-npm-3.0.1-9999aa544b-744e05dcd8.zip/node_modules/string-replace-loader/",
+          "packageDependencies": [
+            ["string-replace-loader", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#npm:3.0.1"],
+            ["@types/webpack", null],
+            ["loader-utils", "npm:2.0.0"],
+            ["schema-utils", "npm:3.0.0"],
+            ["webpack", "virtual:e86c8ebccd62589b6bc7870c6e889a7df22a6c35e4911aa8d630bb43a2d5fe7b9571e7d520335281ddb65981f2b194c445de9dd09a507064625055c2e049d629#npm:4.46.0"]
           ],
           "packagePeers": [
             "@types/webpack",

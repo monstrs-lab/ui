@@ -25,13 +25,5 @@
   ],
   "resolutions": {
     "@storybook/addon-docs": "6.2.0-beta.10"
-  },
-  "dependenciesMeta": {
-    "@storybook/core-client@6.2.0-beta.10": {
-      "unplugged": true
-    },
-    "@storybook/router@6.2.0-beta.10": {
-      "unplugged": true
-    }
   }
 }

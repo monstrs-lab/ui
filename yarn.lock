@@ -2177,7 +2177,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/hash@npm:0.8.0":
+"@emotion/hash@npm:0.8.0, @emotion/hash@npm:^0.8.0":
   version: 0.8.0
   resolution: "@emotion/hash@npm:0.8.0"
   checksum: 8fd781e18428745d6c7121bebf3965cad12c61f3bd5fb773e46f16f1d7b7ae1346770df438fcfe8bc73ecf6762a54baef7cf259a694575d4f06cabb79ebcf7c0
@@ -2228,6 +2228,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/serialize@npm:*":
+  version: 1.0.0
+  resolution: "@emotion/serialize@npm:1.0.0"
+  dependencies:
+    "@emotion/hash": ^0.8.0
+    "@emotion/memoize": ^0.7.4
+    "@emotion/unitless": ^0.7.5
+    "@emotion/utils": ^1.0.0
+    csstype: ^3.0.2
+  checksum: 21b6c15728597a74987c1bb96813e597c4f4d295f7f8aa442def6ca237f8925a790900d9d0c9d49d66347f24e4a38e5ec92e66ed1ff83d7cc237faa5583f0b15
+  languageName: node
+  linkType: hard
+
 "@emotion/serialize@npm:^0.11.15, @emotion/serialize@npm:^0.11.16":
   version: 0.11.16
   resolution: "@emotion/serialize@npm:0.11.16"
@@ -2245,6 +2258,13 @@ __metadata:
   version: 0.9.4
   resolution: "@emotion/sheet@npm:0.9.4"
   checksum: 48baa183e56d78df56ad474d833476fc26c0d563e931a82245e38975fe47ed338155d73dd5769c675aa821feef2e0480f4285c0584fc5271026f276316a299c1
+  languageName: node
+  linkType: hard
+
+"@emotion/styled-base@npm:*":
+  version: 11.0.0
+  resolution: "@emotion/styled-base@npm:11.0.0"
+  checksum: ecd41adfab5f785d697a18e9e0ca8cb977cb3c3014b51341929858db6c1c9cfcc4651b9363c66ddd4bd572fc1923af22f0ef06724169efa9082dccbfa80b8d60
   languageName: node
   linkType: hard
 
@@ -2283,10 +2303,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/unitless@npm:0.7.5":
+"@emotion/unitless@npm:0.7.5, @emotion/unitless@npm:^0.7.5":
   version: 0.7.5
   resolution: "@emotion/unitless@npm:0.7.5"
   checksum: 0be366ef09860037ef08aed0450cb5510f4be25886005e2f120f8e8b7385de6b41ac47df5b9bd55781e5153853e9ed5f49aa517dcbad34cc23bd8afb0201932a
+  languageName: node
+  linkType: hard
+
+"@emotion/utils@npm:*, @emotion/utils@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@emotion/utils@npm:1.0.0"
+  checksum: 56b2c5a45f1d9fed3f666fe921347ba8755827bdf9471fe768ec5cbec353bef70072a6890768c0f22a43f54c6af1c3aaa3512913c1a6af862c479dbe3e3b45b1
   languageName: node
   linkType: hard
 
@@ -3064,6 +3091,20 @@ __metadata:
   checksum: 96f9b5b236d7dfc6ee01ffcf8a80601fa39c40e29b965d0a8d3d7aea0d46d42af6a9e4b9a163612304c5093c7113356a22783553a6f06fc6bfef0f46b27578c7
   languageName: node
   linkType: hard
+
+"@monstrs/storybook-addon-development-templates@workspace:0.0.1, @monstrs/storybook-addon-development-templates@workspace:storybook/addon-development-templates":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/storybook-addon-development-templates@workspace:storybook/addon-development-templates"
+  dependencies:
+    "@monstrs/mctl-cli": 0.2.90
+    "@storybook/addons": 6.2.0-beta.10
+    "@storybook/api": 6.2.0-beta.10
+    "@storybook/components": 6.2.0-beta.10
+    "@types/node": ^14.14.31
+    "@types/react": ^17.0.2
+    react: ^17.0.1
+  languageName: unknown
+  linkType: soft
 
 "@monstrs/tsconfig@npm:^0.2.0":
   version: 0.2.0
@@ -4940,7 +4981,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/webpack-env@npm:^1.16.0":
+"@types/webpack-env@npm:*, @types/webpack-env@npm:^1.16.0":
   version: 1.16.0
   resolution: "@types/webpack-env@npm:1.16.0"
   checksum: eaf62fb65ba18737174a520a444bb7407e5a6f32581690c5a7a687e6f86e9d4ce336fd9e79989aafa19e5f390046ad54b9100cd3d70a43dcf0ab0161d30cd5bd
@@ -5191,6 +5232,7 @@ __metadata:
   resolution: "@ui-parts/design@workspace:ui-parts/design"
   dependencies:
     "@babel/core": ^7.13.8
+    "@monstrs/storybook-addon-development-templates": "workspace:0.0.1"
     "@storybook/addon-actions": 6.2.0-beta.10
     "@storybook/addon-docs": 6.2.0-beta.10
     "@storybook/addon-essentials": 6.2.0-beta.10
@@ -18410,19 +18452,6 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"telemetry@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "telemetry@workspace:."
-  dependencies:
-    "@monstrs/mctl-cli": 0.2.90
-    "@types/jest": ^26.0.20
-    "@types/node": ^14.14.31
-    "@yarnpkg/pnpify": ^2.4.0
-    husky: 5.1.1
-    typescript: ^4.2.3
-  languageName: unknown
-  linkType: soft
-
 "temp-dir@npm:^2.0.0":
   version: 2.0.0
   resolution: "temp-dir@npm:2.0.0"
@@ -19091,6 +19120,19 @@ typescript@^4.2.3:
   checksum: a8956044aabf730699bcc3c2475efdd3f35e509329325cf60b4989761d4c2188e2c474183e2cf92b8c201fcf976814a5a16f144508b2a832643c4f972d0ab803
   languageName: node
   linkType: hard
+
+"ui@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "ui@workspace:."
+  dependencies:
+    "@monstrs/mctl-cli": 0.2.90
+    "@types/jest": ^26.0.20
+    "@types/node": ^14.14.31
+    "@yarnpkg/pnpify": ^2.4.0
+    husky: 5.1.1
+    typescript: ^4.2.3
+  languageName: unknown
+  linkType: soft
 
 "unfetch@npm:^4.2.0":
   version: 4.2.0

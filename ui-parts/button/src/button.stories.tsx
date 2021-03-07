@@ -12,6 +12,18 @@ import { createAppearanceStyles }    from './appearance'
 import { createContentStyles }       from './content'
 import { Content }                   from './content'
 
+export default {
+  title: 'Components/Button',
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+    development: {
+      templates,
+    },
+  },
+}
+
 export const Button = ({
   children,
   childrenPrefix,
@@ -73,221 +85,210 @@ export const Button = ({
   )
 }
 
-export default {
-  title: 'Components/Button',
-  parameters: {
-    component: Button,
-    docs: {
-      page: mdx,
-    },
-    development: {
-      templates,
+Button.args = {
+  children: 'Кнопка',
+  childrenPrefix: '',
+  childrenSuffix: '',
+  size: 36,
+  fontFamily: 'Roboto',
+  fontWeight: 400,
+  fontSize: 12,
+  shapeRounding: 0,
+  paddingLeft: 0,
+  paddingRight: 0,
+  contentDivider: 12,
+  fontColor: 'white',
+  backgroundColor: 'blue',
+  borderColor: 'blue',
+  invertedBorderWidth: 1,
+  shape: 'rectangle',
+  fill: false,
+  rounding: 0,
+  inverted: false,
+  contentAlign: 'center',
+}
+
+Button.argTypes = {
+  children: {
+    name: 'Контент',
+    description: 'Основной контент, описание',
+    table: {
+      category: 'Контент',
     },
   },
-  args: {
-    children: 'Кнопка',
-    childrenPrefix: '',
-    childrenSuffix: '',
-    size: 36,
-    fontFamily: 'Roboto',
-    fontWeight: 400,
-    fontSize: 12,
-    shapeRounding: 0,
-    paddingLeft: 0,
-    paddingRight: 0,
-    contentDivider: 12,
-    fontColor: 'white',
-    backgroundColor: 'blue',
-    borderColor: 'blue',
-    invertedBorderWidth: 1,
-    shape: 'rectangle',
-    fill: false,
-    rounding: 0,
-    inverted: false,
-    contentAlign: 'center',
+  childrenPrefix: {
+    name: 'Контент слева',
+    description: 'Дополнительный контент слева, текст или иконка',
+    table: {
+      category: 'Контент',
+    },
   },
-  argTypes: {
-    children: {
-      name: 'Контент',
-      description: 'Основной контент, описание',
-      table: {
-        category: 'Контент',
-      },
+  childrenSuffix: {
+    name: 'Контент справа',
+    description: 'Дополнительный контент справа, текст или иконка',
+    table: {
+      category: 'Контент',
     },
-    childrenPrefix: {
-      name: 'Контент слева',
-      description: 'Дополнительный контент слева, текст или иконка',
-      table: {
-        category: 'Контент',
-      },
+  },
+  size: {
+    name: 'Размер',
+    description: 'Высота',
+    table: {
+      category: 'Представление',
+      subcategory: 'Форма',
     },
-    childrenSuffix: {
-      name: 'Контент справа',
-      description: 'Дополнительный контент справа, текст или иконка',
-      table: {
-        category: 'Контент',
-      },
+    control: {
+      type: 'number',
     },
-    size: {
-      name: 'Размер',
-      description: 'Высота',
-      table: {
-        category: 'Представление',
-        subcategory: 'Форма',
-      },
-      control: {
-        type: 'number',
-      },
+  },
+  fontFamily: {
+    name: 'Шрифт',
+    description: 'Шрифт',
+    table: {
+      category: 'Представление',
+      subcategory: 'Форма',
     },
-    fontFamily: {
-      name: 'Шрифт',
-      description: 'Шрифт',
-      table: {
-        category: 'Представление',
-        subcategory: 'Форма',
-      },
-      control: {
-        type: 'select',
-        options: fontNames,
-      },
+    control: {
+      type: 'select',
+      options: fontNames,
     },
-    fontWeight: {
-      name: 'Насыщенность шрифта',
-      description: 'Насыщенность шрифта текста',
-      table: {
-        category: 'Представление',
-        subcategory: 'Форма',
-      },
-      control: {
-        type: 'select',
-        options: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-      },
+  },
+  fontWeight: {
+    name: 'Насыщенность шрифта',
+    description: 'Насыщенность шрифта текста',
+    table: {
+      category: 'Представление',
+      subcategory: 'Форма',
     },
-    fontSize: {
-      name: 'Размер шрифта',
-      description: 'Размер шрифта текста',
-      table: {
-        category: 'Представление',
-        subcategory: 'Форма',
-      },
-      control: {
-        type: 'number',
-      },
+    control: {
+      type: 'select',
+      options: [100, 200, 300, 400, 500, 600, 700, 800, 900],
     },
-    shapeRounding: {
-      name: 'Скругление',
-      description: 'Скругление углов кнопки',
-      table: {
-        category: 'Представление',
-        subcategory: 'Форма',
-      },
+  },
+  fontSize: {
+    name: 'Размер шрифта',
+    description: 'Размер шрифта текста',
+    table: {
+      category: 'Представление',
+      subcategory: 'Форма',
     },
-    paddingLeft: {
-      name: 'Отступ слева',
-      description: 'Отступ слева от края до контента',
-      table: {
-        category: 'Представление',
-        subcategory: 'Форма',
-      },
+    control: {
+      type: 'number',
     },
-    paddingRight: {
-      name: 'Отступ справа',
-      description: 'Отступ справа от края до контента',
-      table: {
-        category: 'Представление',
-        subcategory: 'Форма',
-      },
+  },
+  shapeRounding: {
+    name: 'Скругление',
+    description: 'Скругление углов кнопки',
+    table: {
+      category: 'Представление',
+      subcategory: 'Форма',
     },
-    fontColor: {
-      name: 'Цвет текста',
-      description: 'Цвет текста',
-      control: 'color',
-      table: {
-        category: 'Представление',
-        subcategory: 'Внешний вид',
-      },
+  },
+  paddingLeft: {
+    name: 'Отступ слева',
+    description: 'Отступ слева от края до контента',
+    table: {
+      category: 'Представление',
+      subcategory: 'Форма',
     },
-    backgroundColor: {
-      name: 'Цвет заливки',
-      description: 'Цвет текста',
-      control: 'color',
-      table: {
-        category: 'Представление',
-        subcategory: 'Внешний вид',
-      },
+  },
+  paddingRight: {
+    name: 'Отступ справа',
+    description: 'Отступ справа от края до контента',
+    table: {
+      category: 'Представление',
+      subcategory: 'Форма',
     },
-    borderColor: {
-      name: 'Цвет обводки',
-      description: 'Цвет обводки',
-      control: 'color',
-      table: {
-        category: 'Представление',
-        subcategory: 'Внешний вид',
-      },
+  },
+  fontColor: {
+    name: 'Цвет текста',
+    description: 'Цвет текста',
+    control: 'color',
+    table: {
+      category: 'Представление',
+      subcategory: 'Внешний вид',
     },
-    invertedBorderWidth: {
-      name: 'Ширина обводки',
-      description: 'Ширина обводки',
-      table: {
-        category: 'Представление',
-        subcategory: 'Внешний вид',
-      },
+  },
+  backgroundColor: {
+    name: 'Цвет заливки',
+    description: 'Цвет текста',
+    control: 'color',
+    table: {
+      category: 'Представление',
+      subcategory: 'Внешний вид',
     },
-    contentDivider: {
-      name: 'Отступы контента',
-      description: 'Отступы внутри контента',
-      table: {
-        category: 'Представление',
-        subcategory: 'Контент',
-      },
+  },
+  borderColor: {
+    name: 'Цвет обводки',
+    description: 'Цвет обводки',
+    control: 'color',
+    table: {
+      category: 'Представление',
+      subcategory: 'Внешний вид',
     },
-    fill: {
-      name: 'Во всю ширину',
-      description: 'Делает кнопку во всю ширину контейнера',
-      table: {
-        category: 'Модификаторы',
-        subcategory: 'Форма',
-      },
+  },
+  invertedBorderWidth: {
+    name: 'Ширина обводки',
+    description: 'Ширина обводки',
+    table: {
+      category: 'Представление',
+      subcategory: 'Внешний вид',
     },
-    shape: {
-      name: 'Форма',
-      description: 'Форма кнопки',
-      table: {
-        category: 'Модификаторы',
-        subcategory: 'Форма',
-      },
-      control: {
-        type: 'inline-radio',
-        options: ['rectangle', 'square', 'circle'],
-      },
+  },
+  contentDivider: {
+    name: 'Отступы контента',
+    description: 'Отступы внутри контента',
+    table: {
+      category: 'Представление',
+      subcategory: 'Контент',
     },
-    rounding: {
-      name: 'Скругление',
-      description: 'Устанавливает величину скругления',
-      table: {
-        category: 'Модификаторы',
-        subcategory: 'Форма',
-      },
+  },
+  fill: {
+    name: 'Во всю ширину',
+    description: 'Делает кнопку во всю ширину контейнера',
+    table: {
+      category: 'Модификаторы',
+      subcategory: 'Форма',
     },
-    inverted: {
-      name: 'Инвертированная',
-      description: 'Прозрачная заливка, с обводкой и текстом одного цвета',
-      table: {
-        category: 'Модификаторы',
-        subcategory: 'Внешний вид',
-      },
+  },
+  shape: {
+    name: 'Форма',
+    description: 'Форма кнопки',
+    table: {
+      category: 'Модификаторы',
+      subcategory: 'Форма',
     },
-    contentAlign: {
-      name: 'Выравнивание контента',
-      description: 'Выравнивание контента',
-      table: {
-        category: 'Модификаторы',
-        subcategory: 'Контент',
-      },
-      control: {
-        type: 'select',
-        options: ['center', 'flex-start', 'flex-end', 'space-between', 'space-around'],
-      },
+    control: {
+      type: 'inline-radio',
+      options: ['rectangle', 'square', 'circle'],
+    },
+  },
+  rounding: {
+    name: 'Скругление',
+    description: 'Устанавливает величину скругления',
+    table: {
+      category: 'Модификаторы',
+      subcategory: 'Форма',
+    },
+  },
+  inverted: {
+    name: 'Инвертированная',
+    description: 'Прозрачная заливка, с обводкой и текстом одного цвета',
+    table: {
+      category: 'Модификаторы',
+      subcategory: 'Внешний вид',
+    },
+  },
+  contentAlign: {
+    name: 'Выравнивание контента',
+    description: 'Выравнивание контента',
+    table: {
+      category: 'Модификаторы',
+      subcategory: 'Контент',
+    },
+    control: {
+      type: 'select',
+      options: ['center', 'flex-start', 'flex-end', 'space-between', 'space-around'],
     },
   },
 }

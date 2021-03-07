@@ -25,6 +25,7 @@ export default {
 }
 
 export const Button = ({
+  containerWith,
   children,
   childrenPrefix,
   childrenSuffix,
@@ -69,23 +70,26 @@ export const Button = ({
   )
 
   return (
-    <ButtonButton
-      fill={fill}
-      shape={shape}
-      rounding={rounding}
-      inverted={inverted}
-      contentAlign={contentAlign}
-    >
-      <Content divider={contentDivider}>
-        {childrenPrefix && <span>{childrenPrefix}</span>}
-        {children}
-        {childrenSuffix && <span>{childrenSuffix}</span>}
-      </Content>
-    </ButtonButton>
+    <div style={{ width: containerWith, display: 'flex', justifyContent: 'center' }}>
+      <ButtonButton
+        fill={fill}
+        shape={shape}
+        rounding={rounding}
+        inverted={inverted}
+        contentAlign={contentAlign}
+      >
+        <Content divider={contentDivider}>
+          {childrenPrefix && <span>{childrenPrefix}</span>}
+          {children}
+          {childrenSuffix && <span>{childrenSuffix}</span>}
+        </Content>
+      </ButtonButton>
+    </div>
   )
 }
 
 Button.args = {
+  containerWith: 200,
   children: 'Кнопка',
   childrenPrefix: '',
   childrenSuffix: '',
@@ -93,41 +97,60 @@ Button.args = {
   fontFamily: 'Roboto',
   fontWeight: 400,
   fontSize: 12,
-  shapeRounding: 0,
-  paddingLeft: 0,
-  paddingRight: 0,
+  shapeRounding: undefined,
+  paddingLeft: undefined,
+  paddingRight: undefined,
   contentDivider: 12,
   fontColor: 'white',
   backgroundColor: 'blue',
   borderColor: 'blue',
   invertedBorderWidth: 1,
-  shape: 'rectangle',
   fill: false,
   rounding: 0,
   inverted: false,
+  shape: 'rectangle',
   contentAlign: 'center',
 }
 
 Button.argTypes = {
+  containerWith: {
+    name: 'Контейнер',
+    description: 'Ширина контейнера',
+    table: {
+      category: 'Наполнение',
+    },
+    control: {
+      type: 'range',
+      min: 200,
+      max: 1200,
+      step: 10,
+    },
+  },
   children: {
     name: 'Контент',
     description: 'Основной контент, описание',
     table: {
-      category: 'Контент',
+      category: 'Наполнение',
     },
   },
   childrenPrefix: {
     name: 'Контент слева',
     description: 'Дополнительный контент слева, текст или иконка',
     table: {
-      category: 'Контент',
+      category: 'Наполнение',
+    },
+    control: {
+      type: 'text',
     },
   },
   childrenSuffix: {
     name: 'Контент справа',
     description: 'Дополнительный контент справа, текст или иконка',
     table: {
-      category: 'Контент',
+      category: 'Наполнение',
+    },
+    control: {
+      type: 'text',
     },
   },
   size: {
@@ -183,6 +206,9 @@ Button.argTypes = {
       category: 'Представление',
       subcategory: 'Форма',
     },
+    control: {
+      type: 'number',
+    },
   },
   paddingLeft: {
     name: 'Отступ слева',
@@ -190,6 +216,9 @@ Button.argTypes = {
     table: {
       category: 'Представление',
       subcategory: 'Форма',
+    },
+    control: {
+      type: 'number',
     },
   },
   paddingRight: {
@@ -199,32 +228,41 @@ Button.argTypes = {
       category: 'Представление',
       subcategory: 'Форма',
     },
+    control: {
+      type: 'number',
+    },
   },
   fontColor: {
     name: 'Цвет текста',
     description: 'Цвет текста',
-    control: 'color',
     table: {
       category: 'Представление',
       subcategory: 'Внешний вид',
+    },
+    control: {
+      type: 'color',
     },
   },
   backgroundColor: {
     name: 'Цвет заливки',
     description: 'Цвет текста',
-    control: 'color',
     table: {
       category: 'Представление',
       subcategory: 'Внешний вид',
+    },
+    control: {
+      type: 'color',
     },
   },
   borderColor: {
     name: 'Цвет обводки',
     description: 'Цвет обводки',
-    control: 'color',
     table: {
       category: 'Представление',
       subcategory: 'Внешний вид',
+    },
+    control: {
+      type: 'color',
     },
   },
   invertedBorderWidth: {
@@ -234,6 +272,9 @@ Button.argTypes = {
       category: 'Представление',
       subcategory: 'Внешний вид',
     },
+    control: {
+      type: 'number',
+    },
   },
   contentDivider: {
     name: 'Отступы контента',
@@ -242,6 +283,9 @@ Button.argTypes = {
       category: 'Представление',
       subcategory: 'Контент',
     },
+    control: {
+      type: 'number',
+    },
   },
   fill: {
     name: 'Во всю ширину',
@@ -249,18 +293,6 @@ Button.argTypes = {
     table: {
       category: 'Модификаторы',
       subcategory: 'Форма',
-    },
-  },
-  shape: {
-    name: 'Форма',
-    description: 'Форма кнопки',
-    table: {
-      category: 'Модификаторы',
-      subcategory: 'Форма',
-    },
-    control: {
-      type: 'inline-radio',
-      options: ['rectangle', 'square', 'circle'],
     },
   },
   rounding: {
@@ -277,6 +309,18 @@ Button.argTypes = {
     table: {
       category: 'Модификаторы',
       subcategory: 'Внешний вид',
+    },
+  },
+  shape: {
+    name: 'Форма',
+    description: 'Форма кнопки',
+    table: {
+      category: 'Модификаторы',
+      subcategory: 'Форма',
+    },
+    control: {
+      type: 'inline-radio',
+      options: ['rectangle', 'square', 'circle'],
     },
   },
   contentAlign: {

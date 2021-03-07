@@ -1,4 +1,6 @@
-import { Preview, Props, Source, Story } from '@storybook/addon-docs/blocks'
+import { Preview } from '@storybook/addon-docs/blocks'
+import { SyntaxHighlighter } from '@storybook/components'
+import { ArgsTable } from '@storybook/components'
 
 import { Button } from './button.stories'
 
@@ -156,3 +158,229 @@ HTML-элемент `<button>` создает кликабельную кноп�
     ссылка
   </Button>
 </Preview>
+
+## API
+
+<div style={{ height: 32 }} />
+
+<SyntaxHighlighter>{'createBaseStyles()'}</SyntaxHighlighter>
+
+<ArgsTable
+  rows={{
+    numberType: {
+      description: 'Нет параметров',
+      name: 'Нет параметров',
+      table: {
+        defaultValue: 'Нет параметров',
+      },
+    },
+  }}
+/>
+
+<SyntaxHighlighter>{'createContentStyles()'}</SyntaxHighlighter>
+
+<ArgsTable
+  rows={{
+    numberType: {
+      description: 'Нет параметров',
+      name: 'Нет параметров',
+      table: {
+        defaultValue: 'Нет параметров',
+      },
+    },
+  }}
+/>
+
+<SyntaxHighlighter>{'createShapeStyles()'}</SyntaxHighlighter>
+
+<ArgsTable
+  rows={{
+    size: {
+      description: 'Размер',
+      name: 'size',
+      table: {
+        defaultValue: {
+          summary: '-',
+        },
+        type: {
+          summary: 'number',
+        },
+      },
+      type: {
+        required: true,
+      },
+    },
+    fontFamily: {
+      description: 'Семейство шрифта',
+      name: 'fontFamily',
+      table: {
+        defaultValue: {
+          summary: '-',
+        },
+        type: {
+          summary: 'string',
+        },
+      },
+      type: {
+        required: false,
+      },
+    },
+    fontSize: {
+      description: 'Размер шрифта',
+      name: 'fontSize',
+      table: {
+        defaultValue: {
+          summary: '-',
+        },
+        type: {
+          summary: 'number',
+        },
+      },
+      type: {
+        required: false,
+      },
+    },
+    fontWeight: {
+      description: 'Насыщенность шрифта',
+      name: 'fontWeight',
+      table: {
+        defaultValue: {
+          summary: '-',
+        },
+        type: {
+          summary: 'number',
+        },
+      },
+      type: {
+        required: false,
+      },
+    },
+    rounding: {
+      description: 'Скругление',
+      name: 'rounding',
+      table: {
+        defaultValue: {
+          summary: '0',
+        },
+        type: {
+          summary: 'number',
+        },
+      },
+      type: {
+        required: false,
+      },
+    },
+    paddingLeft: {
+      description: 'Отступ слева',
+      name: 'paddingLeft',
+      table: {
+        defaultValue: {
+          summary: '-',
+        },
+        type: {
+          summary: 'number',
+        },
+      },
+      type: {
+        required: false,
+      },
+    },
+    paddingRight: {
+      description: 'Отступ справа',
+      name: 'paddingRight',
+      table: {
+        defaultValue: {
+          summary: '-',
+        },
+        type: {
+          summary: 'number',
+        },
+      },
+      type: {
+        required: false,
+      },
+    },
+    paddingRatio: {
+      description: 'Соотношение оступов от высоты',
+      name: 'paddingRatio',
+      table: {
+        defaultValue: {
+          summary: '0.5',
+        },
+        type: {
+          summary: 'number',
+        },
+      },
+      type: {
+        required: false,
+      },
+    },
+  }}
+/>
+
+<SyntaxHighlighter>{'createAppearanceStyles()'}</SyntaxHighlighter>
+
+<ArgsTable
+  rows={{
+    fontColor: {
+      description: 'Цвет шрифта',
+      name: 'fontColor',
+      table: {
+        defaultValue: {
+          summary: '-',
+        },
+        type: {
+          summary: 'string',
+        },
+      },
+      type: {
+        required: true,
+      },
+    },
+    backgroundColor: {
+      description: 'Цвет заливки',
+      name: 'backgroundColor',
+      table: {
+        defaultValue: {
+          summary: '-',
+        },
+        type: {
+          summary: 'string',
+        },
+      },
+      type: {
+        required: true,
+      },
+    },
+    borderColor: {
+      description: 'Размер шрифта',
+      name: 'borderColor',
+      table: {
+        defaultValue: {
+          summary: 'backgroundColor',
+        },
+        type: {
+          summary: 'string',
+        },
+      },
+      type: {
+        required: false,
+      },
+    },
+    invertedBorderWidth: {
+      description: 'Ширина обводки',
+      name: 'invertedBorderWidth',
+      table: {
+        defaultValue: {
+          summary: '1',
+        },
+        type: {
+          summary: 'number',
+        },
+      },
+      type: {
+        required: false,
+      },
+    },
+  }}
+/>

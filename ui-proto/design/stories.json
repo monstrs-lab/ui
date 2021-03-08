@@ -1,0 +1,22 @@
+{
+  "v": 2,
+  "globalParameters": {},
+  "kindParameters": {
+    "Components/Button": {
+      "fileName": 843,
+      "framework": "react"
+    }
+  },
+  "stories": {
+    "components-button--button": {
+      "id": "components-button--button",
+      "name": "Button",
+      "kind": "Components/Button",
+      "story": "Button",
+      "parameters": {
+        "__id": "components-button--button",
+        "__isArgsStory": true
+      }
+    }
+  }
+}

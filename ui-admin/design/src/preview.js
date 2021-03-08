@@ -21,3 +21,8 @@ export const globalTypes = {
     },
   },
 }
+
+export const parameters = {
+  controls: { expanded: true },
+  layout: 'centered',
+}

@@ -2,6 +2,7 @@ import { prop, switchProp }       from 'styled-tools'
 
 import { createBaseStyles }       from '@ui-parts/button'
 import { createShapeStyles }      from '@ui-parts/button'
+import { createContentStyles }    from '@ui-parts/button'
 import { createAppearanceStyles } from '@ui-parts/button'
 
 const smallNormalSizeStyles = createShapeStyles({ size: 24, fontSize: 11, rounding: 6 })
@@ -14,6 +15,7 @@ const appearancePrimaryStyles = createAppearanceStyles({
 })
 
 export const baseStyles = createBaseStyles()
+export const contentStyles = createContentStyles()
 
 export const shapeStyles = switchProp(prop('size', 'normal'), {
   small: smallNormalSizeStyles,

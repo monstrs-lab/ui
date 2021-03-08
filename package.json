@@ -26,8 +26,8 @@
     "ui/*"
   ],
   "resolutions": {
-    "@storybook/addon-docs": "6.2.0-beta.10",
-    "@storybook/api": "6.2.0-beta.10",
+    "@storybook/addon-docs": "6.2.0-beta.11",
+    "@storybook/api": "6.2.0-beta.11",
     "@types/react": "^17.0.2"
   }
 }

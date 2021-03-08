@@ -61,6 +61,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "@ui-proto/design",
         "reference": "workspace:ui-proto/design"
+      },
+      {
+        "name": "@ui/design",
+        "reference": "workspace:ui/design"
       }
     ],
     "enableTopLevelFallback": true,
@@ -76,6 +80,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@ui-parts/styles", ["virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles", "workspace:ui-parts/styles"]],
       ["@ui-proto/button", ["virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/button", "workspace:ui-proto/button"]],
       ["@ui-proto/design", ["workspace:ui-proto/design"]],
+      ["@ui/design", ["workspace:ui/design"]],
       ["ui", ["workspace:."]]
     ],
     "fallbackPool": [
@@ -9335,6 +9340,38 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:17.0.1"],
             ["react-is", "npm:17.0.1"],
+            ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
+            ["webpack", "virtual:e86c8ebccd62589b6bc7870c6e889a7df22a6c35e4911aa8d630bb43a2d5fe7b9571e7d520335281ddb65981f2b194c445de9dd09a507064625055c2e049d629#npm:4.46.0"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@ui/design", [
+        ["workspace:ui/design", {
+          "packageLocation": "./ui/design/",
+          "packageDependencies": [
+            ["@ui/design", "workspace:ui/design"],
+            ["@babel/core", "npm:7.13.8"],
+            ["@emotion/babel-plugin", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:11.2.0"],
+            ["@emotion/react", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:11.1.5"],
+            ["@emotion/styled", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:11.1.5"],
+            ["@monstrs/storybook-addon-development-templates", "workspace:storybook/addon-development-templates"],
+            ["@storybook/addon-actions", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:6.2.0-beta.10"],
+            ["@storybook/addon-docs", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:6.2.0-beta.10"],
+            ["@storybook/addon-essentials", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:6.2.0-beta.10"],
+            ["@storybook/addon-links", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:6.2.0-beta.10"],
+            ["@storybook/react", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:6.2.0-beta.10"],
+            ["@types/express", "npm:4.17.11"],
+            ["@types/react", "npm:17.0.3"],
+            ["@types/react-dom", "npm:17.0.1"],
+            ["@ui-parts/button", "virtual:2961a2bd35c6a5dc3140c07cb1e13cb8bd32a7c5068f7a64c6aefb3f817a757e9ad0b80b1eaa02c797519f0728c4ca5ee3f72756c419f3fb62469e21dcf44ecd#workspace:ui-parts/button"],
+            ["babel-loader", "virtual:fa36414113fdf759eed01ecfa4ca495c110ceadc2ef39c6116c1f72e18ac6ffac4e7e2a502ff2d9bd798e042750eb010b2d2c0387a7424b03693b9ed8c543fcd#npm:8.2.2"],
+            ["core-js", "npm:3.9.1"],
+            ["express", "npm:4.17.1"],
+            ["react", "npm:17.0.1"],
+            ["react-dom", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:17.0.1"],
+            ["react-is", "npm:17.0.1"],
+            ["string-replace-loader", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#npm:3.0.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
             ["webpack", "virtual:e86c8ebccd62589b6bc7870c6e889a7df22a6c35e4911aa8d630bb43a2d5fe7b9571e7d520335281ddb65981f2b194c445de9dd09a507064625055c2e049d629#npm:4.46.0"]
           ],

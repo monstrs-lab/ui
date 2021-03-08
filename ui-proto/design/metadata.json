@@ -1,3 +1,5 @@
 {
-  "versions": {}
+  "versions": {
+    "latest": "https://ui-proto.ui.monstrs.dev/"
+  }
 }

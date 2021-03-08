@@ -4,11 +4,11 @@
   "license": "MIT",
   "main": "src/index.ts",
   "devDependencies": {
-    "emotion-theming": "^10.0.27",
+    "@emotion/react": "^11.1.5",
     "react": "^17.0.1"
   },
   "peerDependencies": {
-    "emotion-theming": "^10.0.27",
+    "@emotion/react": "^11.1.5",
     "react": "^17.0.1"
   }
 }

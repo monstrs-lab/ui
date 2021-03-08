@@ -1,5 +1,5 @@
 import React                                     from 'react'
-import { ThemeProvider as EmotionThemeProvider } from 'emotion-theming'
+import { ThemeProvider as EmotionThemeProvider } from '@emotion/react'
 
 import * as dark                                 from './dark'
 import * as light                                from './light'

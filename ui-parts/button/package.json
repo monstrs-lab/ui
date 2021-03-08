@@ -7,9 +7,8 @@
     "@ui-parts/styles": "workspace:0.2.0"
   },
   "devDependencies": {
-    "@emotion/styled": "^10.0.27",
-    "@emotion/styled-base": "^10.0.27",
-    "@types/react": "^17.0.2",
+    "@emotion/styled": "^11.1.5",
+    "@types/react": "^17.0.3",
     "@types/styled-system": "^5.1.10",
     "@ui-parts/design-fonts": "workspace:0.0.1",
     "react": "^17.0.1",
@@ -17,7 +16,7 @@
     "styled-tools": "^1.7.2"
   },
   "peerDependencies": {
-    "@emotion/styled": "^10.0.27",
+    "@emotion/styled": "^11.1.5",
     "react": "^17.0.1",
     "styled-system": "^5.1.5",
     "styled-tools": "^1.7.2"

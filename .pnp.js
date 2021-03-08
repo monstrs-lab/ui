@@ -8081,6 +8081,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@types/cors", [
+        ["npm:2.8.10", {
+          "packageLocation": "./.yarn/cache/@types-cors-npm-2.8.10-53b686e0da-c3f3d6feee.zip/node_modules/@types/cors/",
+          "packageDependencies": [
+            ["@types/cors", "npm:2.8.10"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@types/emscripten", [
         ["npm:1.39.4", {
           "packageLocation": "./.yarn/cache/@types-emscripten-npm-1.39.4-4d03380faa-b848421e25.zip/node_modules/@types/emscripten/",
@@ -9044,6 +9053,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ui-admin/theme", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#workspace:ui-admin/theme"],
             ["babel-loader", "virtual:fa36414113fdf759eed01ecfa4ca495c110ceadc2ef39c6116c1f72e18ac6ffac4e7e2a502ff2d9bd798e042750eb010b2d2c0387a7424b03693b9ed8c543fcd#npm:8.2.2"],
             ["core-js", "npm:3.9.1"],
+            ["cors", "npm:2.8.5"],
             ["express", "npm:4.17.1"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:17.0.1"],
@@ -9181,12 +9191,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/addons", "virtual:594f41d81d418392a46ef2184595430ccecce07a52a9dde8e26f066705d63fff977d32de22e47cfe8e8a09ff56d23c66ba4b371bda314215edaac88b9ac9e261#npm:6.2.0-beta.10"],
             ["@storybook/react", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:6.2.0-beta.10"],
             ["@storybook/theming", "virtual:594f41d81d418392a46ef2184595430ccecce07a52a9dde8e26f066705d63fff977d32de22e47cfe8e8a09ff56d23c66ba4b371bda314215edaac88b9ac9e261#npm:6.2.0-beta.10"],
+            ["@types/cors", "npm:2.8.10"],
             ["@types/express", "npm:4.17.11"],
             ["@types/react", "npm:17.0.3"],
             ["@types/react-dom", "npm:17.0.1"],
             ["@ui-parts/button", "virtual:2961a2bd35c6a5dc3140c07cb1e13cb8bd32a7c5068f7a64c6aefb3f817a757e9ad0b80b1eaa02c797519f0728c4ca5ee3f72756c419f3fb62469e21dcf44ecd#workspace:ui-parts/button"],
             ["babel-loader", "virtual:fa36414113fdf759eed01ecfa4ca495c110ceadc2ef39c6116c1f72e18ac6ffac4e7e2a502ff2d9bd798e042750eb010b2d2c0387a7424b03693b9ed8c543fcd#npm:8.2.2"],
             ["core-js", "npm:3.9.1"],
+            ["cors", "npm:2.8.5"],
             ["express", "npm:4.17.1"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:17.0.1"],
@@ -9318,6 +9330,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ui-proto/button", "virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/button"],
             ["babel-loader", "virtual:fa36414113fdf759eed01ecfa4ca495c110ceadc2ef39c6116c1f72e18ac6ffac4e7e2a502ff2d9bd798e042750eb010b2d2c0387a7424b03693b9ed8c543fcd#npm:8.2.2"],
             ["core-js", "npm:3.9.1"],
+            ["cors", "npm:2.8.5"],
             ["express", "npm:4.17.1"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:17.0.1"],
@@ -13124,6 +13137,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/core-util-is-npm-1.0.2-9fc2b94dc3-089015ee3c.zip/node_modules/core-util-is/",
           "packageDependencies": [
             ["core-util-is", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["cors", [
+        ["npm:2.8.5", {
+          "packageLocation": "./.yarn/cache/cors-npm-2.8.5-c9935a2d12-c83e88c154.zip/node_modules/cors/",
+          "packageDependencies": [
+            ["cors", "npm:2.8.5"],
+            ["object-assign", "npm:4.1.1"],
+            ["vary", "npm:1.1.2"]
           ],
           "linkType": "HARD",
         }]

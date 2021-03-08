@@ -4635,6 +4635,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/cors@npm:^2":
+  version: 2.8.10
+  resolution: "@types/cors@npm:2.8.10"
+  checksum: c3f3d6feee59ff75127fec3030d55c3d5f1adfc07953facdae67c47dcd54c83c46a5e92f08afa53542ec978da38a388697d30731019798cb157c9e96c64ef6c3
+  languageName: node
+  linkType: hard
+
 "@types/emscripten@npm:^1.38.0":
   version: 1.39.4
   resolution: "@types/emscripten@npm:1.39.4"
@@ -5299,6 +5306,7 @@ __metadata:
     "@ui-admin/theme": "workspace:0.1.0"
     babel-loader: ^8.2.2
     core-js: ^3.9.1
+    cors: ^2.8.5
     express: ^4.17.1
     react: ^17.0.1
     react-dom: ^17.0.1
@@ -5368,12 +5376,14 @@ __metadata:
     "@storybook/addons": 6.2.0-beta.10
     "@storybook/react": 6.2.0-beta.10
     "@storybook/theming": 6.2.0-beta.10
+    "@types/cors": ^2
     "@types/express": ^4.17.11
     "@types/react": ^17.0.3
     "@types/react-dom": ^17.0.1
     "@ui-parts/button": "workspace:0.2.0"
     babel-loader: ^8.2.2
     core-js: ^3.9.1
+    cors: ^2.8.5
     express: ^4.17.1
     react: ^17.0.1
     react-dom: ^17.0.1
@@ -5433,6 +5443,7 @@ __metadata:
     "@ui-proto/button": "workspace:0.1.0"
     babel-loader: ^8.2.2
     core-js: ^3.9.1
+    cors: ^2.8.5
     express: ^4.17.1
     react: ^17.0.1
     react-dom: ^17.0.1
@@ -8502,6 +8513,16 @@ __metadata:
   version: 1.0.2
   resolution: "core-util-is@npm:1.0.2"
   checksum: 089015ee3c462dfceba70faa1df83b42a7bb35db26dae6af283247b06fe3216c65fccd9f00eebcaf98300dc31e981d56aae9f90b624f8f6ff1153e235ff88b65
+  languageName: node
+  linkType: hard
+
+"cors@npm:^2.8.5":
+  version: 2.8.5
+  resolution: "cors@npm:2.8.5"
+  dependencies:
+    object-assign: ^4
+    vary: ^1
+  checksum: c83e88c15428b87ff55853ec5ce961b650c7aa3de536aadebbeb2334872d86a8be57165a77996f3b746366c950c2d51624a9b76b88fb7f18d178eca051ca1ae2
   languageName: node
   linkType: hard
 
@@ -14920,7 +14941,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"object-assign@npm:^4.1.0, object-assign@npm:^4.1.1":
+"object-assign@npm:^4, object-assign@npm:^4.1.0, object-assign@npm:^4.1.1":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
   checksum: 66cf021898fc1b13ea573ea8635fbd5a76533f50cecbc2fcd5eee1e8029af41bcebe7023788b6d0e06cbe4401ecea075d972f78ec74467cdc571a0f1a4d1a081
@@ -19716,7 +19737,7 @@ typescript@^4.2.3:
   languageName: node
   linkType: hard
 
-"vary@npm:~1.1.2":
+"vary@npm:^1, vary@npm:~1.1.2":
   version: 1.1.2
   resolution: "vary@npm:1.1.2"
   checksum: 591f059f727ac1ba0d97cb7767f8583a03fcbb07db7be2b7dce838ede520ec0e958a41cb19077054769077fdc49a9b9a2dc391c83426bfee89c054b8cc7404bf

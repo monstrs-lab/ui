@@ -1,4 +1,6 @@
 const { exec } = require('child_process')
+const { accessSync } = require('fs')
+const { join } = require('path')
 
 const getWorkspaceChildrenRecursive = (rootWorkspace, project) => {
   const workspaceList = [];
@@ -23,7 +25,11 @@ module.exports = {
             const addons = getWorkspaceChildrenRecursive(project.topLevelWorkspace, project).filter(workspace => workspace.relativeCwd.startsWith('storybook/addon'))
 
             for (addon of addons) {
-              exec(`yarn workspace ${addon.manifest.raw.name} build`)
+              try {
+                accessSync(join(addon.cwd, 'dist'))
+              } catch {
+                exec(`yarn workspace ${addon.manifest.raw.name} build`)
+              }
             }
           }
         }

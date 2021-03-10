@@ -1,0 +1,14 @@
+{
+  "name": "@ui-proto/theme",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@emotion/react": "^11.1.5",
+    "react": "^17.0.1"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.1.5",
+    "react": "^17.0.1"
+  }
+}

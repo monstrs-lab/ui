@@ -79,6 +79,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:ui-proto/text"
       },
       {
+        "name": "@ui-proto/theme",
+        "reference": "workspace:ui-proto/theme"
+      },
+      {
         "name": "@ui/design",
         "reference": "workspace:ui/design"
       }
@@ -100,6 +104,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@ui-proto/design", ["workspace:ui-proto/design"]],
       ["@ui-proto/layout", ["workspace:ui-proto/layout"]],
       ["@ui-proto/text", ["workspace:ui-proto/text"]],
+      ["@ui-proto/theme", ["virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/theme", "workspace:ui-proto/theme"]],
       ["@ui/design", ["workspace:ui/design"]],
       ["ui", ["workspace:."]]
     ],
@@ -9500,6 +9505,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.3"],
             ["@types/react-dom", "npm:17.0.1"],
             ["@ui-proto/button", "virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/button"],
+            ["@ui-proto/theme", "virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/theme"],
             ["babel-loader", "virtual:c1dec21c64fb198a28297c8a9c0554ffd3821ec149562c2b56115b6596577beccb958fc89efcbcde45fce34b5bb2046fa756b3bfc0dd904483e60cd830e4dcae#npm:8.2.2"],
             ["core-js", "npm:3.9.1"],
             ["cors", "npm:2.8.5"],
@@ -9529,6 +9535,34 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@ui-proto/text", "workspace:ui-proto/text"],
             ["@ui-parts/text", "virtual:3c2886bc71f1439c6a9975608675e178732f89951eeaba9270ed9187762c842e3ad00724ac49b228cf961038281c67a16e056d16f56c15a57531172840bfe1b2#workspace:ui-parts/text"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@ui-proto/theme", [
+        ["virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/theme", {
+          "packageLocation": "./.yarn/$$virtual/@ui-proto-theme-virtual-8f1d73410c/1/ui-proto/theme/",
+          "packageDependencies": [
+            ["@ui-proto/theme", "virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/theme"],
+            ["@emotion/react", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:11.1.5"],
+            ["@types/emotion__react", null],
+            ["@types/react", "npm:17.0.3"],
+            ["react", "npm:17.0.1"]
+          ],
+          "packagePeers": [
+            "@emotion/react",
+            "@types/emotion__react",
+            "@types/react",
+            "react"
+          ],
+          "linkType": "SOFT",
+        }],
+        ["workspace:ui-proto/theme", {
+          "packageLocation": "./ui-proto/theme/",
+          "packageDependencies": [
+            ["@ui-proto/theme", "workspace:ui-proto/theme"],
+            ["@emotion/react", "virtual:dabcff60c59f68564917ae47565909e4f5f746b4cb98cee85c3daad4038b196865a90cea672d5382d0ec49bacb022d243a9ed89d51fa5427f807f032343d6119#npm:11.1.5"],
+            ["react", "npm:17.0.1"]
           ],
           "linkType": "SOFT",
         }]

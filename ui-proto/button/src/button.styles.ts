@@ -5,9 +5,26 @@ import { createShapeStyles }      from '@ui-parts/button'
 import { createContentStyles }    from '@ui-parts/button'
 import { createAppearanceStyles } from '@ui-parts/button'
 
-const smallNormalSizeStyles = createShapeStyles({ size: 24, fontSize: 11, rounding: 6 })
-const shapeNormalSizeStyles = createShapeStyles({ size: 32, fontSize: 12, rounding: 6 })
-const largeNormalSizeStyles = createShapeStyles({ size: 48, fontSize: 14, rounding: 6 })
+const smallNormalSizeStyles = createShapeStyles({
+  fontFamily: prop('theme.fonts.primary'),
+  size: 24,
+  fontSize: 11,
+  rounding: 6,
+})
+
+const shapeNormalSizeStyles = createShapeStyles({
+  fontFamily: prop('theme.fonts.primary'),
+  size: 32,
+  fontSize: 12,
+  rounding: 6,
+})
+
+const largeNormalSizeStyles = createShapeStyles({
+  fontFamily: prop('theme.fonts.primary'),
+  size: 48,
+  fontSize: 14,
+  rounding: 6,
+})
 
 const appearancePrimaryStyles = createAppearanceStyles({
   fontColor: 'white',

@@ -1,0 +1,8 @@
+{
+  "name": "@ui-proto/layout",
+  "version": "0.1.0",
+  "license": "MIT",
+  "dependencies": {
+    "@ui-parts/layout": "workspace:0.2.0"
+  }
+}

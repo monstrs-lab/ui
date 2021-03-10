@@ -51,8 +51,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:ui-parts/design-fonts"
       },
       {
+        "name": "@ui-parts/layout",
+        "reference": "workspace:ui-parts/layout"
+      },
+      {
         "name": "@ui-parts/styles",
         "reference": "workspace:ui-parts/styles"
+      },
+      {
+        "name": "@ui-parts/text",
+        "reference": "workspace:ui-parts/text"
       },
       {
         "name": "@ui-proto/button",
@@ -61,6 +69,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "@ui-proto/design",
         "reference": "workspace:ui-proto/design"
+      },
+      {
+        "name": "@ui-proto/layout",
+        "reference": "workspace:ui-proto/layout"
+      },
+      {
+        "name": "@ui-proto/text",
+        "reference": "workspace:ui-proto/text"
       },
       {
         "name": "@ui/design",
@@ -77,9 +93,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@ui-parts/button", ["virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#workspace:ui-parts/button", "virtual:2961a2bd35c6a5dc3140c07cb1e13cb8bd32a7c5068f7a64c6aefb3f817a757e9ad0b80b1eaa02c797519f0728c4ca5ee3f72756c419f3fb62469e21dcf44ecd#workspace:ui-parts/button", "workspace:ui-parts/button"]],
       ["@ui-parts/design", ["workspace:ui-parts/design"]],
       ["@ui-parts/design-fonts", ["virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/design-fonts", "workspace:ui-parts/design-fonts"]],
+      ["@ui-parts/layout", ["virtual:daaf6397b55c2a9058d295a4abe72ed29ea1a96e8de81e5af076b3d55b8088c1b395111233bde1ac26562585fd4fd44f3df85a6ab5ce12d20ebe840baf5d814c#workspace:ui-parts/layout", "workspace:ui-parts/layout"]],
       ["@ui-parts/styles", ["virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles", "workspace:ui-parts/styles"]],
+      ["@ui-parts/text", ["virtual:3c2886bc71f1439c6a9975608675e178732f89951eeaba9270ed9187762c842e3ad00724ac49b228cf961038281c67a16e056d16f56c15a57531172840bfe1b2#workspace:ui-parts/text", "workspace:ui-parts/text"]],
       ["@ui-proto/button", ["virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/button", "workspace:ui-proto/button"]],
       ["@ui-proto/design", ["workspace:ui-proto/design"]],
+      ["@ui-proto/layout", ["workspace:ui-proto/layout"]],
+      ["@ui-proto/text", ["workspace:ui-proto/text"]],
       ["@ui/design", ["workspace:ui/design"]],
       ["ui", ["workspace:."]]
     ],
@@ -9331,6 +9351,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
+      ["@ui-parts/layout", [
+        ["virtual:daaf6397b55c2a9058d295a4abe72ed29ea1a96e8de81e5af076b3d55b8088c1b395111233bde1ac26562585fd4fd44f3df85a6ab5ce12d20ebe840baf5d814c#workspace:ui-parts/layout", {
+          "packageLocation": "./.yarn/$$virtual/@ui-parts-layout-virtual-658ed3a487/1/ui-parts/layout/",
+          "packageDependencies": [
+            ["@ui-parts/layout", "virtual:daaf6397b55c2a9058d295a4abe72ed29ea1a96e8de81e5af076b3d55b8088c1b395111233bde1ac26562585fd4fd44f3df85a6ab5ce12d20ebe840baf5d814c#workspace:ui-parts/layout"],
+            ["@emotion/styled", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:11.1.5"],
+            ["@types/emotion__styled", null],
+            ["@types/react", "npm:17.0.3"],
+            ["@types/styled-system", "npm:5.1.10"],
+            ["react", "npm:17.0.1"],
+            ["styled-system", "npm:5.1.5"]
+          ],
+          "packagePeers": [
+            "@types/emotion__styled"
+          ],
+          "linkType": "SOFT",
+        }],
+        ["workspace:ui-parts/layout", {
+          "packageLocation": "./ui-parts/layout/",
+          "packageDependencies": [
+            ["@ui-parts/layout", "workspace:ui-parts/layout"],
+            ["@emotion/styled", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:11.1.5"],
+            ["@types/react", "npm:17.0.3"],
+            ["@types/styled-system", "npm:5.1.10"],
+            ["react", "npm:17.0.1"],
+            ["styled-system", "npm:5.1.5"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["@ui-parts/styles", [
         ["virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles", {
           "packageLocation": "./.yarn/$$virtual/@ui-parts-styles-virtual-1dd55f1329/1/ui-parts/styles/",
@@ -9352,6 +9402,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ui-parts/styles", "workspace:ui-parts/styles"],
             ["@types/styled-system", "npm:5.1.10"],
             ["core-js", "npm:3.9.0"],
+            ["styled-system", "npm:5.1.5"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@ui-parts/text", [
+        ["virtual:3c2886bc71f1439c6a9975608675e178732f89951eeaba9270ed9187762c842e3ad00724ac49b228cf961038281c67a16e056d16f56c15a57531172840bfe1b2#workspace:ui-parts/text", {
+          "packageLocation": "./.yarn/$$virtual/@ui-parts-text-virtual-f6238d30f5/1/ui-parts/text/",
+          "packageDependencies": [
+            ["@ui-parts/text", "virtual:3c2886bc71f1439c6a9975608675e178732f89951eeaba9270ed9187762c842e3ad00724ac49b228cf961038281c67a16e056d16f56c15a57531172840bfe1b2#workspace:ui-parts/text"],
+            ["@emotion/styled", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:11.1.5"],
+            ["@types/emotion__styled", null],
+            ["@types/react", "npm:17.0.3"],
+            ["@types/styled-system", "npm:5.1.10"],
+            ["react", "npm:17.0.1"],
+            ["styled-system", "npm:5.1.5"]
+          ],
+          "packagePeers": [
+            "@types/emotion__styled"
+          ],
+          "linkType": "SOFT",
+        }],
+        ["workspace:ui-parts/text", {
+          "packageLocation": "./ui-parts/text/",
+          "packageDependencies": [
+            ["@ui-parts/text", "workspace:ui-parts/text"],
+            ["@emotion/styled", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:11.1.5"],
+            ["@types/react", "npm:17.0.3"],
+            ["@types/styled-system", "npm:5.1.10"],
+            ["react", "npm:17.0.1"],
             ["styled-system", "npm:5.1.5"]
           ],
           "linkType": "SOFT",
@@ -9429,6 +9509,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-is", "npm:17.0.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
             ["webpack", "virtual:577a7ab5dbaa528252ee2f6ef289aeaa416dab0d7d33069152586f9225cc857d7e35ed3402917796ba236f5caf9a7f9b32d8931e6086b2e47fad4e45c7502472#npm:4.46.0"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@ui-proto/layout", [
+        ["workspace:ui-proto/layout", {
+          "packageLocation": "./ui-proto/layout/",
+          "packageDependencies": [
+            ["@ui-proto/layout", "workspace:ui-proto/layout"],
+            ["@ui-parts/layout", "virtual:daaf6397b55c2a9058d295a4abe72ed29ea1a96e8de81e5af076b3d55b8088c1b395111233bde1ac26562585fd4fd44f3df85a6ab5ce12d20ebe840baf5d814c#workspace:ui-parts/layout"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@ui-proto/text", [
+        ["workspace:ui-proto/text", {
+          "packageLocation": "./ui-proto/text/",
+          "packageDependencies": [
+            ["@ui-proto/text", "workspace:ui-proto/text"],
+            ["@ui-parts/text", "virtual:3c2886bc71f1439c6a9975608675e178732f89951eeaba9270ed9187762c842e3ad00724ac49b228cf961038281c67a16e056d16f56c15a57531172840bfe1b2#workspace:ui-parts/text"]
           ],
           "linkType": "SOFT",
         }]

@@ -5521,6 +5521,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui-parts/layout@workspace:0.2.0, @ui-parts/layout@workspace:ui-parts/layout":
+  version: 0.0.0-use.local
+  resolution: "@ui-parts/layout@workspace:ui-parts/layout"
+  dependencies:
+    "@emotion/styled": ^11.1.5
+    "@types/react": ^17.0.3
+    "@types/styled-system": ^5.1.10
+    react: ^17.0.1
+    styled-system: ^5.1.5
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    react: ^17.0.1
+    styled-system: ^5.1.5
+  languageName: unknown
+  linkType: soft
+
 "@ui-parts/styles@workspace:0.2.0, @ui-parts/styles@workspace:ui-parts/styles":
   version: 0.0.0-use.local
   resolution: "@ui-parts/styles@workspace:ui-parts/styles"
@@ -5528,6 +5544,22 @@ __metadata:
     "@types/styled-system": ^5.1.10
     styled-system: ^5.1.5
   peerDependencies:
+    styled-system: ^5.1.5
+  languageName: unknown
+  linkType: soft
+
+"@ui-parts/text@workspace:0.2.0, @ui-parts/text@workspace:ui-parts/text":
+  version: 0.0.0-use.local
+  resolution: "@ui-parts/text@workspace:ui-parts/text"
+  dependencies:
+    "@emotion/styled": ^11.1.5
+    "@types/react": ^17.0.3
+    "@types/styled-system": ^5.1.10
+    react: ^17.0.1
+    styled-system: ^5.1.5
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    react: ^17.0.1
     styled-system: ^5.1.5
   languageName: unknown
   linkType: soft
@@ -5577,6 +5609,22 @@ __metadata:
     react-is: ^17.0.1
     typescript: ^4.2.3
     webpack: ^4.46.0
+  languageName: unknown
+  linkType: soft
+
+"@ui-proto/layout@workspace:ui-proto/layout":
+  version: 0.0.0-use.local
+  resolution: "@ui-proto/layout@workspace:ui-proto/layout"
+  dependencies:
+    "@ui-parts/layout": "workspace:0.2.0"
+  languageName: unknown
+  linkType: soft
+
+"@ui-proto/text@workspace:ui-proto/text":
+  version: 0.0.0-use.local
+  resolution: "@ui-proto/text@workspace:ui-proto/text"
+  dependencies:
+    "@ui-parts/text": "workspace:0.2.0"
   languageName: unknown
   linkType: soft
 

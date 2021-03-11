@@ -1,4 +1,9 @@
+import { ButtonHTMLAttributes }  from 'react'
+
 import { ButtonAppearanceProps } from './appearance'
 import { ButtonShapeProps }      from './shape'
 
-export type ButtonProps = ButtonAppearanceProps | ButtonShapeProps
+export interface ButtonProps
+  extends ButtonHTMLAttributes<HTMLButtonElement>,
+    ButtonAppearanceProps,
+    ButtonShapeProps {}

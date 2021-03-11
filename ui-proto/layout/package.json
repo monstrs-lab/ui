@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/layout",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -15,7 +15,7 @@
     "@monstrs/mctl-cli": "0.2.90"
   },
   "dependencies": {
-    "@ui-parts/layout": "workspace:0.2.5"
+    "@ui-parts/layout": "workspace:0.2.6"
   },
   "publishConfig": {
     "access": "public",

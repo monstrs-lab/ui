@@ -7,6 +7,7 @@ import { createAppearanceStyles } from '@ui-parts/button'
 
 const smallNormalSizeStyles = createShapeStyles({
   fontFamily: prop('theme.fonts.primary'),
+  fontWeight: 600,
   size: 24,
   fontSize: 11,
   rounding: 6,
@@ -14,6 +15,7 @@ const smallNormalSizeStyles = createShapeStyles({
 
 const shapeNormalSizeStyles = createShapeStyles({
   fontFamily: prop('theme.fonts.primary'),
+  fontWeight: 600,
   size: 32,
   fontSize: 12,
   rounding: 6,
@@ -21,6 +23,7 @@ const shapeNormalSizeStyles = createShapeStyles({
 
 const largeNormalSizeStyles = createShapeStyles({
   fontFamily: prop('theme.fonts.primary'),
+  fontWeight: 600,
   size: 48,
   fontSize: 14,
   rounding: 6,

@@ -3,8 +3,8 @@ import { FC }            from 'react'
 import styled            from '@emotion/styled'
 
 import { Content }       from '@ui-parts/button'
-import { ButtonProps }   from '@ui-parts/button'
 
+import { ButtonProps }   from './button.interfaces'
 import { baseStyles }    from './button.styles'
 import { shapeStyles }   from './button.styles'
 import { contentStyles } from './button.styles'

@@ -9540,6 +9540,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/styled", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:11.1.5"],
             ["@monstrs/mctl-cli", "virtual:6d25c9b153fceba8fe0348fb4844a8d639936d12eb649bafd35a08b8ae3b56533c548bbb09579094adb291c4725c27d8974cce36f9065dc9f7cf9b0073ef3acb#npm:0.2.90"],
             ["@types/react", "npm:17.0.3"],
+            ["@ui-proto/layout", "workspace:ui-proto/layout"],
+            ["@ui-proto/text", "workspace:ui-proto/text"],
             ["react", "npm:17.0.1"]
           ],
           "linkType": "SOFT",

@@ -1,8 +1,9 @@
-import styled     from '@emotion/styled'
+import styled          from '@emotion/styled'
 
-import { Layout } from '../layout'
+import { LayoutProps } from '../layout'
+import { Layout }      from '../layout'
 
-const Column = styled(Layout)()
+const Column = styled(Layout)<LayoutProps>()
 
 Column.defaultProps = {
   boxSizing: 'border-box',

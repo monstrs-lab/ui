@@ -22,10 +22,10 @@ const Text = styled.span<TextProps>(
 )
 
 Text.defaultProps = {
-  fontFamily: '"Open Sans", sans-serif',
-  color: 'rgb(69, 75, 96)',
-  fontSize: 14,
+  fontFamily: 'primary',
   fontWeight: 'normal',
+  fontSize: 'normal',
+  color: 'text.primary',
   lineHeight: 'normal',
   display: 'inline-flex',
 }

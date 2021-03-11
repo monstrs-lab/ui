@@ -11,6 +11,7 @@ export const GlobalStyles = () => (
       body {
         margin: 0;
         height: 100%;
+        overflow: hidden;
         -webkit-font-smoothing: antialiased;
         -webkit-overflow-scrolling: touch;
       }

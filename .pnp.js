@@ -75,6 +75,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:ui-proto/layout"
       },
       {
+        "name": "@ui-proto/placeholder",
+        "reference": "workspace:ui-proto/placeholder"
+      },
+      {
         "name": "@ui-proto/text",
         "reference": "workspace:ui-proto/text"
       },
@@ -103,6 +107,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@ui-proto/button", ["virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/button", "workspace:ui-proto/button"]],
       ["@ui-proto/design", ["workspace:ui-proto/design"]],
       ["@ui-proto/layout", ["workspace:ui-proto/layout"]],
+      ["@ui-proto/placeholder", ["workspace:ui-proto/placeholder"]],
       ["@ui-proto/text", ["workspace:ui-proto/text"]],
       ["@ui-proto/theme", ["virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/theme", "workspace:ui-proto/theme"]],
       ["@ui/design", ["workspace:ui/design"]],
@@ -9523,6 +9528,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ui-proto/layout", "workspace:ui-proto/layout"],
             ["@monstrs/mctl-cli", "virtual:6d25c9b153fceba8fe0348fb4844a8d639936d12eb649bafd35a08b8ae3b56533c548bbb09579094adb291c4725c27d8974cce36f9065dc9f7cf9b0073ef3acb#npm:0.2.90"],
             ["@ui-parts/layout", "virtual:daaf6397b55c2a9058d295a4abe72ed29ea1a96e8de81e5af076b3d55b8088c1b395111233bde1ac26562585fd4fd44f3df85a6ab5ce12d20ebe840baf5d814c#workspace:ui-parts/layout"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@ui-proto/placeholder", [
+        ["workspace:ui-proto/placeholder", {
+          "packageLocation": "./ui-proto/placeholder/",
+          "packageDependencies": [
+            ["@ui-proto/placeholder", "workspace:ui-proto/placeholder"],
+            ["@emotion/styled", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:11.1.5"],
+            ["@monstrs/mctl-cli", "virtual:6d25c9b153fceba8fe0348fb4844a8d639936d12eb649bafd35a08b8ae3b56533c548bbb09579094adb291c4725c27d8974cce36f9065dc9f7cf9b0073ef3acb#npm:0.2.90"],
+            ["@types/react", "npm:17.0.3"],
+            ["react", "npm:17.0.1"]
           ],
           "linkType": "SOFT",
         }]

@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/button",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,7 +12,7 @@
     "build": "mctl library build"
   },
   "dependencies": {
-    "@ui-parts/button": "workspace:0.2.3"
+    "@ui-parts/button": "workspace:0.2.4"
   },
   "devDependencies": {
     "@emotion/styled": "^11.1.5",

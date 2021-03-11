@@ -1,6 +1,6 @@
 {
-  "name": "@ui-parts/text",
-  "version": "0.2.4",
+  "name": "@ui-proto/placeholder",
+  "version": "0.1.4",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -15,14 +15,11 @@
     "@emotion/styled": "^11.1.5",
     "@monstrs/mctl-cli": "0.2.90",
     "@types/react": "^17.0.3",
-    "@types/styled-system": "^5.1.10",
-    "react": "^17.0.1",
-    "styled-system": "^5.1.5"
+    "react": "^17.0.1"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.1.5",
-    "react": "^17.0.1",
-    "styled-system": "^5.1.5"
+    "react": "^17.0.1"
   },
   "publishConfig": {
     "access": "public",

@@ -1,8 +1,9 @@
-import styled     from '@emotion/styled'
+import styled          from '@emotion/styled'
 
-import { Layout } from '../layout'
+import { LayoutProps } from '../layout'
+import { Layout }      from '../layout'
 
-const Row = styled(Layout)()
+const Row = styled(Layout)<LayoutProps>()
 
 Row.defaultProps = {
   boxSizing: 'border-box',

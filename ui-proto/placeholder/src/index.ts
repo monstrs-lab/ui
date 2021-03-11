@@ -1,1 +1,3 @@
-export * from './background-image-placeholder.component'
+export * from './background-image'
+export * from './inline-image'
+export * from './logo'

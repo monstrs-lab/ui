@@ -1,8 +1,25 @@
 {
   "name": "@ui-proto/text",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -r -f dist",
+    "prepublishOnly": "yarn run build",
+    "build": "mctl library build"
+  },
+  "devDependencies": {
+    "@monstrs/mctl-cli": "0.2.90"
+  },
   "dependencies": {
-    "@ui-parts/text": "workspace:0.2.0"
+    "@ui-parts/text": "workspace:0.2.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
   }
 }

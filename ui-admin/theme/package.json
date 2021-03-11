@@ -1,14 +1,30 @@
 {
   "name": "@ui-admin/theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -r -f dist",
+    "prepublishOnly": "yarn run build",
+    "build": "mctl library build"
+  },
   "devDependencies": {
     "@emotion/react": "^11.1.5",
+    "@monstrs/mctl-cli": "0.2.90",
+    "@types/node": "^14.14.32",
+    "@types/react": "^17.0.3",
     "react": "^17.0.1"
   },
   "peerDependencies": {
     "@emotion/react": "^11.1.5",
     "react": "^17.0.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
   }
 }

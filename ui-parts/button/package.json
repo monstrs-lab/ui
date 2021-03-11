@@ -1,13 +1,23 @@
 {
   "name": "@ui-parts/button",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -r -f dist",
+    "prepublishOnly": "yarn run build",
+    "build": "mctl library build"
+  },
   "dependencies": {
-    "@ui-parts/styles": "workspace:0.2.0"
+    "@ui-parts/styles": "workspace:0.2.1"
   },
   "devDependencies": {
     "@emotion/styled": "^11.1.5",
+    "@monstrs/mctl-cli": "0.2.90",
+    "@types/jest": "^26.0.20",
     "@types/react": "^17.0.3",
     "@types/styled-system": "^5.1.10",
     "@ui-parts/design-fonts": "workspace:0.0.1",
@@ -20,5 +30,10 @@
     "react": "^17.0.1",
     "styled-system": "^5.1.5",
     "styled-tools": "^1.7.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
   }
 }

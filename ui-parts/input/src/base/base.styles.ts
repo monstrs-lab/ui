@@ -1,0 +1,9 @@
+import { styleFn } from 'styled-system'
+
+export const createBaseStyles: styleFn = () => () => ({
+  boxSizing: 'border-box',
+  outline: 'none',
+  width: '100%',
+  border: '1px solid transparent',
+  borderRadius: 0,
+})

@@ -1,7 +1,7 @@
 import React                         from 'react'
 import styled                        from '@emotion/styled'
 
-import { fontNames, useGoogleFonts } from '@ui-parts/design-fonts'
+import { fontNames, useGoogleFonts } from '@monstrs/storybook-google-fonts'
 
 // @ts-ignore
 import mdx                           from './button.docs.mdx'

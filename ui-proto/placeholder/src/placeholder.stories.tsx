@@ -1,6 +1,9 @@
 import React                          from 'react'
 
-import { InlineImagePlaceholder }     from './inline-image'
+import { Box }                        from '@ui-proto/layout'
+
+import { ImagePlaceholder }           from './image'
+import { ImageBoxPlaceholder }        from './image-box'
 import { BackgroundImagePlaceholder } from './background-image'
 import { LogoPlaceholder }            from './logo'
 
@@ -8,21 +11,36 @@ export default {
   title: 'Components/Placeholder',
 }
 
-const placeholderTypes = {
-  'inline-image': InlineImagePlaceholder,
-  'background-image': BackgroundImagePlaceholder,
-  'horizontal-logo': (props) => <LogoPlaceholder {...props} />,
-  'vertical-logo': (props) => <LogoPlaceholder type='vertical' {...props} />,
-}
-
 export const Placeholder = ({ type, ...props }) => {
-  const PlaceholderComponent = placeholderTypes[type] || InlineImagePlaceholder
+  if (type === 'background-image') {
+    return (
+      <Box position='absolute' top={0} right={0} bottom={0} left={0}>
+        <BackgroundImagePlaceholder />
+      </Box>
+    )
+  }
 
-  return <PlaceholderComponent {...props} />
+  if (type === 'horizontal-logo') {
+    return <LogoPlaceholder {...props} />
+  }
+
+  if (type === 'vertical-logo') {
+    return <LogoPlaceholder type='vertical' {...props} />
+  }
+
+  if (type === 'image-box') {
+    return (
+      <Box width={320} height={160}>
+        <ImageBoxPlaceholder />
+      </Box>
+    )
+  }
+
+  return <ImagePlaceholder {...props} />
 }
 
 Placeholder.args = {
-  type: 'inline-image',
+  type: 'image',
 }
 
 Placeholder.argTypes = {
@@ -31,7 +49,7 @@ Placeholder.argTypes = {
     description: 'Тип плейсхолдера',
     control: {
       type: 'radio',
-      options: ['inline-image', 'background-image', 'horizontal-logo', 'vertical-logo'],
+      options: ['image', 'image-box', 'background-image', 'horizontal-logo', 'vertical-logo'],
     },
     table: {
       category: 'Варианты',

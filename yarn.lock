@@ -5525,7 +5525,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/input@workspace:ui-parts/input":
+"@ui-parts/input@workspace:0.2.6, @ui-parts/input@workspace:ui-parts/input":
   version: 0.0.0-use.local
   resolution: "@ui-parts/input@workspace:ui-parts/input"
   dependencies:
@@ -5640,6 +5640,26 @@ __metadata:
     react-is: ^17.0.1
     typescript: ^4.2.3
     webpack: ^4.46.0
+  languageName: unknown
+  linkType: soft
+
+"@ui-proto/input@workspace:ui-proto/input":
+  version: 0.0.0-use.local
+  resolution: "@ui-proto/input@workspace:ui-proto/input"
+  dependencies:
+    "@emotion/styled": ^11.1.5
+    "@monstrs/mctl-cli": 0.2.90
+    "@types/react": ^17.0.3
+    "@types/styled-system": ^5.1.10
+    "@ui-parts/input": "workspace:0.2.6"
+    react: ^17.0.1
+    styled-system: ^5.1.5
+    styled-tools: ^1.7.2
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    react: ^17.0.1
+    styled-system: ^5.1.5
+    styled-tools: ^1.7.2
   languageName: unknown
   linkType: soft
 

@@ -5072,6 +5072,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^14.14.35":
+  version: 14.14.35
+  resolution: "@types/node@npm:14.14.35"
+  checksum: 0f6320bf5370d1ff82105fb7f26aa0658499c97d3ec78561e65b65724280244f281602541182b63470d2c8a98db22fbb4f91409c5c7c97da8c3bb8f97fbc5dbc
+  languageName: node
+  linkType: hard
+
 "@types/normalize-package-data@npm:^2.4.0":
   version: 2.4.0
   resolution: "@types/normalize-package-data@npm:2.4.0"
@@ -5505,6 +5512,33 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui-parts/avatar@workspace:ui-parts/avatar":
+  version: 0.0.0-use.local
+  resolution: "@ui-parts/avatar@workspace:ui-parts/avatar"
+  dependencies:
+    "@emotion/styled": ^11.1.5
+    "@monstrs/mctl-cli": 0.2.90
+    "@monstrs/storybook-google-fonts": "workspace:0.0.1"
+    "@types/jest": ^26.0.20
+    "@types/node": ^14.14.35
+    "@types/react": ^17.0.3
+    "@types/styled-system": ^5.1.10
+    "@ui-parts/image": "workspace:0.2.7"
+    "@ui-parts/scalable-content": "workspace:0.2.7"
+    "@ui-parts/styles": "workspace:0.2.7"
+    "@ui-parts/text-transform": "workspace:0.2.7"
+    react: ^17.0.1
+    string-to-color: ^2.2.2
+    styled-system: ^5.1.5
+    styled-tools: ^1.7.2
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    react: ^17.0.1
+    styled-system: ^5.1.5
+    styled-tools: ^1.7.2
+  languageName: unknown
+  linkType: soft
+
 "@ui-parts/button@workspace:0.2.7, @ui-parts/button@workspace:ui-parts/button":
   version: 0.0.0-use.local
   resolution: "@ui-parts/button@workspace:ui-parts/button"
@@ -5586,7 +5620,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/image@workspace:ui-parts/image":
+"@ui-parts/image@workspace:0.2.7, @ui-parts/image@workspace:ui-parts/image":
   version: 0.0.0-use.local
   resolution: "@ui-parts/image@workspace:ui-parts/image"
   dependencies:
@@ -5645,7 +5679,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/scalable-content@workspace:ui-parts/scalable-content":
+"@ui-parts/scalable-content@workspace:0.2.7, @ui-parts/scalable-content@workspace:ui-parts/scalable-content":
   version: 0.0.0-use.local
   resolution: "@ui-parts/scalable-content@workspace:ui-parts/scalable-content"
   dependencies:
@@ -5676,12 +5710,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/text-transform@workspace:ui-parts/text-transform":
+"@ui-parts/text-transform@workspace:0.2.7, @ui-parts/text-transform@workspace:ui-parts/text-transform":
   version: 0.0.0-use.local
   resolution: "@ui-parts/text-transform@workspace:ui-parts/text-transform"
   dependencies:
     "@monstrs/mctl-cli": 0.2.90
     "@testing-library/react": ^11.2.5
+    "@types/jest": ^26.0.20
+    "@types/node": ^14.14.35
     "@types/react": ^17.0.3
     react: ^17.0.1
   peerDependencies:

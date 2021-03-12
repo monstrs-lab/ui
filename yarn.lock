@@ -3215,6 +3215,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@monstrs/storybook-google-fonts@workspace:0.0.1, @monstrs/storybook-google-fonts@workspace:storybook/google-fonts":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/storybook-google-fonts@workspace:storybook/google-fonts"
+  dependencies:
+    google-fonts-complete: ^2.1.1
+    google-fonts-loader: ^1.0.0
+    react: ^17.0.1
+  peerDependencies:
+    react: ^17.0.1
+  languageName: unknown
+  linkType: soft
+
 "@monstrs/tsconfig@npm:^0.2.0":
   version: 0.2.0
   resolution: "@monstrs/tsconfig@npm:0.2.0"
@@ -5465,10 +5477,10 @@ __metadata:
   dependencies:
     "@emotion/styled": ^11.1.5
     "@monstrs/mctl-cli": 0.2.90
+    "@monstrs/storybook-google-fonts": "workspace:0.0.1"
     "@types/jest": ^26.0.20
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.10
-    "@ui-parts/design-fonts": "workspace:0.0.1"
     "@ui-parts/styles": "workspace:0.2.6"
     react: ^17.0.1
     styled-system: ^5.1.5
@@ -5478,18 +5490,6 @@ __metadata:
     react: ^17.0.1
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
-  languageName: unknown
-  linkType: soft
-
-"@ui-parts/design-fonts@workspace:0.0.1, @ui-parts/design-fonts@workspace:ui-parts/design-fonts":
-  version: 0.0.0-use.local
-  resolution: "@ui-parts/design-fonts@workspace:ui-parts/design-fonts"
-  dependencies:
-    google-fonts-complete: ^2.1.1
-    google-fonts-loader: ^1.0.0
-    react: ^17.0.1
-  peerDependencies:
-    react: ^17.0.1
   languageName: unknown
   linkType: soft
 

@@ -1,12 +1,12 @@
-import React                           from 'react'
+import React                     from 'react'
 
-import { InlineImagePlaceholderProps } from './inline-image-placeholder.interfaces'
+import { ImagePlaceholderProps } from './image-placeholder.interfaces'
 
-export const InlineImagePlaceholder = ({
+export const ImagePlaceholder = ({
   size = 80,
   color = '#A0A4B3',
   ...props
-}: InlineImagePlaceholderProps) => (
+}: ImagePlaceholderProps) => (
   <svg viewBox='0 0 80 80' fill='none' {...props} width={size} height={size}>
     <path
       d='M62.6999 9.90002H16.4999C12.8548 9.90002 9.8999 12.8549 9.8999 16.5V62.7C9.8999 66.3451 12.8548 69.3 16.4999 69.3H62.6999C66.345 69.3 69.2999 66.3451 69.2999 62.7V16.5C69.2999 12.8549 66.345 9.90002 62.6999 9.90002Z'

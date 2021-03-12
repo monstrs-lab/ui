@@ -1,15 +1,15 @@
-import React                      from 'react'
-import { FC }                     from 'react'
+import React                    from 'react'
+import { FC }                   from 'react'
 
-import { Layout }                 from '@ui-proto/layout'
-import { Text }                   from '@ui-proto/text'
+import { Layout }               from '@ui-proto/layout'
+import { Text }                 from '@ui-proto/text'
 
-import { InlineImagePlaceholder } from '../inline-image'
-import { LogoPlaceholderProps }   from './logo-placeholder.interfaces'
+import { ImagePlaceholder }     from '../image'
+import { LogoPlaceholderProps } from './logo-placeholder.interfaces'
 
 export const LogoPlaceholder: FC<LogoPlaceholderProps> = ({
   type = 'horizontal',
-  children = 'Logo',
+  children = 'Логотип',
   color = 'black',
   size = 32,
 }) => (
@@ -18,7 +18,7 @@ export const LogoPlaceholder: FC<LogoPlaceholderProps> = ({
     display='inline-flex'
     alignItems='center'
   >
-    <InlineImagePlaceholder color={color} size={size} />
+    <ImagePlaceholder color={color} size={size} />
     <Layout
       ml={type === 'horizontal' ? size * 0.28 : 0}
       mt={type === 'vertical' ? size * 0.28 : 0}

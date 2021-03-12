@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/input",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,7 +12,7 @@
     "build": "mctl library build"
   },
   "dependencies": {
-    "@ui-parts/input": "workspace:0.2.6"
+    "@ui-parts/input": "workspace:0.2.7"
   },
   "devDependencies": {
     "@emotion/styled": "^11.1.5",

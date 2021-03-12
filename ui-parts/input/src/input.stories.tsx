@@ -1,118 +1,110 @@
 import React                         from 'react'
+import { useState }                  from 'react'
+import { useMemo }                   from 'react'
 import styled                        from '@emotion/styled'
 
 import { fontNames, useGoogleFonts } from '@monstrs/storybook-google-fonts'
 
-// @ts-ignore
-import mdx                           from './button.docs.mdx'
-import { templates }                 from './button.templates'
 import { createBaseStyles }          from './base'
 import { createShapeStyles }         from './shape'
 import { createAppearanceStyles }    from './appearance'
-import { createContentStyles }       from './content'
-import { Content }                   from './content'
+import { Container }                 from './container'
+import { Wrapper }                   from './wrapper'
 
 export default {
-  title: 'Components/Button',
+  title: 'Components/Input',
   parameters: {
-    docs: {
-      page: mdx,
-    },
-    development: {
-      templates,
+    options: {
+      enableShortcuts: false,
     },
   },
 }
 
-export const Button = ({
+export const Input = ({
   containerWith,
-  children,
-  childrenPrefix,
-  childrenSuffix,
   size,
+  borderWidth,
   fontFamily,
   fontSize,
   fontWeight,
   shapeRounding,
   paddingLeft,
   paddingRight,
-  contentDivider,
   fontColor,
   backgroundColor,
   borderColor,
-  invertedBorderWidth,
-  shape,
-  fill,
   rounding,
-  inverted,
-  contentAlign,
 }) => {
   useGoogleFonts(fontFamily, fontWeight)
+  const [value, setValue] = useState('контент')
 
-  const StoryButton = styled.button(
-    createBaseStyles(),
-    createContentStyles(),
-    createShapeStyles({
+  const StoryInput = useMemo(
+    () =>
+      styled.input(
+        createBaseStyles(),
+        createShapeStyles({
+          size,
+          borderWidth,
+          fontFamily,
+          fontSize,
+          fontWeight,
+          rounding: shapeRounding,
+          paddingLeft,
+          paddingRight,
+        }),
+        createAppearanceStyles({
+          fontColor,
+          backgroundColor,
+          borderColor,
+        })
+      ),
+    [
       size,
+      borderWidth,
       fontFamily,
       fontSize,
       fontWeight,
-      rounding: shapeRounding,
+      shapeRounding,
       paddingLeft,
       paddingRight,
-    }),
-    createAppearanceStyles({
       fontColor,
       backgroundColor,
       borderColor,
-      invertedBorderWidth,
-    })
+    ]
   )
 
   return (
     <div style={{ width: containerWith, display: 'flex', justifyContent: 'center' }}>
-      <StoryButton
-        fill={fill}
-        shape={shape}
-        rounding={rounding}
-        inverted={inverted}
-        contentAlign={contentAlign}
-      >
-        <Content divider={contentDivider}>
-          {childrenPrefix && <span>{childrenPrefix}</span>}
-          {children}
-          {childrenSuffix && <span>{childrenSuffix}</span>}
-        </Content>
-      </StoryButton>
+      <Container>
+        <Wrapper>
+          <StoryInput
+            rounding={rounding}
+            value={value}
+            onChange={(event) => setValue(event.target.value)}
+          />
+        </Wrapper>
+      </Container>
     </div>
   )
 }
 
-Button.args = {
-  containerWith: 200,
-  children: 'Кнопка',
-  childrenPrefix: '',
-  childrenSuffix: '',
+Input.args = {
+  containerWith: 300,
   size: 36,
+  borderWidth: 1,
   fontFamily: 'Roboto',
   fontWeight: 400,
   fontSize: 12,
   shapeRounding: undefined,
-  paddingLeft: undefined,
-  paddingRight: undefined,
-  contentDivider: 12,
-  fontColor: 'white',
-  backgroundColor: 'blue',
+  paddingLeft: 8,
+  paddingRight: 12,
+  fontColor: 'blue',
+  backgroundColor: 'white',
   borderColor: 'blue',
-  invertedBorderWidth: 1,
-  fill: false,
   rounding: 0,
-  inverted: false,
-  shape: 'rectangle',
-  contentAlign: 'center',
 }
 
-Button.argTypes = {
+Input.argTypes = {
   containerWith: {
     name: 'Контейнер',
     description: 'Ширина контейнера',
@@ -121,41 +113,25 @@ Button.argTypes = {
     },
     control: {
       type: 'range',
-      min: 200,
+      min: 300,
       max: 1200,
       step: 10,
-    },
-  },
-  children: {
-    name: 'Контент',
-    description: 'Основной контент, описание',
-    table: {
-      category: 'Наполнение',
-    },
-  },
-  childrenPrefix: {
-    name: 'Контент слева',
-    description: 'Дополнительный контент слева, текст или иконка',
-    table: {
-      category: 'Наполнение',
-    },
-    control: {
-      type: 'text',
-    },
-  },
-  childrenSuffix: {
-    name: 'Контент справа',
-    description: 'Дополнительный контент справа, текст или иконка',
-    table: {
-      category: 'Наполнение',
-    },
-    control: {
-      type: 'text',
     },
   },
   size: {
     name: 'Размер',
     description: 'Высота',
+    table: {
+      category: 'Представление',
+      subcategory: 'Форма',
+    },
+    control: {
+      type: 'number',
+    },
+  },
+  borderWidth: {
+    name: 'Размер',
+    description: 'Размер обводки',
     table: {
       category: 'Представление',
       subcategory: 'Форма',
@@ -265,74 +241,12 @@ Button.argTypes = {
       type: 'color',
     },
   },
-  invertedBorderWidth: {
-    name: 'Ширина обводки',
-    description: 'Ширина обводки',
-    table: {
-      category: 'Представление',
-      subcategory: 'Внешний вид',
-    },
-    control: {
-      type: 'number',
-    },
-  },
-  contentDivider: {
-    name: 'Отступы контента',
-    description: 'Отступы внутри контента',
-    table: {
-      category: 'Представление',
-      subcategory: 'Контент',
-    },
-    control: {
-      type: 'number',
-    },
-  },
-  fill: {
-    name: 'Во всю ширину',
-    description: 'Делает кнопку во всю ширину контейнера',
-    table: {
-      category: 'Модификаторы',
-      subcategory: 'Форма',
-    },
-  },
   rounding: {
     name: 'Скругление',
     description: 'Устанавливает величину скругления',
     table: {
       category: 'Модификаторы',
       subcategory: 'Форма',
-    },
-  },
-  inverted: {
-    name: 'Инвертированная',
-    description: 'Прозрачная заливка, с обводкой и текстом одного цвета',
-    table: {
-      category: 'Модификаторы',
-      subcategory: 'Внешний вид',
-    },
-  },
-  shape: {
-    name: 'Форма',
-    description: 'Форма кнопки',
-    table: {
-      category: 'Модификаторы',
-      subcategory: 'Форма',
-    },
-    control: {
-      type: 'inline-radio',
-      options: ['rectangle', 'square', 'circle'],
-    },
-  },
-  contentAlign: {
-    name: 'Выравнивание контента',
-    description: 'Выравнивание контента',
-    table: {
-      category: 'Модификаторы',
-      subcategory: 'Контент',
-    },
-    control: {
-      type: 'select',
-      options: ['center', 'flex-start', 'flex-end', 'space-between', 'space-around'],
     },
   },
 }

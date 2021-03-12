@@ -1,0 +1,39 @@
+{
+  "name": "@ui-parts/input",
+  "version": "0.2.6",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -r -f dist",
+    "prepublishOnly": "yarn run build",
+    "build": "mctl library build"
+  },
+  "dependencies": {
+    "@ui-parts/styles": "workspace:0.2.6"
+  },
+  "devDependencies": {
+    "@emotion/styled": "^11.1.5",
+    "@monstrs/mctl-cli": "0.2.90",
+    "@monstrs/storybook-google-fonts": "workspace:0.0.1",
+    "@types/jest": "^26.0.20",
+    "@types/react": "^17.0.3",
+    "@types/styled-system": "^5.1.10",
+    "react": "^17.0.1",
+    "styled-system": "^5.1.5",
+    "styled-tools": "^1.7.2"
+  },
+  "peerDependencies": {
+    "@emotion/styled": "^11.1.5",
+    "react": "^17.0.1",
+    "styled-system": "^5.1.5",
+    "styled-tools": "^1.7.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
+  }
+}

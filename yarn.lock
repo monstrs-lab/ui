@@ -5582,6 +5582,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui-parts/scalable-content@workspace:ui-parts/scalable-content":
+  version: 0.0.0-use.local
+  resolution: "@ui-parts/scalable-content@workspace:ui-parts/scalable-content"
+  dependencies:
+    "@emotion/styled": ^11.1.5
+    "@monstrs/mctl-cli": 0.2.90
+    "@types/jest": ^26.0.20
+    "@types/react": ^17.0.3
+    "@types/styled-system": ^5.1.10
+    react: ^17.0.1
+    styled-system: ^5.1.5
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    react: ^17.0.1
+    styled-system: ^5.1.5
+  languageName: unknown
+  linkType: soft
+
 "@ui-parts/styles@workspace:0.2.7, @ui-parts/styles@workspace:ui-parts/styles":
   version: 0.0.0-use.local
   resolution: "@ui-parts/styles@workspace:ui-parts/styles"

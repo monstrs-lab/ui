@@ -51,6 +51,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:ui-parts/design"
       },
       {
+        "name": "@ui-parts/image",
+        "reference": "workspace:ui-parts/image"
+      },
+      {
         "name": "@ui-parts/input",
         "reference": "workspace:ui-parts/input"
       },
@@ -109,6 +113,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@ui-admin/theme", ["virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#workspace:ui-admin/theme", "workspace:ui-admin/theme"]],
       ["@ui-parts/button", ["virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#workspace:ui-parts/button", "virtual:2961a2bd35c6a5dc3140c07cb1e13cb8bd32a7c5068f7a64c6aefb3f817a757e9ad0b80b1eaa02c797519f0728c4ca5ee3f72756c419f3fb62469e21dcf44ecd#workspace:ui-parts/button", "workspace:ui-parts/button"]],
       ["@ui-parts/design", ["workspace:ui-parts/design"]],
+      ["@ui-parts/image", ["workspace:ui-parts/image"]],
       ["@ui-parts/input", ["virtual:4376e102aa85feee74919ab727969879ef04c3afaae7ddce7fb206f44f491a9ce55d62a1c31632ed4253bc84f85b4a0aaf3b78bb63c1e96ad4515ad1020355bc#workspace:ui-parts/input", "workspace:ui-parts/input"]],
       ["@ui-parts/layout", ["virtual:daaf6397b55c2a9058d295a4abe72ed29ea1a96e8de81e5af076b3d55b8088c1b395111233bde1ac26562585fd4fd44f3df85a6ab5ce12d20ebe840baf5d814c#workspace:ui-parts/layout", "workspace:ui-parts/layout"]],
       ["@ui-parts/styles", ["virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles", "workspace:ui-parts/styles"]],
@@ -9351,6 +9356,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["string-replace-loader", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#npm:3.0.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
             ["webpack", "virtual:7703ff37724d80aa8e89784979e9352c72c3a27687de2d5bb124ea49ccb94c55157e4abf90a71426b73c580ba0c8c7a9cca2a2aaa9b93e0bc7d6bf5c99cf3747#npm:4.46.0"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@ui-parts/image", [
+        ["workspace:ui-parts/image", {
+          "packageLocation": "./ui-parts/image/",
+          "packageDependencies": [
+            ["@ui-parts/image", "workspace:ui-parts/image"],
+            ["@emotion/styled", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:11.1.5"],
+            ["@monstrs/mctl-cli", "virtual:6d25c9b153fceba8fe0348fb4844a8d639936d12eb649bafd35a08b8ae3b56533c548bbb09579094adb291c4725c27d8974cce36f9065dc9f7cf9b0073ef3acb#npm:0.2.90"],
+            ["@types/jest", "npm:26.0.20"],
+            ["@types/react", "npm:17.0.3"],
+            ["@types/styled-system", "npm:5.1.10"],
+            ["react", "npm:17.0.1"],
+            ["styled-system", "npm:5.1.5"]
           ],
           "linkType": "SOFT",
         }]

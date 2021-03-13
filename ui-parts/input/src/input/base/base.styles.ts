@@ -7,4 +7,6 @@ export const createBaseStyles: styleFn = () => () => ({
   width: '100%',
   border: '1px solid transparent',
   borderRadius: 0,
+  display: 'flex',
+  flexDirection: 'row',
 })

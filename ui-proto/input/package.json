@@ -12,6 +12,7 @@
     "build": "mctl library build"
   },
   "dependencies": {
+    "@ui-parts/conditional-render": "workspace:0.2.7",
     "@ui-parts/input": "workspace:0.2.7"
   },
   "devDependencies": {

@@ -21,6 +21,8 @@
     "@types/jest": "^26.0.20",
     "@types/react": "^17.0.3",
     "@types/styled-system": "^5.1.10",
+    "@ui-parts/conditional-render": "workspace:0.2.7",
+    "@ui-parts/layout": "workspace:0.2.7",
     "react": "^17.0.1",
     "styled-system": "^5.1.5",
     "styled-tools": "^1.7.2"

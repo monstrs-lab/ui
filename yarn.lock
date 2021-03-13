@@ -5491,6 +5491,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui-parts/conditional-render@workspace:0.2.7, @ui-parts/conditional-render@workspace:ui-parts/conditional-render":
+  version: 0.0.0-use.local
+  resolution: "@ui-parts/conditional-render@workspace:ui-parts/conditional-render"
+  dependencies:
+    "@monstrs/mctl-cli": 0.2.90
+    "@types/react": ^17.0.3
+    react: ^17.0.1
+  peerDependencies:
+    react: ^17.0.1
+  languageName: unknown
+  linkType: soft
+
 "@ui-parts/design@workspace:ui-parts/design":
   version: 0.0.0-use.local
   resolution: "@ui-parts/design@workspace:ui-parts/design"
@@ -5553,6 +5565,8 @@ __metadata:
     "@types/jest": ^26.0.20
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.10
+    "@ui-parts/conditional-render": "workspace:0.2.7"
+    "@ui-parts/layout": "workspace:0.2.7"
     "@ui-parts/styles": "workspace:0.2.7"
     react: ^17.0.1
     styled-system: ^5.1.5
@@ -5687,6 +5701,7 @@ __metadata:
     "@monstrs/mctl-cli": 0.2.90
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.10
+    "@ui-parts/conditional-render": "workspace:0.2.7"
     "@ui-parts/input": "workspace:0.2.7"
     react: ^17.0.1
     styled-system: ^5.1.5

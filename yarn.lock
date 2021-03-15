@@ -5524,6 +5524,7 @@ __metadata:
     "@types/react": ^17.0.3
     "@types/react-dom": ^17.0.1
     "@ui-parts/button": "workspace:0.2.7"
+    "@ui-parts/input": "workspace:0.2.7"
     babel-loader: ^8.2.2
     core-js: ^3.9.1
     cors: ^2.8.5
@@ -5680,6 +5681,7 @@ __metadata:
     "@types/react": ^17.0.3
     "@types/react-dom": ^17.0.1
     "@ui-proto/button": "workspace:0.1.7"
+    "@ui-proto/input": "workspace:0.1.7"
     "@ui-proto/theme": "workspace:0.0.8"
     babel-loader: ^8.2.2
     core-js: ^3.9.1
@@ -5693,7 +5695,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/input@workspace:ui-proto/input":
+"@ui-proto/input@workspace:0.1.7, @ui-proto/input@workspace:ui-proto/input":
   version: 0.0.0-use.local
   resolution: "@ui-proto/input@workspace:ui-proto/input"
   dependencies:

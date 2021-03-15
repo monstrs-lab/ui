@@ -15,6 +15,8 @@ import { createBaseStyles }                 from './input'
 import { createShapeStyles }                from './input'
 import { createAppearanceStyles }           from './input'
 import { RawInput }                         from './input'
+import { createAddonsContainerStyles }      from './addon'
+import { createAddonPositionStyles }        from './addon'
 
 export default {
   title: 'Components/Input',
@@ -25,11 +27,29 @@ export default {
   },
 }
 
+const getAddonPosition = (addonBefore, addonAfter) => {
+  if (addonBefore && addonAfter) {
+    return 'both'
+  }
+
+  if (addonBefore) {
+    return 'left'
+  }
+
+  if (addonAfter) {
+    return 'right'
+  }
+
+  return null
+}
+
 export const Input = ({
   containerWith,
   size,
   prefix,
   suffix,
+  addonBefore,
+  addonAfter,
   borderWidth,
   fontFamily,
   fontSize,
@@ -40,6 +60,9 @@ export const Input = ({
   fontColor,
   backgroundColor,
   borderColor,
+  addonFontColor,
+  addonBackgroundColor,
+  addonBorderColor,
   rounding,
 }) => {
   useGoogleFonts(fontFamily, fontWeight)
@@ -60,6 +83,46 @@ export const Input = ({
         })
       ),
     [fontFamily, fontSize, fontWeight, fontColor]
+  )
+
+  const AddonsContainer = useMemo(() => styled.div(createAddonsContainerStyles(borderWidth)), [
+    borderWidth,
+  ])
+
+  const Addon = useMemo(
+    () =>
+      styled(ConditionalRender())(
+        createBaseStyles(),
+        createShapeStyles({
+          size,
+          borderWidth,
+          fontFamily,
+          fontSize,
+          fontWeight,
+          rounding: shapeRounding,
+          paddingLeft,
+          paddingRight,
+        }),
+        createAppearanceStyles({
+          fontColor: addonFontColor,
+          backgroundColor: addonBackgroundColor,
+          borderColor: addonBorderColor,
+        }),
+        createAddonPositionStyles()
+      ),
+    [
+      size,
+      borderWidth,
+      fontFamily,
+      fontSize,
+      fontWeight,
+      shapeRounding,
+      paddingLeft,
+      paddingRight,
+      addonFontColor,
+      addonBackgroundColor,
+      addonBorderColor,
+    ]
   )
 
   const StoryInput = useMemo(
@@ -97,13 +160,19 @@ export const Input = ({
     ]
   )
 
+  const attach = getAddonPosition(addonBefore, addonAfter)
+
   return (
     <Box width={containerWith} justifyContent='center'>
-      <StoryInput rounding={rounding}>
-        <Attachment>{prefix}</Attachment>
-        <RawInput value={value} onChange={(event) => setValue(event.target.value)} />
-        <Attachment type='suffix'>{suffix}</Attachment>
-      </StoryInput>
+      <AddonsContainer>
+        <Addon>{addonBefore}</Addon>
+        <StoryInput rounding={rounding} attach={attach}>
+          <Attachment>{prefix}</Attachment>
+          <RawInput value={value} onChange={(event) => setValue(event.target.value)} />
+          <Attachment type='suffix'>{suffix}</Attachment>
+        </StoryInput>
+        <Addon position='after'>{addonAfter}</Addon>
+      </AddonsContainer>
     </Box>
   )
 }
@@ -112,6 +181,8 @@ Input.args = {
   containerWith: 300,
   prefix: '',
   suffix: '',
+  addonBefore: '',
+  addonAfter: '',
   size: 36,
   borderWidth: 1,
   fontFamily: 'Roboto',
@@ -123,6 +194,9 @@ Input.args = {
   fontColor: 'blue',
   backgroundColor: 'white',
   borderColor: 'blue',
+  addonFontColor: 'white',
+  addonBackgroundColor: 'blue',
+  addonBorderColor: 'blue',
   rounding: 0,
 }
 
@@ -150,6 +224,20 @@ Input.argTypes = {
   suffix: {
     name: 'Суффикс',
     description: 'Дополнительная информация после поля ввода',
+    table: {
+      category: 'Наполнение',
+    },
+  },
+  addonBefore: {
+    name: 'Аддон слева',
+    description: 'Дополнительная блок перед полем ввода',
+    table: {
+      category: 'Наполнение',
+    },
+  },
+  addonAfter: {
+    name: 'Аддон справа',
+    description: 'Дополнительная блок после поля ввода',
     table: {
       category: 'Наполнение',
     },
@@ -269,6 +357,39 @@ Input.argTypes = {
   borderColor: {
     name: 'Цвет обводки',
     description: 'Цвет обводки',
+    table: {
+      category: 'Представление',
+      subcategory: 'Внешний вид',
+    },
+    control: {
+      type: 'color',
+    },
+  },
+  addonFontColor: {
+    name: 'Цвет текста аддона',
+    description: 'Цвет текста аддона',
+    table: {
+      category: 'Представление',
+      subcategory: 'Внешний вид',
+    },
+    control: {
+      type: 'color',
+    },
+  },
+  addonBackgroundColor: {
+    name: 'Цвет заливки аддона',
+    description: 'Цвет текста аддона',
+    table: {
+      category: 'Представление',
+      subcategory: 'Внешний вид',
+    },
+    control: {
+      type: 'color',
+    },
+  },
+  addonBorderColor: {
+    name: 'Цвет обводки аддона',
+    description: 'Цвет обводки аддона',
     table: {
       category: 'Представление',
       subcategory: 'Внешний вид',

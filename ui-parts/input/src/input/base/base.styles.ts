@@ -9,4 +9,5 @@ export const createBaseStyles: styleFn = () => () => ({
   borderRadius: 0,
   display: 'flex',
   flexDirection: 'row',
+  alignItems: 'center',
 })

@@ -1,5 +1,7 @@
 import { styleFn }                     from 'styled-system'
 import { ifProp }                      from 'styled-tools'
+import { switchProp }                  from 'styled-tools'
+import { prop }                        from 'styled-tools'
 
 import { execAndSerialize }            from '@ui-parts/styles'
 import { combine }                     from '@ui-parts/styles'
@@ -44,6 +46,21 @@ export const createRoundingStyles: styleFn = (defaultRounding: number) =>
     { borderRadius: defaultRounding }
   )
 
+export const createAttachStyles: styleFn = () =>
+  switchProp(prop('attach'), () => ({
+    left: {
+      borderBottomRightRadius: 0,
+      borderTopRightRadius: 0,
+    },
+    right: {
+      borderBottomLeftRadius: 0,
+      borderTopLeftRadius: 0,
+    },
+    both: {
+      borderRadius: 0,
+    },
+  }))
+
 export const createShapeStyles = ({
   size,
   borderWidth = 1,
@@ -60,6 +77,7 @@ export const createShapeStyles = ({
       createBaseShapeStyles(size, borderWidth, fontSize, fontWeight, fontFamily),
       createPaddingLeftStyles(paddingLeft || size * paddingRatio),
       createPaddingRightStyles(paddingRight || size * paddingRatio),
-      createRoundingStyles(rounding)
+      createRoundingStyles(rounding),
+      createAttachStyles()
     )
   )

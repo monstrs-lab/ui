@@ -1,15 +1,20 @@
-import React                         from 'react'
-import { useState }                  from 'react'
-import { useMemo }                   from 'react'
-import styled                        from '@emotion/styled'
+import React                                from 'react'
+import { useState }                         from 'react'
+import { useMemo }                          from 'react'
+import styled                               from '@emotion/styled'
 
-import { fontNames, useGoogleFonts } from '@monstrs/storybook-google-fonts'
+import { fontNames, useGoogleFonts }        from '@monstrs/storybook-google-fonts'
+import { ConditionalRender }                from '@ui-parts/conditional-render'
+import { Box }                              from '@ui-parts/layout'
 
-import { createBaseStyles }          from './base'
-import { createShapeStyles }         from './shape'
-import { createAppearanceStyles }    from './appearance'
-import { Container }                 from './container'
-import { Wrapper }                   from './wrapper'
+import { createAttachmentAppearanceStyles } from './attachment'
+import { createAttachmentBaseStyles }       from './attachment'
+import { createAttachmentPositionStyles }   from './attachment'
+import { createAttachmentShapeStyles }      from './attachment'
+import { createBaseStyles }                 from './input'
+import { createShapeStyles }                from './input'
+import { createAppearanceStyles }           from './input'
+import { RawInput }                         from './input'
 
 export default {
   title: 'Components/Input',
@@ -23,6 +28,8 @@ export default {
 export const Input = ({
   containerWith,
   size,
+  prefix,
+  suffix,
   borderWidth,
   fontFamily,
   fontSize,
@@ -38,9 +45,26 @@ export const Input = ({
   useGoogleFonts(fontFamily, fontWeight)
   const [value, setValue] = useState('контент')
 
+  const Attachment = useMemo(
+    () =>
+      styled(ConditionalRender())(
+        createAttachmentBaseStyles(),
+        createAttachmentShapeStyles({
+          fontFamily,
+          fontSize,
+          fontWeight,
+        }),
+        createAttachmentPositionStyles(6, 6),
+        createAttachmentAppearanceStyles({
+          fontColor,
+        })
+      ),
+    [fontFamily, fontSize, fontWeight, fontColor]
+  )
+
   const StoryInput = useMemo(
     () =>
-      styled.input(
+      styled.div(
         createBaseStyles(),
         createShapeStyles({
           size,
@@ -74,22 +98,20 @@ export const Input = ({
   )
 
   return (
-    <div style={{ width: containerWith, display: 'flex', justifyContent: 'center' }}>
-      <Container>
-        <Wrapper>
-          <StoryInput
-            rounding={rounding}
-            value={value}
-            onChange={(event) => setValue(event.target.value)}
-          />
-        </Wrapper>
-      </Container>
-    </div>
+    <Box width={containerWith} justifyContent='center'>
+      <StoryInput rounding={rounding}>
+        <Attachment>{prefix}</Attachment>
+        <RawInput value={value} onChange={(event) => setValue(event.target.value)} />
+        <Attachment type='suffix'>{suffix}</Attachment>
+      </StoryInput>
+    </Box>
   )
 }
 
 Input.args = {
   containerWith: 300,
+  prefix: '',
+  suffix: '',
   size: 36,
   borderWidth: 1,
   fontFamily: 'Roboto',
@@ -116,6 +138,20 @@ Input.argTypes = {
       min: 300,
       max: 1200,
       step: 10,
+    },
+  },
+  prefix: {
+    name: 'Префикс',
+    description: 'Дополнительная информация перед полем ввода',
+    table: {
+      category: 'Наполнение',
+    },
+  },
+  suffix: {
+    name: 'Суффикс',
+    description: 'Дополнительная информация после поля ввода',
+    table: {
+      category: 'Наполнение',
     },
   },
   size: {

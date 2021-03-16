@@ -11,6 +11,9 @@
     "prepublishOnly": "yarn run build",
     "build": "mctl library build"
   },
+  "dependencies": {
+    "@ui-parts/dom": "workspace:0.2.7"
+  },
   "devDependencies": {
     "@emotion/styled": "^11.1.5",
     "@monstrs/mctl-cli": "0.2.90",

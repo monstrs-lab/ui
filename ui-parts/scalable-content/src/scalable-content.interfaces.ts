@@ -13,5 +13,4 @@ export interface UseScaleResult {
 
 export interface ScalableContentProps {
   children: ReactNode
-  offset?: number
 }

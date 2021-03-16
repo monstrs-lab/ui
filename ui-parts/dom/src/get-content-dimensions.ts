@@ -1,8 +1,8 @@
 import { convertPixelToValue } from './convert-pixel-to-value'
 
 interface ContentDimensions {
-  width: number | null
-  height: number | null
+  width: number
+  height: number
 }
 
 export const getContentDimensions = (element: HTMLElement): ContentDimensions => {

@@ -19,10 +19,10 @@ spec:
         app: ui
     spec:
       containers:
-      - name: ui
-        image: eu.gcr.io/the-mesh-254617/ui-design-ui:8aa95d9-1615544823007 # {"$imagepolicy": "flux-system:ui-design"}
-        imagePullPolicy: IfNotPresent
-        ports:
-        - containerPort: 3000
-          name: http
-          protocol: TCP
+        - name: ui
+          image: eu.gcr.io/the-mesh-254617/ui-design-ui:8aa95d9-1615544823007 # {"$imagepolicy": "flux-system:ui-design"}
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
+              name: http
+              protocol: TCP

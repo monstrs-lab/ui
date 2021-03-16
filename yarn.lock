@@ -5538,6 +5538,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui-parts/dom@workspace:ui-parts/dom":
+  version: 0.0.0-use.local
+  resolution: "@ui-parts/dom@workspace:ui-parts/dom"
+  dependencies:
+    "@monstrs/mctl-cli": 0.2.90
+    "@types/react": ^17.0.3
+    react: ^17.0.1
+  peerDependencies:
+    react: ^17.0.1
+  languageName: unknown
+  linkType: soft
+
 "@ui-parts/image@workspace:ui-parts/image":
   version: 0.0.0-use.local
   resolution: "@ui-parts/image@workspace:ui-parts/image"

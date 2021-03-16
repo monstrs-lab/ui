@@ -55,6 +55,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:ui-parts/design"
       },
       {
+        "name": "@ui-parts/dom",
+        "reference": "workspace:ui-parts/dom"
+      },
+      {
         "name": "@ui-parts/image",
         "reference": "workspace:ui-parts/image"
       },
@@ -122,6 +126,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@ui-parts/button", ["virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#workspace:ui-parts/button", "virtual:2961a2bd35c6a5dc3140c07cb1e13cb8bd32a7c5068f7a64c6aefb3f817a757e9ad0b80b1eaa02c797519f0728c4ca5ee3f72756c419f3fb62469e21dcf44ecd#workspace:ui-parts/button", "workspace:ui-parts/button"]],
       ["@ui-parts/conditional-render", ["virtual:8caf71a3fdd27b9b6437019011aa6f2ea0ddc8518b38ccfaf98151ace190837ac7a0127b69ed99d68919e34f20efa102cc7a0b2f67dda727f2c7508b8e0e4551#workspace:ui-parts/conditional-render", "workspace:ui-parts/conditional-render"]],
       ["@ui-parts/design", ["workspace:ui-parts/design"]],
+      ["@ui-parts/dom", ["workspace:ui-parts/dom"]],
       ["@ui-parts/image", ["workspace:ui-parts/image"]],
       ["@ui-parts/input", ["virtual:4376e102aa85feee74919ab727969879ef04c3afaae7ddce7fb206f44f491a9ce55d62a1c31632ed4253bc84f85b4a0aaf3b78bb63c1e96ad4515ad1020355bc#workspace:ui-parts/input", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#workspace:ui-parts/input", "workspace:ui-parts/input"]],
       ["@ui-parts/layout", ["virtual:8caf71a3fdd27b9b6437019011aa6f2ea0ddc8518b38ccfaf98151ace190837ac7a0127b69ed99d68919e34f20efa102cc7a0b2f67dda727f2c7508b8e0e4551#workspace:ui-parts/layout", "virtual:daaf6397b55c2a9058d295a4abe72ed29ea1a96e8de81e5af076b3d55b8088c1b395111233bde1ac26562585fd4fd44f3df85a6ab5ce12d20ebe840baf5d814c#workspace:ui-parts/layout", "virtual:f99e24df4161c573161116c476e28d93eb86d1daf81ca0aca63ae42167d4d7c72a96e9f62aa14d717b450031c55ff364efad5a745895c7239498346b5633170b#workspace:ui-parts/layout", "workspace:ui-parts/layout"]],
@@ -9393,6 +9398,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["string-replace-loader", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#npm:3.0.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
             ["webpack", "virtual:d29cb8e4ffb3a929f77ed97310eaef9d30a970bae44fc51776438d59b6bc9ed88e3837ebf24748213b287c77189525f7b046b0dd0a078634c3788d1dcc77a4ff#npm:4.46.0"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@ui-parts/dom", [
+        ["workspace:ui-parts/dom", {
+          "packageLocation": "./ui-parts/dom/",
+          "packageDependencies": [
+            ["@ui-parts/dom", "workspace:ui-parts/dom"],
+            ["@monstrs/mctl-cli", "virtual:6d25c9b153fceba8fe0348fb4844a8d639936d12eb649bafd35a08b8ae3b56533c548bbb09579094adb291c4725c27d8974cce36f9065dc9f7cf9b0073ef3acb#npm:0.2.90"],
+            ["@types/react", "npm:17.0.3"],
+            ["react", "npm:17.0.1"]
           ],
           "linkType": "SOFT",
         }]

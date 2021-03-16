@@ -5538,7 +5538,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/dom@workspace:ui-parts/dom":
+"@ui-parts/dom@workspace:0.2.7, @ui-parts/dom@workspace:ui-parts/dom":
   version: 0.0.0-use.local
   resolution: "@ui-parts/dom@workspace:ui-parts/dom"
   dependencies:
@@ -5618,6 +5618,7 @@ __metadata:
     "@types/jest": ^26.0.20
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.10
+    "@ui-parts/dom": "workspace:0.2.7"
     react: ^17.0.1
     styled-system: ^5.1.5
   peerDependencies:

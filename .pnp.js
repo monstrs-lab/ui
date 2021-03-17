@@ -83,6 +83,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:ui-parts/text"
       },
       {
+        "name": "@ui-parts/text-transform",
+        "reference": "workspace:ui-parts/text-transform"
+      },
+      {
         "name": "@ui-proto/button",
         "reference": "workspace:ui-proto/button"
       },
@@ -133,6 +137,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@ui-parts/scalable-content", ["workspace:ui-parts/scalable-content"]],
       ["@ui-parts/styles", ["virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles", "workspace:ui-parts/styles"]],
       ["@ui-parts/text", ["virtual:3c2886bc71f1439c6a9975608675e178732f89951eeaba9270ed9187762c842e3ad00724ac49b228cf961038281c67a16e056d16f56c15a57531172840bfe1b2#workspace:ui-parts/text", "workspace:ui-parts/text"]],
+      ["@ui-parts/text-transform", ["workspace:ui-parts/text-transform"]],
       ["@ui-proto/button", ["virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/button", "workspace:ui-proto/button"]],
       ["@ui-proto/design", ["workspace:ui-proto/design"]],
       ["@ui-proto/input", ["virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/input", "workspace:ui-proto/input"]],
@@ -8179,6 +8184,50 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@testing-library/dom", [
+        ["npm:7.30.0", {
+          "packageLocation": "./.yarn/cache/@testing-library-dom-npm-7.30.0-39543a5358-5af9f762ff.zip/node_modules/@testing-library/dom/",
+          "packageDependencies": [
+            ["@testing-library/dom", "npm:7.30.0"],
+            ["@babel/code-frame", "npm:7.12.13"],
+            ["@babel/runtime", "npm:7.12.18"],
+            ["@types/aria-query", "npm:4.2.1"],
+            ["aria-query", "npm:4.2.2"],
+            ["chalk", "npm:4.1.0"],
+            ["dom-accessibility-api", "npm:0.5.4"],
+            ["lz-string", "npm:1.4.4"],
+            ["pretty-format", "npm:26.6.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@testing-library/react", [
+        ["npm:11.2.5", {
+          "packageLocation": "./.yarn/cache/@testing-library-react-npm-11.2.5-dc83329a0e-1389b4eb11.zip/node_modules/@testing-library/react/",
+          "packageDependencies": [
+            ["@testing-library/react", "npm:11.2.5"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:f1578528d9600662c081d3c1ade2eee5f7bc289fd106af35f63f69f946d8e817bb7130f27e0fb40cf621d0b8b63ee3893e6781db4cbcad8b3a9c4960ae84fbb5#npm:11.2.5", {
+          "packageLocation": "./.yarn/$$virtual/@testing-library-react-virtual-df829bcae3/0/cache/@testing-library-react-npm-11.2.5-dc83329a0e-1389b4eb11.zip/node_modules/@testing-library/react/",
+          "packageDependencies": [
+            ["@testing-library/react", "virtual:f1578528d9600662c081d3c1ade2eee5f7bc289fd106af35f63f69f946d8e817bb7130f27e0fb40cf621d0b8b63ee3893e6781db4cbcad8b3a9c4960ae84fbb5#npm:11.2.5"],
+            ["@babel/runtime", "npm:7.12.18"],
+            ["@testing-library/dom", "npm:7.30.0"],
+            ["@types/react", "npm:17.0.3"],
+            ["@types/react-dom", null],
+            ["react", "npm:17.0.1"],
+            ["react-dom", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:17.0.1"]
+          ],
+          "packagePeers": [
+            "@types/react-dom",
+            "@types/react",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@toml-tools/lexer", [
         ["npm:0.3.1", {
           "packageLocation": "./.yarn/cache/@toml-tools-lexer-npm-0.3.1-fb17e55dd3-1d845adff5.zip/node_modules/@toml-tools/lexer/",
@@ -8205,6 +8254,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-anymatch-npm-1.3.1-b86e9de5d9-1647865e52.zip/node_modules/@types/anymatch/",
           "packageDependencies": [
             ["@types/anymatch", "npm:1.3.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/aria-query", [
+        ["npm:4.2.1", {
+          "packageLocation": "./.yarn/cache/@types-aria-query-npm-4.2.1-4248197909-1b64d16e09.zip/node_modules/@types/aria-query/",
+          "packageDependencies": [
+            ["@types/aria-query", "npm:4.2.1"]
           ],
           "linkType": "HARD",
         }]
@@ -9673,6 +9731,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/styled-system", "npm:5.1.10"],
             ["react", "npm:17.0.1"],
             ["styled-system", "npm:5.1.5"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@ui-parts/text-transform", [
+        ["workspace:ui-parts/text-transform", {
+          "packageLocation": "./ui-parts/text-transform/",
+          "packageDependencies": [
+            ["@ui-parts/text-transform", "workspace:ui-parts/text-transform"],
+            ["@monstrs/mctl-cli", "virtual:6d25c9b153fceba8fe0348fb4844a8d639936d12eb649bafd35a08b8ae3b56533c548bbb09579094adb291c4725c27d8974cce36f9065dc9f7cf9b0073ef3acb#npm:0.2.90"],
+            ["@testing-library/react", "virtual:f1578528d9600662c081d3c1ade2eee5f7bc289fd106af35f63f69f946d8e817bb7130f27e0fb40cf621d0b8b63ee3893e6781db4cbcad8b3a9c4960ae84fbb5#npm:11.2.5"],
+            ["@types/react", "npm:17.0.3"],
+            ["react", "npm:17.0.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -14512,6 +14583,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["doctrine", "npm:3.0.0"],
             ["esutils", "npm:2.0.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["dom-accessibility-api", [
+        ["npm:0.5.4", {
+          "packageLocation": "./.yarn/cache/dom-accessibility-api-npm-0.5.4-dd3e7035e5-39351d26a3.zip/node_modules/dom-accessibility-api/",
+          "packageDependencies": [
+            ["dom-accessibility-api", "npm:0.5.4"]
           ],
           "linkType": "HARD",
         }]
@@ -20068,6 +20148,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["lru-cache", "npm:6.0.0"],
             ["yallist", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["lz-string", [
+        ["npm:1.4.4", {
+          "packageLocation": "./.yarn/cache/lz-string-npm-1.4.4-59a2091d3f-60a13f8a72.zip/node_modules/lz-string/",
+          "packageDependencies": [
+            ["lz-string", "npm:1.4.4"]
           ],
           "linkType": "HARD",
         }]

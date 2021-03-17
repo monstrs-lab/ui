@@ -1,9 +1,9 @@
 export interface TextTransformProps {
   children: string
-  uppercase?: boolean
-  lowercase?: boolean
-  firstletter?: boolean
-  lastletter?: boolean
+  upperCase?: boolean
+  lowerCase?: boolean
+  firstLetter?: boolean
+  lastLetter?: boolean
   substr?: number | [number, number]
   replace?: [string, string]
 }

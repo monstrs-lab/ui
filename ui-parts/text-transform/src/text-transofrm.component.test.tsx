@@ -5,25 +5,25 @@ import { TextTransform } from './text-transform.component'
 
 describe('TextTransform', () => {
   it('uppercase', () => {
-    const { getByText } = render(<TextTransform uppercase>uppercase</TextTransform>)
+    const { getByText } = render(<TextTransform upperCase>uppercase</TextTransform>)
 
     expect(getByText('UPPERCASE')).toBeDefined()
   })
 
   it('lowercase', () => {
-    const { getByText } = render(<TextTransform lowercase>LOWERCASE</TextTransform>)
+    const { getByText } = render(<TextTransform lowerCase>LOWERCASE</TextTransform>)
 
     expect(getByText('lowercase')).toBeDefined()
   })
 
   it('firstletter', () => {
-    const { getByText } = render(<TextTransform firstletter>word</TextTransform>)
+    const { getByText } = render(<TextTransform firstLetter>word</TextTransform>)
 
     expect(getByText('w')).toBeDefined()
   })
 
   it('lastletter', () => {
-    const { getByText } = render(<TextTransform lastletter>word</TextTransform>)
+    const { getByText } = render(<TextTransform lastLetter>word</TextTransform>)
 
     expect(getByText('d')).toBeDefined()
   })

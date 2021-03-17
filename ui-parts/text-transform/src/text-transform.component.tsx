@@ -10,13 +10,13 @@ export const TextTransform: FC<TextTransformProps> = ({ children, ...props }) =>
       const args = props[key]
 
       switch (key) {
-        case 'uppercase':
+        case 'upperCase':
           return result.toUpperCase()
-        case 'lowercase':
+        case 'lowerCase':
           return result.toLowerCase()
-        case 'firstletter':
+        case 'firstLetter':
           return result.substr(0, 1)
-        case 'lastletter':
+        case 'lastLetter':
           return result.substr(-1)
         case 'substr':
           return Array.isArray(args) ? result.substr(args[0], args[1]) : result.substr(args)

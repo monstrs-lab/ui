@@ -1,0 +1,3 @@
+releases:
+  "@ui-parts/avatar": patch
+  "@ui-parts/text-transform": patch

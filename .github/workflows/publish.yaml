@@ -1,0 +1,42 @@
+name: Publish
+
+on: 
+  workflow_dispatch:
+    inputs:
+      strategy:
+        description: Version strategy
+        default: patch
+        required: false
+
+jobs:
+  run:
+    name: Publish
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.10'
+
+      - name: Install
+        run: yarn install
+
+      - name: Build
+        run: yarn workspaces foreach --verbose --topological --no-private run build
+      
+      - name: Version
+        run: yarn workspaces foreach --verbose --topological --no-private version ${{ github.event.inputs.strategy }}
+      
+      - name: Version Apply
+        run: yarn version apply --all
+      
+      - name: Npm Publish
+        run: yarn workspaces foreach --verbose --topological --no-private npm publish --access public
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}

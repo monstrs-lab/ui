@@ -36,7 +36,10 @@ jobs:
       - name: Version Apply
         run: yarn version apply --all
       
+      - name: Create 
+        run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+
       - name: Npm Publish
         run: yarn workspaces foreach --verbose --topological --no-private npm publish --access public
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}

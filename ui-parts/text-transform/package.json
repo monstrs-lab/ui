@@ -12,7 +12,7 @@
     "build": "mctl library build"
   },
   "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.91",
+    "@monstrs/mctl-cli": "0.2.92",
     "@testing-library/react": "^11.2.5",
     "@types/jest": "^26.0.21",
     "@types/node": "^14.14.35",

@@ -1,0 +1,36 @@
+name: Publish
+
+on: 
+  workflow_dispatch:
+    inputs:
+      strategy:
+        description: Version strategy
+        default: patch
+        required: false
+
+jobs:
+  run:
+    name: Publish
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.10'
+
+      - name: Install
+        run: yarn install
+      
+      - name: Create .npmrc
+        run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+
+      - name: Npm Publish
+        run: yarn mctl version:publish --verbose

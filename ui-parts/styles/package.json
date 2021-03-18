@@ -12,7 +12,7 @@
     "build": "mctl library build"
   },
   "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.90",
+    "@monstrs/mctl-cli": "0.2.91",
     "@types/styled-system": "^5.1.10",
     "styled-system": "^5.1.5"
   },

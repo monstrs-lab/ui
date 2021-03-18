@@ -8,7 +8,7 @@
     "build": "mctl library build"
   },
   "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.90",
+    "@monstrs/mctl-cli": "0.2.91",
     "@types/node": "^14.14.32",
     "@types/react": "^17.0.3"
   },

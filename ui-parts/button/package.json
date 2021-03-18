@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@emotion/styled": "^11.1.5",
-    "@monstrs/mctl-cli": "0.2.90",
+    "@monstrs/mctl-cli": "0.2.91",
     "@monstrs/storybook-google-fonts": "workspace:0.0.1",
     "@types/jest": "^26.0.20",
     "@types/react": "^17.0.3",

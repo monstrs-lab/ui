@@ -1,0 +1,32 @@
+name: Version
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - master
+
+jobs:
+  run:
+    name: Version
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.10'
+
+      - name: Install
+        run: yarn install
+
+      - name: Version
+        run: yarn mctl version:github --no-private --verbose
+
+      - name: Status
+        run: git status

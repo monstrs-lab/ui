@@ -12,7 +12,7 @@
     "build": "mctl library build"
   },
   "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.90"
+    "@monstrs/mctl-cli": "0.2.91"
   },
   "dependencies": {
     "@ui-parts/layout": "workspace:0.2.7"

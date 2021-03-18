@@ -2,10 +2,6 @@ name: Publish
 
 on: 
   workflow_dispatch:
-    inputs:
-      token:
-        description: NPM Auth Token
-        required: false
 
 jobs:
   run:
@@ -29,7 +25,7 @@ jobs:
       - name: Npm Publish
         run: yarn mctl version:publish --verbose
         env:
-          YARN_NPM_AUTH_TOKEN: ${{ env.INPUT_TOKEN || secrets.NPM_AUTH_TOKEN }}
+          YARN_NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v7

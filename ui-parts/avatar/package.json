@@ -1,6 +1,6 @@
 {
   "name": "@ui-parts/avatar",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -24,7 +24,7 @@
     "@types/styled-system": "^5.1.10",
     "@ui-parts/image": "workspace:0.2.7",
     "@ui-parts/scalable-content": "workspace:0.2.7",
-    "@ui-parts/text-transform": "workspace:0.2.7",
+    "@ui-parts/text-transform": "workspace:0.2.8",
     "react": "^17.0.1",
     "string-to-color": "^2.2.2",
     "styled-system": "^5.1.5",

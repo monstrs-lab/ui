@@ -34,3 +34,5 @@ jobs:
 
       - name: Npm Publish
         run: yarn mctl version:publish --verbose
+        env:
+          YARN_NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}

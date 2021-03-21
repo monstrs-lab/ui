@@ -5584,6 +5584,27 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui-parts/checkmark@workspace:ui-parts/checkmark":
+  version: 0.0.0-use.local
+  resolution: "@ui-parts/checkmark@workspace:ui-parts/checkmark"
+  dependencies:
+    "@emotion/styled": ^11.1.5
+    "@monstrs/mctl-cli": 0.2.92
+    "@types/jest": ^26.0.21
+    "@types/react": ^17.0.3
+    "@types/styled-system": ^5.1.10
+    "@ui-parts/styles": "workspace:0.2.7"
+    react: ^17.0.1
+    styled-system: ^5.1.5
+    styled-tools: ^1.7.2
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    react: ^17.0.1
+    styled-system: ^5.1.5
+    styled-tools: ^1.7.2
+  languageName: unknown
+  linkType: soft
+
 "@ui-parts/conditional-render@workspace:0.2.7, @ui-parts/conditional-render@workspace:ui-parts/conditional-render":
   version: 0.0.0-use.local
   resolution: "@ui-parts/conditional-render@workspace:ui-parts/conditional-render"

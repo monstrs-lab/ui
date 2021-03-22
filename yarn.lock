@@ -5646,6 +5646,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui-parts/hidden-input@workspace:ui-parts/hidden-input":
+  version: 0.0.0-use.local
+  resolution: "@ui-parts/hidden-input@workspace:ui-parts/hidden-input"
+  dependencies:
+    "@emotion/styled": ^11.1.5
+    "@monstrs/mctl-cli": 0.2.92
+    "@testing-library/react": ^11.2.5
+    "@types/jest": ^26.0.21
+    "@types/react": ^17.0.3
+    react: ^17.0.1
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    react: ^17.0.1
+  languageName: unknown
+  linkType: soft
+
 "@ui-parts/image@workspace:0.2.7, @ui-parts/image@workspace:ui-parts/image":
   version: 0.0.0-use.local
   resolution: "@ui-parts/image@workspace:ui-parts/image"

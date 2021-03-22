@@ -63,6 +63,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:ui-parts/dom"
       },
       {
+        "name": "@ui-parts/hidden-input",
+        "reference": "workspace:ui-parts/hidden-input"
+      },
+      {
         "name": "@ui-parts/image",
         "reference": "workspace:ui-parts/image"
       },
@@ -136,6 +140,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@ui-parts/conditional-render", ["virtual:8caf71a3fdd27b9b6437019011aa6f2ea0ddc8518b38ccfaf98151ace190837ac7a0127b69ed99d68919e34f20efa102cc7a0b2f67dda727f2c7508b8e0e4551#workspace:ui-parts/conditional-render", "workspace:ui-parts/conditional-render"]],
       ["@ui-parts/design", ["workspace:ui-parts/design"]],
       ["@ui-parts/dom", ["virtual:63b6d96acffe15e420ba486f834d57a1a9e5ea21739065c7c5f19797525db334d28774d17bcc9ddc9c2668f36f214ecf6203a99552e6faa24ea7fd8f02ef4a62#workspace:ui-parts/dom", "workspace:ui-parts/dom"]],
+      ["@ui-parts/hidden-input", ["workspace:ui-parts/hidden-input"]],
       ["@ui-parts/image", ["virtual:17cfdf8e7e7133a351e095155d1ffcd1b06238de8eb81580d5434d62135e06aa9c294b73284a31fd8b0e8fe7ffa7b7463ad3b4c58690c4ddfcb05a0e7bf8814c#workspace:ui-parts/image", "virtual:f7e335c1f43fac8ffc22085d1e1806ffccc7e695a749fad949687bc0c3bae4ed3f1382767aa3295d923a61aed1cd672d8a183f5f15b4ef5aee9a015e74aa8ada#workspace:ui-parts/image", "workspace:ui-parts/image"]],
       ["@ui-parts/input", ["virtual:4376e102aa85feee74919ab727969879ef04c3afaae7ddce7fb206f44f491a9ce55d62a1c31632ed4253bc84f85b4a0aaf3b78bb63c1e96ad4515ad1020355bc#workspace:ui-parts/input", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#workspace:ui-parts/input", "workspace:ui-parts/input"]],
       ["@ui-parts/layout", ["virtual:8caf71a3fdd27b9b6437019011aa6f2ea0ddc8518b38ccfaf98151ace190837ac7a0127b69ed99d68919e34f20efa102cc7a0b2f67dda727f2c7508b8e0e4551#workspace:ui-parts/layout", "virtual:daaf6397b55c2a9058d295a4abe72ed29ea1a96e8de81e5af076b3d55b8088c1b395111233bde1ac26562585fd4fd44f3df85a6ab5ce12d20ebe840baf5d814c#workspace:ui-parts/layout", "virtual:f99e24df4161c573161116c476e28d93eb86d1daf81ca0aca63ae42167d4d7c72a96e9f62aa14d717b450031c55ff364efad5a745895c7239498346b5633170b#workspace:ui-parts/layout", "workspace:ui-parts/layout"]],
@@ -10819,6 +10824,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@ui-parts/dom", "workspace:ui-parts/dom"],
             ["@monstrs/mctl-cli", "virtual:6d25c9b153fceba8fe0348fb4844a8d639936d12eb649bafd35a08b8ae3b56533c548bbb09579094adb291c4725c27d8974cce36f9065dc9f7cf9b0073ef3acb#npm:0.2.92"],
+            ["@types/react", "npm:17.0.3"],
+            ["react", "npm:17.0.1"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@ui-parts/hidden-input", [
+        ["workspace:ui-parts/hidden-input", {
+          "packageLocation": "./ui-parts/hidden-input/",
+          "packageDependencies": [
+            ["@ui-parts/hidden-input", "workspace:ui-parts/hidden-input"],
+            ["@emotion/styled", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:11.1.5"],
+            ["@monstrs/mctl-cli", "virtual:6d25c9b153fceba8fe0348fb4844a8d639936d12eb649bafd35a08b8ae3b56533c548bbb09579094adb291c4725c27d8974cce36f9065dc9f7cf9b0073ef3acb#npm:0.2.92"],
+            ["@testing-library/react", "virtual:973e3954effae3c00e3f02e26323ff86f1c35f750c98bb6adf8f0223bb95ad636bdec1dec60b7fe4a5ff82113f19e6d21d75fbc3a4df633a4525b8a9a6aea0c0#npm:11.2.5"],
+            ["@types/jest", "npm:26.0.21"],
             ["@types/react", "npm:17.0.3"],
             ["react", "npm:17.0.1"]
           ],

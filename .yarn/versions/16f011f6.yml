@@ -1,0 +1,4 @@
+releases:
+  "@ui-parts/events-state": patch
+  "@ui-parts/input": patch
+  "@ui-proto/input": patch

@@ -12,6 +12,7 @@
     "build": "mctl library build"
   },
   "dependencies": {
+    "@ui-parts/events-state": "workspace:0.2.7",
     "@ui-parts/styles": "workspace:0.2.7"
   },
   "devDependencies": {

@@ -1,10 +1,12 @@
 import React                                from 'react'
 import { useState }                         from 'react'
 import { useMemo }                          from 'react'
+import { useRef }                           from 'react'
 import styled                               from '@emotion/styled'
 
 import { fontNames, useGoogleFonts }        from '@monstrs/storybook-google-fonts'
 import { ConditionalRender }                from '@ui-parts/conditional-render'
+import { ForwardEventsState }               from '@ui-parts/events-state'
 import { Box }                              from '@ui-parts/layout'
 
 import { createAttachmentAppearanceStyles } from './attachment'
@@ -66,7 +68,9 @@ export const Input = ({
   rounding,
 }) => {
   useGoogleFonts(fontFamily, fontWeight)
+
   const [value, setValue] = useState('контент')
+  const ref = useRef<HTMLInputElement>(null)
 
   const Attachment = useMemo(
     () =>
@@ -166,11 +170,13 @@ export const Input = ({
     <Box width={containerWith} justifyContent='center'>
       <AddonsContainer>
         <Addon>{addonBefore}</Addon>
-        <StoryInput rounding={rounding} attach={attach}>
-          <Attachment>{prefix}</Attachment>
-          <RawInput value={value} onChange={(event) => setValue(event.target.value)} />
-          <Attachment type='suffix'>{suffix}</Attachment>
-        </StoryInput>
+        <ForwardEventsState ref={ref} events={['focus', 'blur']}>
+          <StoryInput rounding={rounding} attach={attach}>
+            <Attachment>{prefix}</Attachment>
+            <RawInput ref={ref} value={value} onChange={(event) => setValue(event.target.value)} />
+            <Attachment type='suffix'>{suffix}</Attachment>
+          </StoryInput>
+        </ForwardEventsState>
         <Addon position='after'>{addonAfter}</Addon>
       </AddonsContainer>
     </Box>

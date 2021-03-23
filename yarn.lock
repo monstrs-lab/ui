@@ -5646,6 +5646,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui-parts/events-state@workspace:0.2.7, @ui-parts/events-state@workspace:ui-parts/events-state":
+  version: 0.0.0-use.local
+  resolution: "@ui-parts/events-state@workspace:ui-parts/events-state"
+  dependencies:
+    "@monstrs/mctl-cli": 0.2.92
+    "@types/react": ^17.0.3
+    react: ^17.0.1
+  peerDependencies:
+    react: ^17.0.1
+  languageName: unknown
+  linkType: soft
+
 "@ui-parts/hidden-input@workspace:ui-parts/hidden-input":
   version: 0.0.0-use.local
   resolution: "@ui-parts/hidden-input@workspace:ui-parts/hidden-input"
@@ -5691,6 +5703,7 @@ __metadata:
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.10
     "@ui-parts/conditional-render": "workspace:0.2.7"
+    "@ui-parts/events-state": "workspace:0.2.7"
     "@ui-parts/layout": "workspace:0.2.7"
     "@ui-parts/styles": "workspace:0.2.7"
     react: ^17.0.1

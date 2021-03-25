@@ -5821,6 +5821,28 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui-proto/avatar@workspace:ui-proto/avatar":
+  version: 0.0.0-use.local
+  resolution: "@ui-proto/avatar@workspace:ui-proto/avatar"
+  dependencies:
+    "@emotion/styled": ^11.1.5
+    "@monstrs/mctl-cli": 0.2.92
+    "@types/react": ^17.0.3
+    "@types/styled-system": ^5.1.10
+    "@ui-parts/avatar": "workspace:0.2.10"
+    "@ui-parts/image": "workspace:0.2.7"
+    "@ui-parts/text-transform": "workspace:0.2.10"
+    react: ^17.0.1
+    styled-system: ^5.1.5
+    styled-tools: ^1.7.2
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    react: ^17.0.1
+    styled-system: ^5.1.5
+    styled-tools: ^1.7.2
+  languageName: unknown
+  linkType: soft
+
 "@ui-proto/button@workspace:0.1.7, @ui-proto/button@workspace:ui-proto/button":
   version: 0.0.0-use.local
   resolution: "@ui-proto/button@workspace:ui-proto/button"

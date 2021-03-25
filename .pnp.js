@@ -11346,6 +11346,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ui-proto/avatar", "workspace:ui-proto/avatar"],
             ["@emotion/styled", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:11.1.5"],
             ["@monstrs/mctl-cli", "virtual:6d25c9b153fceba8fe0348fb4844a8d639936d12eb649bafd35a08b8ae3b56533c548bbb09579094adb291c4725c27d8974cce36f9065dc9f7cf9b0073ef3acb#npm:0.2.92"],
+            ["@types/node", "npm:14.14.35"],
             ["@types/react", "npm:17.0.3"],
             ["@types/styled-system", "npm:5.1.10"],
             ["@ui-parts/avatar", "virtual:8724c16d548c5b10e2d1077d976ede32e643e19bd81fba08096d10e5ce8d005c5ae80db72a0ad91bb591aa085e5fd3f0e737a24f071505eeedec9c86c785bf3b#workspace:ui-parts/avatar"],

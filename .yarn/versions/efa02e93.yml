@@ -1,0 +1,3 @@
+releases:
+  "@ui-parts/avatar": patch
+  "@ui-proto/avatar": patch

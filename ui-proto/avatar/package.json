@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/avatar",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,9 +12,9 @@
     "build": "mctl library build"
   },
   "dependencies": {
-    "@ui-parts/avatar": "workspace:0.2.10",
-    "@ui-parts/image": "workspace:0.2.7",
-    "@ui-parts/text-transform": "workspace:0.2.10"
+    "@ui-parts/avatar": "workspace:0.2.12",
+    "@ui-parts/image": "workspace:0.2.8",
+    "@ui-parts/text-transform": "workspace:0.2.11"
   },
   "devDependencies": {
     "@emotion/styled": "^11.1.5",

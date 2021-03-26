@@ -1,6 +1,6 @@
 {
   "name": "@ui-parts/scalable-content",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,7 +12,7 @@
     "build": "mctl library build"
   },
   "dependencies": {
-    "@ui-parts/dom": "workspace:0.2.7"
+    "@ui-parts/dom": "workspace:0.2.8"
   },
   "devDependencies": {
     "@emotion/styled": "^11.1.5",

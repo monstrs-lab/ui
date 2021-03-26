@@ -1,6 +1,6 @@
 {
   "name": "@ui-parts/input",
-  "version": "0.2.7",
+  "version": "0.2.9",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,8 +12,8 @@
     "build": "mctl library build"
   },
   "dependencies": {
-    "@ui-parts/events-state": "workspace:0.2.7",
-    "@ui-parts/styles": "workspace:0.2.7"
+    "@ui-parts/events-state": "workspace:0.2.9",
+    "@ui-parts/styles": "workspace:0.2.8"
   },
   "devDependencies": {
     "@emotion/styled": "^11.1.5",
@@ -22,8 +22,8 @@
     "@types/jest": "^26.0.21",
     "@types/react": "^17.0.3",
     "@types/styled-system": "^5.1.10",
-    "@ui-parts/conditional-render": "workspace:0.2.7",
-    "@ui-parts/layout": "workspace:0.2.7",
+    "@ui-parts/conditional-render": "workspace:0.2.8",
+    "@ui-parts/layout": "workspace:0.2.8",
     "react": "^17.0.1",
     "styled-system": "^5.1.5",
     "styled-tools": "^1.7.2"

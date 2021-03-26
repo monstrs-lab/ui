@@ -5466,7 +5466,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ui-admin/button@workspace:0.0.8, @ui-admin/button@workspace:ui-admin/button":
+"@ui-admin/button@workspace:0.0.9, @ui-admin/button@workspace:ui-admin/button":
   version: 0.0.0-use.local
   resolution: "@ui-admin/button@workspace:ui-admin/button"
   dependencies:
@@ -5474,7 +5474,7 @@ __metadata:
     "@monstrs/mctl-cli": 0.2.92
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.10
-    "@ui-parts/button": "workspace:0.2.7"
+    "@ui-parts/button": "workspace:0.2.8"
     react: ^17.0.1
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
@@ -5503,8 +5503,8 @@ __metadata:
     "@types/express": ^4.17.11
     "@types/react": ^17.0.3
     "@types/react-dom": ^17.0.2
-    "@ui-admin/button": "workspace:0.0.8"
-    "@ui-admin/theme": "workspace:0.0.8"
+    "@ui-admin/button": "workspace:0.0.9"
+    "@ui-admin/theme": "workspace:0.0.9"
     assert: ^2.0.0
     babel-loader: ^8.2.2
     core-js: ^3.9.1
@@ -5520,7 +5520,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/theme@workspace:0.0.8, @ui-admin/theme@workspace:ui-admin/theme":
+"@ui-admin/theme@workspace:0.0.9, @ui-admin/theme@workspace:ui-admin/theme":
   version: 0.0.0-use.local
   resolution: "@ui-admin/theme@workspace:ui-admin/theme"
   dependencies:
@@ -5535,7 +5535,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/avatar@workspace:0.2.10, @ui-parts/avatar@workspace:ui-parts/avatar":
+"@ui-parts/avatar@workspace:0.2.12, @ui-parts/avatar@workspace:ui-parts/avatar":
   version: 0.0.0-use.local
   resolution: "@ui-parts/avatar@workspace:ui-parts/avatar"
   dependencies:
@@ -5546,10 +5546,10 @@ __metadata:
     "@types/node": ^14.14.35
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.10
-    "@ui-parts/image": "workspace:0.2.7"
-    "@ui-parts/scalable-content": "workspace:0.2.7"
-    "@ui-parts/styles": "workspace:0.2.7"
-    "@ui-parts/text-transform": "workspace:0.2.10"
+    "@ui-parts/image": "workspace:0.2.8"
+    "@ui-parts/scalable-content": "workspace:0.2.8"
+    "@ui-parts/styles": "workspace:0.2.8"
+    "@ui-parts/text-transform": "workspace:0.2.11"
     react: ^17.0.1
     string-to-color: ^2.2.2
     styled-system: ^5.1.5
@@ -5562,7 +5562,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/button@workspace:0.2.7, @ui-parts/button@workspace:ui-parts/button":
+"@ui-parts/button@workspace:0.2.8, @ui-parts/button@workspace:ui-parts/button":
   version: 0.0.0-use.local
   resolution: "@ui-parts/button@workspace:ui-parts/button"
   dependencies:
@@ -5572,7 +5572,7 @@ __metadata:
     "@types/jest": ^26.0.21
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.10
-    "@ui-parts/styles": "workspace:0.2.7"
+    "@ui-parts/styles": "workspace:0.2.8"
     react: ^17.0.1
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
@@ -5594,9 +5594,9 @@ __metadata:
     "@types/jest": ^26.0.21
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.10
-    "@ui-parts/conditional-render": "workspace:0.2.7"
-    "@ui-parts/hidden-input": "workspace:0.2.7"
-    "@ui-parts/styles": "workspace:0.2.7"
+    "@ui-parts/conditional-render": "workspace:0.2.8"
+    "@ui-parts/hidden-input": "workspace:0.2.9"
+    "@ui-parts/styles": "workspace:0.2.8"
     react: ^17.0.1
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
@@ -5608,7 +5608,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/conditional-render@workspace:0.2.7, @ui-parts/conditional-render@workspace:ui-parts/conditional-render":
+"@ui-parts/conditional-render@workspace:0.2.8, @ui-parts/conditional-render@workspace:ui-parts/conditional-render":
   version: 0.0.0-use.local
   resolution: "@ui-parts/conditional-render@workspace:ui-parts/conditional-render"
   dependencies:
@@ -5640,9 +5640,9 @@ __metadata:
     "@types/express": ^4.17.11
     "@types/react": ^17.0.3
     "@types/react-dom": ^17.0.2
-    "@ui-parts/avatar": "workspace:0.2.10"
-    "@ui-parts/button": "workspace:0.2.7"
-    "@ui-parts/input": "workspace:0.2.7"
+    "@ui-parts/avatar": "workspace:0.2.12"
+    "@ui-parts/button": "workspace:0.2.8"
+    "@ui-parts/input": "workspace:0.2.9"
     assert: ^2.0.0
     babel-loader: ^8.2.2
     core-js: ^3.9.1
@@ -5658,7 +5658,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/dom@workspace:0.2.7, @ui-parts/dom@workspace:ui-parts/dom":
+"@ui-parts/dom@workspace:0.2.8, @ui-parts/dom@workspace:ui-parts/dom":
   version: 0.0.0-use.local
   resolution: "@ui-parts/dom@workspace:ui-parts/dom"
   dependencies:
@@ -5670,7 +5670,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/events-state@workspace:0.2.7, @ui-parts/events-state@workspace:ui-parts/events-state":
+"@ui-parts/events-state@workspace:0.2.9, @ui-parts/events-state@workspace:ui-parts/events-state":
   version: 0.0.0-use.local
   resolution: "@ui-parts/events-state@workspace:ui-parts/events-state"
   dependencies:
@@ -5682,7 +5682,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/hidden-input@workspace:0.2.7, @ui-parts/hidden-input@workspace:ui-parts/hidden-input":
+"@ui-parts/hidden-input@workspace:0.2.9, @ui-parts/hidden-input@workspace:ui-parts/hidden-input":
   version: 0.0.0-use.local
   resolution: "@ui-parts/hidden-input@workspace:ui-parts/hidden-input"
   dependencies:
@@ -5698,7 +5698,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/image@workspace:0.2.7, @ui-parts/image@workspace:ui-parts/image":
+"@ui-parts/image@workspace:0.2.8, @ui-parts/image@workspace:ui-parts/image":
   version: 0.0.0-use.local
   resolution: "@ui-parts/image@workspace:ui-parts/image"
   dependencies:
@@ -5716,7 +5716,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/input@workspace:0.2.7, @ui-parts/input@workspace:ui-parts/input":
+"@ui-parts/input@workspace:0.2.9, @ui-parts/input@workspace:ui-parts/input":
   version: 0.0.0-use.local
   resolution: "@ui-parts/input@workspace:ui-parts/input"
   dependencies:
@@ -5726,10 +5726,10 @@ __metadata:
     "@types/jest": ^26.0.21
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.10
-    "@ui-parts/conditional-render": "workspace:0.2.7"
-    "@ui-parts/events-state": "workspace:0.2.7"
-    "@ui-parts/layout": "workspace:0.2.7"
-    "@ui-parts/styles": "workspace:0.2.7"
+    "@ui-parts/conditional-render": "workspace:0.2.8"
+    "@ui-parts/events-state": "workspace:0.2.9"
+    "@ui-parts/layout": "workspace:0.2.8"
+    "@ui-parts/styles": "workspace:0.2.8"
     react: ^17.0.1
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
@@ -5741,7 +5741,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/layout@workspace:0.2.7, @ui-parts/layout@workspace:ui-parts/layout":
+"@ui-parts/layout@workspace:0.2.8, @ui-parts/layout@workspace:ui-parts/layout":
   version: 0.0.0-use.local
   resolution: "@ui-parts/layout@workspace:ui-parts/layout"
   dependencies:
@@ -5758,7 +5758,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/scalable-content@workspace:0.2.7, @ui-parts/scalable-content@workspace:ui-parts/scalable-content":
+"@ui-parts/scalable-content@workspace:0.2.8, @ui-parts/scalable-content@workspace:ui-parts/scalable-content":
   version: 0.0.0-use.local
   resolution: "@ui-parts/scalable-content@workspace:ui-parts/scalable-content"
   dependencies:
@@ -5767,7 +5767,7 @@ __metadata:
     "@types/jest": ^26.0.21
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.10
-    "@ui-parts/dom": "workspace:0.2.7"
+    "@ui-parts/dom": "workspace:0.2.8"
     react: ^17.0.1
     styled-system: ^5.1.5
   peerDependencies:
@@ -5777,7 +5777,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/styles@workspace:0.2.7, @ui-parts/styles@workspace:ui-parts/styles":
+"@ui-parts/styles@workspace:0.2.8, @ui-parts/styles@workspace:ui-parts/styles":
   version: 0.0.0-use.local
   resolution: "@ui-parts/styles@workspace:ui-parts/styles"
   dependencies:
@@ -5789,7 +5789,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/text-transform@workspace:0.2.10, @ui-parts/text-transform@workspace:ui-parts/text-transform":
+"@ui-parts/text-transform@workspace:0.2.11, @ui-parts/text-transform@workspace:ui-parts/text-transform":
   version: 0.0.0-use.local
   resolution: "@ui-parts/text-transform@workspace:ui-parts/text-transform"
   dependencies:
@@ -5804,7 +5804,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/text@workspace:0.2.7, @ui-parts/text@workspace:ui-parts/text":
+"@ui-parts/text@workspace:0.2.8, @ui-parts/text@workspace:ui-parts/text":
   version: 0.0.0-use.local
   resolution: "@ui-parts/text@workspace:ui-parts/text"
   dependencies:
@@ -5830,9 +5830,9 @@ __metadata:
     "@types/node": ^14.14.35
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.10
-    "@ui-parts/avatar": "workspace:0.2.10"
-    "@ui-parts/image": "workspace:0.2.7"
-    "@ui-parts/text-transform": "workspace:0.2.10"
+    "@ui-parts/avatar": "workspace:0.2.12"
+    "@ui-parts/image": "workspace:0.2.8"
+    "@ui-parts/text-transform": "workspace:0.2.11"
     react: ^17.0.1
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
@@ -5844,7 +5844,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/button@workspace:0.1.7, @ui-proto/button@workspace:ui-proto/button":
+"@ui-proto/button@workspace:0.1.8, @ui-proto/button@workspace:ui-proto/button":
   version: 0.0.0-use.local
   resolution: "@ui-proto/button@workspace:ui-proto/button"
   dependencies:
@@ -5852,7 +5852,7 @@ __metadata:
     "@monstrs/mctl-cli": 0.2.92
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.10
-    "@ui-parts/button": "workspace:0.2.7"
+    "@ui-parts/button": "workspace:0.2.8"
     react: ^17.0.1
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
@@ -5880,9 +5880,9 @@ __metadata:
     "@types/express": ^4.17.11
     "@types/react": ^17.0.3
     "@types/react-dom": ^17.0.2
-    "@ui-proto/button": "workspace:0.1.7"
-    "@ui-proto/input": "workspace:0.1.7"
-    "@ui-proto/theme": "workspace:0.0.8"
+    "@ui-proto/button": "workspace:0.1.8"
+    "@ui-proto/input": "workspace:0.1.9"
+    "@ui-proto/theme": "workspace:0.0.9"
     assert: ^2.0.0
     babel-loader: ^8.2.2
     core-js: ^3.9.1
@@ -5897,7 +5897,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/input@workspace:0.1.7, @ui-proto/input@workspace:ui-proto/input":
+"@ui-proto/input@workspace:0.1.9, @ui-proto/input@workspace:ui-proto/input":
   version: 0.0.0-use.local
   resolution: "@ui-proto/input@workspace:ui-proto/input"
   dependencies:
@@ -5905,8 +5905,8 @@ __metadata:
     "@monstrs/mctl-cli": 0.2.92
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.10
-    "@ui-parts/conditional-render": "workspace:0.2.7"
-    "@ui-parts/input": "workspace:0.2.7"
+    "@ui-parts/conditional-render": "workspace:0.2.8"
+    "@ui-parts/input": "workspace:0.2.9"
     react: ^17.0.1
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
@@ -5918,12 +5918,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/layout@workspace:0.1.7, @ui-proto/layout@workspace:ui-proto/layout":
+"@ui-proto/layout@workspace:0.1.8, @ui-proto/layout@workspace:ui-proto/layout":
   version: 0.0.0-use.local
   resolution: "@ui-proto/layout@workspace:ui-proto/layout"
   dependencies:
     "@monstrs/mctl-cli": 0.2.92
-    "@ui-parts/layout": "workspace:0.2.7"
+    "@ui-parts/layout": "workspace:0.2.8"
   languageName: unknown
   linkType: soft
 
@@ -5934,8 +5934,8 @@ __metadata:
     "@emotion/styled": ^11.1.5
     "@monstrs/mctl-cli": 0.2.92
     "@types/react": ^17.0.3
-    "@ui-proto/layout": "workspace:0.1.7"
-    "@ui-proto/text": "workspace:0.1.7"
+    "@ui-proto/layout": "workspace:0.1.8"
+    "@ui-proto/text": "workspace:0.1.8"
     react: ^17.0.1
   peerDependencies:
     "@emotion/styled": ^11.1.5
@@ -5943,16 +5943,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/text@workspace:0.1.7, @ui-proto/text@workspace:ui-proto/text":
+"@ui-proto/text@workspace:0.1.8, @ui-proto/text@workspace:ui-proto/text":
   version: 0.0.0-use.local
   resolution: "@ui-proto/text@workspace:ui-proto/text"
   dependencies:
     "@monstrs/mctl-cli": 0.2.92
-    "@ui-parts/text": "workspace:0.2.7"
+    "@ui-parts/text": "workspace:0.2.8"
   languageName: unknown
   linkType: soft
 
-"@ui-proto/theme@workspace:0.0.8, @ui-proto/theme@workspace:ui-proto/theme":
+"@ui-proto/theme@workspace:0.0.9, @ui-proto/theme@workspace:ui-proto/theme":
   version: 0.0.0-use.local
   resolution: "@ui-proto/theme@workspace:ui-proto/theme"
   dependencies:
@@ -5984,7 +5984,7 @@ __metadata:
     "@types/express": ^4.17.11
     "@types/react": ^17.0.3
     "@types/react-dom": ^17.0.2
-    "@ui-parts/button": "workspace:0.2.7"
+    "@ui-parts/button": "workspace:0.2.8"
     assert: ^2.0.0
     babel-loader: ^8.2.2
     core-js: ^3.9.1

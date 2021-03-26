@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/placeholder",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,8 +12,8 @@
     "build": "mctl library build"
   },
   "dependencies": {
-    "@ui-proto/layout": "workspace:0.1.7",
-    "@ui-proto/text": "workspace:0.1.7"
+    "@ui-proto/layout": "workspace:0.1.8",
+    "@ui-proto/text": "workspace:0.1.8"
   },
   "devDependencies": {
     "@emotion/styled": "^11.1.5",

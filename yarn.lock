@@ -5948,7 +5948,9 @@ __metadata:
   resolution: "@ui-proto/text@workspace:ui-proto/text"
   dependencies:
     "@monstrs/mctl-cli": 0.2.92
+    "@types/react": ^17.0.3
     "@ui-parts/text": "workspace:0.2.8"
+    react: ^17.0.1
   languageName: unknown
   linkType: soft
 

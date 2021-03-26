@@ -11289,7 +11289,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["styled-system", "npm:5.1.5"]
           ],
           "packagePeers": [
-            "@types/emotion__styled"
+            "@types/emotion__styled",
+            "@types/react",
+            "react"
           ],
           "linkType": "SOFT",
         }],
@@ -11516,7 +11518,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@ui-proto/text", "workspace:ui-proto/text"],
             ["@monstrs/mctl-cli", "virtual:6d25c9b153fceba8fe0348fb4844a8d639936d12eb649bafd35a08b8ae3b56533c548bbb09579094adb291c4725c27d8974cce36f9065dc9f7cf9b0073ef3acb#npm:0.2.92"],
-            ["@ui-parts/text", "virtual:3c2886bc71f1439c6a9975608675e178732f89951eeaba9270ed9187762c842e3ad00724ac49b228cf961038281c67a16e056d16f56c15a57531172840bfe1b2#workspace:ui-parts/text"]
+            ["@types/react", "npm:17.0.3"],
+            ["@ui-parts/text", "virtual:3c2886bc71f1439c6a9975608675e178732f89951eeaba9270ed9187762c842e3ad00724ac49b228cf961038281c67a16e056d16f56c15a57531172840bfe1b2#workspace:ui-parts/text"],
+            ["react", "npm:17.0.1"]
           ],
           "linkType": "SOFT",
         }]

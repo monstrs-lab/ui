@@ -32,6 +32,7 @@ const largeNormalSizeStyles = createShapeStyles({
 const appearancePrimaryStyles = createAppearanceStyles({
   fontColor: 'white',
   backgroundColor: 'black',
+  invertedBorderWidth: 2,
 })
 
 export const baseStyles = createBaseStyles()

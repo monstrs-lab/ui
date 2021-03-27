@@ -5642,7 +5642,7 @@ __metadata:
     "@types/react-dom": ^17.0.2
     "@ui-parts/avatar": "workspace:0.2.12"
     "@ui-parts/button": "workspace:0.2.8"
-    "@ui-parts/input": "workspace:0.2.9"
+    "@ui-parts/input": "workspace:0.2.10"
     assert: ^2.0.0
     babel-loader: ^8.2.2
     core-js: ^3.9.1
@@ -5716,7 +5716,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/input@workspace:0.2.9, @ui-parts/input@workspace:ui-parts/input":
+"@ui-parts/input@workspace:0.2.10, @ui-parts/input@workspace:ui-parts/input":
   version: 0.0.0-use.local
   resolution: "@ui-parts/input@workspace:ui-parts/input"
   dependencies:
@@ -5881,7 +5881,7 @@ __metadata:
     "@types/react": ^17.0.3
     "@types/react-dom": ^17.0.2
     "@ui-proto/button": "workspace:0.1.9"
-    "@ui-proto/input": "workspace:0.1.9"
+    "@ui-proto/input": "workspace:0.1.10"
     "@ui-proto/theme": "workspace:0.0.9"
     assert: ^2.0.0
     babel-loader: ^8.2.2
@@ -5897,7 +5897,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/input@workspace:0.1.9, @ui-proto/input@workspace:ui-proto/input":
+"@ui-proto/input@workspace:0.1.10, @ui-proto/input@workspace:ui-proto/input":
   version: 0.0.0-use.local
   resolution: "@ui-proto/input@workspace:ui-proto/input"
   dependencies:
@@ -5906,7 +5906,7 @@ __metadata:
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.10
     "@ui-parts/conditional-render": "workspace:0.2.8"
-    "@ui-parts/input": "workspace:0.2.9"
+    "@ui-parts/input": "workspace:0.2.10"
     react: ^17.0.1
     styled-system: ^5.1.5
     styled-tools: ^1.7.2

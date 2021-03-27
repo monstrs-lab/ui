@@ -28,7 +28,7 @@
     "@types/react-dom": "^17.0.2",
     "@ui-parts/avatar": "workspace:0.2.12",
     "@ui-parts/button": "workspace:0.2.8",
-    "@ui-parts/input": "workspace:0.2.9",
+    "@ui-parts/input": "workspace:0.2.10",
     "assert": "^2.0.0",
     "babel-loader": "^8.2.2",
     "core-js": "^3.9.1",

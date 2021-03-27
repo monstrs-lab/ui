@@ -10,4 +10,5 @@ export const createBaseStyles: styleFn = () => () => ({
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
+  cursor: 'text',
 })

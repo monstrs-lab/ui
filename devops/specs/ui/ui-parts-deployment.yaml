@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: ui
-        image: eu.gcr.io/the-mesh-254617/ui-design-ui:367bf47-1616317447607 # {"$imagepolicy": "flux-system:ui-design"}
+        image: eu.gcr.io/the-mesh-254617/ui-design-ui:1026165-1617200218604 # {"$imagepolicy": "flux-system:ui-design"}
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000

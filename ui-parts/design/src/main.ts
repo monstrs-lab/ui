@@ -21,15 +21,6 @@ module.exports = {
     require.resolve('@monstrs/storybook-addon-development-templates'),
   ],
   managerWebpack: async (config) => {
-    config.module.rules.push({
-      test: /@storybook\/router\/dist\/(esm|cjs)\/utils\.js/,
-      loader: require.resolve('string-replace-loader'),
-      options: {
-        search: '/^[a-zA-Z0-9 _-]*$/',
-        replace: '/^[a-zA-Z0-9 (),_-]*$/',
-      },
-    })
-
     // eslint-disable-next-line no-param-reassign
     config.resolve.fallback = {
       assert: require.resolve('assert/'),
@@ -40,15 +31,6 @@ module.exports = {
     return config
   },
   webpackFinal: async (config) => {
-    config.module.rules.push({
-      test: /@storybook\/core-client\/dist\/(esm|cjs)\/preview\/parseArgsParam\.js/,
-      loader: require.resolve('string-replace-loader'),
-      options: {
-        search: '/^[a-zA-Z0-9 _-]*$/',
-        replace: '/^[a-zA-Z0-9 (),_-]*$/',
-      },
-    })
-
     // eslint-disable-next-line no-param-reassign
     config.resolve.fallback = {
       assert: require.resolve('assert/'),

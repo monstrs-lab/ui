@@ -2,12 +2,38 @@
   "v": 2,
   "globalParameters": {},
   "kindParameters": {
+    "Components/Avatar": {
+      "fileName": 89049,
+      "framework": "react"
+    },
     "Components/Button": {
-      "fileName": 843,
+      "fileName": 21077,
+      "framework": "react"
+    },
+    "Components/Input": {
+      "fileName": 48945,
+      "framework": "react"
+    },
+    "Components/Placeholder": {
+      "fileName": 75060,
+      "framework": "react"
+    },
+    "Components/Text": {
+      "fileName": 28593,
       "framework": "react"
     }
   },
   "stories": {
+    "components-avatar--avatar": {
+      "id": "components-avatar--avatar",
+      "name": "Avatar",
+      "kind": "Components/Avatar",
+      "story": "Avatar",
+      "parameters": {
+        "__id": "components-avatar--avatar",
+        "__isArgsStory": true
+      }
+    },
     "components-button--button": {
       "id": "components-button--button",
       "name": "Button",
@@ -15,6 +41,36 @@
       "story": "Button",
       "parameters": {
         "__id": "components-button--button",
+        "__isArgsStory": true
+      }
+    },
+    "components-input--input": {
+      "id": "components-input--input",
+      "name": "Input",
+      "kind": "Components/Input",
+      "story": "Input",
+      "parameters": {
+        "__id": "components-input--input",
+        "__isArgsStory": true
+      }
+    },
+    "components-placeholder--placeholder": {
+      "id": "components-placeholder--placeholder",
+      "name": "Placeholder",
+      "kind": "Components/Placeholder",
+      "story": "Placeholder",
+      "parameters": {
+        "__id": "components-placeholder--placeholder",
+        "__isArgsStory": true
+      }
+    },
+    "components-text--text": {
+      "id": "components-text--text",
+      "name": "Text",
+      "kind": "Components/Text",
+      "story": "Text",
+      "parameters": {
+        "__id": "components-text--text",
         "__isArgsStory": true
       }
     }

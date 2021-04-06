@@ -2,12 +2,34 @@
   "v": 2,
   "globalParameters": {},
   "kindParameters": {
+    "Components/Avatar": {
+      "fileName": 39842,
+      "framework": "react"
+    },
     "Components/Button": {
-      "fileName": 863,
+      "fileName": 88946,
+      "framework": "react"
+    },
+    "Components/Checkbox": {
+      "fileName": 72532,
+      "framework": "react"
+    },
+    "Components/Input": {
+      "fileName": 38567,
       "framework": "react"
     }
   },
   "stories": {
+    "components-avatar--avatar": {
+      "id": "components-avatar--avatar",
+      "name": "Avatar",
+      "kind": "Components/Avatar",
+      "story": "Avatar",
+      "parameters": {
+        "__id": "components-avatar--avatar",
+        "__isArgsStory": true
+      }
+    },
     "components-button--button": {
       "id": "components-button--button",
       "name": "Button",
@@ -15,6 +37,26 @@
       "story": "Button",
       "parameters": {
         "__id": "components-button--button",
+        "__isArgsStory": true
+      }
+    },
+    "components-checkbox--checkbox": {
+      "id": "components-checkbox--checkbox",
+      "name": "Checkbox",
+      "kind": "Components/Checkbox",
+      "story": "Checkbox",
+      "parameters": {
+        "__id": "components-checkbox--checkbox",
+        "__isArgsStory": true
+      }
+    },
+    "components-input--input": {
+      "id": "components-input--input",
+      "name": "Input",
+      "kind": "Components/Input",
+      "story": "Input",
+      "parameters": {
+        "__id": "components-input--input",
         "__isArgsStory": true
       }
     }

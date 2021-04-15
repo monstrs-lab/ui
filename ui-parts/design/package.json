@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "extract": "mkdir -p ../../.git && build-storybook --config-dir ./src -o dist/static --quiet && npx sb extract dist/static ./stories.json",
-    "build": "mkdir -p ../../.git && build-storybook --config-dir ./src -o dist/static --quiet && cp index.js dist && npx sb extract dist/static ./dist/static/stories.json && cp metadata.json dist/static",
+    "build": "mkdir -p ../../.git && build-storybook --config-dir ./src -o dist/static --quiet && cp index.js dist && cp stories.json dist/static && cp metadata.json dist/static",
     "dev": "start-storybook --config-dir ./src -p 3000",
     "start": "node dist/index.js"
   },

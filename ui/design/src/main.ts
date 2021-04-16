@@ -28,5 +28,7 @@ module.exports = {
       url: 'https://ui-admin.ui.monstrs.dev',
     },
   },
+  stories: ['./*.stories.@(ts|tsx|mdx)'],
+  addons: ['@storybook/addon-essentials'],
   webpackFinal: async (config) => updateEmotionAliases(config),
 }

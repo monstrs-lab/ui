@@ -39,7 +39,7 @@ jobs:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
         run: |
           yarn workspaces changed foreach app pack \
-            --registry 'eu.gcr.io/${{ secrets.GCR_PROJECT_ID }}/ui-' \
+            --registry 'eu.gcr.io/${{ secrets.GCR_PROJECT_ID }}/' \
             --buildpack monstrs/buildpack-yarn-static-workspace:0.0.2 \
             --builder monstrs/builder-node-static:buster \
             --tag-policy hash-timestamp \

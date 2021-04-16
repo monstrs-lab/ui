@@ -4,7 +4,7 @@ metadata:
   name: ui-proto-design
   namespace: flux-system
 spec:
-  image: eu.gcr.io/the-mesh-254617/ui-design-ui-proto
+  image: eu.gcr.io/the-mesh-254617/ui-proto-design
   interval: 1m0s
   secretRef:
     name: flux-sync-gcr

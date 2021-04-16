@@ -4,7 +4,7 @@ metadata:
   name: ui-parts-design
   namespace: flux-system
 spec:
-  image: eu.gcr.io/the-mesh-254617/ui-design-ui-parts
+  image: eu.gcr.io/the-mesh-254617/ui-parts-design
   interval: 1m0s
   secretRef:
     name: flux-sync-gcr

@@ -15,17 +15,17 @@
     "@ui-parts/styles": "workspace:0.2.8"
   },
   "devDependencies": {
-    "@emotion/styled": "^11.1.5",
-    "@monstrs/mctl-cli": "0.2.92",
+    "@emotion/styled": "^11.3.0",
+    "@monstrs/mctl-cli": "0.2.101",
     "@monstrs/storybook-google-fonts": "workspace:0.0.1",
-    "@types/jest": "^26.0.21",
-    "@types/node": "^14.14.35",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.40",
     "@types/react": "^17.0.3",
-    "@types/styled-system": "^5.1.10",
+    "@types/styled-system": "^5.1.11",
     "@ui-parts/image": "workspace:0.2.8",
     "@ui-parts/scalable-content": "workspace:0.2.8",
     "@ui-parts/text-transform": "workspace:0.2.11",
-    "react": "^17.0.1",
+    "react": "^17.0.2",
     "string-to-color": "^2.2.2",
     "styled-system": "^5.1.5",
     "styled-tools": "^1.7.2"

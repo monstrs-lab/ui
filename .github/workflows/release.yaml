@@ -32,11 +32,15 @@ jobs:
 
       - name: Install Buildpack Cli
         run: |
-          (curl -sSL "https://github.com/buildpacks/pack/releases/download/v0.13.1/pack-v0.13.1-linux.tgz" | sudo tar -C /usr/local/bin/ --no-same-owner -xzv pack)
+          (curl -sSL "https://github.com/buildpacks/pack/releases/download/v0.18.0/pack-v0.18.0-linux.tgz" | sudo tar -C /usr/local/bin/ --no-same-owner -xzv pack)
 
       - name: Release
-        id: release
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
         run: |
-          yarn mctl pack -v --push --registry 'eu.gcr.io/${{ secrets.GCR_PROJECT_ID }}/ui-' -t hash-timestamp
+          yarn workspaces changed foreach app pack \
+            --registry 'eu.gcr.io/${{ secrets.GCR_PROJECT_ID }}/ui-' \
+            --buildpack monstrs/buildpack-yarn-static-workspace:0.0.2 \
+            --builder monstrs/builder-node-static:buster \
+            --tag-policy hash-timestamp \
+            --publish

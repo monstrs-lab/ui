@@ -12,9 +12,9 @@
     "build": "mctl library build"
   },
   "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.92",
+    "@monstrs/mctl-cli": "0.2.101",
     "@types/react": "^17.0.3",
-    "react": "^17.0.1"
+    "react": "^17.0.2"
   },
   "dependencies": {
     "@ui-parts/text": "workspace:0.2.8"

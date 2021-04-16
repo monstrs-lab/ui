@@ -12,8 +12,8 @@
     "build": "mctl library build"
   },
   "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.92",
-    "@types/styled-system": "^5.1.10",
+    "@monstrs/mctl-cli": "0.2.101",
+    "@types/styled-system": "^5.1.11",
     "styled-system": "^5.1.5"
   },
   "peerDependencies": {

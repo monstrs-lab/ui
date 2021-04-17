@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "build": "mkdir -p ../../.git && build-storybook --config-dir ./src -o dist --quiet && cp metadata.json dist && npx sb extract dist ./dist/stories.json",
+    "build": "mkdir -p ../../.git && build-storybook --config-dir ./src -o dist --quiet && npx sb extract dist ./dist/stories.json",
     "dev": "start-storybook --config-dir ./src -p 3000"
   },
   "devDependencies": {

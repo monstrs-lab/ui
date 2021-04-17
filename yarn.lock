@@ -5165,7 +5165,6 @@ __metadata:
   resolution: "@ui-admin/button@workspace:ui-admin/button"
   dependencies:
     "@emotion/styled": ^11.3.0
-    "@monstrs/mctl-cli": 0.2.101
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.11
     "@ui-parts/button": "workspace:0.2.8"
@@ -5214,7 +5213,6 @@ __metadata:
   resolution: "@ui-admin/theme@workspace:ui-admin/theme"
   dependencies:
     "@emotion/react": ^11.1.5
-    "@monstrs/mctl-cli": 0.2.101
     "@types/node": ^14.14.41
     "@types/react": ^17.0.3
     react: ^17.0.2
@@ -5229,7 +5227,6 @@ __metadata:
   resolution: "@ui-parts/avatar@workspace:ui-parts/avatar"
   dependencies:
     "@emotion/styled": ^11.3.0
-    "@monstrs/mctl-cli": 0.2.101
     "@monstrs/storybook-google-fonts": "workspace:0.0.1"
     "@types/jest": ^26.0.22
     "@types/node": ^14.14.41
@@ -5256,7 +5253,6 @@ __metadata:
   resolution: "@ui-parts/button@workspace:ui-parts/button"
   dependencies:
     "@emotion/styled": ^11.3.0
-    "@monstrs/mctl-cli": 0.2.101
     "@monstrs/storybook-google-fonts": "workspace:0.0.1"
     "@types/jest": ^26.0.22
     "@types/react": ^17.0.3
@@ -5278,7 +5274,6 @@ __metadata:
   resolution: "@ui-parts/checkbox@workspace:ui-parts/checkbox"
   dependencies:
     "@emotion/styled": ^11.3.0
-    "@monstrs/mctl-cli": 0.2.101
     "@monstrs/storybook-google-fonts": "workspace:0.0.1"
     "@types/jest": ^26.0.22
     "@types/react": ^17.0.3
@@ -5301,7 +5296,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-parts/conditional-render@workspace:ui-parts/conditional-render"
   dependencies:
-    "@monstrs/mctl-cli": 0.2.101
     "@types/react": ^17.0.3
     react: ^17.0.2
   peerDependencies:
@@ -5346,7 +5340,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-parts/dom@workspace:ui-parts/dom"
   dependencies:
-    "@monstrs/mctl-cli": 0.2.101
     "@types/react": ^17.0.3
     react: ^17.0.2
   peerDependencies:
@@ -5358,7 +5351,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-parts/events-state@workspace:ui-parts/events-state"
   dependencies:
-    "@monstrs/mctl-cli": 0.2.101
     "@types/react": ^17.0.3
     react: ^17.0.2
   peerDependencies:
@@ -5371,7 +5363,6 @@ __metadata:
   resolution: "@ui-parts/hidden-input@workspace:ui-parts/hidden-input"
   dependencies:
     "@emotion/styled": ^11.3.0
-    "@monstrs/mctl-cli": 0.2.101
     "@testing-library/react": ^11.2.6
     "@types/jest": ^26.0.22
     "@types/react": ^17.0.3
@@ -5387,7 +5378,6 @@ __metadata:
   resolution: "@ui-parts/image@workspace:ui-parts/image"
   dependencies:
     "@emotion/styled": ^11.3.0
-    "@monstrs/mctl-cli": 0.2.101
     "@types/jest": ^26.0.22
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.11
@@ -5405,7 +5395,6 @@ __metadata:
   resolution: "@ui-parts/input@workspace:ui-parts/input"
   dependencies:
     "@emotion/styled": ^11.3.0
-    "@monstrs/mctl-cli": 0.2.101
     "@monstrs/storybook-google-fonts": "workspace:0.0.1"
     "@types/jest": ^26.0.22
     "@types/react": ^17.0.3
@@ -5430,7 +5419,6 @@ __metadata:
   resolution: "@ui-parts/layout@workspace:ui-parts/layout"
   dependencies:
     "@emotion/styled": ^11.3.0
-    "@monstrs/mctl-cli": 0.2.101
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.11
     react: ^17.0.2
@@ -5447,7 +5435,6 @@ __metadata:
   resolution: "@ui-parts/scalable-content@workspace:ui-parts/scalable-content"
   dependencies:
     "@emotion/styled": ^11.3.0
-    "@monstrs/mctl-cli": 0.2.101
     "@types/jest": ^26.0.22
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.11
@@ -5465,7 +5452,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-parts/styles@workspace:ui-parts/styles"
   dependencies:
-    "@monstrs/mctl-cli": 0.2.101
     "@types/styled-system": ^5.1.11
     styled-system: ^5.1.5
   peerDependencies:
@@ -5477,7 +5463,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-parts/text-transform@workspace:ui-parts/text-transform"
   dependencies:
-    "@monstrs/mctl-cli": 0.2.101
     "@testing-library/react": ^11.2.6
     "@types/jest": ^26.0.22
     "@types/node": ^14.14.41
@@ -5493,7 +5478,6 @@ __metadata:
   resolution: "@ui-parts/text@workspace:ui-parts/text"
   dependencies:
     "@emotion/styled": ^11.3.0
-    "@monstrs/mctl-cli": 0.2.101
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.11
     react: ^17.0.2
@@ -5510,7 +5494,6 @@ __metadata:
   resolution: "@ui-proto/avatar@workspace:ui-proto/avatar"
   dependencies:
     "@emotion/styled": ^11.3.0
-    "@monstrs/mctl-cli": 0.2.101
     "@types/node": ^14.14.41
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.11
@@ -5533,7 +5516,6 @@ __metadata:
   resolution: "@ui-proto/button@workspace:ui-proto/button"
   dependencies:
     "@emotion/styled": ^11.3.0
-    "@monstrs/mctl-cli": 0.2.101
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.11
     "@ui-parts/button": "workspace:0.2.8"
@@ -5581,7 +5563,6 @@ __metadata:
   resolution: "@ui-proto/input@workspace:ui-proto/input"
   dependencies:
     "@emotion/styled": ^11.3.0
-    "@monstrs/mctl-cli": 0.2.101
     "@types/react": ^17.0.3
     "@types/styled-system": ^5.1.11
     "@ui-parts/conditional-render": "workspace:0.2.8"
@@ -5601,7 +5582,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-proto/layout@workspace:ui-proto/layout"
   dependencies:
-    "@monstrs/mctl-cli": 0.2.101
     "@ui-parts/layout": "workspace:0.2.8"
   languageName: unknown
   linkType: soft
@@ -5611,7 +5591,6 @@ __metadata:
   resolution: "@ui-proto/placeholder@workspace:ui-proto/placeholder"
   dependencies:
     "@emotion/styled": ^11.3.0
-    "@monstrs/mctl-cli": 0.2.101
     "@types/react": ^17.0.3
     "@ui-proto/layout": "workspace:0.1.8"
     "@ui-proto/text": "workspace:0.1.8"
@@ -5626,7 +5605,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-proto/text@workspace:ui-proto/text"
   dependencies:
-    "@monstrs/mctl-cli": 0.2.101
     "@types/react": ^17.0.3
     "@ui-parts/text": "workspace:0.2.8"
     react: ^17.0.2
@@ -5638,7 +5616,6 @@ __metadata:
   resolution: "@ui-proto/theme@workspace:ui-proto/theme"
   dependencies:
     "@emotion/react": ^11.1.5
-    "@monstrs/mctl-cli": 0.2.101
     "@types/node": ^14.14.41
     "@types/react": ^17.0.3
     react: ^17.0.2
@@ -19358,7 +19335,6 @@ typescript@^4.2.4:
     "@monstrs/mctl-cli": 0.2.101
     "@types/jest": ^26.0.22
     "@types/node": ^14.14.41
-    "@yarnpkg/pnpify": ^2.4.0
     husky: 5.1.3
     typescript: ^4.2.4
   languageName: unknown

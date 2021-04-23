@@ -12,10 +12,18 @@ const updateEmotionAliases = (config) => ({
 })
 
 module.exports = {
+  core: {
+    builder: 'webpack5',
+  },
   stories: ['../../**/*.stories.@(ts|tsx|mdx)'],
   addons: [
-    '@storybook/addon-essentials',
     require.resolve('@monstrs/storybook-addon-development-templates'),
+    '@storybook/addon-essentials',
   ],
-  webpackFinal: async (config) => updateEmotionAliases(config),
+  webpackFinal: async (config) => {
+    // eslint-disable-next-line no-param-reassign
+    config.resolve.fallback.assert = false
+
+    return updateEmotionAliases(config)
+  },
 }

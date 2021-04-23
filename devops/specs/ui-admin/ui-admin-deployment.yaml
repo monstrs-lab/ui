@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: ui-admin
-        image: eu.gcr.io/the-mesh-254617/ui-admin-design:0642316-1619160537405 # {"$imagepolicy": "flux-system:ui-admin-design"}
+        image: eu.gcr.io/the-mesh-254617/ui-admin-design:db5ae3a-1619166112537 # {"$imagepolicy": "flux-system:ui-admin-design"}
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80

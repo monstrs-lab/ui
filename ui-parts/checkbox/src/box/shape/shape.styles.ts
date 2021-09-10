@@ -6,10 +6,12 @@ import { combine }          from '@ui-parts/styles'
 
 import { BoxShapeStyles }   from './shape.interfaces'
 
-export const createBoxBaseShapeStyles: styleFn = (
-  size: number,
-  borderWidth: number | Function
-) => () => ({ height: size, width: size, borderWidth })
+export const createBoxBaseShapeStyles: styleFn =
+  (size: number, borderWidth: number | Function) => () => ({
+    height: size,
+    width: size,
+    borderWidth,
+  })
 
 export const createPatternStyles: styleFn = (borderRadius: number) =>
   switchProp(prop('shape', 'square'), {

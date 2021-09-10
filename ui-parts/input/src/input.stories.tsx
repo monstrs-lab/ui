@@ -89,9 +89,10 @@ export const Input = ({
     [fontFamily, fontSize, fontWeight, fontColor]
   )
 
-  const AddonsContainer = useMemo(() => styled.div(createAddonsContainerStyles(borderWidth)), [
-    borderWidth,
-  ])
+  const AddonsContainer = useMemo(
+    () => styled.div(createAddonsContainerStyles(borderWidth)),
+    [borderWidth]
+  )
 
   const Addon = useMemo(
     () =>

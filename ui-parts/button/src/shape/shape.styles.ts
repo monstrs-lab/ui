@@ -8,12 +8,14 @@ import { combine }                 from '@ui-parts/styles'
 import { ButtonShapeRoudingProps } from './shape.interfaces'
 import { ButtonShapeStyles }       from './shape.interfaces'
 
-export const createBaseShapeStyles: styleFn = (
-  size: number,
-  fontSize: number | Function,
-  fontWeight: string | Function,
-  fontFamily: string | Function
-) => () => ({ height: size, fontSize, fontWeight, fontFamily })
+export const createBaseShapeStyles: styleFn =
+  (
+    size: number,
+    fontSize: number | Function,
+    fontWeight: string | Function,
+    fontFamily: string | Function
+  ) =>
+  () => ({ height: size, fontSize, fontWeight, fontFamily })
 
 export const createPaddingStyles: styleFn = (paddingLeft, paddingRight) => () => ({
   paddingLeft,

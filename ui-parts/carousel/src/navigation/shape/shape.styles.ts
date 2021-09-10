@@ -8,11 +8,12 @@ import { combine }               from '@ui-parts/styles'
 
 import { NavigationShapeStyles } from './shape.interfaces'
 
-export const createBaseShapeStyles: styleFn = (
-  width: number | string,
-  borderWidth: number | string,
-  borderRadius: number | string
-) => () => ({ width, borderWidth, borderRadius })
+export const createBaseShapeStyles: styleFn =
+  (width: number | string, borderWidth: number | string, borderRadius: number | string) => () => ({
+    width,
+    borderWidth,
+    borderRadius,
+  })
 
 export const createFillStyles: styleFn = (height: number) =>
   ifProp(

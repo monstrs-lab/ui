@@ -11575,6 +11575,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@ui-proto-button-virtual-3e9d1f7e8d/1/ui-proto/button/",
           "packageDependencies": [
             ["@ui-proto/button", "virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/button"],
+            ["@emotion/is-prop-valid", "npm:1.1.0"],
             ["@emotion/styled", "virtual:cfbccdd0518e6fd8c74e528b157f27269521967643e15c25efd881bebe491bb219bfbab8e9c313369d542b6e70a51037df2a0cdb91d8e9b319b8e4fba7a993ec#npm:11.3.0"],
             ["@mdx-js/react", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:1.6.22"],
             ["@storybook/addon-docs", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:6.2.9"],
@@ -11601,6 +11602,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./ui-proto/button/",
           "packageDependencies": [
             ["@ui-proto/button", "workspace:ui-proto/button"],
+            ["@emotion/is-prop-valid", "npm:1.1.0"],
             ["@emotion/styled", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:11.3.0"],
             ["@mdx-js/react", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:1.6.22"],
             ["@storybook/addon-docs", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:6.2.9"],

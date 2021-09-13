@@ -1,6 +1,6 @@
 {
   "name": "@ui-parts/input",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,8 +12,8 @@
     "prepack": "yarn run build"
   },
   "dependencies": {
-    "@ui-parts/events-state": "workspace:0.2.9",
-    "@ui-parts/styles": "workspace:0.2.8"
+    "@ui-parts/events-state": "workspace:0.2.10",
+    "@ui-parts/styles": "workspace:0.2.9"
   },
   "devDependencies": {
     "@emotion/styled": "^11.3.0",
@@ -21,8 +21,8 @@
     "@types/jest": "^26.0.22",
     "@types/react": "^17.0.3",
     "@types/styled-system": "^5.1.11",
-    "@ui-parts/conditional-render": "workspace:0.2.8",
-    "@ui-parts/layout": "workspace:0.2.8",
+    "@ui-parts/conditional-render": "workspace:0.2.9",
+    "@ui-parts/layout": "workspace:0.2.9",
     "react": "^17.0.2",
     "styled-system": "^5.1.5",
     "styled-tools": "^1.7.2"

@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/input",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,8 +12,8 @@
     "prepack": "yarn run build"
   },
   "dependencies": {
-    "@ui-parts/conditional-render": "workspace:0.2.8",
-    "@ui-parts/input": "workspace:0.2.10"
+    "@ui-parts/conditional-render": "workspace:0.2.9",
+    "@ui-parts/input": "workspace:0.2.11"
   },
   "devDependencies": {
     "@emotion/styled": "^11.3.0",

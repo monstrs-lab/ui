@@ -1,6 +1,6 @@
 {
   "name": "@ui-parts/checkbox",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,7 +12,7 @@
     "prepack": "yarn run build"
   },
   "dependencies": {
-    "@ui-parts/styles": "workspace:0.2.8"
+    "@ui-parts/styles": "workspace:0.2.9"
   },
   "devDependencies": {
     "@emotion/styled": "^11.3.0",
@@ -20,8 +20,8 @@
     "@types/jest": "^26.0.22",
     "@types/react": "^17.0.3",
     "@types/styled-system": "^5.1.11",
-    "@ui-parts/conditional-render": "workspace:0.2.8",
-    "@ui-parts/hidden-input": "workspace:0.2.9",
+    "@ui-parts/conditional-render": "workspace:0.2.9",
+    "@ui-parts/hidden-input": "workspace:0.2.10",
     "react": "^17.0.2",
     "styled-system": "^5.1.5",
     "styled-tools": "^1.7.2"

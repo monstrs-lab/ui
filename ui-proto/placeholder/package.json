@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/placeholder",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,8 +12,8 @@
     "prepack": "yarn run build"
   },
   "dependencies": {
-    "@ui-proto/layout": "workspace:0.1.8",
-    "@ui-proto/text": "workspace:0.1.8"
+    "@ui-proto/layout": "workspace:0.1.9",
+    "@ui-proto/text": "workspace:0.1.9"
   },
   "devDependencies": {
     "@emotion/styled": "^11.3.0",

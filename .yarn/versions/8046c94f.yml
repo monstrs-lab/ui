@@ -1,9 +1,0 @@
-releases:
-  "@ui-admin/theme": patch
-  "@ui-parts/avatar": patch
-  "@ui-parts/text": patch
-  "@ui-parts/text-transform": patch
-  "@ui-proto/avatar": patch
-  "@ui-proto/placeholder": patch
-  "@ui-proto/text": patch
-  "@ui-proto/theme": patch

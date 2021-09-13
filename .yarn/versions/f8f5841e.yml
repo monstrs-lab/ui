@@ -1,6 +1,0 @@
-releases:
-  "@ui-parts/avatar": patch
-  "@ui-parts/carousel": patch
-  "@ui-parts/dom": patch
-  "@ui-parts/scalable-content": patch
-  "@ui-proto/avatar": patch

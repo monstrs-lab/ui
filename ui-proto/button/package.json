@@ -12,6 +12,7 @@
     "prepack": "yarn run build"
   },
   "dependencies": {
+    "@emotion/is-prop-valid": "^1.1.0",
     "@ui-parts/button": "workspace:0.2.8"
   },
   "devDependencies": {

@@ -19,10 +19,13 @@ spec:
         app: ui-proto
     spec:
       containers:
-      - name: ui-proto
-        image: eu.gcr.io/the-mesh-254617/ui-proto-design:b127216-1631560886764 # {"$imagepolicy": "flux-system:ui-proto-design"}
-        imagePullPolicy: IfNotPresent
-        ports:
-        - containerPort: 80
-          name: http
-          protocol: TCP
+        - name: ui-proto
+          image: eu.gcr.io/the-mesh-254617/ui-proto-design:b127216-1631560886764 # {"$imagepolicy": "flux-system:ui-proto-design"}
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+              name: http
+              protocol: TCP
+          resources:
+            requests:
+              cpu: 50m

@@ -26,3 +26,6 @@ spec:
             - containerPort: 80
               name: http
               protocol: TCP
+          resources:
+            requests:
+              cpu: 50m

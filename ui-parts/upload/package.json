@@ -12,7 +12,7 @@
     "prepack": "yarn run build"
   },
   "dependencies": {
-    "@monstrs/react-upload": "^0.1.9",
+    "@monstrs/react-upload": "^0.1.10",
     "react-dropzone": "^12.0.4"
   },
   "devDependencies": {

@@ -6664,10 +6664,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:7816187f7e4e9299051fa5542ef91a27b12763383bb66af2781f0b111353a05a20f9af01f438bcf59b49653a1143f19e94307dbcc0d3e9f9e2366aa5da5f453a#npm:0.0.3", {
-          "packageLocation": "./.yarn/__virtual__/@monstrs-react-app-links-virtual-a8429700be/0/cache/@monstrs-react-app-links-npm-0.0.3-da1395f725-acb6d2ce58.zip/node_modules/@monstrs/react-app-links/",
+        ["virtual:20b5d86090fd4f2c2616855daea68d238093b09bce5a5af3426af62a8c1589499df2187078d0c39bedf14e6a0acaadeec89beeff579a68b9878c357a3e72db36#npm:0.0.3", {
+          "packageLocation": "./.yarn/__virtual__/@monstrs-react-app-links-virtual-890c1a2747/0/cache/@monstrs-react-app-links-npm-0.0.3-da1395f725-acb6d2ce58.zip/node_modules/@monstrs/react-app-links/",
           "packageDependencies": [
-            ["@monstrs/react-app-links", "virtual:7816187f7e4e9299051fa5542ef91a27b12763383bb66af2781f0b111353a05a20f9af01f438bcf59b49653a1143f19e94307dbcc0d3e9f9e2366aa5da5f453a#npm:0.0.3"],
+            ["@monstrs/react-app-links", "virtual:20b5d86090fd4f2c2616855daea68d238093b09bce5a5af3426af62a8c1589499df2187078d0c39bedf14e6a0acaadeec89beeff579a68b9878c357a3e72db36#npm:0.0.3"],
             ["@types/react", "npm:17.0.3"],
             ["react", "npm:17.0.2"],
             ["tldjs", "npm:2.3.1"]
@@ -6680,22 +6680,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@monstrs/react-upload", [
-        ["npm:0.1.9", {
-          "packageLocation": "./.yarn/cache/@monstrs-react-upload-npm-0.1.9-edf6382e1d-f8d1fda318.zip/node_modules/@monstrs/react-upload/",
+        ["npm:0.1.10", {
+          "packageLocation": "./.yarn/cache/@monstrs-react-upload-npm-0.1.10-c9bd936584-7ea7046405.zip/node_modules/@monstrs/react-upload/",
           "packageDependencies": [
-            ["@monstrs/react-upload", "npm:0.1.9"]
+            ["@monstrs/react-upload", "npm:0.1.10"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:0a543ef4ac7b91057dc089b5f28da431d78ad2cf7c4590df3a3fd521f1da60c429136472ac0d47a065dffde82589647b97a9841ce63868a2a7873f74441dd419#npm:0.1.9", {
-          "packageLocation": "./.yarn/__virtual__/@monstrs-react-upload-virtual-7816187f7e/0/cache/@monstrs-react-upload-npm-0.1.9-edf6382e1d-f8d1fda318.zip/node_modules/@monstrs/react-upload/",
+        ["virtual:0a543ef4ac7b91057dc089b5f28da431d78ad2cf7c4590df3a3fd521f1da60c429136472ac0d47a065dffde82589647b97a9841ce63868a2a7873f74441dd419#npm:0.1.10", {
+          "packageLocation": "./.yarn/__virtual__/@monstrs-react-upload-virtual-20b5d86090/0/cache/@monstrs-react-upload-npm-0.1.10-c9bd936584-7ea7046405.zip/node_modules/@monstrs/react-upload/",
           "packageDependencies": [
-            ["@monstrs/react-upload", "virtual:0a543ef4ac7b91057dc089b5f28da431d78ad2cf7c4590df3a3fd521f1da60c429136472ac0d47a065dffde82589647b97a9841ce63868a2a7873f74441dd419#npm:0.1.9"],
-            ["@monstrs/react-app-links", "virtual:7816187f7e4e9299051fa5542ef91a27b12763383bb66af2781f0b111353a05a20f9af01f438bcf59b49653a1143f19e94307dbcc0d3e9f9e2366aa5da5f453a#npm:0.0.3"],
+            ["@monstrs/react-upload", "virtual:0a543ef4ac7b91057dc089b5f28da431d78ad2cf7c4590df3a3fd521f1da60c429136472ac0d47a065dffde82589647b97a9841ce63868a2a7873f74441dd419#npm:0.1.10"],
+            ["@monstrs/react-app-links", "virtual:20b5d86090fd4f2c2616855daea68d238093b09bce5a5af3426af62a8c1589499df2187078d0c39bedf14e6a0acaadeec89beeff579a68b9878c357a3e72db36#npm:0.0.3"],
             ["@types/graphql", null],
             ["@types/react", "npm:17.0.3"],
             ["graphql", "npm:16.3.0"],
-            ["graphql-request", "virtual:7816187f7e4e9299051fa5542ef91a27b12763383bb66af2781f0b111353a05a20f9af01f438bcf59b49653a1143f19e94307dbcc0d3e9f9e2366aa5da5f453a#npm:4.0.0"],
+            ["graphql-request", "virtual:20b5d86090fd4f2c2616855daea68d238093b09bce5a5af3426af62a8c1589499df2187078d0c39bedf14e6a0acaadeec89beeff579a68b9878c357a3e72db36#npm:4.0.0"],
             ["react", "npm:17.0.2"]
           ],
           "packagePeers": [
@@ -11641,7 +11641,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./ui-parts/upload/",
           "packageDependencies": [
             ["@ui-parts/upload", "workspace:ui-parts/upload"],
-            ["@monstrs/react-upload", "virtual:0a543ef4ac7b91057dc089b5f28da431d78ad2cf7c4590df3a3fd521f1da60c429136472ac0d47a065dffde82589647b97a9841ce63868a2a7873f74441dd419#npm:0.1.9"],
+            ["@monstrs/react-upload", "virtual:0a543ef4ac7b91057dc089b5f28da431d78ad2cf7c4590df3a3fd521f1da60c429136472ac0d47a065dffde82589647b97a9841ce63868a2a7873f74441dd419#npm:0.1.10"],
             ["@types/node", "npm:14.14.41"],
             ["@types/react", "npm:17.0.3"],
             ["@ui-parts/avatar", "virtual:0a543ef4ac7b91057dc089b5f28da431d78ad2cf7c4590df3a3fd521f1da60c429136472ac0d47a065dffde82589647b97a9841ce63868a2a7873f74441dd419#workspace:ui-parts/avatar"],
@@ -18735,10 +18735,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:7816187f7e4e9299051fa5542ef91a27b12763383bb66af2781f0b111353a05a20f9af01f438bcf59b49653a1143f19e94307dbcc0d3e9f9e2366aa5da5f453a#npm:4.0.0", {
-          "packageLocation": "./.yarn/__virtual__/graphql-request-virtual-eda5a5e8f4/0/cache/graphql-request-npm-4.0.0-be24c6bda4-0d16c7f063.zip/node_modules/graphql-request/",
+        ["virtual:20b5d86090fd4f2c2616855daea68d238093b09bce5a5af3426af62a8c1589499df2187078d0c39bedf14e6a0acaadeec89beeff579a68b9878c357a3e72db36#npm:4.0.0", {
+          "packageLocation": "./.yarn/__virtual__/graphql-request-virtual-49f5766d78/0/cache/graphql-request-npm-4.0.0-be24c6bda4-0d16c7f063.zip/node_modules/graphql-request/",
           "packageDependencies": [
-            ["graphql-request", "virtual:7816187f7e4e9299051fa5542ef91a27b12763383bb66af2781f0b111353a05a20f9af01f438bcf59b49653a1143f19e94307dbcc0d3e9f9e2366aa5da5f453a#npm:4.0.0"],
+            ["graphql-request", "virtual:20b5d86090fd4f2c2616855daea68d238093b09bce5a5af3426af62a8c1589499df2187078d0c39bedf14e6a0acaadeec89beeff579a68b9878c357a3e72db36#npm:4.0.0"],
             ["@types/graphql", null],
             ["cross-fetch", "npm:3.1.5"],
             ["extract-files", "npm:9.0.0"],

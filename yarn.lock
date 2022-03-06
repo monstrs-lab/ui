@@ -3425,16 +3425,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/react-upload@npm:^0.1.9":
-  version: 0.1.9
-  resolution: "@monstrs/react-upload@npm:0.1.9"
+"@monstrs/react-upload@npm:^0.1.10":
+  version: 0.1.10
+  resolution: "@monstrs/react-upload@npm:0.1.10"
   dependencies:
     "@monstrs/react-app-links": 0.0.3
     graphql-request: ^4.0.0
   peerDependencies:
     graphql: ^16.3.0
     react: ^17.0.1
-  checksum: f8d1fda31849e9579a595eaa2397b467ad49768c60916dedcec33edc639e3f28ca482abc21cca92f5baaf812515eb6eaaf3c5e9c07ff583657a1cde13a4d30f5
+  checksum: 7ea704640561e321c90a2cf5ed8f06da9f4cf2eac3e8c18fbd3a30b572eea8e6ef826d9f27665727f1f770a4905423040649f136c08b421dacfe872f6767c057
   languageName: node
   linkType: hard
 
@@ -5938,7 +5938,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-parts/upload@workspace:ui-parts/upload"
   dependencies:
-    "@monstrs/react-upload": ^0.1.9
+    "@monstrs/react-upload": ^0.1.10
     "@types/node": ^14.14.41
     "@types/react": ^17.0.3
     "@ui-parts/avatar": "workspace:0.2.13"

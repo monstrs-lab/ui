@@ -1,18 +1,19 @@
-import { Children }                            from 'react'
-import { cloneElement }                        from 'react'
-import { useState }                            from 'react'
-import { useEffect }                           from 'react'
-import { useCallback }                         from 'react'
-import { useAnimation }                        from 'framer-motion'
-import { DraggableProps }                      from 'framer-motion'
-import { PanInfo }                             from 'framer-motion'
+import { DraggableProps }                from 'framer-motion'
+import { PanInfo }                       from 'framer-motion'
+import { Children }                      from 'react'
+import { useAnimation }                  from 'framer-motion'
+import { cloneElement }                  from 'react'
+import { useState }                      from 'react'
+import { useEffect }                     from 'react'
+import { useCallback }                   from 'react'
 
-import { getContentDimensions, useWindowSize } from '@ui-parts/dom'
+import { getContentDimensions }          from '@ui-parts/dom'
+import { useWindowSize }                 from '@ui-parts/dom'
 
-import { UseCarouselProp }                     from './hooks.interfaces'
-import { UseCarouselResult }                   from './hooks.interfaces'
-import { CarouselSlydeToIndexType }            from './hooks.interfaces'
-import { CarouselSlydeToTwoIndexesType }       from './hooks.interfaces'
+import { UseCarouselProp }               from './hooks.interfaces'
+import { UseCarouselResult }             from './hooks.interfaces'
+import { CarouselSlydeToIndexType }      from './hooks.interfaces'
+import { CarouselSlydeToTwoIndexesType } from './hooks.interfaces'
 
 const swipePower = (offset: number, velocity: number): number => Math.abs(offset) * velocity
 
@@ -121,14 +122,13 @@ export const useCarousel: UseCarouselProp = (
 
     return Children.map(items, (item, num) =>
       cloneElement(item, {
-        key: num,
+        key: num, // eslint-disable-line react/no-array-index-key
         ...item.props,
         style: {
           ...item.props.style,
           ...getSlideStyles(num, slidesLength),
         },
-      })
-    )
+      }))
   }, [items, direction, slideSize, slidesLength, spaceBetween])
 
   const getLoopSlides = useCallback(() => {
@@ -154,14 +154,13 @@ export const useCarousel: UseCarouselProp = (
 
     return Children.map(newItems, (item, num) =>
       cloneElement(item, {
-        key: num - 1,
+        key: num - 1, // eslint-disable-line react/no-array-index-key
         ...item.props,
         style: {
           ...item.props.style,
           ...getSlideStyles(),
         },
-      })
-    )
+      }))
   }, [items, direction, slideSize, slidesPerView, spaceBetween])
 
   const slideToIndex: CarouselSlydeToIndexType = (index, duration = transitionDuration) => {

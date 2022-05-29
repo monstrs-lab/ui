@@ -1,4 +1,5 @@
-import { prop, switchProp }       from 'styled-tools'
+import { prop }                   from 'styled-tools'
+import { switchProp }             from 'styled-tools'
 
 import { createBaseStyles }       from '@ui-parts/avatar'
 import { createShapeStyles }      from '@ui-parts/avatar'

@@ -6,8 +6,13 @@ import { combine }                    from '@ui-parts/styles'
 
 import { PaginationAppearanceStyles } from './appearance.interfaces'
 
-export const createColorStyles: styleFn =
-  (color: string, backgroundColor: string, borderColor: string, borderStyle: string) => () => ({
+export const createColorStyles: styleFn = (
+    color: string,
+    backgroundColor: string,
+    borderColor: string,
+    borderStyle: string
+  ) =>
+  () => ({
     color,
     backgroundColor,
     borderColor,

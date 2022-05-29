@@ -8,15 +8,15 @@
   ],
   "scripts": {
     "build": "yarn app library build",
-    "postpack": "rm -rf dist",
-    "prepack": "yarn run build"
-  },
-  "devDependencies": {
-    "@types/react": "^17.0.3",
-    "react": "^17.0.2"
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist"
   },
   "dependencies": {
     "@ui-parts/text": "workspace:0.2.9"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.45",
+    "react": "^17.0.2"
   },
   "publishConfig": {
     "access": "public",

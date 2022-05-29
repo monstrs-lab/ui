@@ -1,13 +1,13 @@
 import { styleFn }           from 'styled-system'
-import { prop, switchProp }  from 'styled-tools'
+import { prop }              from 'styled-tools'
+import { switchProp }        from 'styled-tools'
 
 import { execAndSerialize }  from '@ui-parts/styles'
 import { combine }           from '@ui-parts/styles'
 
 import { AvatarShapeStyles } from './shape.interfaces'
 
-export const createBaseShapeStyles: styleFn =
-  (
+export const createBaseShapeStyles: styleFn = (
     padding: number,
     borderWidth: number,
     fontSize: number | Function,

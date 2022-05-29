@@ -6,8 +6,12 @@ import { combine }                from '@ui-parts/styles'
 
 import { ButtonAppearanceStyles } from './appearance.interfaces'
 
-export const createColorStyles: styleFn =
-  (color: string, backgroundColor: string, borderColor: string) => () => ({
+export const createColorStyles: styleFn = (
+    color: string,
+    backgroundColor: string,
+    borderColor: string
+  ) =>
+  () => ({
     backgroundColor,
     borderColor,
     color,

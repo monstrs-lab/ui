@@ -6,8 +6,7 @@ import { combine }               from '@ui-parts/styles'
 
 import { PaginationShapeStyles } from './shape.interfaces'
 
-export const createBaseShapeStyles: styleFn =
-  (
+export const createBaseShapeStyles: styleFn = (
     size: number | string,
     margin: number | string,
     borderWidth: number | string,

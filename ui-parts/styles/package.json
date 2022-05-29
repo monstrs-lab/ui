@@ -8,11 +8,11 @@
   ],
   "scripts": {
     "build": "yarn app library build",
-    "postpack": "rm -rf dist",
-    "prepack": "yarn run build"
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist"
   },
   "devDependencies": {
-    "@types/styled-system": "^5.1.11",
+    "@types/styled-system": "^5.1.15",
     "styled-system": "^5.1.5"
   },
   "peerDependencies": {

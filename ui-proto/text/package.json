@@ -7,7 +7,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "yarn app library build",
+    "build": "yarn library build",
     "prepack": "yarn run build",
     "postpack": "rm -rf dist"
   },
@@ -15,7 +15,7 @@
     "@ui-parts/text": "workspace:0.2.9"
   },
   "devDependencies": {
-    "@types/react": "^17.0.45",
+    "@types/react": "^18.0.9",
     "react": "^18.1.0"
   },
   "publishConfig": {

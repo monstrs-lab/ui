@@ -7,7 +7,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "yarn app library build",
+    "build": "yarn library build",
     "prepack": "yarn run build",
     "postpack": "rm -rf dist"
   },
@@ -17,9 +17,9 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.36",
-    "@types/react": "^17.0.45",
+    "@types/react": "^18.0.9",
     "@ui-parts/avatar": "workspace:0.2.13",
-    "graphql": "^16.3.0",
+    "graphql": "^16.5.0",
     "react": "^18.1.0"
   },
   "peerDependencies": {

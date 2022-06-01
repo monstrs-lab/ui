@@ -1,3 +1,5 @@
+/* eslint-disable react/function-component-definition */
+
 import { createElement } from 'react'
 
 export type ConditionFunction = (props: any) => boolean

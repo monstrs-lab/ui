@@ -7,20 +7,20 @@
     "dist"
   ],
   "scripts": {
-    "build": "yarn app library build",
-    "postpack": "rm -rf dist",
-    "prepack": "yarn run build"
+    "build": "yarn library build",
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist"
   },
   "dependencies": {
     "@monstrs/react-upload": "^0.1.10",
     "react-dropzone": "^12.0.4"
   },
   "devDependencies": {
-    "@types/node": "^14.14.41",
-    "@types/react": "^17.0.3",
+    "@types/node": "^17.0.36",
+    "@types/react": "^18.0.9",
     "@ui-parts/avatar": "workspace:0.2.13",
-    "graphql": "^16.3.0",
-    "react": "^17.0.2"
+    "graphql": "^16.5.0",
+    "react": "^18.1.0"
   },
   "peerDependencies": {
     "graphql": "^16.3.0",

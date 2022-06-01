@@ -18,9 +18,9 @@ jobs:
           ref: master
 
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
-          node-version: '14.10'
+          node-version: '16.13'
 
       - name: Install
         run: yarn install
@@ -38,9 +38,7 @@ jobs:
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
         run: |
-          yarn workspaces changed foreach app pack \
+          yarn workspaces changed foreach image pack \
             --registry 'eu.gcr.io/${{ secrets.GCR_PROJECT_ID }}/' \
-            --buildpack monstrs/buildpack-yarn-static-workspace:0.0.2 \
-            --builder monstrs/builder-node-static:buster \
             --tag-policy hash-timestamp \
             --publish

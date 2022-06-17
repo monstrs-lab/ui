@@ -57,6 +57,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:ui-parts/conditional-render"\
       },\
       {\
+        "name": "@ui-parts/core",\
+        "reference": "workspace:ui-parts/core"\
+      },\
+      {\
         "name": "@ui-parts/design",\
         "reference": "workspace:ui-parts/design"\
       },\
@@ -157,6 +161,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@ui-parts/carousel", ["workspace:ui-parts/carousel"]],\
       ["@ui-parts/checkbox", ["workspace:ui-parts/checkbox"]],\
       ["@ui-parts/conditional-render", ["virtual:b255d093b1aba6294bef28a427c0589dd358c4a655bbf0ea7fd8eefb895a80d99741239ba4b26b5e389b46e23bed38b644fadd05caf96b0fe8245be5429ae41d#workspace:ui-parts/conditional-render", "workspace:ui-parts/conditional-render"]],\
+      ["@ui-parts/core", ["workspace:ui-parts/core"]],\
       ["@ui-parts/design", ["workspace:ui-parts/design"]],\
       ["@ui-parts/dom", ["virtual:63b6d96acffe15e420ba486f834d57a1a9e5ea21739065c7c5f19797525db334d28774d17bcc9ddc9c2668f36f214ecf6203a99552e6faa24ea7fd8f02ef4a62#workspace:ui-parts/dom", "workspace:ui-parts/dom"]],\
       ["@ui-parts/events-state", ["virtual:8caf71a3fdd27b9b6437019011aa6f2ea0ddc8518b38ccfaf98151ace190837ac7a0127b69ed99d68919e34f20efa102cc7a0b2f67dda727f2c7508b8e0e4551#workspace:ui-parts/events-state", "workspace:ui-parts/events-state"]],\
@@ -5383,10 +5388,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:a67878515934f8cd11bccd56043b9a2c645191864bc9db25a8307120d5cf35a56491a7ff933255dbfb3dd07f5f4ebc1b15b2319e6a873f2de79a05e5a858adf6#npm:1.2.8", {\
-          "packageLocation": "./.yarn/__virtual__/@stitches-react-virtual-41ee9d4d36/0/cache/@stitches-react-npm-1.2.8-445a1042b8-029795323c.zip/node_modules/@stitches/react/",\
+        ["virtual:85e5aae0f1fe5f2953af24e1304a8497a8551cb5516d0b53f79f0656874643be28533aa127f54212ed4fdace35ee3c99021315dd8363fbebafee3da1a2ab6d6d#npm:1.2.8", {\
+          "packageLocation": "./.yarn/__virtual__/@stitches-react-virtual-f5267bd9ff/0/cache/@stitches-react-npm-1.2.8-445a1042b8-029795323c.zip/node_modules/@stitches/react/",\
           "packageDependencies": [\
-            ["@stitches/react", "virtual:a67878515934f8cd11bccd56043b9a2c645191864bc9db25a8307120d5cf35a56491a7ff933255dbfb3dd07f5f4ebc1b15b2319e6a873f2de79a05e5a858adf6#npm:1.2.8"],\
+            ["@stitches/react", "virtual:85e5aae0f1fe5f2953af24e1304a8497a8551cb5516d0b53f79f0656874643be28533aa127f54212ed4fdace35ee3c99021315dd8363fbebafee3da1a2ab6d6d#npm:1.2.8"],\
             ["@types/react", "npm:17.0.39"],\
             ["react", "npm:18.2.0"]\
           ],\
@@ -9012,6 +9017,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT"\
         }]\
       ]],\
+      ["@ui-parts/core", [\
+        ["workspace:ui-parts/core", {\
+          "packageLocation": "./ui-parts/core/",\
+          "packageDependencies": [\
+            ["@ui-parts/core", "workspace:ui-parts/core"],\
+            ["@stitches/react", "virtual:85e5aae0f1fe5f2953af24e1304a8497a8551cb5516d0b53f79f0656874643be28533aa127f54212ed4fdace35ee3c99021315dd8363fbebafee3da1a2ab6d6d#npm:1.2.8"],\
+            ["@types/react", "npm:17.0.39"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["@ui-parts/design", [\
         ["workspace:ui-parts/design", {\
           "packageLocation": "./ui-parts/design/",\
@@ -9578,7 +9595,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@ui-proto-core-virtual-a678785159/1/ui-proto/core/",\
           "packageDependencies": [\
             ["@ui-proto/core", "virtual:8724c16d548c5b10e2d1077d976ede32e643e19bd81fba08096d10e5ce8d005c5ae80db72a0ad91bb591aa085e5fd3f0e737a24f071505eeedec9c86c785bf3b#workspace:ui-proto/core"],\
-            ["@stitches/react", "virtual:a67878515934f8cd11bccd56043b9a2c645191864bc9db25a8307120d5cf35a56491a7ff933255dbfb3dd07f5f4ebc1b15b2319e6a873f2de79a05e5a858adf6#npm:1.2.8"],\
+            ["@stitches/react", "virtual:85e5aae0f1fe5f2953af24e1304a8497a8551cb5516d0b53f79f0656874643be28533aa127f54212ed4fdace35ee3c99021315dd8363fbebafee3da1a2ab6d6d#npm:1.2.8"],\
             ["@types/react", "npm:17.0.39"],\
             ["react", "npm:18.2.0"]\
           ],\
@@ -9592,7 +9609,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./ui-proto/core/",\
           "packageDependencies": [\
             ["@ui-proto/core", "workspace:ui-proto/core"],\
-            ["@stitches/react", "virtual:a67878515934f8cd11bccd56043b9a2c645191864bc9db25a8307120d5cf35a56491a7ff933255dbfb3dd07f5f4ebc1b15b2319e6a873f2de79a05e5a858adf6#npm:1.2.8"],\
+            ["@stitches/react", "virtual:85e5aae0f1fe5f2953af24e1304a8497a8551cb5516d0b53f79f0656874643be28533aa127f54212ed4fdace35ee3c99021315dd8363fbebafee3da1a2ab6d6d#npm:1.2.8"],\
             ["@types/react", "npm:17.0.39"],\
             ["react", "npm:18.2.0"]\
           ],\

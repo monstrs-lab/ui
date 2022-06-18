@@ -1,10 +1,6 @@
 import { Image }  from '@radix-ui/react-avatar'
 
+import { image }  from '@ui-parts/avatar'
 import { styled } from '@ui-proto/core'
 
-export const AvatarImage = styled(Image, {
-  width: '100%',
-  height: '100%',
-  objectFit: 'cover',
-  borderRadius: 'inherit',
-})
+export const AvatarImage = styled(Image, image.base())

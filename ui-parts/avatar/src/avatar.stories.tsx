@@ -1,109 +1,78 @@
-import styled                     from '@emotion/styled'
+import * as fallback     from './avatar-fallback.styles'
+import * as image        from './avatar-image.styles'
+import * as root         from './avatar-root.styles'
 
-import React                      from 'react'
-import stringToColor              from 'string-to-color'
+import { Root }          from '@radix-ui/react-avatar'
+import { Image }         from '@radix-ui/react-avatar'
+import { Fallback }      from '@radix-ui/react-avatar'
 
-import { ImageBlock }             from '@ui-parts/image'
-import { ScalableContent }        from '@ui-parts/scalable-content'
-import { TextTransform }          from '@ui-parts/text-transform'
-import { fontNames }              from '@monstrs/storybook-google-fonts'
-import { useGoogleFonts }         from '@monstrs/storybook-google-fonts'
+import React             from 'react'
 
-import { createAppearanceStyles } from './appearance'
-// @ts-ignore
-import { templates }              from './avatar.templates'
-import { createBaseStyles }       from './base'
-import { createShapeStyles }      from './shape'
+import { TextTransform } from '@ui-parts/text-transform'
+import { styled }        from '@ui-parts/core'
+import { theme }         from '@ui-parts/core'
 
 export default {
   title: 'Components/Avatar',
-  parameters: {
-    development: {
-      templates,
-    },
-  },
 }
 
 export const Avatar = ({
-  backgroundColor,
-  borderColor,
-  borderWidth,
+  src,
+  text,
   size,
-  borderRadius,
-  padding,
-  fontColor,
   fontSize,
   fontWeight,
-  fontFamily,
-  shape,
-  textBasedBackground,
-  contentType,
-  src,
-  icon,
-  text,
-  alt,
+  color,
+  backgroundColor,
+  borderStyle,
+  borderWidth,
+  borderColor,
+  borderRadius,
 }) => {
-  useGoogleFonts(fontFamily, fontWeight)
+  const AvatarImage = styled(Image, image.base())
 
-  const StoryAvatar = styled.div(
-    createBaseStyles(),
-    createShapeStyles({
-      size,
-      borderRadius,
-      borderWidth,
-      padding,
-      fontSize,
-      fontWeight,
-      fontFamily,
-    }),
-    createAppearanceStyles({
-      backgroundColor,
-      borderColor,
-      fontColor,
-    })
+  const AvatarFallback = styled(
+    Fallback,
+    fallback.base(),
+    fallback.shape(fontSize, fontWeight, theme.fonts.primary),
+    fallback.appearance(color)
+  )
+
+  const AvatarRoot = styled(
+    Root,
+    root.base(),
+    root.size(size),
+    root.shape(borderWidth, borderRadius, borderStyle),
+    root.appearance(backgroundColor, borderColor)
   )
 
   return (
-    <StoryAvatar shape={shape} background={textBasedBackground ? stringToColor(text) : null}>
-      {(contentType === 'image' && <ImageBlock src={src} alt={alt} />) ||
-        (contentType === 'scalable-text' && <ScalableContent>{text}</ScalableContent>) ||
-        (contentType === 'first-letter-text' && (
-          <TextTransform firstLetter upperCase>
-            {text}
-          </TextTransform>
-        )) ||
-        (contentType === 'icon' && icon)}
-    </StoryAvatar>
+    <AvatarRoot>
+      <AvatarImage src={src} />
+      <AvatarFallback>
+        <TextTransform firstLetter upperCase>
+          {text}
+        </TextTransform>
+      </AvatarFallback>
+    </AvatarRoot>
   )
 }
 
 Avatar.args = {
-  contentType: 'scalable-text',
-  src: 'https://media.istockphoto.com/vectors/default-profile-picture-avatar-photo-placeholder-vector-illustration-vector-id1223671392?s=170x170',
+  src: 'https://cdn.drawize.com/Content/Images/avatars/placeholder.png?s=1&width=100',
   text: 'Аватар',
-  fontColor: 'white',
-  backgroundColor: 'blue',
-  textBasedBackground: false,
-  borderColor: 'blue',
-  borderWidth: 4,
-  fontFamily: 'Roboto',
-  fontWeight: 400,
-  fontSize: 16,
-  size: 100,
-  borderRadius: undefined,
-  padding: 10,
-  shape: 'circle',
-  icon: '',
+  color: theme.colors.white.value,
+  backgroundColor: theme.colors.blue.value,
+  fontWeight: theme.fontWeights.normal.value,
+  borderColor: theme.colors.blue.value,
+  borderRadius: 48,
+  borderStyle: 'solid',
+  borderWidth: 1,
+  fontSize: 20,
+  size: 48,
 }
 
 Avatar.argTypes = {
-  text: {
-    name: 'Текст',
-    description: 'Текст внутри',
-    table: {
-      category: 'Наполнение',
-    },
-  },
   src: {
     name: 'Изображение',
     description: 'Адресс изображения',
@@ -111,15 +80,11 @@ Avatar.argTypes = {
       category: 'Наполнение',
     },
   },
-  contentType: {
-    name: 'Контент',
-    description: 'Выбор наполнения',
+  text: {
+    name: 'Текст',
+    description: 'Текст внутри',
     table: {
       category: 'Наполнение',
-    },
-    control: {
-      type: 'inline-radio',
-      options: ['image', 'scalable-text', 'first-letter-text', 'icon'],
     },
   },
   size: {
@@ -131,29 +96,6 @@ Avatar.argTypes = {
     },
     control: {
       type: 'number',
-    },
-  },
-  padding: {
-    name: 'Отступы',
-    description: 'Отступы от контента',
-    table: {
-      category: 'Представление',
-      subcategory: 'Форма',
-    },
-    control: {
-      type: 'number',
-    },
-  },
-  fontFamily: {
-    name: 'Шрифт',
-    description: 'Шрифт',
-    table: {
-      category: 'Представление',
-      subcategory: 'Форма',
-    },
-    control: {
-      type: 'select',
-      options: fontNames,
     },
   },
   fontWeight: {
@@ -190,15 +132,7 @@ Avatar.argTypes = {
       type: 'color',
     },
   },
-  textBasedBackground: {
-    name: 'Цвет на основе текста',
-    description: 'Цвет на основе текста',
-    table: {
-      category: 'Представление',
-      subcategory: 'Внешний вид',
-    },
-  },
-  fontColor: {
+  color: {
     name: 'Цвет текста',
     description: 'Цвет текста',
     table: {
@@ -207,6 +141,18 @@ Avatar.argTypes = {
     },
     control: {
       type: 'color',
+    },
+  },
+  borderStyle: {
+    name: 'Стиль обводки',
+    description: 'Стиль обводки',
+    table: {
+      category: 'Представление',
+      subcategory: 'Обводка',
+    },
+    control: {
+      type: 'select',
+      options: ['dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset'],
     },
   },
   borderWidth: {
@@ -231,24 +177,12 @@ Avatar.argTypes = {
       type: 'color',
     },
   },
-  shape: {
-    name: 'Форма',
-    description: 'Форма аватара',
-    table: {
-      category: 'Модификаторы',
-      subcategory: 'Форма',
-    },
-    control: {
-      type: 'inline-radio',
-      options: ['square', 'circle'],
-    },
-  },
   borderRadius: {
     name: 'Скругление',
     description: 'Устанавливает величину скругления',
     table: {
-      category: 'Модификаторы',
-      subcategory: 'Форма',
+      category: 'Представление',
+      subcategory: 'Обводка',
     },
     control: {
       type: 'number',

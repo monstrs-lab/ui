@@ -1,5 +1,5 @@
 export interface TextTransformProps {
-  children: string
+  children?: string
   upperCase?: boolean
   lowerCase?: boolean
   firstLetter?: boolean

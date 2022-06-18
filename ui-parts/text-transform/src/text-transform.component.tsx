@@ -24,7 +24,7 @@ export const TextTransform: FC<TextTransformProps> = ({ children, ...props }) =>
         default:
           return result
       }
-    }, children)
+    }, children || '')
 
     return transformed as any as ReactElement
   } catch (error) {

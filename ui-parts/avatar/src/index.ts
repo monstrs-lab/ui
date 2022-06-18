@@ -1,4 +1,3 @@
-export * from './avatar.interfaces'
-export * from './appearance'
-export * from './shape'
-export * from './base'
+export * as fallback from './avatar-fallback.styles'
+export * as image from './avatar-image.styles'
+export * as root from './avatar-root.styles'

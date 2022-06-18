@@ -4562,25 +4562,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-parts/avatar@workspace:ui-parts/avatar"
   dependencies:
-    "@emotion/styled": ^11.9.3
     "@monstrs/storybook-google-fonts": "workspace:0.0.1"
-    "@types/jest": ^28.1.1
+    "@radix-ui/react-avatar": ^0.1.4
+    "@stitches/react": ^1.2.8
     "@types/node": ^18.0.0
     "@types/react": ^18.0.14
-    "@types/styled-system": ^5.1.15
-    "@ui-parts/image": "workspace:0.2.9"
-    "@ui-parts/scalable-content": "workspace:0.2.9"
-    "@ui-parts/styles": "workspace:0.2.9"
+    "@ui-parts/core": "workspace:0.1.0"
     "@ui-parts/text-transform": "workspace:0.2.12"
+    "@ui-parts/types": "workspace:0.1.0"
     react: ^18.2.0
-    string-to-color: ^2.2.2
-    styled-system: ^5.1.5
-    styled-tools: ^1.7.2
   peerDependencies:
-    "@emotion/styled": ^11.1.5
-    react: ^17.0.1
-    styled-system: ^5.1.5
-    styled-tools: ^1.7.2
+    react: "^18.2.0 "
   languageName: unknown
   linkType: soft
 
@@ -4661,7 +4653,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/core@workspace:ui-parts/core":
+"@ui-parts/core@workspace:0.1.0, @ui-parts/core@workspace:ui-parts/core":
   version: 0.0.0-use.local
   resolution: "@ui-parts/core@workspace:ui-parts/core"
   dependencies:
@@ -4745,7 +4737,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/image@workspace:0.2.9, @ui-parts/image@workspace:ui-parts/image":
+"@ui-parts/image@workspace:ui-parts/image":
   version: 0.0.0-use.local
   resolution: "@ui-parts/image@workspace:ui-parts/image"
   dependencies:
@@ -4802,7 +4794,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/scalable-content@workspace:0.2.9, @ui-parts/scalable-content@workspace:ui-parts/scalable-content":
+"@ui-parts/scalable-content@workspace:ui-parts/scalable-content":
   version: 0.0.0-use.local
   resolution: "@ui-parts/scalable-content@workspace:ui-parts/scalable-content"
   dependencies:
@@ -4861,6 +4853,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui-parts/types@workspace:0.1.0, @ui-parts/types@workspace:ui-parts/types":
+  version: 0.0.0-use.local
+  resolution: "@ui-parts/types@workspace:ui-parts/types"
+  languageName: unknown
+  linkType: soft
+
 "@ui-parts/upload@workspace:ui-parts/upload":
   version: 0.0.0-use.local
   resolution: "@ui-parts/upload@workspace:ui-parts/upload"
@@ -4882,21 +4880,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-proto/avatar@workspace:ui-proto/avatar"
   dependencies:
-    "@emotion/styled": ^11.9.3
     "@radix-ui/react-avatar": ^0.1.4
     "@types/node": ^18.0.0
     "@types/react": ^18.0.14
-    "@types/styled-system": ^5.1.15
+    "@ui-parts/avatar": "workspace:0.2.13"
     "@ui-parts/text-transform": "workspace:0.2.12"
     "@ui-proto/core": "workspace:0.1.0"
     react: ^18.2.0
-    styled-system: ^5.1.5
-    styled-tools: ^1.7.2
   peerDependencies:
-    "@emotion/styled": ^11.1.5
-    react: ^17.0.1
-    styled-system: ^5.1.5
-    styled-tools: ^1.7.2
+    react: ^18.2.0
   languageName: unknown
   linkType: soft
 
@@ -7153,13 +7145,6 @@ __metadata:
   version: 1.2.2
   resolution: "colorette@npm:1.2.2"
   checksum: 69fec14ddaedd0f5b00e4bae40dc4bc61f7050ebdc82983a595d6fd64e650b9dc3c033fff378775683138e992e0ddd8717ac7c7cec4d089679dcfbe3cd921b04
-  languageName: node
-  linkType: hard
-
-"colornames@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "colornames@npm:1.1.1"
-  checksum: a97df66bde2a0efb592870f790bae2ffcbf2f9e30c0064783a2941be6713f0ac2acfa3bf1baf70bb423d99526f4fc761bf311fac94aa18ed642d77932352f864
   languageName: node
   linkType: hard
 
@@ -9613,13 +9598,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hex-rgb@npm:^4.1.0":
-  version: 4.2.0
-  resolution: "hex-rgb@npm:4.2.0"
-  checksum: 9018826c19553fbb18687d5c7b1ad3a871e17b8d44cdf9d575d15ec0cb4a671dd1f5941723de434fe0d0d128941129f457274379c148e131833b2f2553bc2cd2
-  languageName: node
-  linkType: hard
-
 "hey-listen@npm:^1.0.8":
   version: 1.0.8
   resolution: "hey-listen@npm:1.0.8"
@@ -11506,31 +11484,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.padend@npm:^4.6.1":
-  version: 4.6.1
-  resolution: "lodash.padend@npm:4.6.1"
-  checksum: c2e6e789debf83b98f5c085305cdcfff1067e7a31bda2a110fd765d3c11a99edfbeef570d9ef737ab3212006bdb8114e77622e518c18c1fce52b8fdfd9dab685
-  languageName: node
-  linkType: hard
-
-"lodash.trimstart@npm:^4.5.1":
-  version: 4.5.1
-  resolution: "lodash.trimstart@npm:4.5.1"
-  checksum: 4b2d37505ac15f501f4f2378928455a40e858fa56c924494dbc21d5d828c55e821cda8543f25fe265e3d552937e915264a2567ba9291a172262c24c33e9ad6b0
-  languageName: node
-  linkType: hard
-
 "lodash.uniq@npm:4.5.0":
   version: 4.5.0
   resolution: "lodash.uniq@npm:4.5.0"
   checksum: a4779b57a8d0f3c441af13d9afe7ecff22dd1b8ce1129849f71d9bbc8e8ee4e46dfb4b7c28f7ad3d67481edd6e51126e4e2a6ee276e25906d10f7140187c392d
-  languageName: node
-  linkType: hard
-
-"lodash.words@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "lodash.words@npm:4.2.0"
-  checksum: 287d617ffa3fb453b6925620f04fa195c801590833fd9336c7e80c36ce105d06613ad0455ad368738fb40b36fd5f635b85f837fc7f584b73e03365482acd6e7a
   languageName: node
   linkType: hard
 
@@ -14059,13 +14016,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rgb-hex@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "rgb-hex@npm:3.0.0"
-  checksum: 45959f777c9a078230cd20cdef2db159856ab74c1115ec6cb096801fdf223f533439d26555f2b39f2d9e1547f25588c6a3462dc19630a71dc090204b0d9e9d9f
-  languageName: node
-  linkType: hard
-
 "rimraf@npm:^2.2.8":
   version: 2.7.1
   resolution: "rimraf@npm:2.7.1"
@@ -14731,20 +14681,6 @@ __metadata:
   peerDependencies:
     webpack: ^5
   checksum: 15fec37e2ddfc83819ad6b8005b5518e4314de69b9332077d8f032292b02106000ccc5ac52ceb1285efe30a5286620aef1e51c7d3c00d08fa4571d648b32cfa9
-  languageName: node
-  linkType: hard
-
-"string-to-color@npm:^2.2.2":
-  version: 2.2.2
-  resolution: "string-to-color@npm:2.2.2"
-  dependencies:
-    colornames: "npm:^1.1.1"
-    hex-rgb: "npm:^4.1.0"
-    lodash.padend: "npm:^4.6.1"
-    lodash.trimstart: "npm:^4.5.1"
-    lodash.words: "npm:^4.2.0"
-    rgb-hex: "npm:^3.0.0"
-  checksum: 9ffe859f387f5a2da30794ea4399d43b2f701acc2c0429f9aed9cce52f873f9ec40ad6b64eb5e5f030d602e38dca9a4b8f39f41c33d287b4b9d2043e4a513508
   languageName: node
   linkType: hard
 

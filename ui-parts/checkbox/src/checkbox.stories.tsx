@@ -5,8 +5,8 @@ import { useState }                      from 'react'
 import { styleFn }                       from 'styled-system'
 import { ifProp }                        from 'styled-tools'
 
-import { ConditionalRender }             from '@ui-parts/conditional-render'
 import { HiddenInput }                   from '@ui-parts/hidden-input'
+import { ConditionalRender }             from '@ui-primitives/conditional-render'
 import { fontNames }                     from '@monstrs/storybook-google-fonts'
 import { useGoogleFonts }                from '@monstrs/storybook-google-fonts'
 

@@ -12,7 +12,6 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-parts/conditional-render": "workspace:0.2.9",
     "@ui-parts/input": "workspace:0.2.11"
   },
   "devDependencies": {

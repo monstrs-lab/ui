@@ -2212,30 +2212,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/react-app-links@npm:0.0.3":
-  version: 0.0.3
-  resolution: "@monstrs/react-app-links@npm:0.0.3"
-  dependencies:
-    tldjs: "npm:^2.3.1"
-  peerDependencies:
-    react: ^17.0.1
-  checksum: acb6d2ce58de0fd5f9567c6bf7320aa7624dfceb30a2ee117b7fd42cb04705aebef527d66bdea790f882e46da71fa16a3dbbce5b9f17c18f9ef6bd94e942175e
-  languageName: node
-  linkType: hard
-
-"@monstrs/react-upload@npm:^0.1.10":
-  version: 0.1.10
-  resolution: "@monstrs/react-upload@npm:0.1.10"
-  dependencies:
-    "@monstrs/react-app-links": "npm:0.0.3"
-    graphql-request: "npm:^4.0.0"
-  peerDependencies:
-    graphql: ^16.3.0
-    react: ^17.0.1
-  checksum: 7ea704640561e321c90a2cf5ed8f06da9f4cf2eac3e8c18fbd3a30b572eea8e6ef826d9f27665727f1f770a4905423040649f136c08b421dacfe872f6767c057
-  languageName: node
-  linkType: hard
-
 "@monstrs/schematics-utils@npm:0.1.14":
   version: 0.1.14
   resolution: "@monstrs/schematics-utils@npm:0.1.14"
@@ -4666,23 +4642,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/image@workspace:ui-parts/image":
-  version: 0.0.0-use.local
-  resolution: "@ui-parts/image@workspace:ui-parts/image"
-  dependencies:
-    "@emotion/styled": ^11.9.3
-    "@types/jest": ^28.1.1
-    "@types/react": ^18.0.14
-    "@types/styled-system": ^5.1.15
-    react: ^18.2.0
-    styled-system: ^5.1.5
-  peerDependencies:
-    "@emotion/styled": ^11.1.5
-    react: ^17.0.1
-    styled-system: ^5.1.5
-  languageName: unknown
-  linkType: soft
-
 "@ui-parts/input@workspace:0.2.11, @ui-parts/input@workspace:ui-parts/input":
   version: 0.0.0-use.local
   resolution: "@ui-parts/input@workspace:ui-parts/input"
@@ -4771,23 +4730,6 @@ __metadata:
 "@ui-parts/types@workspace:0.1.0, @ui-parts/types@workspace:ui-parts/types":
   version: 0.0.0-use.local
   resolution: "@ui-parts/types@workspace:ui-parts/types"
-  languageName: unknown
-  linkType: soft
-
-"@ui-parts/upload@workspace:ui-parts/upload":
-  version: 0.0.0-use.local
-  resolution: "@ui-parts/upload@workspace:ui-parts/upload"
-  dependencies:
-    "@monstrs/react-upload": ^0.1.10
-    "@types/node": ^18.0.0
-    "@types/react": ^18.0.14
-    "@ui-parts/avatar": "workspace:0.2.13"
-    graphql: ^16.5.0
-    react: ^18.2.0
-    react-dropzone: ^14.2.1
-  peerDependencies:
-    graphql: ^16.3.0
-    react: ^17.0.1
   languageName: unknown
   linkType: soft
 
@@ -6162,13 +6104,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"attr-accept@npm:^2.2.2":
-  version: 2.2.2
-  resolution: "attr-accept@npm:2.2.2"
-  checksum: 496f7249354ab53e522510c1dc8f67a1887382187adde4dc205507d2f014836a247073b05e9d9ea51e2e9c7f71b0d2aa21730af80efa9af2d68303e5f0565c4d
-  languageName: node
-  linkType: hard
-
 "autoprefixer@npm:^9.8.6":
   version: 9.8.6
   resolution: "autoprefixer@npm:9.8.6"
@@ -7343,15 +7278,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-fetch@npm:^3.0.6":
-  version: 3.1.5
-  resolution: "cross-fetch@npm:3.1.5"
-  dependencies:
-    node-fetch: "npm:2.6.7"
-  checksum: f6b8c6ee3ef993ace6277fd789c71b6acf1b504fd5f5c7128df4ef2f125a429e29cd62dc8c127523f04a5f2fa4771ed80e3f3d9695617f441425045f505cf3bb
-  languageName: node
-  linkType: hard
-
 "cross-spawn@npm:7.0.3, cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
@@ -8471,13 +8397,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"extract-files@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "extract-files@npm:9.0.0"
-  checksum: c31781d090f8d8f62cc541f1023b39ea863f24bd6fb3d4011922d71cbded70cef8191f2b70b43ec6cb5c5907cdad1dc5e9f29f78228936c10adc239091d8ab64
-  languageName: node
-  linkType: hard
-
 "extsprintf@npm:1.3.0":
   version: 1.3.0
   resolution: "extsprintf@npm:1.3.0"
@@ -8606,15 +8525,6 @@ __metadata:
   peerDependencies:
     webpack: ^4.0.0 || ^5.0.0
   checksum: faf43eecf233f4897b0150aaa874eeeac214e4f9de49738a9e0ef734a30b5260059e85b7edadf852b98e415f875bd5f12587768a93fd52aaf2e479ecf95fab20
-  languageName: node
-  linkType: hard
-
-"file-selector@npm:^0.6.0":
-  version: 0.6.0
-  resolution: "file-selector@npm:0.6.0"
-  dependencies:
-    tslib: ^2.4.0
-  checksum: 7d051b6e5d793f3c6e2ab287ba5e7c2c6a0971bccc9d56e044c8047ba483e18f60fc0b5771c951dc707c0d15f4f36ccb4f1f1aaf385d21ec8f7700dadf8325ba
   languageName: node
   linkType: hard
 
@@ -9288,26 +9198,6 @@ __metadata:
   version: 1.0.4
   resolution: "grapheme-splitter@npm:1.0.4"
   checksum: 0c22ec54dee1b05cd480f78cf14f732cb5b108edc073572c4ec205df4cd63f30f8db8025afc5debc8835a8ddeacf648a1c7992fe3dcd6ad38f9a476d84906620
-  languageName: node
-  linkType: hard
-
-"graphql-request@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "graphql-request@npm:4.0.0"
-  dependencies:
-    cross-fetch: "npm:^3.0.6"
-    extract-files: "npm:^9.0.0"
-    form-data: "npm:^3.0.0"
-  peerDependencies:
-    graphql: 14 - 16
-  checksum: 0d16c7f06360679c022faaa19554c2693e200263beae0dec920b0668f6c48b0d08de6e1155a50a050283a58a878b29b04db129a2d932a645bfadbe8d55530243
-  languageName: node
-  linkType: hard
-
-"graphql@npm:^16.5.0":
-  version: 16.5.0
-  resolution: "graphql@npm:16.5.0"
-  checksum: a82a926d085818934d04fdf303a269af170e79de943678bd2726370a96194f9454ade9d6d76c2de69afbd7b9f0b4f8061619baecbbddbe82125860e675ac219e
   languageName: node
   linkType: hard
 
@@ -12005,7 +11895,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:2.6.7, node-fetch@npm:^2.6.1, node-fetch@npm:^2.6.7":
+"node-fetch@npm:^2.6.1, node-fetch@npm:^2.6.7":
   version: 2.6.7
   resolution: "node-fetch@npm:2.6.7"
   dependencies:
@@ -13168,7 +13058,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.0.0, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.0.0, prop-types@npm:^15.7.2":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -13233,13 +13123,6 @@ __metadata:
     end-of-stream: "npm:^1.1.0"
     once: "npm:^1.3.1"
   checksum: e42e9229fba14732593a718b04cb5e1cfef8254544870997e0ecd9732b189a48e1256e4e5478148ecb47c8511dca2b09eae56b4d0aad8009e6fac8072923cfc9
-  languageName: node
-  linkType: hard
-
-"punycode@npm:^1.4.1":
-  version: 1.4.1
-  resolution: "punycode@npm:1.4.1"
-  checksum: fa6e698cb53db45e4628559e557ddaf554103d2a96a1d62892c8f4032cd3bc8871796cae9eabc1bc700e2b6677611521ce5bb1d9a27700086039965d0cf34518
   languageName: node
   linkType: hard
 
@@ -13382,19 +13265,6 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
   checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
-  languageName: node
-  linkType: hard
-
-"react-dropzone@npm:^14.2.1":
-  version: 14.2.1
-  resolution: "react-dropzone@npm:14.2.1"
-  dependencies:
-    attr-accept: ^2.2.2
-    file-selector: ^0.6.0
-    prop-types: ^15.8.1
-  peerDependencies:
-    react: ">= 16.8 || 18.0.0"
-  checksum: 8556d997d66bad79fe165a30d6dc8f917c67d8c7d23069c417eb2a0da6df824ba71b84b532707711e184da105122f6a6e81104341dc5b8c0f96e318267fdda91
   languageName: node
   linkType: hard
 
@@ -15050,15 +14920,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tldjs@npm:^2.3.1":
-  version: 2.3.1
-  resolution: "tldjs@npm:2.3.1"
-  dependencies:
-    punycode: "npm:^1.4.1"
-  checksum: f699c6a6aa29b0f0ed1297f3a8c692dd9403139d2e5c5381490c69e9e447e499dd8caaa2b228af30ecc8591b45af51344d2b39d99af2d29fcee964e8093428de
-  languageName: node
-  linkType: hard
-
 "tmpl@npm:1.0.5":
   version: 1.0.5
   resolution: "tmpl@npm:1.0.5"
@@ -15268,7 +15129,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.0, tslib@npm:^2.0.1, tslib@npm:^2.0.3, tslib@npm:^2.4.0":
+"tslib@npm:^2.0.0, tslib@npm:^2.0.1, tslib@npm:^2.0.3":
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
   checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113

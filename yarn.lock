@@ -4682,24 +4682,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/scalable-content@workspace:ui-parts/scalable-content":
-  version: 0.0.0-use.local
-  resolution: "@ui-parts/scalable-content@workspace:ui-parts/scalable-content"
-  dependencies:
-    "@emotion/styled": ^11.9.3
-    "@types/jest": ^28.1.1
-    "@types/react": ^18.0.14
-    "@types/styled-system": ^5.1.15
-    "@ui-utils/content-dimensions": "workspace:0.1.0"
-    react: ^18.2.0
-    styled-system: ^5.1.5
-  peerDependencies:
-    "@emotion/styled": ^11.1.5
-    react: ^17.0.1
-    styled-system: ^5.1.5
-  languageName: unknown
-  linkType: soft
-
 "@ui-parts/styles@workspace:0.2.9, @ui-parts/styles@workspace:ui-parts/styles":
   version: 0.0.0-use.local
   resolution: "@ui-parts/styles@workspace:ui-parts/styles"
@@ -4749,6 +4731,19 @@ __metadata:
   resolution: "@ui-primitives/events-state@workspace:ui-primitives/events-state"
   dependencies:
     "@types/react": ^18.0.14
+    react: ^18.2.0
+  peerDependencies:
+    react: ^18.2.0
+  languageName: unknown
+  linkType: soft
+
+"@ui-primitives/scalable-content@workspace:ui-primitives/scalable-content":
+  version: 0.0.0-use.local
+  resolution: "@ui-primitives/scalable-content@workspace:ui-primitives/scalable-content"
+  dependencies:
+    "@stitches/react": ^1.2.8
+    "@types/react": ^18.0.14
+    "@ui-utils/content-dimensions": "workspace:0.1.0"
     react: ^18.2.0
   peerDependencies:
     react: ^18.2.0

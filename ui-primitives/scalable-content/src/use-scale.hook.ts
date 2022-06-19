@@ -15,6 +15,7 @@ export const useScale = (): UseScaleResult => {
     if (ref?.current?.parentElement) {
       const childrenWidth = ref.current.offsetWidth
       const childrenHeight = ref.current.offsetHeight
+
       const { width, height } = getContentDimensions(ref.current.parentElement)
 
       if (childrenWidth >= childrenHeight) {

@@ -12,8 +12,8 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-parts/events-state": "workspace:0.2.10",
-    "@ui-parts/styles": "workspace:0.2.9"
+    "@ui-parts/styles": "workspace:0.2.9",
+    "@ui-primitives/events-state": "workspace:0.2.10"
   },
   "devDependencies": {
     "@emotion/styled": "^11.9.3",

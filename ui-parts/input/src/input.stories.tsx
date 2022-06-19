@@ -5,9 +5,9 @@ import { useState }                         from 'react'
 import { useMemo }                          from 'react'
 import { useRef }                           from 'react'
 
-import { ForwardEventsState }               from '@ui-parts/events-state'
 import { Box }                              from '@ui-parts/layout'
 import { ConditionalRender }                from '@ui-primitives/conditional-render'
+import { ForwardEventsState }               from '@ui-primitives/events-state'
 import { fontNames }                        from '@monstrs/storybook-google-fonts'
 import { useGoogleFonts }                   from '@monstrs/storybook-google-fonts'
 

@@ -4651,17 +4651,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/events-state@workspace:0.2.10, @ui-parts/events-state@workspace:ui-parts/events-state":
-  version: 0.0.0-use.local
-  resolution: "@ui-parts/events-state@workspace:ui-parts/events-state"
-  dependencies:
-    "@types/react": ^18.0.14
-    react: ^18.2.0
-  peerDependencies:
-    react: ^17.0.1
-  languageName: unknown
-  linkType: soft
-
 "@ui-parts/hidden-input@workspace:0.2.10, @ui-parts/hidden-input@workspace:ui-parts/hidden-input":
   version: 0.0.0-use.local
   resolution: "@ui-parts/hidden-input@workspace:ui-parts/hidden-input"
@@ -4703,10 +4692,10 @@ __metadata:
     "@types/jest": ^28.1.1
     "@types/react": ^18.0.14
     "@types/styled-system": ^5.1.15
-    "@ui-parts/events-state": "workspace:0.2.10"
     "@ui-parts/layout": "workspace:0.2.9"
     "@ui-parts/styles": "workspace:0.2.9"
     "@ui-primitives/conditional-render": "workspace:0.2.9"
+    "@ui-primitives/events-state": "workspace:0.2.10"
     react: ^18.2.0
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
@@ -4805,6 +4794,17 @@ __metadata:
 "@ui-primitives/conditional-render@workspace:0.2.9, @ui-primitives/conditional-render@workspace:ui-primitives/conditional-render":
   version: 0.0.0-use.local
   resolution: "@ui-primitives/conditional-render@workspace:ui-primitives/conditional-render"
+  dependencies:
+    "@types/react": ^18.0.14
+    react: ^18.2.0
+  peerDependencies:
+    react: ^18.2.0
+  languageName: unknown
+  linkType: soft
+
+"@ui-primitives/events-state@workspace:0.2.10, @ui-primitives/events-state@workspace:ui-primitives/events-state":
+  version: 0.0.0-use.local
+  resolution: "@ui-primitives/events-state@workspace:ui-primitives/events-state"
   dependencies:
     "@types/react": ^18.0.14
     react: ^18.2.0
@@ -4914,7 +4914,6 @@ __metadata:
     "@types/react": ^18.0.14
     "@types/styled-system": ^5.1.15
     "@ui-parts/input": "workspace:0.2.11"
-    "@ui-primitives/conditional-render": "workspace:0.2.9"
     react: ^18.2.0
     styled-system: ^5.1.5
     styled-tools: ^1.7.2

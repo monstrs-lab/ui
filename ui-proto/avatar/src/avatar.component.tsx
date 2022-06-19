@@ -1,7 +1,7 @@
 import React              from 'react'
 import { FC }             from 'react'
 
-import { TextTransform }  from '@ui-parts/text-transform'
+import { TextTransform }  from '@ui-primitives/text-transform'
 
 import { AvatarFallback } from './avatar-fallback.component'
 import { AvatarImage }    from './avatar-image.component'

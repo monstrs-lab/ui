@@ -1,5 +1,5 @@
 {
-  "name": "@ui-parts/text-transform",
+  "name": "@ui-primitives/text-transform",
   "version": "0.2.12",
   "license": "MIT",
   "main": "src/index.ts",
@@ -19,7 +19,7 @@
     "react": "^18.2.0"
   },
   "peerDependencies": {
-    "react": "^17.0.1"
+    "react": "^18.2.0"
   },
   "publishConfig": {
     "access": "public",

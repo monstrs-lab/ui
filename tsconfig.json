@@ -26,5 +26,12 @@
     "jsx": "react",
     "outDir": "./dist"
   },
-  "include": ["ui/**/*", "ui-proto/**/*", "ui-parts/**/*", "ui-admin/**/*"]
+  "include": [
+    "ui/**/*",
+    "ui-proto/**/*",
+    "ui-parts/**/*",
+    "ui-admin/**/*",
+    "ui-primitives/**/*",
+    "ui-utils/**/*"
+  ]
 }

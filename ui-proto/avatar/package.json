@@ -14,7 +14,7 @@
   "dependencies": {
     "@radix-ui/react-avatar": "^0.1.4",
     "@ui-parts/avatar": "workspace:0.2.13",
-    "@ui-parts/text-transform": "workspace:0.2.12",
+    "@ui-primitives/text-transform": "workspace:0.2.12",
     "@ui-proto/core": "workspace:0.1.0"
   },
   "devDependencies": {

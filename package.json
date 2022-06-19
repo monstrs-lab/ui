@@ -3,9 +3,11 @@
   "private": true,
   "workspaces": [
     "storybook/*",
+    "ui-primitives/*",
     "ui-admin/*",
     "ui-proto/*",
     "ui-parts/*",
+    "ui-utils/*",
     "ui/*"
   ],
   "resolutions": {

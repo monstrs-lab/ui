@@ -18,8 +18,8 @@
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@ui-parts/core": "workspace:0.1.0",
-    "@ui-parts/text-transform": "workspace:0.2.12",
     "@ui-parts/types": "workspace:0.1.0",
+    "@ui-primitives/text-transform": "workspace:0.2.12",
     "react": "^18.2.0"
   },
   "peerDependencies": {

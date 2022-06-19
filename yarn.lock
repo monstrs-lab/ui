@@ -4568,8 +4568,8 @@ __metadata:
     "@types/node": ^18.0.0
     "@types/react": ^18.0.14
     "@ui-parts/core": "workspace:0.1.0"
-    "@ui-parts/text-transform": "workspace:0.2.12"
     "@ui-parts/types": "workspace:0.1.0"
+    "@ui-primitives/text-transform": "workspace:0.2.12"
     react: ^18.2.0
   peerDependencies:
     react: "^18.2.0 "
@@ -4823,20 +4823,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/text-transform@workspace:0.2.12, @ui-parts/text-transform@workspace:ui-parts/text-transform":
-  version: 0.0.0-use.local
-  resolution: "@ui-parts/text-transform@workspace:ui-parts/text-transform"
-  dependencies:
-    "@testing-library/react": ^13.3.0
-    "@types/jest": ^28.1.1
-    "@types/node": ^18.0.0
-    "@types/react": ^18.0.14
-    react: ^18.2.0
-  peerDependencies:
-    react: ^17.0.1
-  languageName: unknown
-  linkType: soft
-
 "@ui-parts/text@workspace:0.2.9, @ui-parts/text@workspace:ui-parts/text":
   version: 0.0.0-use.local
   resolution: "@ui-parts/text@workspace:ui-parts/text"
@@ -4876,6 +4862,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui-primitives/text-transform@workspace:0.2.12, @ui-primitives/text-transform@workspace:ui-primitives/text-transform":
+  version: 0.0.0-use.local
+  resolution: "@ui-primitives/text-transform@workspace:ui-primitives/text-transform"
+  dependencies:
+    "@testing-library/react": ^13.3.0
+    "@types/jest": ^28.1.1
+    "@types/node": ^18.0.0
+    "@types/react": ^18.0.14
+    react: ^18.2.0
+  peerDependencies:
+    react: ^18.2.0
+  languageName: unknown
+  linkType: soft
+
 "@ui-proto/avatar@workspace:ui-proto/avatar":
   version: 0.0.0-use.local
   resolution: "@ui-proto/avatar@workspace:ui-proto/avatar"
@@ -4884,7 +4884,7 @@ __metadata:
     "@types/node": ^18.0.0
     "@types/react": ^18.0.14
     "@ui-parts/avatar": "workspace:0.2.13"
-    "@ui-parts/text-transform": "workspace:0.2.12"
+    "@ui-primitives/text-transform": "workspace:0.2.12"
     "@ui-proto/core": "workspace:0.1.0"
     react: ^18.2.0
   peerDependencies:

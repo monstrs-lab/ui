@@ -8,7 +8,7 @@ import { Fallback }      from '@radix-ui/react-avatar'
 
 import React             from 'react'
 
-import { TextTransform } from '@ui-parts/text-transform'
+import { TextTransform } from '@ui-primitives/text-transform'
 import { styled }        from '@ui-parts/core'
 import { theme }         from '@ui-parts/core'
 

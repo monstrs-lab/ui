@@ -2,7 +2,7 @@ import { useEffect }            from 'react'
 import { useRef }               from 'react'
 import { useState }             from 'react'
 
-import { getContentDimensions } from '@ui-parts/dom'
+import { getContentDimensions } from '@ui-utils/content-dimensions'
 
 import { UseScaleResult }       from './scalable-content.interfaces'
 

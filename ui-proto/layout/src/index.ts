@@ -1,1 +1,1 @@
-export * from '@ui-parts/layout'
+export * from '@ui-primitives/layout'

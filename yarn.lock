@@ -4651,10 +4651,10 @@ __metadata:
     "@types/jest": ^28.1.1
     "@types/react": ^18.0.14
     "@types/styled-system": ^5.1.15
-    "@ui-parts/layout": "workspace:0.2.9"
     "@ui-parts/styles": "workspace:0.2.9"
     "@ui-primitives/conditional-render": "workspace:0.2.9"
     "@ui-primitives/events-state": "workspace:0.2.10"
+    "@ui-primitives/layout": "workspace:0.2.9"
     react: ^18.2.0
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
@@ -4663,22 +4663,6 @@ __metadata:
     react: ^17.0.1
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
-  languageName: unknown
-  linkType: soft
-
-"@ui-parts/layout@workspace:0.2.9, @ui-parts/layout@workspace:ui-parts/layout":
-  version: 0.0.0-use.local
-  resolution: "@ui-parts/layout@workspace:ui-parts/layout"
-  dependencies:
-    "@emotion/styled": ^11.9.3
-    "@types/react": ^18.0.14
-    "@types/styled-system": ^5.1.15
-    react: ^18.2.0
-    styled-system: ^5.1.5
-  peerDependencies:
-    "@emotion/styled": ^11.1.5
-    react: ^17.0.1
-    styled-system: ^5.1.5
   languageName: unknown
   linkType: soft
 
@@ -4718,6 +4702,21 @@ __metadata:
     react: ^18.2.0
   peerDependencies:
     react: ^18.2.0
+  languageName: unknown
+  linkType: soft
+
+"@ui-primitives/layout@workspace:0.2.9, @ui-primitives/layout@workspace:ui-primitives/layout":
+  version: 0.0.0-use.local
+  resolution: "@ui-primitives/layout@workspace:ui-primitives/layout"
+  dependencies:
+    "@emotion/styled": ^11.9.3
+    "@types/react": ^18.0.14
+    "@types/styled-system": ^5.1.15
+    react: ^18.2.0
+    styled-system: ^5.1.5
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    react: ^17.0.1
   languageName: unknown
   linkType: soft
 
@@ -4865,7 +4864,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-proto/layout@workspace:ui-proto/layout"
   dependencies:
-    "@ui-parts/layout": "workspace:0.2.9"
+    "@ui-primitives/layout": "workspace:0.2.9"
   languageName: unknown
   linkType: soft
 

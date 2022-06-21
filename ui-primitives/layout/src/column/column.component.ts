@@ -1,9 +1,11 @@
+import type { FC }     from 'react'
+
 import styled          from '@emotion/styled'
 
 import { LayoutProps } from '../layout'
 import { Layout }      from '../layout'
 
-const Column = styled(Layout)<LayoutProps>()
+const Column: FC<LayoutProps> = styled(Layout)()
 
 Column.defaultProps = {
   boxSizing: 'border-box',

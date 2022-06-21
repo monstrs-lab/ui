@@ -1,3 +1,5 @@
+import type { FC }     from 'react'
+
 import styled          from '@emotion/styled'
 
 import { flexbox }     from 'styled-system'
@@ -7,7 +9,7 @@ import { system }      from 'styled-system'
 
 import { LayoutProps } from './layout.interfaces'
 
-const Layout = styled.div<LayoutProps>(
+const Layout: FC<LayoutProps> = styled.div(
   system({
     boxSizing: true,
   }),

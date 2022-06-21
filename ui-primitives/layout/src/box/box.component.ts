@@ -1,3 +1,5 @@
+import type { FC }    from 'react'
+
 import styled         from '@emotion/styled'
 
 import { background } from 'styled-system'
@@ -12,7 +14,7 @@ import { space }      from 'styled-system'
 
 import { BoxProps }   from './box.interfaces'
 
-const Box = styled.div<BoxProps>(
+const Box: FC<BoxProps> = styled.div(
   system({
     boxSizing: true,
     cursor: true,

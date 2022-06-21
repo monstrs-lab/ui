@@ -1,1 +1,1 @@
-export * from '@ui-parts/text'
+export * from '@ui-primitives/text'

@@ -1,6 +1,6 @@
-import type { Token } from '@ui-parts/types'
+import type { CSSObject } from '@emotion/styled'
 
-export const base = () => ({
+export const base = (): CSSObject => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -10,7 +10,7 @@ export const base = () => ({
   boxSizing: 'border-box',
 })
 
-export const size = (s: number) => ({
+export const size = (s: number): CSSObject => ({
   width: s,
   height: s,
 })
@@ -19,16 +19,13 @@ export const shape = (
   borderWidth: number = 1,
   borderRadius: number | string = '100%',
   borderStyle: string = 'solid'
-) => ({
+): CSSObject => ({
   borderRadius,
   borderStyle,
   borderWidth,
 })
 
-export const appearance = (
-  backgroundColor: string | Token<any, string, 'colors', ''>,
-  borderColor: string | Token<any, string, 'colors', ''>
-) => ({
+export const appearance = (backgroundColor: string, borderColor: string): CSSObject => ({
   backgroundColor,
   borderColor,
 })

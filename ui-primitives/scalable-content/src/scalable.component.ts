@@ -1,3 +1,3 @@
-import { styled } from '@stitches/react'
+import styled from '@emotion/styled'
 
-export const Scalable = styled('div', { transformOrigin: 'center center' })
+export const Scalable = styled.div({ transformOrigin: 'center center' })

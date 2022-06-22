@@ -33,6 +33,7 @@
     "@ui-parts/avatar": "workspace:0.2.13",
     "@ui-parts/button": "workspace:0.2.9",
     "@ui-parts/input": "workspace:0.2.11",
+    "@ui-parts/theme": "workspace:0.0.10",
     "babel-loader": "^8.2.5",
     "core-js": "^3.23.1",
     "react": "^18.2.0",

@@ -1,24 +1,24 @@
-import { Fallback } from '@radix-ui/react-avatar'
+import type { Theme } from '@ui-proto/theme'
+import type { FC }    from 'react'
 
-import { fallback } from '@ui-parts/avatar'
-import { styled }   from '@ui-proto/core'
-import { theme }    from '@ui-proto/core'
+import styled         from '@emotion/styled'
+import { Fallback }   from '@radix-ui/react-avatar'
 
-export const AvatarFallback = styled(
-  Fallback,
+import { switchProp } from 'styled-tools'
+import { prop }       from 'styled-tools'
+
+import { fallback }   from '@ui-parts/avatar'
+
+export interface AvatarFallbackProps {
+  size?: 'small' | 'normal' | 'large'
+}
+
+export const AvatarFallback: FC<AvatarFallbackProps> = styled(Fallback)<AvatarFallbackProps>(
   fallback.base(),
-  fallback.appearance(theme.colors.white),
-  {
-    variants: {
-      size: {
-        small: fallback.shape(18, theme.fontWeights.bold, theme.fonts.primary),
-        normal: fallback.shape(20, theme.fontWeights.bold, theme.fonts.primary),
-        large: fallback.shape(22, theme.fontWeights.bold, theme.fonts.primary),
-      },
-    },
-
-    defaultVariants: {
-      size: 'normal',
-    },
-  }
+  ({ theme }) => fallback.appearance(theme.colors.white),
+  switchProp(prop('size', 'normal'), ({ theme }: { theme: Theme }) => ({
+    small: fallback.shape(18, theme.fontWeights.bold, theme.fonts.primary),
+    normal: fallback.shape(20, theme.fontWeights.bold, theme.fonts.primary),
+    large: fallback.shape(22, theme.fontWeights.bold, theme.fonts.primary),
+  }))
 )

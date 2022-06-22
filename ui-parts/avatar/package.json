@@ -12,12 +12,13 @@
     "postpack": "rm -rf dist"
   },
   "devDependencies": {
+    "@emotion/styled": "^11.9.3",
     "@monstrs/storybook-google-fonts": "workspace:0.0.1",
     "@radix-ui/react-avatar": "^0.1.4",
-    "@stitches/react": "^1.2.8",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@ui-parts/core": "workspace:0.1.0",
+    "@ui-parts/theme": "workspace:0.0.10",
     "@ui-parts/types": "workspace:0.1.0",
     "@ui-primitives/text-transform": "workspace:0.2.12",
     "react": "^18.2.0"

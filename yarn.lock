@@ -4522,12 +4522,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-parts/avatar@workspace:ui-parts/avatar"
   dependencies:
+    "@emotion/styled": ^11.9.3
     "@monstrs/storybook-google-fonts": "workspace:0.0.1"
     "@radix-ui/react-avatar": ^0.1.4
-    "@stitches/react": ^1.2.8
     "@types/node": ^18.0.0
     "@types/react": ^18.0.14
     "@ui-parts/core": "workspace:0.1.0"
+    "@ui-parts/theme": "workspace:0.0.10"
     "@ui-parts/types": "workspace:0.1.0"
     "@ui-primitives/text-transform": "workspace:0.2.12"
     react: ^18.2.0
@@ -4616,6 +4617,7 @@ __metadata:
     "@ui-parts/avatar": "workspace:0.2.13"
     "@ui-parts/button": "workspace:0.2.9"
     "@ui-parts/input": "workspace:0.2.11"
+    "@ui-parts/theme": "workspace:0.0.10"
     babel-loader: ^8.2.5
     core-js: ^3.23.1
     express: ^4.18.1
@@ -4677,6 +4679,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui-parts/theme@workspace:0.0.10, @ui-parts/theme@workspace:ui-parts/theme":
+  version: 0.0.0-use.local
+  resolution: "@ui-parts/theme@workspace:ui-parts/theme"
+  dependencies:
+    "@emotion/react": ^11.9.3
+    "@types/node": ^18.0.0
+    "@types/react": ^18.0.14
+    react: ^18.2.0
+  peerDependencies:
+    "@emotion/react": ^11.1.5
+    react: ^17.0.1
+  languageName: unknown
+  linkType: soft
+
 "@ui-parts/types@workspace:0.1.0, @ui-parts/types@workspace:ui-parts/types":
   version: 0.0.0-use.local
   resolution: "@ui-parts/types@workspace:ui-parts/types"
@@ -4724,11 +4740,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-primitives/scalable-content@workspace:ui-primitives/scalable-content"
   dependencies:
-    "@stitches/react": ^1.2.8
+    "@emotion/styled": ^11.9.3
     "@types/react": ^18.0.14
     "@ui-utils/content-dimensions": "workspace:0.1.0"
     react: ^18.2.0
   peerDependencies:
+    "@emotion/styled": ^11.1.5
     react: ^18.2.0
   languageName: unknown
   linkType: soft
@@ -4766,14 +4783,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-proto/avatar@workspace:ui-proto/avatar"
   dependencies:
+    "@emotion/styled": ^11.9.3
     "@radix-ui/react-avatar": ^0.1.4
     "@types/node": ^18.0.0
     "@types/react": ^18.0.14
     "@ui-parts/avatar": "workspace:0.2.13"
     "@ui-primitives/text-transform": "workspace:0.2.12"
-    "@ui-proto/core": "workspace:0.1.0"
+    "@ui-proto/theme": "workspace:0.0.10"
     react: ^18.2.0
+    styled-tools: ^1.7.2
   peerDependencies:
+    "@emotion/styled": ^11.1.5
     react: ^18.2.0
   languageName: unknown
   linkType: soft
@@ -4798,7 +4818,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/core@workspace:0.1.0, @ui-proto/core@workspace:ui-proto/core":
+"@ui-proto/core@workspace:ui-proto/core":
   version: 0.0.0-use.local
   resolution: "@ui-proto/core@workspace:ui-proto/core"
   dependencies:

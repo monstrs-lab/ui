@@ -1,6 +1,6 @@
-import type { Token } from '@ui-parts/types'
+import type { CSSObject } from '@emotion/styled'
 
-export const base = () => ({
+export const base = (): CSSObject => ({
   width: '100%',
   height: '100%',
   display: 'flex',
@@ -11,13 +11,13 @@ export const base = () => ({
 export const shape = (
   fontSize: number,
   fontWeight: string | number | any,
-  fontFamily: string | Token<any, string, 'fonts', ''>
-) => ({
+  fontFamily: string
+): CSSObject => ({
   fontSize,
   fontWeight,
   fontFamily,
 })
 
-export const appearance = (color: string | Token<any, string, 'colors', ''>) => ({
+export const appearance = (color: string): CSSObject => ({
   color,
 })

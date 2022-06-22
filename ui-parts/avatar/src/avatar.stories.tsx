@@ -1,16 +1,18 @@
-import * as fallback     from './avatar-fallback.styles'
-import * as image        from './avatar-image.styles'
-import * as root         from './avatar-root.styles'
+import * as fallback      from './avatar-fallback.styles'
+import * as image         from './avatar-image.styles'
+import * as root          from './avatar-root.styles'
 
-import { Root }          from '@radix-ui/react-avatar'
-import { Image }         from '@radix-ui/react-avatar'
-import { Fallback }      from '@radix-ui/react-avatar'
+import styled             from '@emotion/styled'
+import { Root }           from '@radix-ui/react-avatar'
+import { Image }          from '@radix-ui/react-avatar'
+import { Fallback }       from '@radix-ui/react-avatar'
 
-import React             from 'react'
+import React              from 'react'
 
-import { TextTransform } from '@ui-primitives/text-transform'
-import { styled }        from '@ui-parts/core'
-import { theme }         from '@ui-parts/core'
+import { TextTransform }  from '@ui-primitives/text-transform'
+import { fontNames }      from '@monstrs/storybook-google-fonts'
+import { useGoogleFonts } from '@monstrs/storybook-google-fonts'
+import { theme }          from '@ui-parts/theme'
 
 export default {
   title: 'Components/Avatar',
@@ -22,6 +24,7 @@ export const Avatar = ({
   size,
   fontSize,
   fontWeight,
+  fontFamily,
   color,
   backgroundColor,
   borderStyle,
@@ -29,17 +32,17 @@ export const Avatar = ({
   borderColor,
   borderRadius,
 }) => {
-  const AvatarImage = styled(Image, image.base())
+  useGoogleFonts(fontFamily, fontWeight)
 
-  const AvatarFallback = styled(
-    Fallback,
+  const AvatarImage = styled(Image)(image.base())
+
+  const AvatarFallback = styled(Fallback)(
     fallback.base(),
-    fallback.shape(fontSize, fontWeight, theme.fonts.primary),
-    fallback.appearance(color)
+    fallback.appearance(color),
+    fallback.shape(fontSize, fontWeight, fontFamily)
   )
 
-  const AvatarRoot = styled(
-    Root,
+  const AvatarRoot = styled(Root)(
     root.base(),
     root.size(size),
     root.shape(borderWidth, borderRadius, borderStyle),
@@ -61,10 +64,11 @@ export const Avatar = ({
 Avatar.args = {
   src: 'https://cdn.drawize.com/Content/Images/avatars/placeholder.png?s=1&width=100',
   text: 'Аватар',
-  color: theme.colors.white.value,
-  backgroundColor: theme.colors.blue.value,
-  fontWeight: theme.fontWeights.normal.value,
-  borderColor: theme.colors.blue.value,
+  fontFamily: 'Roboto',
+  color: theme.colors.white,
+  backgroundColor: theme.colors.blue,
+  fontWeight: theme.fontWeights.normal,
+  borderColor: theme.colors.blue,
   borderRadius: 48,
   borderStyle: 'solid',
   borderWidth: 1,
@@ -96,6 +100,18 @@ Avatar.argTypes = {
     },
     control: {
       type: 'number',
+    },
+  },
+  fontFamily: {
+    name: 'Шрифт',
+    description: 'Шрифт',
+    table: {
+      category: 'Представление',
+      subcategory: 'Форма',
+    },
+    control: {
+      type: 'select',
+      options: fontNames,
     },
   },
   fontWeight: {

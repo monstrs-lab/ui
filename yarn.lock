@@ -2466,15 +2466,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stitches/react@npm:^1.2.8":
-  version: 1.2.8
-  resolution: "@stitches/react@npm:1.2.8"
-  peerDependencies:
-    react: ">= 16.3.0"
-  checksum: 029795323cdedb5599ec0636526fc233b2cf41fa9c1f4a704b1f7f457c6170053384a7430afed45e25f73e348d7c391cf1379bc079943cd9cad44302234a5244
-  languageName: node
-  linkType: hard
-
 "@storybook/addon-actions@npm:6.5.9, @storybook/addon-actions@npm:^6.5.9":
   version: 6.5.9
   resolution: "@storybook/addon-actions@npm:6.5.9"
@@ -4527,9 +4518,7 @@ __metadata:
     "@radix-ui/react-avatar": ^0.1.4
     "@types/node": ^18.0.0
     "@types/react": ^18.0.14
-    "@ui-parts/core": "workspace:0.1.0"
     "@ui-parts/theme": "workspace:0.0.10"
-    "@ui-parts/types": "workspace:0.1.0"
     "@ui-primitives/text-transform": "workspace:0.2.12"
     react: ^18.2.0
   peerDependencies:
@@ -4578,18 +4567,6 @@ __metadata:
     react: ^17.0.1
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
-  languageName: unknown
-  linkType: soft
-
-"@ui-parts/core@workspace:0.1.0, @ui-parts/core@workspace:ui-parts/core":
-  version: 0.0.0-use.local
-  resolution: "@ui-parts/core@workspace:ui-parts/core"
-  dependencies:
-    "@stitches/react": ^1.2.8
-    "@types/react": ^18.0.14
-    react: ^18.2.0
-  peerDependencies:
-    react: ^18.1.0
   languageName: unknown
   linkType: soft
 
@@ -4690,12 +4667,6 @@ __metadata:
   peerDependencies:
     "@emotion/react": ^11.1.5
     react: ^17.0.1
-  languageName: unknown
-  linkType: soft
-
-"@ui-parts/types@workspace:0.1.0, @ui-parts/types@workspace:ui-parts/types":
-  version: 0.0.0-use.local
-  resolution: "@ui-parts/types@workspace:ui-parts/types"
   languageName: unknown
   linkType: soft
 
@@ -4815,18 +4786,6 @@ __metadata:
     react: ^17.0.1
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
-  languageName: unknown
-  linkType: soft
-
-"@ui-proto/core@workspace:ui-proto/core":
-  version: 0.0.0-use.local
-  resolution: "@ui-proto/core@workspace:ui-proto/core"
-  dependencies:
-    "@stitches/react": ^1.2.8
-    "@types/react": ^18.0.14
-    react: ^18.2.0
-  peerDependencies:
-    react: ^18.1.0
   languageName: unknown
   linkType: soft
 

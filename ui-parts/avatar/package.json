@@ -17,9 +17,7 @@
     "@radix-ui/react-avatar": "^0.1.4",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
-    "@ui-parts/core": "workspace:0.1.0",
     "@ui-parts/theme": "workspace:0.0.10",
-    "@ui-parts/types": "workspace:0.1.0",
     "@ui-primitives/text-transform": "workspace:0.2.12",
     "react": "^18.2.0"
   },

@@ -4549,29 +4549,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/checkbox@workspace:ui-parts/checkbox":
-  version: 0.0.0-use.local
-  resolution: "@ui-parts/checkbox@workspace:ui-parts/checkbox"
-  dependencies:
-    "@emotion/styled": ^11.9.3
-    "@monstrs/storybook-google-fonts": "workspace:0.0.1"
-    "@types/jest": ^28.1.1
-    "@types/react": ^18.0.14
-    "@types/styled-system": ^5.1.15
-    "@ui-parts/hidden-input": "workspace:0.2.10"
-    "@ui-parts/styles": "workspace:0.2.9"
-    "@ui-primitives/conditional-render": "workspace:0.2.9"
-    react: ^18.2.0
-    styled-system: ^5.1.5
-    styled-tools: ^1.7.2
-  peerDependencies:
-    "@emotion/styled": ^11.1.5
-    react: ^17.0.1
-    styled-system: ^5.1.5
-    styled-tools: ^1.7.2
-  languageName: unknown
-  linkType: soft
-
 "@ui-parts/design@workspace:ui-parts/design":
   version: 0.0.0-use.local
   resolution: "@ui-parts/design@workspace:ui-parts/design"
@@ -4605,21 +4582,6 @@ __metadata:
     react-is: ^18.2.0
     string-replace-loader: ^3.1.0
     typescript: ^4.7.3
-  languageName: unknown
-  linkType: soft
-
-"@ui-parts/hidden-input@workspace:0.2.10, @ui-parts/hidden-input@workspace:ui-parts/hidden-input":
-  version: 0.0.0-use.local
-  resolution: "@ui-parts/hidden-input@workspace:ui-parts/hidden-input"
-  dependencies:
-    "@emotion/styled": ^11.9.3
-    "@testing-library/react": ^13.3.0
-    "@types/jest": ^28.1.1
-    "@types/react": ^18.0.14
-    react: ^18.2.0
-  peerDependencies:
-    "@emotion/styled": ^11.1.5
-    react: ^17.0.1
   languageName: unknown
   linkType: soft
 

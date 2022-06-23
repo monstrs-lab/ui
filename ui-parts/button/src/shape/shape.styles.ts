@@ -3,8 +3,8 @@ import { ifProp }                  from 'styled-tools'
 import { prop }                    from 'styled-tools'
 import { switchProp }              from 'styled-tools'
 
-import { execAndSerialize }        from '@ui-parts/styles'
-import { combine }                 from '@ui-parts/styles'
+import { execAndSerialize }        from '@ui-utils/styled'
+import { combine }                 from '@ui-utils/styled'
 
 import { ButtonShapeRoudingProps } from './shape.interfaces'
 import { ButtonShapeStyles }       from './shape.interfaces'

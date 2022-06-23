@@ -4536,8 +4536,8 @@ __metadata:
     "@types/jest": ^28.1.1
     "@types/react": ^18.0.14
     "@types/styled-system": ^5.1.15
-    "@ui-parts/styles": "workspace:0.2.9"
     "@ui-primitives/content-divider": "workspace:0.2.9"
+    "@ui-utils/styled": "workspace:0.1.0"
     react: ^18.2.0
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
@@ -4594,10 +4594,10 @@ __metadata:
     "@types/jest": ^28.1.1
     "@types/react": ^18.0.14
     "@types/styled-system": ^5.1.15
-    "@ui-parts/styles": "workspace:0.2.9"
     "@ui-primitives/conditional-render": "workspace:0.2.9"
     "@ui-primitives/events-state": "workspace:0.2.10"
     "@ui-primitives/layout": "workspace:0.2.9"
+    "@ui-utils/styled": "workspace:0.1.0"
     react: ^18.2.0
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
@@ -4606,17 +4606,6 @@ __metadata:
     react: ^17.0.1
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
-  languageName: unknown
-  linkType: soft
-
-"@ui-parts/styles@workspace:0.2.9, @ui-parts/styles@workspace:ui-parts/styles":
-  version: 0.0.0-use.local
-  resolution: "@ui-parts/styles@workspace:ui-parts/styles"
-  dependencies:
-    "@types/styled-system": ^5.1.15
-    styled-system: ^5.1.5
-  peerDependencies:
-    styled-system: ^5.1.5
   languageName: unknown
   linkType: soft
 
@@ -4867,6 +4856,15 @@ __metadata:
 "@ui-utils/content-dimensions@workspace:0.1.0, @ui-utils/content-dimensions@workspace:ui-utils/content-dimensions":
   version: 0.0.0-use.local
   resolution: "@ui-utils/content-dimensions@workspace:ui-utils/content-dimensions"
+  languageName: unknown
+  linkType: soft
+
+"@ui-utils/styled@workspace:0.1.0, @ui-utils/styled@workspace:ui-utils/styled":
+  version: 0.0.0-use.local
+  resolution: "@ui-utils/styled@workspace:ui-utils/styled"
+  dependencies:
+    "@types/styled-system": ^5.1.15
+    styled-system: ^5.1.5
   languageName: unknown
   linkType: soft
 

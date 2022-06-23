@@ -53,10 +53,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:ui-parts/input"\
       },\
       {\
-        "name": "@ui-parts/styles",\
-        "reference": "workspace:ui-parts/styles"\
-      },\
-      {\
         "name": "@ui-parts/theme",\
         "reference": "workspace:ui-parts/theme"\
       },\
@@ -125,6 +121,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:ui-utils/content-dimensions"\
       },\
       {\
+        "name": "@ui-utils/styled",\
+        "reference": "workspace:ui-utils/styled"\
+      },\
+      {\
         "name": "@ui-utils/use-window-size",\
         "reference": "workspace:ui-utils/use-window-size"\
       },\
@@ -144,7 +144,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@ui-parts/button", ["virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#workspace:ui-parts/button", "virtual:2961a2bd35c6a5dc3140c07cb1e13cb8bd32a7c5068f7a64c6aefb3f817a757e9ad0b80b1eaa02c797519f0728c4ca5ee3f72756c419f3fb62469e21dcf44ecd#workspace:ui-parts/button", "workspace:ui-parts/button"]],\
       ["@ui-parts/design", ["workspace:ui-parts/design"]],\
       ["@ui-parts/input", ["virtual:4376e102aa85feee74919ab727969879ef04c3afaae7ddce7fb206f44f491a9ce55d62a1c31632ed4253bc84f85b4a0aaf3b78bb63c1e96ad4515ad1020355bc#workspace:ui-parts/input", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#workspace:ui-parts/input", "workspace:ui-parts/input"]],\
-      ["@ui-parts/styles", ["virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles", "workspace:ui-parts/styles"]],\
       ["@ui-parts/theme", ["virtual:17cfdf8e7e7133a351e095155d1ffcd1b06238de8eb81580d5434d62135e06aa9c294b73284a31fd8b0e8fe7ffa7b7463ad3b4c58690c4ddfcb05a0e7bf8814c#workspace:ui-parts/theme", "virtual:ebf516df2d8d4a4675417c591d6205230d1c31fc3d4c22877e30dff17958a8bfec9938fff30ec52dd2c53970c4fc5af5ec9b8369c836f8de30025a70e4758e2f#workspace:ui-parts/theme", "workspace:ui-parts/theme"]],\
       ["@ui-primitives/conditional-render", ["virtual:8caf71a3fdd27b9b6437019011aa6f2ea0ddc8518b38ccfaf98151ace190837ac7a0127b69ed99d68919e34f20efa102cc7a0b2f67dda727f2c7508b8e0e4551#workspace:ui-primitives/conditional-render", "workspace:ui-primitives/conditional-render"]],\
       ["@ui-primitives/content-divider", ["virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#workspace:ui-primitives/content-divider", "virtual:2961a2bd35c6a5dc3140c07cb1e13cb8bd32a7c5068f7a64c6aefb3f817a757e9ad0b80b1eaa02c797519f0728c4ca5ee3f72756c419f3fb62469e21dcf44ecd#workspace:ui-primitives/content-divider", "workspace:ui-primitives/content-divider"]],\
@@ -162,6 +161,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@ui-proto/text", ["workspace:ui-proto/text"]],\
       ["@ui-proto/theme", ["virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/theme", "virtual:8724c16d548c5b10e2d1077d976ede32e643e19bd81fba08096d10e5ce8d005c5ae80db72a0ad91bb591aa085e5fd3f0e737a24f071505eeedec9c86c785bf3b#workspace:ui-proto/theme", "workspace:ui-proto/theme"]],\
       ["@ui-utils/content-dimensions", ["workspace:ui-utils/content-dimensions"]],\
+      ["@ui-utils/styled", ["workspace:ui-utils/styled"]],\
       ["@ui-utils/use-window-size", ["workspace:ui-utils/use-window-size"]],\
       ["@ui/design", ["workspace:ui/design"]],\
       ["ui", ["workspace:."]]\
@@ -8733,8 +8733,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.39"],\
             ["@types/styled-system", "npm:5.1.15"],\
             ["@types/styled-tools", null],\
-            ["@ui-parts/styles", "virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles"],\
             ["@ui-primitives/content-divider", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#workspace:ui-primitives/content-divider"],\
+            ["@ui-utils/styled", "workspace:ui-utils/styled"],\
             ["core-js", "npm:3.23.1"],\
             ["react", "npm:18.2.0"],\
             ["styled-system", "npm:5.1.5"],\
@@ -8765,8 +8765,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.39"],\
             ["@types/styled-system", "npm:5.1.15"],\
             ["@types/styled-tools", null],\
-            ["@ui-parts/styles", "virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles"],\
             ["@ui-primitives/content-divider", "virtual:2961a2bd35c6a5dc3140c07cb1e13cb8bd32a7c5068f7a64c6aefb3f817a757e9ad0b80b1eaa02c797519f0728c4ca5ee3f72756c419f3fb62469e21dcf44ecd#workspace:ui-primitives/content-divider"],\
+            ["@ui-utils/styled", "workspace:ui-utils/styled"],\
             ["core-js", "npm:3.23.1"],\
             ["react", "npm:18.2.0"],\
             ["styled-system", "npm:5.1.5"],\
@@ -8795,8 +8795,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:28.1.1"],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/styled-system", "npm:5.1.15"],\
-            ["@ui-parts/styles", "virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles"],\
             ["@ui-primitives/content-divider", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#workspace:ui-primitives/content-divider"],\
+            ["@ui-utils/styled", "workspace:ui-utils/styled"],\
             ["core-js", "npm:3.23.1"],\
             ["react", "npm:18.2.0"],\
             ["styled-system", "npm:5.1.5"],\
@@ -8855,10 +8855,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.39"],\
             ["@types/styled-system", "npm:5.1.15"],\
             ["@types/styled-tools", null],\
-            ["@ui-parts/styles", "virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles"],\
             ["@ui-primitives/conditional-render", "virtual:8caf71a3fdd27b9b6437019011aa6f2ea0ddc8518b38ccfaf98151ace190837ac7a0127b69ed99d68919e34f20efa102cc7a0b2f67dda727f2c7508b8e0e4551#workspace:ui-primitives/conditional-render"],\
             ["@ui-primitives/events-state", "virtual:8caf71a3fdd27b9b6437019011aa6f2ea0ddc8518b38ccfaf98151ace190837ac7a0127b69ed99d68919e34f20efa102cc7a0b2f67dda727f2c7508b8e0e4551#workspace:ui-primitives/events-state"],\
             ["@ui-primitives/layout", "virtual:f99e24df4161c573161116c476e28d93eb86d1daf81ca0aca63ae42167d4d7c72a96e9f62aa14d717b450031c55ff364efad5a745895c7239498346b5633170b#workspace:ui-primitives/layout"],\
+            ["@ui-utils/styled", "workspace:ui-utils/styled"],\
             ["react", "npm:18.2.0"],\
             ["styled-system", "npm:5.1.5"],\
             ["styled-tools", "npm:1.7.2"]\
@@ -8886,10 +8886,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.39"],\
             ["@types/styled-system", "npm:5.1.15"],\
             ["@types/styled-tools", null],\
-            ["@ui-parts/styles", "virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles"],\
             ["@ui-primitives/conditional-render", "virtual:8caf71a3fdd27b9b6437019011aa6f2ea0ddc8518b38ccfaf98151ace190837ac7a0127b69ed99d68919e34f20efa102cc7a0b2f67dda727f2c7508b8e0e4551#workspace:ui-primitives/conditional-render"],\
             ["@ui-primitives/events-state", "virtual:8caf71a3fdd27b9b6437019011aa6f2ea0ddc8518b38ccfaf98151ace190837ac7a0127b69ed99d68919e34f20efa102cc7a0b2f67dda727f2c7508b8e0e4551#workspace:ui-primitives/events-state"],\
             ["@ui-primitives/layout", "virtual:8caf71a3fdd27b9b6437019011aa6f2ea0ddc8518b38ccfaf98151ace190837ac7a0127b69ed99d68919e34f20efa102cc7a0b2f67dda727f2c7508b8e0e4551#workspace:ui-primitives/layout"],\
+            ["@ui-utils/styled", "workspace:ui-utils/styled"],\
             ["react", "npm:18.2.0"],\
             ["styled-system", "npm:5.1.5"],\
             ["styled-tools", "npm:1.7.2"]\
@@ -8912,39 +8912,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:28.1.1"],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/styled-system", "npm:5.1.15"],\
-            ["@ui-parts/styles", "virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles"],\
             ["@ui-primitives/conditional-render", "virtual:8caf71a3fdd27b9b6437019011aa6f2ea0ddc8518b38ccfaf98151ace190837ac7a0127b69ed99d68919e34f20efa102cc7a0b2f67dda727f2c7508b8e0e4551#workspace:ui-primitives/conditional-render"],\
             ["@ui-primitives/events-state", "virtual:8caf71a3fdd27b9b6437019011aa6f2ea0ddc8518b38ccfaf98151ace190837ac7a0127b69ed99d68919e34f20efa102cc7a0b2f67dda727f2c7508b8e0e4551#workspace:ui-primitives/events-state"],\
             ["@ui-primitives/layout", "virtual:f99e24df4161c573161116c476e28d93eb86d1daf81ca0aca63ae42167d4d7c72a96e9f62aa14d717b450031c55ff364efad5a745895c7239498346b5633170b#workspace:ui-primitives/layout"],\
+            ["@ui-utils/styled", "workspace:ui-utils/styled"],\
             ["react", "npm:18.2.0"],\
             ["styled-system", "npm:5.1.5"],\
             ["styled-tools", "npm:1.7.2"]\
-          ],\
-          "linkType": "SOFT"\
-        }]\
-      ]],\
-      ["@ui-parts/styles", [\
-        ["virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles", {\
-          "packageLocation": "./.yarn/__virtual__/@ui-parts-styles-virtual-1dd55f1329/1/ui-parts/styles/",\
-          "packageDependencies": [\
-            ["@ui-parts/styles", "virtual:f3d84b265e30c1363335cc905c635802af81586cae47d2e5187566b8e5e05a2ad453320ddd49662b146faee6c6ad9d4ad6bc3929258e4cfaf84f94ed6562737e#workspace:ui-parts/styles"],\
-            ["@types/styled-system", "npm:5.1.15"],\
-            ["core-js", "npm:3.23.1"],\
-            ["styled-system", "npm:5.1.5"]\
-          ],\
-          "packagePeers": [\
-            "@types/styled-system",\
-            "styled-system"\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["workspace:ui-parts/styles", {\
-          "packageLocation": "./ui-parts/styles/",\
-          "packageDependencies": [\
-            ["@ui-parts/styles", "workspace:ui-parts/styles"],\
-            ["@types/styled-system", "npm:5.1.15"],\
-            ["core-js", "npm:3.23.1"],\
-            ["styled-system", "npm:5.1.5"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -9462,6 +9436,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./ui-utils/content-dimensions/",\
           "packageDependencies": [\
             ["@ui-utils/content-dimensions", "workspace:ui-utils/content-dimensions"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@ui-utils/styled", [\
+        ["workspace:ui-utils/styled", {\
+          "packageLocation": "./ui-utils/styled/",\
+          "packageDependencies": [\
+            ["@ui-utils/styled", "workspace:ui-utils/styled"],\
+            ["@types/styled-system", "npm:5.1.15"],\
+            ["styled-system", "npm:5.1.5"]\
           ],\
           "linkType": "SOFT"\
         }]\

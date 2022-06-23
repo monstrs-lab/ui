@@ -12,7 +12,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-parts/styles": "workspace:0.2.9"
+    "@ui-utils/styled": "workspace:0.1.0"
   },
   "devDependencies": {
     "@emotion/styled": "^11.9.3",

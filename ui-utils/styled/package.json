@@ -1,6 +1,6 @@
 {
-  "name": "@ui-parts/styles",
-  "version": "0.2.9",
+  "name": "@ui-utils/styled",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -13,9 +13,6 @@
   },
   "devDependencies": {
     "@types/styled-system": "^5.1.15",
-    "styled-system": "^5.1.5"
-  },
-  "peerDependencies": {
     "styled-system": "^5.1.5"
   },
   "publishConfig": {

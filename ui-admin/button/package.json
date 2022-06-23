@@ -12,7 +12,8 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-parts/button": "workspace:0.2.9"
+    "@ui-parts/button": "workspace:0.2.9",
+    "@ui-primitives/content-divider": "workspace:0.2.9"
   },
   "devDependencies": {
     "@emotion/styled": "^11.9.3",

@@ -1,5 +1,3 @@
-import type { FC }    from 'react'
-
 import styled         from '@emotion/styled'
 
 import { color }      from 'styled-system'
@@ -10,7 +8,7 @@ import { typography } from 'styled-system'
 
 import { TextProps }  from './text.interfaces'
 
-const Text: FC<TextProps> = styled.span(
+const Text = styled.span<TextProps>(
   system({
     wordBreak: true,
     whiteSpace: true,

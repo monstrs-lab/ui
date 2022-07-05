@@ -7,8 +7,8 @@ export default {
   title: 'Components/ToggleGroup',
 }
 
-export const ToggleGroup = ({ side, sideOffset }) => (
-  <ToggleGroupComponent type='single' defaultValue='center' aria-label='Text alignment'>
+export const ToggleGroup = ({ type }) => (
+  <ToggleGroupComponent type={type} defaultValue='center' aria-label='Text alignment'>
     <ToggleGroupItem value='left' aria-label='Left aligned'>
       First
     </ToggleGroupItem>
@@ -20,3 +20,18 @@ export const ToggleGroup = ({ side, sideOffset }) => (
     </ToggleGroupItem>
   </ToggleGroupComponent>
 )
+
+ToggleGroup.args = {
+  type: 'single',
+}
+
+ToggleGroup.argTypes = {
+  type: {
+    name: 'Тип',
+    description: 'Количество елементов выбираемых за раз',
+    control: {
+      type: 'radio',
+      options: ['single', 'multiple'],
+    },
+  },
+}

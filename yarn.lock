@@ -2638,6 +2638,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-tabs@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "@radix-ui/react-tabs@npm:0.1.5"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@radix-ui/primitive": 0.1.0
+    "@radix-ui/react-context": 0.1.1
+    "@radix-ui/react-id": 0.1.5
+    "@radix-ui/react-primitive": 0.1.4
+    "@radix-ui/react-roving-focus": 0.1.5
+    "@radix-ui/react-use-controllable-state": 0.1.0
+  peerDependencies:
+    react: ^16.8 || ^17.0
+  checksum: 323d8f669ec739e9f697df26edd5695536f648d5851d84a7f9e7d8bf9913504ce7c7bb12f99d7e2da07830e1f4ab05f5f74c0456989fe64acef35b4ed6aa4a42
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-toggle-group@npm:^0.1.5":
   version: 0.1.5
   resolution: "@radix-ui/react-toggle-group@npm:0.1.5"
@@ -5236,6 +5253,24 @@ __metadata:
     "@emotion/styled": ^11.9.3
     "@radix-ui/react-icons": ^1.1.1
     "@radix-ui/react-radio-group": ^0.1.5
+    "@types/node": ^18.0.0
+    "@types/react": ^18.0.14
+    "@ui-proto/layout": "workspace:0.1.9"
+    "@ui-proto/text": "workspace:0.1.9"
+    "@ui-proto/theme": "workspace:0.0.10"
+    react: ^18.2.0
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    react: ^18.2.0
+  languageName: unknown
+  linkType: soft
+
+"@ui-proto/tabs@workspace:ui-proto/tabs":
+  version: 0.0.0-use.local
+  resolution: "@ui-proto/tabs@workspace:ui-proto/tabs"
+  dependencies:
+    "@emotion/styled": ^11.9.3
+    "@radix-ui/react-tabs": ^0.1.5
     "@types/node": ^18.0.0
     "@types/react": ^18.0.14
     "@ui-proto/layout": "workspace:0.1.9"

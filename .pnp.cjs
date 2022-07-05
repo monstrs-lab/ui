@@ -129,6 +129,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:ui-proto/theme"\
       },\
       {\
+        "name": "@ui-proto/toggle-group",\
+        "reference": "workspace:ui-proto/toggle-group"\
+      },\
+      {\
         "name": "@ui-proto/tooltip",\
         "reference": "workspace:ui-proto/tooltip"\
       },\
@@ -179,6 +183,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@ui-proto/radio-group", ["workspace:ui-proto/radio-group"]],\
       ["@ui-proto/text", ["workspace:ui-proto/text"]],\
       ["@ui-proto/theme", ["virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/theme", "virtual:8724c16d548c5b10e2d1077d976ede32e643e19bd81fba08096d10e5ce8d005c5ae80db72a0ad91bb591aa085e5fd3f0e737a24f071505eeedec9c86c785bf3b#workspace:ui-proto/theme", "virtual:bcddfc290de65c5a9d8e0ec100654912452c96081220a362cb46afe1845779f6141d721afe3c553bdae930bdd45e4e763f8608cbae3e6285a9e55ee267710606#workspace:ui-proto/theme", "workspace:ui-proto/theme"]],\
+      ["@ui-proto/toggle-group", ["workspace:ui-proto/toggle-group"]],\
       ["@ui-proto/tooltip", ["workspace:ui-proto/tooltip"]],\
       ["@ui-utils/content-dimensions", ["workspace:ui-utils/content-dimensions"]],\
       ["@ui-utils/styled", ["workspace:ui-utils/styled"]],\
@@ -5644,6 +5649,61 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@radix-ui/react-toggle", [\
+        ["npm:0.1.4", {\
+          "packageLocation": "./.yarn/cache/@radix-ui-react-toggle-npm-0.1.4-0db871a9bc-7725372ba7.zip/node_modules/@radix-ui/react-toggle/",\
+          "packageDependencies": [\
+            ["@radix-ui/react-toggle", "npm:0.1.4"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:fc6e885d676b7f8e47fe64cdabb7c083c970fe7f9d7e91b3352a58691149eef43ad589346a5bcda597e80bbe890b512a475d5b93089eb214509274b0de48094a#npm:0.1.4", {\
+          "packageLocation": "./.yarn/__virtual__/@radix-ui-react-toggle-virtual-98785c08c7/0/cache/@radix-ui-react-toggle-npm-0.1.4-0db871a9bc-7725372ba7.zip/node_modules/@radix-ui/react-toggle/",\
+          "packageDependencies": [\
+            ["@radix-ui/react-toggle", "virtual:fc6e885d676b7f8e47fe64cdabb7c083c970fe7f9d7e91b3352a58691149eef43ad589346a5bcda597e80bbe890b512a475d5b93089eb214509274b0de48094a#npm:0.1.4"],\
+            ["@babel/runtime", "npm:7.18.3"],\
+            ["@radix-ui/primitive", "npm:0.1.0"],\
+            ["@radix-ui/react-primitive", "virtual:52d8358c5f06196e9683f93b40cbf1be81742084d148e752af713e50090e2a2bfb91109537cd7b4f7df66da0ea7237b9746ddf20be64e75498b4d90f20df98e0#npm:0.1.4"],\
+            ["@radix-ui/react-use-controllable-state", "virtual:2b2cf46e29fe0a4aa0e2888fad93a0787944e97c0514854e42f7e2e01e110f03477bf4ad884839d68fb5df1a7662749f031f408fe43e51bd00adafb2731067c0#npm:0.1.0"],\
+            ["@types/react", "npm:17.0.39"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@radix-ui/react-toggle-group", [\
+        ["npm:0.1.5", {\
+          "packageLocation": "./.yarn/cache/@radix-ui-react-toggle-group-npm-0.1.5-f4444238b5-e2a45b49f8.zip/node_modules/@radix-ui/react-toggle-group/",\
+          "packageDependencies": [\
+            ["@radix-ui/react-toggle-group", "npm:0.1.5"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:0267533b0a389a7a73d6759b4c468802bb0a20d582d6598146f262b6d8ad0d2e03f953a7c7b3236fad94b1f660df786750be55ed18152ce1f2d079c74f27a9de#npm:0.1.5", {\
+          "packageLocation": "./.yarn/__virtual__/@radix-ui-react-toggle-group-virtual-fc6e885d67/0/cache/@radix-ui-react-toggle-group-npm-0.1.5-f4444238b5-e2a45b49f8.zip/node_modules/@radix-ui/react-toggle-group/",\
+          "packageDependencies": [\
+            ["@radix-ui/react-toggle-group", "virtual:0267533b0a389a7a73d6759b4c468802bb0a20d582d6598146f262b6d8ad0d2e03f953a7c7b3236fad94b1f660df786750be55ed18152ce1f2d079c74f27a9de#npm:0.1.5"],\
+            ["@babel/runtime", "npm:7.18.3"],\
+            ["@radix-ui/primitive", "npm:0.1.0"],\
+            ["@radix-ui/react-context", "virtual:52d8358c5f06196e9683f93b40cbf1be81742084d148e752af713e50090e2a2bfb91109537cd7b4f7df66da0ea7237b9746ddf20be64e75498b4d90f20df98e0#npm:0.1.1"],\
+            ["@radix-ui/react-primitive", "virtual:52d8358c5f06196e9683f93b40cbf1be81742084d148e752af713e50090e2a2bfb91109537cd7b4f7df66da0ea7237b9746ddf20be64e75498b4d90f20df98e0#npm:0.1.4"],\
+            ["@radix-ui/react-roving-focus", "virtual:34c36d108332da5d6ff07be0da41726332d9c7e0925906d889bfe4465b5242415e327baabe287122684653f1d412e3533a029dca3f19f43c8cfd3ef9f5440681#npm:0.1.5"],\
+            ["@radix-ui/react-toggle", "virtual:fc6e885d676b7f8e47fe64cdabb7c083c970fe7f9d7e91b3352a58691149eef43ad589346a5bcda597e80bbe890b512a475d5b93089eb214509274b0de48094a#npm:0.1.4"],\
+            ["@radix-ui/react-use-controllable-state", "virtual:2b2cf46e29fe0a4aa0e2888fad93a0787944e97c0514854e42f7e2e01e110f03477bf4ad884839d68fb5df1a7662749f031f408fe43e51bd00adafb2731067c0#npm:0.1.0"],\
+            ["@types/react", "npm:17.0.39"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@radix-ui/react-tooltip", [\
         ["npm:0.1.7", {\
           "packageLocation": "./.yarn/cache/@radix-ui-react-tooltip-npm-0.1.7-047678cf99-7cfd4dbc86.zip/node_modules/@radix-ui/react-tooltip/",\
@@ -10124,6 +10184,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/react", "virtual:a3acd3eb448e5d606d06b3bf57bf469844d23d6521090aa36e60dbda1519ab22aa8158f9e67021aa95d9737fb2a1d536aeea4bc864679db0c36ec5b452fa9496#npm:11.9.3"],\
             ["@types/node", "npm:18.0.0"],\
             ["@types/react", "npm:17.0.39"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@ui-proto/toggle-group", [\
+        ["workspace:ui-proto/toggle-group", {\
+          "packageLocation": "./ui-proto/toggle-group/",\
+          "packageDependencies": [\
+            ["@ui-proto/toggle-group", "workspace:ui-proto/toggle-group"],\
+            ["@emotion/styled", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:11.9.3"],\
+            ["@radix-ui/react-toggle-group", "virtual:0267533b0a389a7a73d6759b4c468802bb0a20d582d6598146f262b6d8ad0d2e03f953a7c7b3236fad94b1f660df786750be55ed18152ce1f2d079c74f27a9de#npm:0.1.5"],\
+            ["@types/node", "npm:18.0.0"],\
+            ["@types/react", "npm:17.0.39"],\
+            ["@ui-proto/theme", "virtual:8724c16d548c5b10e2d1077d976ede32e643e19bd81fba08096d10e5ce8d005c5ae80db72a0ad91bb591aa085e5fd3f0e737a24f071505eeedec9c86c785bf3b#workspace:ui-proto/theme"],\
             ["react", "npm:18.2.0"]\
           ],\
           "linkType": "SOFT"\

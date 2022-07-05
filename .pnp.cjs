@@ -121,6 +121,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:ui-proto/radio-group"\
       },\
       {\
+        "name": "@ui-proto/switch",\
+        "reference": "workspace:ui-proto/switch"\
+      },\
+      {\
         "name": "@ui-proto/tabs",\
         "reference": "workspace:ui-proto/tabs"\
       },\
@@ -185,6 +189,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@ui-proto/layout", ["workspace:ui-proto/layout"]],\
       ["@ui-proto/placeholder", ["workspace:ui-proto/placeholder"]],\
       ["@ui-proto/radio-group", ["workspace:ui-proto/radio-group"]],\
+      ["@ui-proto/switch", ["workspace:ui-proto/switch"]],\
       ["@ui-proto/tabs", ["workspace:ui-proto/tabs"]],\
       ["@ui-proto/text", ["workspace:ui-proto/text"]],\
       ["@ui-proto/theme", ["virtual:0f3a5181f4947da0054f054c25737f5bbf9f540b641d99dd0a718654bf7eff3e754f81c236645976b2b0f53c47afee38b96afa76d06b7516ebfda3d4f23c527b#workspace:ui-proto/theme", "virtual:8724c16d548c5b10e2d1077d976ede32e643e19bd81fba08096d10e5ce8d005c5ae80db72a0ad91bb591aa085e5fd3f0e737a24f071505eeedec9c86c785bf3b#workspace:ui-proto/theme", "virtual:bcddfc290de65c5a9d8e0ec100654912452c96081220a362cb46afe1845779f6141d721afe3c553bdae930bdd45e4e763f8608cbae3e6285a9e55ee267710606#workspace:ui-proto/theme", "workspace:ui-proto/theme"]],\
@@ -5654,6 +5659,37 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@radix-ui/react-switch", [\
+        ["npm:0.1.5", {\
+          "packageLocation": "./.yarn/cache/@radix-ui-react-switch-npm-0.1.5-f4e2e68c70-e000cfeff7.zip/node_modules/@radix-ui/react-switch/",\
+          "packageDependencies": [\
+            ["@radix-ui/react-switch", "npm:0.1.5"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:632d989d8191ed79592c4b9ab8e6ca357158f056bab11bac03057fe9a7b6acbcd367e69408e0f9862d84c17ff4656cf6f186281e18df6ebc411a6fee042a720c#npm:0.1.5", {\
+          "packageLocation": "./.yarn/__virtual__/@radix-ui-react-switch-virtual-57051a1894/0/cache/@radix-ui-react-switch-npm-0.1.5-f4e2e68c70-e000cfeff7.zip/node_modules/@radix-ui/react-switch/",\
+          "packageDependencies": [\
+            ["@radix-ui/react-switch", "virtual:632d989d8191ed79592c4b9ab8e6ca357158f056bab11bac03057fe9a7b6acbcd367e69408e0f9862d84c17ff4656cf6f186281e18df6ebc411a6fee042a720c#npm:0.1.5"],\
+            ["@babel/runtime", "npm:7.18.3"],\
+            ["@radix-ui/primitive", "npm:0.1.0"],\
+            ["@radix-ui/react-compose-refs", "virtual:60b943e1af7b138bed5f6964fc3ac61fd2bd1bda4affb1c5bd0260a36cb2a1272bac7974c928cb869685485f382a125c0ba1c223740cc64d2e6755fad0d5dcac#npm:0.1.0"],\
+            ["@radix-ui/react-context", "virtual:52d8358c5f06196e9683f93b40cbf1be81742084d148e752af713e50090e2a2bfb91109537cd7b4f7df66da0ea7237b9746ddf20be64e75498b4d90f20df98e0#npm:0.1.1"],\
+            ["@radix-ui/react-label", "virtual:8629b894f642f98acb5a2d568ff5c09edc459ae0afeb2eaa4293c504ec779586f568944f14c1645419a81b0cf18a1205093a91a91784b3c4055f0aff3ab44161#npm:0.1.5"],\
+            ["@radix-ui/react-primitive", "virtual:52d8358c5f06196e9683f93b40cbf1be81742084d148e752af713e50090e2a2bfb91109537cd7b4f7df66da0ea7237b9746ddf20be64e75498b4d90f20df98e0#npm:0.1.4"],\
+            ["@radix-ui/react-use-controllable-state", "virtual:2b2cf46e29fe0a4aa0e2888fad93a0787944e97c0514854e42f7e2e01e110f03477bf4ad884839d68fb5df1a7662749f031f408fe43e51bd00adafb2731067c0#npm:0.1.0"],\
+            ["@radix-ui/react-use-previous", "virtual:8629b894f642f98acb5a2d568ff5c09edc459ae0afeb2eaa4293c504ec779586f568944f14c1645419a81b0cf18a1205093a91a91784b3c4055f0aff3ab44161#npm:0.1.1"],\
+            ["@radix-ui/react-use-size", "virtual:8629b894f642f98acb5a2d568ff5c09edc459ae0afeb2eaa4293c504ec779586f568944f14c1645419a81b0cf18a1205093a91a91784b3c4055f0aff3ab44161#npm:0.1.1"],\
+            ["@types/react", "npm:17.0.39"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@radix-ui/react-tabs", [\
         ["npm:0.1.5", {\
           "packageLocation": "./.yarn/cache/@radix-ui-react-tabs-npm-0.1.5-e936f02fdb-323d8f669e.zip/node_modules/@radix-ui/react-tabs/",\
@@ -10135,6 +10171,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/styled", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:11.9.3"],\
             ["@radix-ui/react-icons", "virtual:bcddfc290de65c5a9d8e0ec100654912452c96081220a362cb46afe1845779f6141d721afe3c553bdae930bdd45e4e763f8608cbae3e6285a9e55ee267710606#npm:1.1.1"],\
             ["@radix-ui/react-radio-group", "virtual:3cb9816e8f1f21ca280d46c064a3b6595f10a5b9113691d4da87c37dc0d5d2302a3893a444c39acaaa7d0c47d792e721edb322c0c55369ed04ea00661cd08422#npm:0.1.5"],\
+            ["@types/node", "npm:18.0.0"],\
+            ["@types/react", "npm:17.0.39"],\
+            ["@ui-proto/layout", "workspace:ui-proto/layout"],\
+            ["@ui-proto/text", "workspace:ui-proto/text"],\
+            ["@ui-proto/theme", "virtual:8724c16d548c5b10e2d1077d976ede32e643e19bd81fba08096d10e5ce8d005c5ae80db72a0ad91bb591aa085e5fd3f0e737a24f071505eeedec9c86c785bf3b#workspace:ui-proto/theme"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@ui-proto/switch", [\
+        ["workspace:ui-proto/switch", {\
+          "packageLocation": "./ui-proto/switch/",\
+          "packageDependencies": [\
+            ["@ui-proto/switch", "workspace:ui-proto/switch"],\
+            ["@emotion/styled", "virtual:244d2f1105564048d1735909c8b947388facc2533745f29d4e6626c7b97c8500253412c5fe896e7633d5e705d877a76bf33e3a5dadb0e29b7b00f82f15140932#npm:11.9.3"],\
+            ["@radix-ui/react-switch", "virtual:632d989d8191ed79592c4b9ab8e6ca357158f056bab11bac03057fe9a7b6acbcd367e69408e0f9862d84c17ff4656cf6f186281e18df6ebc411a6fee042a720c#npm:0.1.5"],\
             ["@types/node", "npm:18.0.0"],\
             ["@types/react", "npm:17.0.39"],\
             ["@ui-proto/layout", "workspace:ui-proto/layout"],\

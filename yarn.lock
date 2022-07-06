@@ -2518,6 +2518,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-focus-guards@npm:0.1.0":
+  version: 0.1.0
+  resolution: "@radix-ui/react-focus-guards@npm:0.1.0"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+  peerDependencies:
+    react: ^16.8 || ^17.0
+  checksum: d199462ecf93d9ac3abc4b507e937c9a1cc9f37e1946dc558f43b57fde833bc308767e80cc48ddc7d3b4e897de750f95ffcde3a96d55a03edc63504a29923706
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-focus-scope@npm:0.1.4":
   version: 0.1.4
   resolution: "@radix-ui/react-focus-scope@npm:0.1.4"
@@ -2565,6 +2576,32 @@ __metadata:
   peerDependencies:
     react: ^16.8 || ^17.0
   checksum: fc9741d1abdeabd11cbb21ad5e0126e76fe03a2b71b7265bec847d509ad16a83b9e0cb5ef5fa3510274c610385319745a767765aec02a20aae050a1ee6359eff
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-popover@npm:^0.1.6":
+  version: 0.1.6
+  resolution: "@radix-ui/react-popover@npm:0.1.6"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@radix-ui/primitive": 0.1.0
+    "@radix-ui/react-compose-refs": 0.1.0
+    "@radix-ui/react-context": 0.1.1
+    "@radix-ui/react-dismissable-layer": 0.1.5
+    "@radix-ui/react-focus-guards": 0.1.0
+    "@radix-ui/react-focus-scope": 0.1.4
+    "@radix-ui/react-id": 0.1.5
+    "@radix-ui/react-popper": 0.1.4
+    "@radix-ui/react-portal": 0.1.4
+    "@radix-ui/react-presence": 0.1.2
+    "@radix-ui/react-primitive": 0.1.4
+    "@radix-ui/react-use-controllable-state": 0.1.0
+    aria-hidden: ^1.1.1
+    react-remove-scroll: ^2.4.0
+  peerDependencies:
+    react: ^16.8 || ^17.0
+    react-dom: ^16.8 || ^17.0
+  checksum: 21e0dfd97876a5b92ffe70a231fb7195f41dd2c2555a268b59e1f7b113f080e69462c8bd6189cd9e657fbeef25129d7f58a96c7906a0add3c087f7dc716f4043
   languageName: node
   linkType: hard
 
@@ -5377,6 +5414,26 @@ __metadata:
   peerDependencies:
     "@emotion/styled": ^11.1.5
     react: ^17.0.1
+  languageName: unknown
+  linkType: soft
+
+"@ui-proto/popover@workspace:ui-proto/popover":
+  version: 0.0.0-use.local
+  resolution: "@ui-proto/popover@workspace:ui-proto/popover"
+  dependencies:
+    "@emotion/react": ^11.9.3
+    "@emotion/styled": ^11.9.3
+    "@radix-ui/react-icons": ^1.1.1
+    "@radix-ui/react-popover": ^0.1.6
+    "@types/node": ^18.0.0
+    "@types/react": ^18.0.14
+    "@ui-proto/text": "workspace:0.1.9"
+    "@ui-proto/theme": "workspace:0.0.10"
+    react: ^18.2.0
+  peerDependencies:
+    "@emotion/react": ^11.9.3
+    "@emotion/styled": ^11.1.5
+    react: ^18.2.0
   languageName: unknown
   linkType: soft
 

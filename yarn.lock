@@ -2564,7 +2564,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-label@npm:0.1.5":
+"@radix-ui/react-label@npm:0.1.5, @radix-ui/react-label@npm:^0.1.5":
   version: 0.1.5
   resolution: "@radix-ui/react-label@npm:0.1.5"
   dependencies:
@@ -5391,6 +5391,25 @@ __metadata:
     react: ^17.0.1
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
+  languageName: unknown
+  linkType: soft
+
+"@ui-proto/label@workspace:ui-proto/label":
+  version: 0.0.0-use.local
+  resolution: "@ui-proto/label@workspace:ui-proto/label"
+  dependencies:
+    "@emotion/styled": ^11.9.3
+    "@radix-ui/react-label": ^0.1.5
+    "@types/node": ^18.0.0
+    "@types/react": ^18.0.14
+    "@ui-proto/input": "workspace:0.1.11"
+    "@ui-proto/layout": "workspace:0.1.9"
+    "@ui-proto/theme": "workspace:0.0.10"
+    react: ^18.2.0
+    styled-system: ^5.1.5
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    react: ^18.2.0
   languageName: unknown
   linkType: soft
 

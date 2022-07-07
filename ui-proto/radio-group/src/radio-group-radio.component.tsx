@@ -8,8 +8,8 @@ import { RadioGroupItem }      from './radio-group-item.component'
 
 export interface RadioGroupRadioProps extends RadioGroupItemProps {}
 
-export const RadioGroupRadio: FC<RadioGroupRadioProps> = ({ value }) => (
-  <RadioGroupItem value={value}>
+export const RadioGroupRadio: FC<RadioGroupRadioProps> = ({ id, value }) => (
+  <RadioGroupItem id={id} value={value}>
     <RadioGroupIndicator />
   </RadioGroupItem>
 )

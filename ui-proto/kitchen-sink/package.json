@@ -1,0 +1,18 @@
+{
+  "name": "@ui-proto/kitchen-sink",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "@emotion/styled": "^11.1.5",
+    "@ui-proto/button": "workspace:0.1.10",
+    "@ui-proto/checkbox": "workspace:0.1.0",
+    "@ui-proto/input": "workspace:0.1.11",
+    "@ui-proto/label": "workspace:0.1.10",
+    "@ui-proto/layout": "workspace:0.1.9",
+    "@ui-proto/radio-group": "workspace:0.1.0",
+    "@ui-proto/select": "workspace:0.1.10",
+    "@ui-proto/text": "workspace:0.1.9",
+    "react": "^18.2.0"
+  }
+}

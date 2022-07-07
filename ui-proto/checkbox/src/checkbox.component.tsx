@@ -7,8 +7,8 @@ import { CheckboxIndicator } from './checkbox-indicator.component'
 import { CheckboxRoot }      from './checkbox-root.component'
 import { CheckboxProps }     from './checkbox.interfaces'
 
-export const Checkbox: FC<CheckboxProps> = ({ required, value, onChange }) => (
-  <CheckboxRoot required={required} checked={value} onCheckedChange={onChange}>
+export const Checkbox: FC<CheckboxProps> = ({ id, required, value, onChange }) => (
+  <CheckboxRoot id={id} required={required} checked={value} onCheckedChange={onChange}>
     <CheckboxIndicator>
       <CheckIcon color='black' width={20} height={20} />
     </CheckboxIndicator>

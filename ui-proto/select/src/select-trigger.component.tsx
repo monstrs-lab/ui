@@ -5,7 +5,7 @@ export const SelectTrigger = styled(Trigger)({
   all: 'unset',
   display: 'inline-flex',
   alignItems: 'center',
-  justifyContent: 'center',
+  justifyContent: 'space-between',
   borderRadius: 4,
   padding: '0 15px',
   fontSize: 13,
@@ -19,4 +19,8 @@ export const SelectTrigger = styled(Trigger)({
   fontFamily: '"Noto Sans"',
   '&:hover': { backgroundColor: 'rgb(224, 224, 224)' },
   '&:focus': { boxShadow: `0 0 0 2px #1EA7FD` },
+
+  '&[data-placeholder]': {
+    color: 'rgb(117, 117, 117)',
+  },
 })

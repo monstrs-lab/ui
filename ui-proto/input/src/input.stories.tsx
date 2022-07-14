@@ -12,14 +12,13 @@ export const Input = ({ containerWith, ...props }) => {
 
   return (
     <div style={{ width: containerWith, display: 'flex', justifyContent: 'center' }}>
-      <InputComponent {...props} value={value} onChange={setValue} />
+      <InputComponent {...props} value={value} onValueChange={setValue} />
     </div>
   )
 }
 
 Input.args = {
   containerWith: 200,
-  size: 'normal',
 }
 
 Input.argTypes = {
@@ -34,17 +33,6 @@ Input.argTypes = {
       min: 200,
       max: 1200,
       step: 10,
-    },
-  },
-  size: {
-    name: 'Размер',
-    description: 'Размер',
-    control: {
-      type: 'radio',
-      options: ['small', 'normal', 'large'],
-    },
-    table: {
-      category: 'Форма',
     },
   },
 }

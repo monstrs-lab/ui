@@ -2,6 +2,7 @@ import React               from 'react'
 
 import { Button }          from '@ui-proto/button'
 import { Checkbox }        from '@ui-proto/checkbox'
+import { PasswordInput }   from '@ui-proto/input'
 import { Input }           from '@ui-proto/input'
 import { Label }           from '@ui-proto/label'
 import { Column }          from '@ui-proto/layout'
@@ -57,7 +58,7 @@ export const Forms = () => (
           <Label htmlFor='email'>Email</Label>
         </Layout>
         <Layout>
-          <Input id='email' placeholder='Enter your Email address' />
+          <Input id='email' placeholder='Enter your Email address' prefix='@' />
         </Layout>
       </Column>
     </Layout>
@@ -133,7 +134,34 @@ export const Forms = () => (
           <Label htmlFor='password'>Password</Label>
         </Layout>
         <Layout>
-          <Input id='password' placeholder='Enter password' />
+          <PasswordInput id='password' placeholder='Enter password' />
+        </Layout>
+      </Column>
+    </Layout>
+    <Layout flexBasis={16} />
+    <Layout>
+      <Column>
+        <Layout mb='8px'>
+          <Label htmlFor='site'>Site</Label>
+        </Layout>
+        <Layout>
+          <Row>
+            <Layout flexBasis={104}>
+              <Select defaultValue='https' attach='right'>
+                <SelectItem value='https'>https:// </SelectItem>
+                <SelectItem value='http'>http://</SelectItem>
+              </Select>
+            </Layout>
+            <Layout flexGrow={1}>
+              <Input id='site' placeholder='Enter site' attach='both' />
+            </Layout>
+            <Layout flexBasis={80}>
+              <Select defaultValue='com' attach='left'>
+                <SelectItem value='com'>.com </SelectItem>
+                <SelectItem value='net'>.net</SelectItem>
+              </Select>
+            </Layout>
+          </Row>
         </Layout>
       </Column>
     </Layout>

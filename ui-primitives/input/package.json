@@ -1,0 +1,33 @@
+{
+  "name": "@ui-primitives/input",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn library build",
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist"
+  },
+  "dependencies": {
+    "@radix-ui/react-compose-refs": "^0.1.0",
+    "@radix-ui/react-context": "^0.1.1",
+    "@radix-ui/react-primitive": "^0.1.4",
+    "@radix-ui/react-use-controllable-state": "^0.1.0",
+    "@radix-ui/react-use-layout-effect": "0.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.14",
+    "react": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
+  }
+}

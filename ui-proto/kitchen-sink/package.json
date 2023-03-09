@@ -5,14 +5,14 @@
   "license": "MIT",
   "devDependencies": {
     "@emotion/styled": "^11.10.6",
-    "@ui-proto/button": "workspace:0.1.10",
-    "@ui-proto/checkbox": "workspace:0.1.0",
-    "@ui-proto/input": "workspace:0.1.11",
-    "@ui-proto/label": "workspace:0.1.10",
-    "@ui-proto/layout": "workspace:0.1.9",
-    "@ui-proto/radio-group": "workspace:0.1.0",
-    "@ui-proto/select": "workspace:0.1.10",
-    "@ui-proto/text": "workspace:0.1.9",
+    "@ui-proto/button": "workspace:0.1.11",
+    "@ui-proto/checkbox": "workspace:0.1.1",
+    "@ui-proto/input": "workspace:0.1.12",
+    "@ui-proto/label": "workspace:0.1.11",
+    "@ui-proto/layout": "workspace:0.1.10",
+    "@ui-proto/radio-group": "workspace:0.1.1",
+    "@ui-proto/select": "workspace:0.1.11",
+    "@ui-proto/text": "workspace:0.1.10",
     "react": "^18.2.0"
   }
 }

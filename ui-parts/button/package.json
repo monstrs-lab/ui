@@ -1,6 +1,6 @@
 {
   "name": "@ui-parts/button",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,7 +12,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-utils/styled": "workspace:0.1.0"
+    "@ui-utils/styled": "workspace:0.1.1"
   },
   "devDependencies": {
     "@emotion/styled": "^11.10.6",
@@ -20,7 +20,7 @@
     "@types/jest": "^29.4.0",
     "@types/react": "^18.0.28",
     "@types/styled-system": "^5.1.16",
-    "@ui-primitives/content-divider": "workspace:0.2.9",
+    "@ui-primitives/content-divider": "workspace:0.2.10",
     "react": "^18.2.0",
     "styled-system": "^5.1.5",
     "styled-tools": "^1.7.2"

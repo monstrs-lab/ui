@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/input",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,7 +12,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-parts/input": "workspace:0.2.11"
+    "@ui-parts/input": "workspace:0.2.12"
   },
   "devDependencies": {
     "@emotion/styled": "^11.10.6",

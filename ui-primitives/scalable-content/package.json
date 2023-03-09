@@ -1,6 +1,6 @@
 {
   "name": "@ui-primitives/scalable-content",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,7 +12,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-utils/content-dimensions": "workspace:0.1.0"
+    "@ui-utils/content-dimensions": "workspace:0.1.1"
   },
   "devDependencies": {
     "@emotion/styled": "^11.10.6",

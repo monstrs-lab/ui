@@ -16,10 +16,10 @@
     "styled-tools": "^1.7.2"
   },
   "devDependencies": {
-    "@emotion/styled": "^11.9.3",
-    "@radix-ui/react-icons": "^1.1.1",
-    "@types/react": "^18.0.14",
-    "@types/styled-system": "^5.1.15",
+    "@emotion/styled": "^11.10.6",
+    "@radix-ui/react-icons": "^1.2.0",
+    "@types/react": "^18.0.28",
+    "@types/styled-system": "^5.1.16",
     "react": "^18.2.0",
     "styled-system": "^5.1.5"
   },

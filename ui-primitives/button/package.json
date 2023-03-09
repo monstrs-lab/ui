@@ -12,11 +12,11 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@radix-ui/react-primitive": "^0.1.4",
+    "@radix-ui/react-primitive": "^1.0.2",
     "@ui-primitives/content-divider": "workspace:0.2.10"
   },
   "devDependencies": {
-    "@types/react": "^18.0.14",
+    "@types/react": "^18.0.28",
     "react": "^18.2.0"
   },
   "peerDependencies": {

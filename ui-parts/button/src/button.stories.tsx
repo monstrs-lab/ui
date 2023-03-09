@@ -2,15 +2,14 @@ import styled                     from '@emotion/styled'
 
 import React                      from 'react'
 
+import { ContentDivider }         from '@ui-primitives/content-divider'
 import { fontNames }              from '@monstrs/storybook-google-fonts'
 import { useGoogleFonts }         from '@monstrs/storybook-google-fonts'
 
 // @ts-ignore
 import mdx                        from './button.docs.mdx'
-import { Content }                from './content'
 import { createAppearanceStyles } from './appearance'
 import { createBaseStyles }       from './base'
-import { templates }              from './button.templates'
 import { createContentStyles }    from './content'
 import { createShapeStyles }      from './shape'
 
@@ -19,9 +18,6 @@ export default {
   parameters: {
     docs: {
       page: mdx,
-    },
-    development: {
-      templates,
     },
   },
 }
@@ -80,11 +76,11 @@ export const Button = ({
         inverted={inverted}
         contentAlign={contentAlign}
       >
-        <Content divider={contentDivider}>
+        <ContentDivider divider={contentDivider}>
           {childrenPrefix && <span>{childrenPrefix}</span>}
           {children}
           {childrenSuffix && <span>{childrenSuffix}</span>}
-        </Content>
+        </ContentDivider>
       </StoryButton>
     </div>
   )

@@ -1,45 +1,21 @@
-import { Root }   from '@radix-ui/react-avatar'
+import type { FC }        from 'react'
 
-import { styled } from '@ui-proto/core'
-import { theme }  from '@ui-proto/core'
+import React              from 'react'
 
-export const Avatar = styled(Root, {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  verticalAlign: 'middle',
-  overflow: 'hidden',
-  userSelect: 'none',
-  boxSizing: 'border-box',
-  backgroundColor: theme.colors.black,
+import { TextTransform }  from '@ui-primitives/text-transform'
 
-  variants: {
-    shape: {
-      circle: {
-        borderRadius: '100%',
-      },
-      square: {
-        borderRadius: 4,
-      },
-    },
-    size: {
-      small: {
-        width: 40,
-        height: 40,
-      },
-      normal: {
-        width: 48,
-        height: 48,
-      },
-      large: {
-        width: 56,
-        height: 56,
-      },
-    },
-  },
+import { AvatarFallback } from './avatar-fallback.component'
+import { AvatarImage }    from './avatar-image.component'
+import { AvatarRoot }     from './avatar-root.component'
+import { AvatarProps }    from './avatar.interfaces'
 
-  defaultVariants: {
-    shape: 'circle',
-    size: 'normal',
-  },
-})
+export const Avatar: FC<AvatarProps> = ({ size, image, fallback }) => (
+  <AvatarRoot size={size}>
+    <AvatarImage src={image} />
+    <AvatarFallback size={size}>
+      <TextTransform firstLetter upperCase>
+        {fallback}
+      </TextTransform>
+    </AvatarFallback>
+  </AvatarRoot>
+)

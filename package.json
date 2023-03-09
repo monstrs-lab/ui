@@ -3,9 +3,11 @@
   "private": true,
   "workspaces": [
     "storybook/*",
+    "ui-primitives/*",
     "ui-admin/*",
     "ui-proto/*",
     "ui-parts/*",
+    "ui-utils/*",
     "ui/*"
   ],
   "resolutions": {
@@ -22,19 +24,19 @@
     "webpack-virtual-modules": "^0.4.2"
   },
   "devDependencies": {
-    "@jest/core": "^28.1.1",
-    "@monstrs/code-service": "^0.0.114",
-    "@monstrs/config-jest": "^0.0.12",
-    "@monstrs/schematics": "^0.0.22",
-    "@types/eslint": "^8.4.3",
-    "@types/jest": "^28.1.1",
-    "@types/node": "^18.0.0",
-    "eslint": "^8.17.0",
+    "@jest/core": "^29.5.0",
+    "@monstrs/code-service": "^0.0.115",
+    "@monstrs/config-jest": "^0.0.13",
+    "@monstrs/schematics": "^0.0.23",
+    "@types/eslint": "^8.21.1",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.14.6",
+    "eslint": "^8.35.0",
     "husky": "8.0.1",
-    "jest-environment-jsdom": "^28.1.1",
-    "typescript": "^4.7.3"
+    "jest-environment-jsdom": "^29.5.0",
+    "typescript": "^4.9.5"
   },
-  "packageManager": "yarn@3.2.1",
+  "packageManager": "yarn@3.4.1",
   "tools": {
     "schematic": {
       "collection": "@monstrs/schematics",

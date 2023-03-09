@@ -16,8 +16,8 @@
     "@ui-proto/text": "workspace:0.1.9"
   },
   "devDependencies": {
-    "@emotion/styled": "^11.9.3",
-    "@types/react": "^18.0.14",
+    "@emotion/styled": "^11.10.6",
+    "@types/react": "^18.0.28",
     "react": "^18.2.0"
   },
   "peerDependencies": {

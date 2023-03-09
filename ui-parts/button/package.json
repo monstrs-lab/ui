@@ -12,14 +12,15 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-parts/styles": "workspace:0.2.9"
+    "@ui-utils/styled": "workspace:0.1.0"
   },
   "devDependencies": {
-    "@emotion/styled": "^11.9.3",
+    "@emotion/styled": "^11.10.6",
     "@monstrs/storybook-google-fonts": "workspace:0.0.1",
-    "@types/jest": "^28.1.1",
-    "@types/react": "^18.0.14",
-    "@types/styled-system": "^5.1.15",
+    "@types/jest": "^29.4.0",
+    "@types/react": "^18.0.28",
+    "@types/styled-system": "^5.1.16",
+    "@ui-primitives/content-divider": "workspace:0.2.9",
     "react": "^18.2.0",
     "styled-system": "^5.1.5",
     "styled-tools": "^1.7.2"

@@ -12,10 +12,10 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-parts/text": "workspace:0.2.9"
+    "@ui-primitives/text": "workspace:0.2.9"
   },
   "devDependencies": {
-    "@types/react": "^18.0.14",
+    "@types/react": "^18.0.28",
     "react": "^18.2.0"
   },
   "publishConfig": {

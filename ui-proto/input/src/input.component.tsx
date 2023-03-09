@@ -15,14 +15,21 @@ import { appearanceStyles }         from './input.styles'
 export const InputElement = styled.div(baseStyles, shapeStyles, appearanceStyles)
 
 export const InputWithoutRef: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
-  { size, value, disabled, onChange, onChangeNative, ...props },
+  { id, size, value, disabled, onChange, onChangeNative, ...props },
   ref
 ) => {
   const changeValue = useChangeValue(disabled, onChange, onChangeNative)
 
   return (
     <InputElement {...props} size={size}>
-      <RawInput ref={ref} {...props} disabled={disabled} value={value} onChange={changeValue} />
+      <RawInput
+        ref={ref}
+        id={id}
+        {...props}
+        disabled={disabled}
+        value={value}
+        onChange={changeValue}
+      />
     </InputElement>
   )
 }

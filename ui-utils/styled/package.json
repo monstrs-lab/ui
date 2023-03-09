@@ -1,0 +1,23 @@
+{
+  "name": "@ui-utils/styled",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn library build",
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/styled-system": "^5.1.16",
+    "styled-system": "^5.1.5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
+  }
+}

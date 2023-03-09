@@ -15,7 +15,8 @@ const ATTACHMENTS_SUFFIX_NAME = 'AttachmentsSuffix'
 
 type AttachmentsElement = ElementRef<typeof Primitive.div>
 type PrimitiveDivProps = ComponentPropsWithoutRef<typeof Primitive.div>
-interface AttachmentsProps extends PrimitiveDivProps {}
+
+export interface AttachmentsProps extends PrimitiveDivProps {}
 
 export const AttachmentsPrefix = forwardRef<AttachmentsElement, AttachmentsProps>((
   { __scopeInput, children, ...containerProps }: ScopedProps<AttachmentsProps>,

@@ -12,7 +12,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@radix-ui/react-tabs": "^0.1.5"
+    "@radix-ui/react-tabs": "^1.0.3"
   },
   "devDependencies": {
     "@emotion/styled": "^11.10.6",

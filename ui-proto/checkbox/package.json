@@ -12,8 +12,8 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@radix-ui/react-checkbox": "^0.1.5",
-    "@radix-ui/react-icons": "^1.1.1"
+    "@radix-ui/react-checkbox": "^1.0.3",
+    "@radix-ui/react-icons": "^1.2.0"
   },
   "devDependencies": {
     "@emotion/styled": "^11.10.6",

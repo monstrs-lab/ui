@@ -12,12 +12,12 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@radix-ui/react-tooltip": "^0.1.7"
+    "@radix-ui/react-tooltip": "^1.0.5"
   },
   "devDependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
-    "@radix-ui/react-icons": "^1.1.1",
+    "@radix-ui/react-icons": "^1.2.0",
     "@types/node": "^18.14.6",
     "@types/react": "^18.0.28",
     "@ui-proto/text": "workspace:0.1.9",

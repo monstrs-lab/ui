@@ -12,8 +12,8 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@radix-ui/react-icons": "^1.1.1",
-    "@radix-ui/react-radio-group": "^0.1.5"
+    "@radix-ui/react-icons": "^1.2.0",
+    "@radix-ui/react-radio-group": "^1.1.2"
   },
   "devDependencies": {
     "@emotion/styled": "^11.10.6",

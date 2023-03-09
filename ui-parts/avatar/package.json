@@ -14,7 +14,7 @@
   "devDependencies": {
     "@emotion/styled": "^11.10.6",
     "@monstrs/storybook-google-fonts": "workspace:0.0.1",
-    "@radix-ui/react-avatar": "^0.1.4",
+    "@radix-ui/react-avatar": "^1.0.2",
     "@types/node": "^18.14.6",
     "@types/react": "^18.0.28",
     "@ui-parts/theme": "workspace:0.0.10",

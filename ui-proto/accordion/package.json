@@ -12,14 +12,14 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@radix-ui/react-accordion": "^0.1.6",
-    "@radix-ui/react-icons": "^1.1.1",
+    "@radix-ui/react-accordion": "^1.1.1",
+    "@radix-ui/react-icons": "^1.2.0",
     "@ui-proto/text": "workspace:0.1.9"
   },
   "devDependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
-    "@radix-ui/react-collapsible": "^0.1.6",
+    "@radix-ui/react-collapsible": "^1.0.2",
     "@types/node": "^18.14.6",
     "@types/react": "^18.0.28",
     "@ui-proto/theme": "workspace:0.0.10",

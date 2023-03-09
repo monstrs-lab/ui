@@ -16,7 +16,7 @@
     "@monstrs/storybook-google-fonts": "workspace:0.0.1",
     "@radix-ui/react-avatar": "^0.1.4",
     "@types/node": "^18.14.6",
-    "@types/react": "^18.0.14",
+    "@types/react": "^18.0.28",
     "@ui-parts/theme": "workspace:0.0.10",
     "@ui-primitives/text-transform": "workspace:0.2.12",
     "react": "^18.2.0"

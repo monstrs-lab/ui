@@ -1,8 +1,0 @@
-releases:
-  "@ui-primitives/button": patch
-  "@ui-primitives/input": patch
-  "@ui-proto/avatar": patch
-  "@ui-proto/button": patch
-  "@ui-proto/input": patch
-  "@ui-proto/label": patch
-  "@ui-proto/select": patch

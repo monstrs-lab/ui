@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/button",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@emotion/is-prop-valid": "^1.2.0",
-    "@ui-primitives/button": "workspace:0.1.0",
+    "@ui-primitives/button": "workspace:0.1.1",
     "@ui-primitives/content-divider": "workspace:0.2.10"
   },
   "devDependencies": {

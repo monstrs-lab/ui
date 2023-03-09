@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/input",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,7 +12,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-primitives/input": "workspace:0.1.0",
+    "@ui-primitives/input": "workspace:0.1.1",
     "styled-tools": "^1.7.2"
   },
   "devDependencies": {

@@ -1697,7 +1697,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/styled@npm:^11.10.6":
+"@emotion/styled@npm:^11.10.6, @emotion/styled@npm:^11.9.3":
   version: 11.10.6
   resolution: "@emotion/styled@npm:11.10.6"
   dependencies:
@@ -2456,19 +2456,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-avatar@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "@radix-ui/react-avatar@npm:1.0.2"
+"@radix-ui/react-avatar@npm:^0.1.4":
+  version: 0.1.4
+  resolution: "@radix-ui/react-avatar@npm:0.1.4"
   dependencies:
     "@babel/runtime": ^7.13.10
-    "@radix-ui/react-context": 1.0.0
-    "@radix-ui/react-primitive": 1.0.2
-    "@radix-ui/react-use-callback-ref": 1.0.0
-    "@radix-ui/react-use-layout-effect": 1.0.0
+    "@radix-ui/react-context": 0.1.1
+    "@radix-ui/react-primitive": 0.1.4
+    "@radix-ui/react-use-callback-ref": 0.1.0
+    "@radix-ui/react-use-layout-effect": 0.1.0
   peerDependencies:
-    react: ^16.8 || ^17.0 || ^18.0
-    react-dom: ^16.8 || ^17.0 || ^18.0
-  checksum: 5351bd8763b1d0f2450e79a443b8525a652c89921321c25b93afad666b56a7eb00fcedfc801d5f284c78a7cbebea658f04e4fee6d305d7def57a562d9518dbdb
+    react: ^16.8 || ^17.0
+  checksum: cbba5f7b7f174a314d37e1c8c6f9a9a7bc9ec30fc5b75af74fa3341d59f3836810d3500189f5bc857f82183c203cdbfd4c87d35077a50778b42a66a8ddd2fd68
   languageName: node
   linkType: hard
 
@@ -2528,6 +2527,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-compose-refs@npm:0.1.0":
+  version: 0.1.0
+  resolution: "@radix-ui/react-compose-refs@npm:0.1.0"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+  peerDependencies:
+    react: ^16.8 || ^17.0
+  checksum: d1455577b2afee141998e847890e8f5ba5cb17aa58ba699f9abe21c7948e2435bbda28f7f7efe825ca200c66bcaf095ff4b93553778d599cba3f611c97cd222e
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-compose-refs@npm:1.0.0":
   version: 1.0.0
   resolution: "@radix-ui/react-compose-refs@npm:1.0.0"
@@ -2536,6 +2546,17 @@ __metadata:
   peerDependencies:
     react: ^16.8 || ^17.0 || ^18.0
   checksum: fb98be2e275a1a758ccac647780ff5b04be8dcf25dcea1592db3b691fecf719c4c0700126da605b2f512dd89caa111352b9fad59528d736b4e0e9a0e134a74a1
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-context@npm:0.1.1":
+  version: 0.1.1
+  resolution: "@radix-ui/react-context@npm:0.1.1"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+  peerDependencies:
+    react: ^16.8 || ^17.0
+  checksum: 85ed35b6e386706bc3a8d21ff7e2a55d0f452fd8ab89f6c9a6c2e271e390c8788800517589d5606a3bfbcca08741fbcb4b6c695c466a284ae35957d92620c467
   languageName: node
   linkType: hard
 
@@ -2714,6 +2735,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-primitive@npm:0.1.4":
+  version: 0.1.4
+  resolution: "@radix-ui/react-primitive@npm:0.1.4"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@radix-ui/react-slot": 0.1.2
+  peerDependencies:
+    react: ^16.8 || ^17.0
+  checksum: e7b83dc51565a7a54dfd16296e2aa1639dafe32655e3a3974d29d28497f0e9ec9cdf0ee59bc54a88b2a51eeb307781f01f6fcacb4d6dc84a8e10631ddb6142e5
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-primitive@npm:1.0.2":
   version: 1.0.2
   resolution: "@radix-ui/react-primitive@npm:1.0.2"
@@ -2826,6 +2859,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-slot@npm:0.1.2":
+  version: 0.1.2
+  resolution: "@radix-ui/react-slot@npm:0.1.2"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@radix-ui/react-compose-refs": 0.1.0
+  peerDependencies:
+    react: ^16.8 || ^17.0
+  checksum: 216927b9b1dae28328d630f6b2c91f1a424c0b00fb4efcebb7a109fdfc5bceda5cf878dfac5baa8aa441150d4c5263f5a914f2962bbce8375972ae076e4d3b65
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-slot@npm:1.0.1":
   version: 1.0.1
   resolution: "@radix-ui/react-slot@npm:1.0.1"
@@ -2935,6 +2980,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-use-callback-ref@npm:0.1.0":
+  version: 0.1.0
+  resolution: "@radix-ui/react-use-callback-ref@npm:0.1.0"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+  peerDependencies:
+    react: ^16.8 || ^17.0
+  checksum: 5356971123d7bbc66a208eca4709483190d0927a6817089f885d4538cd701a174d76830ba36cfaa6336b340415aaefaddc606a575246b0cbcb4b1f2897075203
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-use-callback-ref@npm:1.0.0":
   version: 1.0.0
   resolution: "@radix-ui/react-use-callback-ref@npm:1.0.0"
@@ -2967,6 +3023,17 @@ __metadata:
   peerDependencies:
     react: ^16.8 || ^17.0 || ^18.0
   checksum: 5bec1b73ed6c38139bf1db3c626c0474ca6221ae55f154ef83f1c6429ea866280b2a0ba9436b807334d0215bb4389f0b492c65471cf565635957a8ee77cce98a
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-use-layout-effect@npm:0.1.0":
+  version: 0.1.0
+  resolution: "@radix-ui/react-use-layout-effect@npm:0.1.0"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+  peerDependencies:
+    react: ^16.8 || ^17.0
+  checksum: d8be1f97706dec2dcdf98284ad04a115898338dd34f68d61cf9bfda87d88c694019576313a235202b05be3a56ab6453fcee44d651f6b8a502a0cd2dbde153f49
   languageName: node
   linkType: hard
 
@@ -5098,23 +5165,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-parts/avatar@workspace:0.2.13, @ui-parts/avatar@workspace:ui-parts/avatar":
-  version: 0.0.0-use.local
-  resolution: "@ui-parts/avatar@workspace:ui-parts/avatar"
-  dependencies:
-    "@emotion/styled": ^11.10.6
-    "@monstrs/storybook-google-fonts": "workspace:0.0.1"
-    "@radix-ui/react-avatar": ^1.0.2
-    "@types/node": ^18.14.6
-    "@types/react": ^18.0.28
-    "@ui-parts/theme": "workspace:0.0.10"
-    "@ui-primitives/text-transform": "workspace:0.2.12"
-    react: ^18.2.0
-  peerDependencies:
-    react: "^18.2.0 "
-  languageName: unknown
-  linkType: soft
-
 "@ui-parts/button@workspace:0.2.9, @ui-parts/button@workspace:ui-parts/button":
   version: 0.0.0-use.local
   resolution: "@ui-parts/button@workspace:ui-parts/button"
@@ -5158,7 +5208,6 @@ __metadata:
     "@types/express": ^4.17.17
     "@types/react": ^18.0.28
     "@types/react-dom": ^18.0.11
-    "@ui-parts/avatar": "workspace:0.2.13"
     "@ui-parts/button": "workspace:0.2.9"
     "@ui-parts/input": "workspace:0.2.11"
     "@ui-parts/theme": "workspace:0.0.10"
@@ -5320,6 +5369,24 @@ __metadata:
     react: ^18.2.0
   peerDependencies:
     "@emotion/react": ^11.9.3
+    "@emotion/styled": ^11.1.5
+    react: ^18.2.0
+  languageName: unknown
+  linkType: soft
+
+"@ui-proto/avatar@workspace:ui-proto/avatar":
+  version: 0.0.0-use.local
+  resolution: "@ui-proto/avatar@workspace:ui-proto/avatar"
+  dependencies:
+    "@emotion/styled": ^11.9.3
+    "@radix-ui/react-avatar": ^0.1.4
+    "@types/node": ^18.14.6
+    "@types/react": ^18.0.14
+    "@ui-primitives/text-transform": "workspace:0.2.12"
+    "@ui-proto/theme": "workspace:0.0.10"
+    react: ^18.2.0
+    styled-tools: ^1.7.2
+  peerDependencies:
     "@emotion/styled": ^11.1.5
     react: ^18.2.0
   languageName: unknown

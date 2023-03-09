@@ -2409,7 +2409,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/storybook-google-fonts@workspace:0.0.1, @monstrs/storybook-google-fonts@workspace:storybook/google-fonts":
+"@monstrs/storybook-google-fonts@workspace:storybook/google-fonts":
   version: 0.0.0-use.local
   resolution: "@monstrs/storybook-google-fonts@workspace:storybook/google-fonts"
   dependencies:
@@ -3536,7 +3536,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addons@npm:6.5.16, @storybook/addons@npm:^6.5.16":
+"@storybook/addons@npm:6.5.16":
   version: 6.5.16
   resolution: "@storybook/addons@npm:6.5.16"
   dependencies:
@@ -4382,7 +4382,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:6.5.16, @storybook/theming@npm:^6.5.16":
+"@storybook/theming@npm:6.5.16":
   version: 6.5.16
   resolution: "@storybook/theming@npm:6.5.16"
   dependencies:
@@ -4663,15 +4663,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/cors@npm:^2.8.13":
-  version: 2.8.13
-  resolution: "@types/cors@npm:2.8.13"
-  dependencies:
-    "@types/node": "*"
-  checksum: 7ef197ea19d2e5bf1313b8416baa6f3fd6dd887fd70191da1f804f557395357dafd8bc8bed0ac60686923406489262a7c8a525b55748f7b2b8afa686700de907
-  languageName: node
-  linkType: hard
-
 "@types/emscripten@npm:^1.38.0":
   version: 1.39.6
   resolution: "@types/emscripten@npm:1.39.6"
@@ -4710,13 +4701,6 @@ __metadata:
   version: 0.0.51
   resolution: "@types/estree@npm:0.0.51"
   checksum: e56a3bcf759fd9185e992e7fdb3c6a5f81e8ff120e871641607581fb3728d16c811702a7d40fa5f869b7f7b4437ab6a87eb8d98ffafeee51e85bbe955932a189
-  languageName: node
-  linkType: hard
-
-"@types/events@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@types/events@npm:3.0.0"
-  checksum: 9a424c2da210957d5636e0763e8c9fc3aaeee35bf411284ddec62a56a6abe31de9c7c2e713dabdd8a76ff98b47db2bd52f61310be6609641d6234cc842ecbbe3
   languageName: node
   linkType: hard
 
@@ -5174,141 +5158,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ui-admin/button@workspace:0.0.11, @ui-admin/button@workspace:ui-admin/button":
-  version: 0.0.0-use.local
-  resolution: "@ui-admin/button@workspace:ui-admin/button"
-  dependencies:
-    "@emotion/styled": ^11.10.6
-    "@types/react": ^18.0.28
-    "@types/styled-system": ^5.1.16
-    "@ui-parts/button": "workspace:0.2.10"
-    "@ui-primitives/content-divider": "workspace:0.2.10"
-    react: ^18.2.0
-    styled-system: ^5.1.5
-    styled-tools: ^1.7.2
-  peerDependencies:
-    "@emotion/styled": ^11.1.5
-    react: ^17.0.1
-    styled-system: ^5.1.5
-    styled-tools: ^1.7.2
-  languageName: unknown
-  linkType: soft
-
-"@ui-admin/design@workspace:ui-admin/design":
-  version: 0.0.0-use.local
-  resolution: "@ui-admin/design@workspace:ui-admin/design"
-  dependencies:
-    "@babel/core": ^7.21.0
-    "@emotion/babel-plugin": ^11.10.6
-    "@emotion/react": ^11.10.6
-    "@emotion/styled": ^11.10.6
-    "@storybook/addon-actions": ^6.5.16
-    "@storybook/addon-docs": ^6.5.16
-    "@storybook/addon-essentials": ^6.5.16
-    "@storybook/addon-links": ^6.5.16
-    "@storybook/builder-webpack5": ^6.5.16
-    "@storybook/manager-webpack5": ^6.5.16
-    "@storybook/react": ^6.5.16
-    "@types/events": ^3.0.0
-    "@types/express": ^4.17.17
-    "@types/react": ^18.0.28
-    "@types/react-dom": ^18.0.11
-    "@ui-admin/button": "workspace:0.0.11"
-    "@ui-admin/theme": "workspace:0.0.11"
-    babel-loader: ^8.2.5
-    core-js: ^3.29.0
-    events: ^3.3.0
-    express: ^4.18.2
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-is: ^18.2.0
-    typescript: ^4.9.5
-  languageName: unknown
-  linkType: soft
-
-"@ui-admin/theme@workspace:0.0.11, @ui-admin/theme@workspace:ui-admin/theme":
-  version: 0.0.0-use.local
-  resolution: "@ui-admin/theme@workspace:ui-admin/theme"
-  dependencies:
-    "@emotion/react": ^11.10.6
-    "@types/node": ^18.14.6
-    "@types/react": ^18.0.28
-    react: ^18.2.0
-  peerDependencies:
-    "@emotion/react": ^11.1.5
-    react: ^17.0.1
-  languageName: unknown
-  linkType: soft
-
-"@ui-parts/button@workspace:0.2.10, @ui-parts/button@workspace:ui-parts/button":
-  version: 0.0.0-use.local
-  resolution: "@ui-parts/button@workspace:ui-parts/button"
-  dependencies:
-    "@emotion/styled": ^11.10.6
-    "@monstrs/storybook-google-fonts": "workspace:0.0.1"
-    "@types/jest": ^29.4.0
-    "@types/react": ^18.0.28
-    "@types/styled-system": ^5.1.16
-    "@ui-primitives/content-divider": "workspace:0.2.10"
-    "@ui-utils/styled": "workspace:0.1.1"
-    react: ^18.2.0
-    styled-system: ^5.1.5
-    styled-tools: ^1.7.2
-  peerDependencies:
-    "@emotion/styled": ^11.1.5
-    react: ^17.0.1
-    styled-system: ^5.1.5
-    styled-tools: ^1.7.2
-  languageName: unknown
-  linkType: soft
-
-"@ui-parts/design@workspace:ui-parts/design":
-  version: 0.0.0-use.local
-  resolution: "@ui-parts/design@workspace:ui-parts/design"
-  dependencies:
-    "@babel/core": ^7.21.0
-    "@emotion/babel-plugin": ^11.10.6
-    "@emotion/react": ^11.10.6
-    "@emotion/styled": ^11.10.6
-    "@storybook/addon-actions": ^6.5.16
-    "@storybook/addon-docs": ^6.5.16
-    "@storybook/addon-essentials": ^6.5.16
-    "@storybook/addon-links": ^6.5.16
-    "@storybook/addons": ^6.5.16
-    "@storybook/builder-webpack5": ^6.5.16
-    "@storybook/manager-webpack5": ^6.5.16
-    "@storybook/react": ^6.5.16
-    "@storybook/theming": ^6.5.16
-    "@types/cors": ^2.8.13
-    "@types/express": ^4.17.17
-    "@types/react": ^18.0.28
-    "@types/react-dom": ^18.0.11
-    "@ui-parts/theme": "workspace:0.0.10"
-    babel-loader: ^8.2.5
-    core-js: ^3.29.0
-    express: ^4.18.2
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-is: ^18.2.0
-    string-replace-loader: ^3.1.0
-    typescript: ^4.9.5
-  languageName: unknown
-  linkType: soft
-
-"@ui-parts/theme@workspace:0.0.10, @ui-parts/theme@workspace:ui-parts/theme":
-  version: 0.0.0-use.local
-  resolution: "@ui-parts/theme@workspace:ui-parts/theme"
-  dependencies:
-    "@emotion/react": ^11.10.6
-    "@types/node": ^18.14.6
-    "@types/react": ^18.0.28
-    react: ^18.2.0
-  peerDependencies:
-    "@emotion/react": ^11.1.5
-    react: ^17.0.1
-  languageName: unknown
-  linkType: soft
-
 "@ui-primitives/button@workspace:0.1.0, @ui-primitives/button@workspace:ui-primitives/button":
   version: 0.0.0-use.local
   resolution: "@ui-primitives/button@workspace:ui-primitives/button"
@@ -5478,7 +5327,6 @@ __metadata:
     "@emotion/styled": ^11.10.6
     "@types/react": ^18.0.28
     "@types/styled-system": ^5.1.16
-    "@ui-parts/button": "workspace:0.2.10"
     "@ui-primitives/button": "workspace:0.1.0"
     "@ui-primitives/content-divider": "workspace:0.2.10"
     react: ^18.2.0
@@ -5793,7 +5641,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-utils/styled@workspace:0.1.1, @ui-utils/styled@workspace:ui-utils/styled":
+"@ui-utils/styled@workspace:ui-utils/styled":
   version: 0.0.0-use.local
   resolution: "@ui-utils/styled@workspace:ui-utils/styled"
   dependencies:
@@ -9203,7 +9051,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"events@npm:^3.2.0, events@npm:^3.3.0":
+"events@npm:^3.2.0":
   version: 3.3.0
   resolution: "events@npm:3.3.0"
   checksum: f6f487ad2198aa41d878fa31452f1a3c00958f46e9019286ff4787c84aac329332ab45c9cdc8c445928fc6d7ded294b9e005a7fce9426488518017831b272780

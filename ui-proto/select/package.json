@@ -16,7 +16,7 @@
     "@radix-ui/react-select": "^0.1.2-rc.52"
   },
   "devDependencies": {
-    "@emotion/styled": "^11.9.3",
+    "@emotion/styled": "^11.10.6",
     "@types/node": "^18.14.6",
     "@types/react": "^18.0.14",
     "@ui-proto/layout": "workspace:0.1.9",

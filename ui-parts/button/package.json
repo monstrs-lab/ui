@@ -15,7 +15,7 @@
     "@ui-utils/styled": "workspace:0.1.0"
   },
   "devDependencies": {
-    "@emotion/styled": "^11.9.3",
+    "@emotion/styled": "^11.10.6",
     "@monstrs/storybook-google-fonts": "workspace:0.0.1",
     "@types/jest": "^29.4.0",
     "@types/react": "^18.0.14",

@@ -17,8 +17,8 @@
     "@ui-proto/text": "workspace:0.1.9"
   },
   "devDependencies": {
-    "@emotion/react": "^11.9.3",
-    "@emotion/styled": "^11.9.3",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "@radix-ui/react-collapsible": "^0.1.6",
     "@types/node": "^18.14.6",
     "@types/react": "^18.0.14",

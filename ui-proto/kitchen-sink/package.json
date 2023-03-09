@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "devDependencies": {
-    "@emotion/styled": "^11.1.5",
+    "@emotion/styled": "^11.10.6",
     "@ui-proto/button": "workspace:0.1.10",
     "@ui-proto/checkbox": "workspace:0.1.0",
     "@ui-proto/input": "workspace:0.1.11",

@@ -15,8 +15,8 @@
     "@radix-ui/react-tooltip": "^0.1.7"
   },
   "devDependencies": {
-    "@emotion/react": "^11.9.3",
-    "@emotion/styled": "^11.9.3",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "@radix-ui/react-icons": "^1.1.1",
     "@types/node": "^18.14.6",
     "@types/react": "^18.0.14",

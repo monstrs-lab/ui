@@ -1,3 +1,2 @@
-export * from './input.interfaces'
+export * from './password-input.component'
 export * from './input.component'
-export * from './input.styles'

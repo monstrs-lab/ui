@@ -12,15 +12,16 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-parts/input": "workspace:0.2.12"
+    "@ui-primitives/input": "workspace:0.1.0",
+    "styled-tools": "^1.7.2"
   },
   "devDependencies": {
     "@emotion/styled": "^11.10.6",
+    "@radix-ui/react-icons": "^1.2.0",
     "@types/react": "^18.0.28",
     "@types/styled-system": "^5.1.16",
     "react": "^18.2.0",
-    "styled-system": "^5.1.5",
-    "styled-tools": "^1.7.2"
+    "styled-system": "^5.1.5"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.1.5",

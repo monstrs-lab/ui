@@ -1,28 +1,27 @@
-import isPropValid        from '@emotion/is-prop-valid'
-import styled             from '@emotion/styled'
+import styled                         from '@emotion/styled'
 
-import React              from 'react'
-import { FC }             from 'react'
+import { Button as PrimitivesButton } from '@ui-primitives/button'
 
-import { ContentDivider } from '@ui-primitives/content-divider'
-
-import { ButtonProps }    from './button.interfaces'
-import { baseStyles }     from './button.styles'
-import { shapeStyles }    from './button.styles'
-import { contentStyles }  from './button.styles'
-import { variantStyles }  from './button.styles'
-
-const shouldForwardProp = (prop) => isPropValid(prop) && !['fill'].includes(prop)
-
-export const ButtonElement = styled('button', { shouldForwardProp })(
-  baseStyles,
-  contentStyles,
-  shapeStyles,
-  variantStyles
-)
-
-export const Button: FC<ButtonProps> = ({ children, ...props }) => (
-  <ButtonElement {...props}>
-    <ContentDivider divider={12}>{children}</ContentDivider>
-  </ButtonElement>
-)
+export const Button = styled(PrimitivesButton)({
+  boxSizing: 'border-box',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  wordBreak: 'break-word',
+  cursor: 'pointer',
+  outline: 'none',
+  padding: 0,
+  border: '1px solid transparent',
+  height: 40,
+  fontSize: 12,
+  fontWeight: 600,
+  fontFamily: 'Noto Sans',
+  paddingLeft: 20,
+  paddingRight: 20,
+  borderRadius: 6,
+  backgroundColor: 'black',
+  borderColor: 'black',
+  color: 'white',
+  '&:hover': { backgroundColor: 'rgba(0, 0, 0, 0.8)' },
+  '&:focus': { borderColor: '#1EA7FD' },
+})

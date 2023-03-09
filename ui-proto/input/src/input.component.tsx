@@ -1,37 +1,29 @@
-import styled                       from '@emotion/styled'
+import type { InputControlAttachPosition } from './input-control.component'
+import type { RootProps }                  from '@ui-primitives/input'
+import type { ControlElement }             from '@ui-primitives/input'
+import type { ReactNode }                  from 'react'
 
-import React                        from 'react'
-import { ForwardRefRenderFunction } from 'react'
-import { forwardRef }               from 'react'
+import React                               from 'react'
+import { forwardRef }                      from 'react'
 
-import { RawInput }                 from '@ui-parts/input'
-import { useChangeValue }           from '@ui-parts/input'
+import { InputAttachmentsPrefix }          from './input-attachments.component'
+import { InputAttachmentsSuffix }          from './input-attachments.component'
+import { InputControl }                    from './input-control.component'
+import { InputRoot }                       from './input-root.component'
 
-import { InputProps }               from './input.interfaces'
-import { baseStyles }               from './input.styles'
-import { shapeStyles }              from './input.styles'
-import { appearanceStyles }         from './input.styles'
-
-export const InputElement = styled.div(baseStyles, shapeStyles, appearanceStyles)
-
-export const InputWithoutRef: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
-  { id, size, value, disabled, onChange, onChangeNative, ...props },
-  ref
-) => {
-  const changeValue = useChangeValue(disabled, onChange, onChangeNative)
-
-  return (
-    <InputElement {...props} size={size}>
-      <RawInput
-        ref={ref}
-        id={id}
-        {...props}
-        disabled={disabled}
-        value={value}
-        onChange={changeValue}
-      />
-    </InputElement>
-  )
+export interface InputProps extends Omit<RootProps, 'prefix'> {
+  attach?: InputControlAttachPosition
+  prefix?: ReactNode
+  suffix?: ReactNode
 }
 
-export const Input = forwardRef<HTMLInputElement, InputProps>(InputWithoutRef)
+export const Input = forwardRef<ControlElement, InputProps>((
+  { prefix, suffix, attach, ...props },
+  forwardedRef
+) => (
+  <InputRoot {...props}>
+    <InputAttachmentsPrefix>{prefix}</InputAttachmentsPrefix>
+    <InputControl ref={forwardedRef} attach={attach} />
+    <InputAttachmentsSuffix>{suffix}</InputAttachmentsSuffix>
+  </InputRoot>
+))

@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.2.0",
-    "@radix-ui/react-select": "^1.2.1"
+    "@radix-ui/react-select": "^1.2.1",
+    "styled-tools": "^1.7.2"
   },
   "devDependencies": {
     "@emotion/styled": "^11.10.6",

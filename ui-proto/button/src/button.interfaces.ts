@@ -1,6 +1,6 @@
-import { ButtonHTMLAttributes } from 'react'
+import { ButtonProps as ButtonPrimitivesProps } from '@ui-primitives/button'
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends ButtonPrimitivesProps {
   fill?: boolean
   inverted?: boolean
   size?: 'small' | 'normal' | 'large'

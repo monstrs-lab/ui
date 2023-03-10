@@ -5319,7 +5319,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/button@workspace:0.1.13, @ui-proto/button@workspace:ui-proto/button":
+"@ui-proto/button@workspace:0.1.14, @ui-proto/button@workspace:ui-proto/button":
   version: 0.0.0-use.local
   resolution: "@ui-proto/button@workspace:ui-proto/button"
   dependencies:
@@ -5411,7 +5411,7 @@ __metadata:
   resolution: "@ui-proto/kitchen-sink@workspace:ui-proto/kitchen-sink"
   dependencies:
     "@emotion/styled": ^11.10.6
-    "@ui-proto/button": "workspace:0.1.13"
+    "@ui-proto/button": "workspace:0.1.14"
     "@ui-proto/checkbox": "workspace:0.1.1"
     "@ui-proto/input": "workspace:0.1.13"
     "@ui-proto/label": "workspace:0.1.12"

@@ -5386,7 +5386,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/input@workspace:0.1.13, @ui-proto/input@workspace:ui-proto/input":
+"@ui-proto/input@workspace:0.1.14, @ui-proto/input@workspace:ui-proto/input":
   version: 0.0.0-use.local
   resolution: "@ui-proto/input@workspace:ui-proto/input"
   dependencies:
@@ -5413,8 +5413,8 @@ __metadata:
     "@emotion/styled": ^11.10.6
     "@ui-proto/button": "workspace:0.1.14"
     "@ui-proto/checkbox": "workspace:0.1.1"
-    "@ui-proto/input": "workspace:0.1.13"
-    "@ui-proto/label": "workspace:0.1.12"
+    "@ui-proto/input": "workspace:0.1.14"
+    "@ui-proto/label": "workspace:0.1.13"
     "@ui-proto/layout": "workspace:0.1.10"
     "@ui-proto/radio-group": "workspace:0.1.1"
     "@ui-proto/select": "workspace:0.1.12"
@@ -5423,7 +5423,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/label@workspace:0.1.12, @ui-proto/label@workspace:ui-proto/label":
+"@ui-proto/label@workspace:0.1.13, @ui-proto/label@workspace:ui-proto/label":
   version: 0.0.0-use.local
   resolution: "@ui-proto/label@workspace:ui-proto/label"
   dependencies:
@@ -5431,7 +5431,7 @@ __metadata:
     "@radix-ui/react-label": ^2.0.1
     "@types/node": ^18.14.6
     "@types/react": ^18.0.28
-    "@ui-proto/input": "workspace:0.1.13"
+    "@ui-proto/input": "workspace:0.1.14"
     "@ui-proto/layout": "workspace:0.1.10"
     "@ui-proto/theme": "workspace:0.0.11"
     react: ^18.2.0

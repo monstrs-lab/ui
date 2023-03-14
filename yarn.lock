@@ -5222,7 +5222,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-primitives/layout@workspace:0.2.10, @ui-primitives/layout@workspace:ui-primitives/layout":
+"@ui-primitives/layout@workspace:0.2.11, @ui-primitives/layout@workspace:ui-primitives/layout":
   version: 0.0.0-use.local
   resolution: "@ui-primitives/layout@workspace:ui-primitives/layout"
   dependencies:
@@ -5265,7 +5265,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-primitives/text@workspace:0.2.10, @ui-primitives/text@workspace:ui-primitives/text":
+"@ui-primitives/text@workspace:0.2.11, @ui-primitives/text@workspace:ui-primitives/text":
   version: 0.0.0-use.local
   resolution: "@ui-primitives/text@workspace:ui-primitives/text"
   dependencies:
@@ -5291,7 +5291,7 @@ __metadata:
     "@radix-ui/react-icons": ^1.2.0
     "@types/node": ^18.14.6
     "@types/react": ^18.0.28
-    "@ui-proto/text": "workspace:0.1.10"
+    "@ui-proto/text": "workspace:0.1.11"
     "@ui-proto/theme": "workspace:0.0.11"
     react: ^18.2.0
   peerDependencies:
@@ -5414,16 +5414,16 @@ __metadata:
     "@ui-proto/button": "workspace:0.1.14"
     "@ui-proto/checkbox": "workspace:0.1.1"
     "@ui-proto/input": "workspace:0.1.14"
-    "@ui-proto/label": "workspace:0.1.13"
-    "@ui-proto/layout": "workspace:0.1.10"
-    "@ui-proto/radio-group": "workspace:0.1.1"
-    "@ui-proto/select": "workspace:0.1.12"
-    "@ui-proto/text": "workspace:0.1.10"
+    "@ui-proto/label": "workspace:0.1.14"
+    "@ui-proto/layout": "workspace:0.1.11"
+    "@ui-proto/radio-group": "workspace:0.1.2"
+    "@ui-proto/select": "workspace:0.1.13"
+    "@ui-proto/text": "workspace:0.1.11"
     react: ^18.2.0
   languageName: unknown
   linkType: soft
 
-"@ui-proto/label@workspace:0.1.13, @ui-proto/label@workspace:ui-proto/label":
+"@ui-proto/label@workspace:0.1.14, @ui-proto/label@workspace:ui-proto/label":
   version: 0.0.0-use.local
   resolution: "@ui-proto/label@workspace:ui-proto/label"
   dependencies:
@@ -5432,7 +5432,7 @@ __metadata:
     "@types/node": ^18.14.6
     "@types/react": ^18.0.28
     "@ui-proto/input": "workspace:0.1.14"
-    "@ui-proto/layout": "workspace:0.1.10"
+    "@ui-proto/layout": "workspace:0.1.11"
     "@ui-proto/theme": "workspace:0.0.11"
     react: ^18.2.0
     styled-system: ^5.1.5
@@ -5442,11 +5442,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/layout@workspace:0.1.10, @ui-proto/layout@workspace:ui-proto/layout":
+"@ui-proto/layout@workspace:0.1.11, @ui-proto/layout@workspace:ui-proto/layout":
   version: 0.0.0-use.local
   resolution: "@ui-proto/layout@workspace:ui-proto/layout"
   dependencies:
-    "@ui-primitives/layout": "workspace:0.2.10"
+    "@ui-primitives/layout": "workspace:0.2.11"
   peerDependencies:
     "@emotion/styled": ^11.1.5
     react: ^18.2.0
@@ -5459,8 +5459,8 @@ __metadata:
   dependencies:
     "@emotion/styled": ^11.10.6
     "@types/react": ^18.0.28
-    "@ui-proto/layout": "workspace:0.1.10"
-    "@ui-proto/text": "workspace:0.1.10"
+    "@ui-proto/layout": "workspace:0.1.11"
+    "@ui-proto/text": "workspace:0.1.11"
     react: ^18.2.0
   peerDependencies:
     "@emotion/styled": ^11.1.5
@@ -5478,7 +5478,7 @@ __metadata:
     "@radix-ui/react-popover": ^1.0.5
     "@types/node": ^18.14.6
     "@types/react": ^18.0.28
-    "@ui-proto/text": "workspace:0.1.10"
+    "@ui-proto/text": "workspace:0.1.11"
     "@ui-proto/theme": "workspace:0.0.11"
     react: ^18.2.0
   peerDependencies:
@@ -5488,7 +5488,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/radio-group@workspace:0.1.1, @ui-proto/radio-group@workspace:ui-proto/radio-group":
+"@ui-proto/radio-group@workspace:0.1.2, @ui-proto/radio-group@workspace:ui-proto/radio-group":
   version: 0.0.0-use.local
   resolution: "@ui-proto/radio-group@workspace:ui-proto/radio-group"
   dependencies:
@@ -5497,8 +5497,8 @@ __metadata:
     "@radix-ui/react-radio-group": ^1.1.2
     "@types/node": ^18.14.6
     "@types/react": ^18.0.28
-    "@ui-proto/layout": "workspace:0.1.10"
-    "@ui-proto/text": "workspace:0.1.10"
+    "@ui-proto/layout": "workspace:0.1.11"
+    "@ui-proto/text": "workspace:0.1.11"
     "@ui-proto/theme": "workspace:0.0.11"
     react: ^18.2.0
   peerDependencies:
@@ -5507,7 +5507,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/select@workspace:0.1.12, @ui-proto/select@workspace:ui-proto/select":
+"@ui-proto/select@workspace:0.1.13, @ui-proto/select@workspace:ui-proto/select":
   version: 0.0.0-use.local
   resolution: "@ui-proto/select@workspace:ui-proto/select"
   dependencies:
@@ -5516,7 +5516,7 @@ __metadata:
     "@radix-ui/react-select": ^1.2.1
     "@types/node": ^18.14.6
     "@types/react": ^18.0.28
-    "@ui-proto/layout": "workspace:0.1.10"
+    "@ui-proto/layout": "workspace:0.1.11"
     react: ^18.2.0
     styled-tools: ^1.7.2
   peerDependencies:
@@ -5548,8 +5548,8 @@ __metadata:
     "@radix-ui/react-switch": ^1.0.2
     "@types/node": ^18.14.6
     "@types/react": ^18.0.28
-    "@ui-proto/layout": "workspace:0.1.10"
-    "@ui-proto/text": "workspace:0.1.10"
+    "@ui-proto/layout": "workspace:0.1.11"
+    "@ui-proto/text": "workspace:0.1.11"
     "@ui-proto/theme": "workspace:0.0.11"
     react: ^18.2.0
   peerDependencies:
@@ -5566,8 +5566,8 @@ __metadata:
     "@radix-ui/react-tabs": ^1.0.3
     "@types/node": ^18.14.6
     "@types/react": ^18.0.28
-    "@ui-proto/layout": "workspace:0.1.10"
-    "@ui-proto/text": "workspace:0.1.10"
+    "@ui-proto/layout": "workspace:0.1.11"
+    "@ui-proto/text": "workspace:0.1.11"
     "@ui-proto/theme": "workspace:0.0.11"
     react: ^18.2.0
   peerDependencies:
@@ -5576,12 +5576,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/text@workspace:0.1.10, @ui-proto/text@workspace:ui-proto/text":
+"@ui-proto/text@workspace:0.1.11, @ui-proto/text@workspace:ui-proto/text":
   version: 0.0.0-use.local
   resolution: "@ui-proto/text@workspace:ui-proto/text"
   dependencies:
     "@types/react": ^18.0.28
-    "@ui-primitives/text": "workspace:0.2.10"
+    "@ui-primitives/text": "workspace:0.2.11"
     react: ^18.2.0
   peerDependencies:
     "@emotion/styled": ^11.1.5
@@ -5629,7 +5629,7 @@ __metadata:
     "@radix-ui/react-tooltip": ^1.0.5
     "@types/node": ^18.14.6
     "@types/react": ^18.0.28
-    "@ui-proto/text": "workspace:0.1.10"
+    "@ui-proto/text": "workspace:0.1.11"
     "@ui-proto/theme": "workspace:0.0.11"
     react: ^18.2.0
   peerDependencies:

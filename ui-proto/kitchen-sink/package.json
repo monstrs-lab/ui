@@ -8,11 +8,11 @@
     "@ui-proto/button": "workspace:0.1.14",
     "@ui-proto/checkbox": "workspace:0.1.1",
     "@ui-proto/input": "workspace:0.1.14",
-    "@ui-proto/label": "workspace:0.1.13",
-    "@ui-proto/layout": "workspace:0.1.10",
-    "@ui-proto/radio-group": "workspace:0.1.1",
-    "@ui-proto/select": "workspace:0.1.12",
-    "@ui-proto/text": "workspace:0.1.10",
+    "@ui-proto/label": "workspace:0.1.14",
+    "@ui-proto/layout": "workspace:0.1.11",
+    "@ui-proto/radio-group": "workspace:0.1.2",
+    "@ui-proto/select": "workspace:0.1.13",
+    "@ui-proto/text": "workspace:0.1.11",
     "react": "^18.2.0"
   }
 }

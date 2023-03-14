@@ -12,6 +12,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
+    "@radix-ui/react-icons": "^1.2.0",
     "@ui-primitives/input": "workspace:0.1.1",
     "styled-tools": "^1.7.2"
   },

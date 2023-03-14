@@ -5233,7 +5233,7 @@ __metadata:
     styled-system: ^5.1.5
   peerDependencies:
     "@emotion/styled": ^11.1.5
-    react: ^17.0.1
+    react: ^18.2.0
   languageName: unknown
   linkType: soft
 
@@ -5276,7 +5276,7 @@ __metadata:
     styled-system: ^5.1.5
   peerDependencies:
     "@emotion/styled": ^11.1.5
-    react: ^17.0.1
+    react: ^18
   languageName: unknown
   linkType: soft
 
@@ -5447,6 +5447,9 @@ __metadata:
   resolution: "@ui-proto/layout@workspace:ui-proto/layout"
   dependencies:
     "@ui-primitives/layout": "workspace:0.2.10"
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    react: ^18.2.0
   languageName: unknown
   linkType: soft
 
@@ -5579,6 +5582,9 @@ __metadata:
   dependencies:
     "@types/react": ^18.0.28
     "@ui-primitives/text": "workspace:0.2.10"
+    react: ^18.2.0
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
     react: ^18.2.0
   languageName: unknown
   linkType: soft

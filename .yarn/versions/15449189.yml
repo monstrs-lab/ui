@@ -1,0 +1,3 @@
+releases:
+  "@ui-proto/input": patch
+  "@ui-proto/label": patch

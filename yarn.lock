@@ -5251,7 +5251,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-primitives/text-transform@workspace:0.2.13, @ui-primitives/text-transform@workspace:ui-primitives/text-transform":
+"@ui-primitives/text-transform@workspace:0.2.14, @ui-primitives/text-transform@workspace:ui-primitives/text-transform":
   version: 0.0.0-use.local
   resolution: "@ui-primitives/text-transform@workspace:ui-primitives/text-transform"
   dependencies:
@@ -5265,7 +5265,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-primitives/text@workspace:0.2.11, @ui-primitives/text@workspace:ui-primitives/text":
+"@ui-primitives/text@workspace:0.2.14, @ui-primitives/text@workspace:ui-primitives/text":
   version: 0.0.0-use.local
   resolution: "@ui-primitives/text@workspace:ui-primitives/text"
   dependencies:
@@ -5276,7 +5276,7 @@ __metadata:
     styled-system: ^5.1.5
   peerDependencies:
     "@emotion/styled": ^11.1.5
-    react: ^18
+    react: ^18.2.0
   languageName: unknown
   linkType: soft
 
@@ -5309,7 +5309,7 @@ __metadata:
     "@radix-ui/react-avatar": ^1.0.2
     "@types/node": ^18.14.6
     "@types/react": ^18.0.28
-    "@ui-primitives/text-transform": "workspace:0.2.13"
+    "@ui-primitives/text-transform": "workspace:0.2.14"
     "@ui-proto/theme": "workspace:0.0.11"
     react: ^18.2.0
     styled-tools: ^1.7.2
@@ -5581,7 +5581,7 @@ __metadata:
   resolution: "@ui-proto/text@workspace:ui-proto/text"
   dependencies:
     "@types/react": ^18.0.28
-    "@ui-primitives/text": "workspace:0.2.11"
+    "@ui-primitives/text": "workspace:0.2.14"
     react: ^18.2.0
   peerDependencies:
     "@emotion/styled": ^11.1.5

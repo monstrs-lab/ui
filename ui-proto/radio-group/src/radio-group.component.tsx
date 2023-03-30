@@ -1,9 +1,12 @@
-import { Root } from '@radix-ui/react-radio-group'
+import type { FC }        from 'react'
+import type { ReactNode } from 'react'
 
-import React    from 'react'
-import { FC }   from 'react'
+import { Root }           from '@radix-ui/react-radio-group'
+
+import React              from 'react'
 
 export interface RadioGroupProps {
+  children?: ReactNode
   required?: boolean
   value?: string
   defaultValue?: string

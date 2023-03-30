@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.2",
-    "@ui-primitives/text-transform": "workspace:0.2.13",
+    "@ui-primitives/text-transform": "workspace:0.2.14",
     "styled-tools": "^1.7.2"
   },
   "devDependencies": {

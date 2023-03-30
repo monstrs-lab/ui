@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/avatar",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.2",
-    "@ui-primitives/text-transform": "workspace:0.2.14",
+    "@ui-primitives/text-transform": "workspace:0.2.15",
     "styled-tools": "^1.7.2"
   },
   "devDependencies": {

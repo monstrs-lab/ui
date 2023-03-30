@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/placeholder",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@ui-proto/layout": "workspace:0.1.11",
-    "@ui-proto/text": "workspace:0.1.11"
+    "@ui-proto/text": "workspace:0.1.12"
   },
   "devDependencies": {
     "@emotion/styled": "^11.10.6",

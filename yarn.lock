@@ -1821,6 +1821,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@css-primitives/layout@workspace:^, @css-primitives/layout@workspace:css-primitives/layout":
+  version: 0.0.0-use.local
+  resolution: "@css-primitives/layout@workspace:css-primitives/layout"
+  dependencies:
+    "@ui-utils/responsive": "workspace:^"
+    "@ui-utils/vanilla-extract": "workspace:^"
+    "@vanilla-extract/css": ^1.11.0
+    "@vanilla-extract/dynamic": ^2.0.3
+    csstype: ^3.1.2
+  peerDependencies:
+    "@vanilla-extract/css": ^1
+    "@vanilla-extract/dynamic": ^2
+  languageName: unknown
+  linkType: soft
+
 "@discoveryjs/json-ext@npm:^0.5.3":
   version: 0.5.7
   resolution: "@discoveryjs/json-ext@npm:0.5.7"
@@ -5729,9 +5744,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-primitives/layout@workspace:ui-primitives/layout"
   dependencies:
+    "@css-primitives/layout": "workspace:^"
     "@emotion/styled": ^11.10.6
     "@types/react": ^18.0.28
     "@types/styled-system": ^5.1.16
+    "@ui-utils/vanilla-extract": "workspace:^"
+    "@vanilla-extract/css": ^1.11.0
+    "@vanilla-extract/dynamic": ^2.0.3
+    csstype: ^3.1.2
     react: ^18.2.0
     styled-system: ^5.1.5
   peerDependencies:
@@ -6149,6 +6169,12 @@ __metadata:
 "@ui-utils/content-dimensions@workspace:0.1.1, @ui-utils/content-dimensions@workspace:ui-utils/content-dimensions":
   version: 0.0.0-use.local
   resolution: "@ui-utils/content-dimensions@workspace:ui-utils/content-dimensions"
+  languageName: unknown
+  linkType: soft
+
+"@ui-utils/responsive@workspace:^, @ui-utils/responsive@workspace:ui-utils/responsive":
+  version: 0.0.0-use.local
+  resolution: "@ui-utils/responsive@workspace:ui-utils/responsive"
   languageName: unknown
   linkType: soft
 

@@ -7,7 +7,7 @@ import { layout }      from 'styled-system'
 import { space }       from 'styled-system'
 import { system }      from 'styled-system'
 
-import { LayoutProps } from './layout.interfaces'
+import { LayoutProps } from './p-layout.interfaces'
 
 const Layout: FC<LayoutProps> = styled.div(
   system({

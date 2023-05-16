@@ -1,2 +1,2 @@
-export * from './layout.interfaces'
-export * from './layout.component'
+export * from './p-layout.interfaces'
+export * from './p-layout.component'

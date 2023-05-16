@@ -3,6 +3,7 @@
   "private": true,
   "workspaces": [
     "storybook/*",
+    "css-primitives/*",
     "ui-primitives/*",
     "ui-proto/*",
     "ui-utils/*",

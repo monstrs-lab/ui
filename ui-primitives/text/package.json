@@ -12,6 +12,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
+    "@vanilla-extract/css": "^1.11.0",
     "styled-system": "^5.1.5"
   },
   "devDependencies": {

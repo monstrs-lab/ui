@@ -1,10 +1,11 @@
-import type { ReactNode } from 'react'
+import type { Properties } from 'csstype'
+import type { ReactNode }  from 'react'
 
 export interface TextProps {
   children: ReactNode
-  wordBreak?: string
-  whiteSpace?: string
-  textTransform?: string
-  textOverflow?: string
-  cursor?: string
+  wordBreak?: Properties['wordBreak']
+  whiteSpace?: Properties['whiteSpace']
+  textTransform?: Properties['textTransform']
+  textOverflow?: Properties['textOverflow']
+  cursor?: Properties['cursor']
 }

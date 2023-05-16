@@ -10431,6 +10431,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ui-utils/vanilla-extract", "workspace:ui-utils/vanilla-extract"],\
             ["@vanilla-extract/css", "npm:1.11.0"],\
             ["@vanilla-extract/dynamic", "npm:2.0.3"],\
+            ["csstype", "npm:3.1.2"],\
             ["react", "npm:18.2.0"],\
             ["styled-system", "npm:5.1.5"]\
           ],\
@@ -10452,6 +10453,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ui-utils/vanilla-extract", "workspace:ui-utils/vanilla-extract"],\
             ["@vanilla-extract/css", "npm:1.11.0"],\
             ["@vanilla-extract/dynamic", "npm:2.0.3"],\
+            ["csstype", "npm:3.1.2"],\
             ["react", "npm:18.2.0"],\
             ["styled-system", "npm:5.1.5"]\
           ],\
@@ -10474,6 +10476,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ui-utils/vanilla-extract", "workspace:ui-utils/vanilla-extract"],\
             ["@vanilla-extract/css", "npm:1.11.0"],\
             ["@vanilla-extract/dynamic", "npm:2.0.3"],\
+            ["csstype", "npm:3.1.2"],\
             ["react", "npm:18.2.0"],\
             ["styled-system", "npm:5.1.5"]\
           ],\
@@ -10496,6 +10499,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ui-utils/vanilla-extract", "workspace:ui-utils/vanilla-extract"],\
             ["@vanilla-extract/css", "npm:1.11.0"],\
             ["@vanilla-extract/dynamic", "npm:2.0.3"],\
+            ["csstype", "npm:3.1.2"],\
             ["react", "npm:18.2.0"],\
             ["styled-system", "npm:5.1.5"]\
           ],\
@@ -10517,6 +10521,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ui-utils/vanilla-extract", "workspace:ui-utils/vanilla-extract"],\
             ["@vanilla-extract/css", "npm:1.11.0"],\
             ["@vanilla-extract/dynamic", "npm:2.0.3"],\
+            ["csstype", "npm:3.1.2"],\
             ["react", "npm:18.2.0"],\
             ["styled-system", "npm:5.1.5"]\
           ],\

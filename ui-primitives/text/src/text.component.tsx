@@ -1,34 +1,33 @@
-import styled         from '@emotion/styled'
+import type { TextProps }   from './text.interfaces'
+import type { FC }          from 'react'
 
-import { color }      from 'styled-system'
-import { layout }     from 'styled-system'
-import { space }      from 'styled-system'
-import { system }     from 'styled-system'
-import { typography } from 'styled-system'
+import { assignInlineVars } from '@vanilla-extract/dynamic'
 
-import { TextProps }  from './text.interfaces'
+import React                from 'react'
 
-const Text = styled.span<TextProps>(
-  system({
-    wordBreak: true,
-    whiteSpace: true,
-    textTransform: true,
-    textOverflow: true,
-    cursor: true,
-  }),
-  color,
-  space,
-  typography,
-  layout
+import { filterEmptyVars }  from '@ui-utils/vanilla-extract'
+
+import { text }             from './text.css'
+import { vars }             from './text.css'
+
+export const Text: FC<TextProps> = ({
+  children,
+  textTransform,
+  textOverflow,
+  wordBreak,
+  cursor,
+}) => (
+  <span
+    className={text}
+    style={assignInlineVars(
+      filterEmptyVars({
+        [vars.textTransform]: textTransform,
+        [vars.textOverflow]: textOverflow,
+        [vars.wordBreak]: wordBreak,
+        [vars.cursor]: cursor,
+      })
+    )}
+  >
+    {children}
+  </span>
 )
-
-Text.defaultProps = {
-  fontFamily: 'primary',
-  fontWeight: 'normal',
-  fontSize: 'normal',
-  color: 'text.primary',
-  lineHeight: 'normal',
-  display: 'inline-flex',
-}
-
-export { Text }

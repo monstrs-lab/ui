@@ -1,14 +1,10 @@
-import { ColorProps }      from 'styled-system'
-import { LayoutProps }     from 'styled-system'
-import { SpaceProps }      from 'styled-system'
-import { TypographyProps } from 'styled-system'
+import type { ReactNode } from 'react'
 
-export interface BaseTextProps {
+export interface TextProps {
+  children: ReactNode
   wordBreak?: string
   whiteSpace?: string
   textTransform?: string
   textOverflow?: string
   cursor?: string
 }
-
-export type TextProps = BaseTextProps & ColorProps & SpaceProps & TypographyProps & LayoutProps

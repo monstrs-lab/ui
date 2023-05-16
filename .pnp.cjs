@@ -152,6 +152,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:ui-utils/use-window-size"\
       },\
       {\
+        "name": "@ui-utils/vanilla-extract",\
+        "reference": "workspace:ui-utils/vanilla-extract"\
+      },\
+      {\
         "name": "@ui/design",\
         "reference": "workspace:ui/design"\
       }\
@@ -193,6 +197,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@ui-utils/content-dimensions", ["workspace:ui-utils/content-dimensions"]],\
       ["@ui-utils/styled", ["workspace:ui-utils/styled"]],\
       ["@ui-utils/use-window-size", ["workspace:ui-utils/use-window-size"]],\
+      ["@ui-utils/vanilla-extract", ["workspace:ui-utils/vanilla-extract"]],\
       ["@ui/design", ["workspace:ui/design"]],\
       ["ui", ["workspace:."]]\
     ],\
@@ -10423,7 +10428,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/emotion__styled", null],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/styled-system", "npm:5.1.16"],\
+            ["@ui-utils/vanilla-extract", "workspace:ui-utils/vanilla-extract"],\
             ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["@vanilla-extract/dynamic", "npm:2.0.3"],\
             ["react", "npm:18.2.0"],\
             ["styled-system", "npm:5.1.5"]\
           ],\
@@ -10442,7 +10449,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/emotion__styled", null],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/styled-system", "npm:5.1.16"],\
+            ["@ui-utils/vanilla-extract", "workspace:ui-utils/vanilla-extract"],\
             ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["@vanilla-extract/dynamic", "npm:2.0.3"],\
             ["react", "npm:18.2.0"],\
             ["styled-system", "npm:5.1.5"]\
           ],\
@@ -10462,7 +10471,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/emotion__styled", null],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/styled-system", "npm:5.1.16"],\
+            ["@ui-utils/vanilla-extract", "workspace:ui-utils/vanilla-extract"],\
             ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["@vanilla-extract/dynamic", "npm:2.0.3"],\
             ["react", "npm:18.2.0"],\
             ["styled-system", "npm:5.1.5"]\
           ],\
@@ -10482,7 +10493,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/emotion__styled", null],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/styled-system", "npm:5.1.16"],\
+            ["@ui-utils/vanilla-extract", "workspace:ui-utils/vanilla-extract"],\
             ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["@vanilla-extract/dynamic", "npm:2.0.3"],\
             ["react", "npm:18.2.0"],\
             ["styled-system", "npm:5.1.5"]\
           ],\
@@ -10501,7 +10514,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/styled", "virtual:0ad5e7d6d827bc148b1398f57fe3673fbfc09037037480452ac7cc4fb90c7e1c7a6e14d448b9e72bc04526ab2738cdee53f0e03125b294719542fb07c4f7160a#npm:11.10.6"],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/styled-system", "npm:5.1.16"],\
+            ["@ui-utils/vanilla-extract", "workspace:ui-utils/vanilla-extract"],\
             ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["@vanilla-extract/dynamic", "npm:2.0.3"],\
             ["react", "npm:18.2.0"],\
             ["styled-system", "npm:5.1.5"]\
           ],\
@@ -11206,6 +11221,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT"\
         }]\
       ]],\
+      ["@ui-utils/vanilla-extract", [\
+        ["workspace:ui-utils/vanilla-extract", {\
+          "packageLocation": "./ui-utils/vanilla-extract/",\
+          "packageDependencies": [\
+            ["@ui-utils/vanilla-extract", "workspace:ui-utils/vanilla-extract"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["@ui/design", [\
         ["workspace:ui/design", {\
           "packageLocation": "./ui/design/",\
@@ -11266,6 +11290,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["deepmerge", "npm:4.3.0"],\
             ["media-query-parser", "npm:2.0.2"],\
             ["outdent", "npm:0.8.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@vanilla-extract/dynamic", [\
+        ["npm:2.0.3", {\
+          "packageLocation": "./.yarn/cache/@vanilla-extract-dynamic-npm-2.0.3-5224c4cda8-9ad4068d7e.zip/node_modules/@vanilla-extract/dynamic/",\
+          "packageDependencies": [\
+            ["@vanilla-extract/dynamic", "npm:2.0.3"],\
+            ["@vanilla-extract/private", "npm:1.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\

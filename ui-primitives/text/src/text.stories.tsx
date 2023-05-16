@@ -1,23 +1,26 @@
-import React                       from 'react'
+import React                     from 'react'
 
-import { text } from './text.styles'
+import { Text as TextComponent } from './text.component'
 
 export default {
   title: 'Components/Text',
 }
 
-export const Text = ({ children }) => <span className={text}>{children}</span>
+export const Text = ({ children, cursor }) => (
+  <TextComponent cursor={cursor}>{children}</TextComponent>
+)
 
 Text.args = {
-    children: 'Текст',
-  }
-  
-  Text.argTypes = {
-    children: {
-      name: 'Контент',
-      description: 'Основной контент, описание',
-      table: {
-        category: 'Наполнение',
-      },
+  children: 'Текст',
+  cursor: 'pointer',
+}
+
+Text.argTypes = {
+  children: {
+    name: 'Контент',
+    description: 'Основной контент, описание',
+    table: {
+      category: 'Наполнение',
     },
-  }
+  },
+}

@@ -1,4 +1,4 @@
 export * from './space.interfaces'
 export * from './space.component'
-export * from './text.interfaces'
-export * from './text.component'
+export * from './p-text.interfaces'
+export * from './p-text.component'

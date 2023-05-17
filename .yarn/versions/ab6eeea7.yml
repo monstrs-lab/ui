@@ -1,0 +1,9 @@
+releases:
+  "@ui-primitives/layout": patch
+  "@ui-proto/label": patch
+  "@ui-proto/layout": patch
+  "@ui-proto/placeholder": patch
+  "@ui-proto/radio-group": patch
+  "@ui-proto/select": patch
+  "@ui-proto/switch": patch
+  "@ui-proto/tabs": patch

@@ -9,5 +9,6 @@ import type { ReactNode }     from 'react'
 export interface BoxProps extends LayoutProps, ColorProps, PositionProps, BorderProps, ShadowProps {
   children?: ReactNode
   cursor?: Properties['cursor']
+  background?: ColorProps['backgroundColor']
   bg?: ColorProps['backgroundColor']
 }

@@ -68,6 +68,7 @@ export const Box: FC<BoxProps> = ({
   boxShadow,
   textShadow,
   cursor,
+  background,
   bg,
 }) => (
   <Layout
@@ -112,7 +113,7 @@ export const Box: FC<BoxProps> = ({
         order,
       }),
       ...assignColorVars({
-        backgroundColor: backgroundColor || bg,
+        backgroundColor: backgroundColor || background || bg,
         color,
         opacity,
       }),

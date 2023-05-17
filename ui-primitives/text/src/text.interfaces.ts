@@ -1,14 +1,15 @@
-import { ColorProps }      from 'styled-system'
-import { LayoutProps }     from 'styled-system'
-import { SpaceProps }      from 'styled-system'
-import { TypographyProps } from 'styled-system'
+import type { ColorProps }                    from '@css-primitives/color'
+import type { LayoutProps as CssLayoutProps } from '@css-primitives/layout'
+import type { SpaceProps }                    from '@css-primitives/space'
+import type { TypographyProps }               from '@css-primitives/typography'
+import type { Properties }                    from 'csstype'
+import type { ReactNode }                     from 'react'
 
-export interface BaseTextProps {
-  wordBreak?: string
-  whiteSpace?: string
-  textTransform?: string
-  textOverflow?: string
-  cursor?: string
+export interface TextProps extends CssLayoutProps, SpaceProps, TypographyProps, ColorProps {
+  children: ReactNode
+  wordBreak?: Properties['wordBreak']
+  whiteSpace?: Properties['whiteSpace']
+  textTransform?: Properties['textTransform']
+  textOverflow?: Properties['textOverflow']
+  cursor?: Properties['cursor']
 }
-
-export type TextProps = BaseTextProps & ColorProps & SpaceProps & TypographyProps & LayoutProps

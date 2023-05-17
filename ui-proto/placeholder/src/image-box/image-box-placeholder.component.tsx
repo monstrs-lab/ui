@@ -14,7 +14,7 @@ export const ImageBoxPlaceholder = ({
     height='100%'
     alignItems='center'
     justifyContent='center'
-    background={backgroundColor}
+    backgroundColor={backgroundColor}
   >
     <ImagePlaceholder color={color} size={size} />
   </Box>

@@ -12,7 +12,7 @@ export default {
 
 export const Label = ({ type }) => (
   <Row alignItems='center'>
-    <Layout mr={16}>
+    <Layout marginRight={16}>
       <LabelComponent htmlFor='id'>First Name</LabelComponent>
     </Layout>
     <Layout width={200}>

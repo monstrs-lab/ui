@@ -23,14 +23,14 @@ export default {
 
 export const Forms = () => (
   <Column width={400}>
-    <Layout mb={30} justifyContent='center'>
+    <Layout marginBottom={30} justifyContent='center'>
       <Text fontSize='medium'>Create New Account</Text>
     </Layout>
     <Layout>
       <Row>
         <Layout flexBasis='50%'>
           <Column>
-            <Layout mb='8px'>
+            <Layout marginBottom='8px'>
               <Label htmlFor='firstName'>First Name</Label>
             </Layout>
             <Layout>
@@ -41,7 +41,7 @@ export const Forms = () => (
         <Layout flexBasis={24} />
         <Layout flexBasis='50%'>
           <Column>
-            <Layout mb='8px'>
+            <Layout marginBottom='8px'>
               <Label htmlFor='lastName'>Last Name</Label>
             </Layout>
             <Layout>
@@ -54,7 +54,7 @@ export const Forms = () => (
     <Layout flexBasis={16} />
     <Layout>
       <Column>
-        <Layout mb='8px'>
+        <Layout marginBottom='8px'>
           <Label htmlFor='email'>Email</Label>
         </Layout>
         <Layout>
@@ -65,7 +65,7 @@ export const Forms = () => (
     <Layout flexBasis={16} />
     <Layout>
       <Column>
-        <Layout mb='8px'>
+        <Layout marginBottom='8px'>
           <Label>Industry</Label>
         </Layout>
         <Layout>
@@ -104,19 +104,19 @@ export const Forms = () => (
     <Layout flexBasis={16} />
     <Layout>
       <Column>
-        <Layout mb='8px'>
+        <Layout marginBottom='8px'>
           <Label>Sex</Label>
         </Layout>
         <Layout>
           <RadioGroup defaultValue='male'>
             <Row>
-              <Layout mr='8px'>
+              <Layout marginRight='8px'>
                 <RadioGroupRadio value='male' id='male' />
               </Layout>
-              <Layout mr='16px'>
+              <Layout marginRight='16px'>
                 <Label htmlFor='male'>Male</Label>
               </Layout>
-              <Layout mr='8px'>
+              <Layout marginRight='8px'>
                 <RadioGroupRadio value='female' id='female' />
               </Layout>
               <Layout>
@@ -130,7 +130,7 @@ export const Forms = () => (
     <Layout flexBasis={16} />
     <Layout>
       <Column>
-        <Layout mb='8px'>
+        <Layout marginBottom='8px'>
           <Label htmlFor='password'>Password</Label>
         </Layout>
         <Layout>
@@ -141,7 +141,7 @@ export const Forms = () => (
     <Layout flexBasis={16} />
     <Layout>
       <Column>
-        <Layout mb='8px'>
+        <Layout marginBottom='8px'>
           <Label htmlFor='site'>Site</Label>
         </Layout>
         <Layout>
@@ -170,7 +170,7 @@ export const Forms = () => (
       <Row>
         <Layout flexGrow={1}>
           <Row alignItems='center'>
-            <Layout mr='12px'>
+            <Layout marginRight='12px'>
               <Checkbox id='privacy' />
             </Layout>
             <Layout>

@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "build": "mkdir -p ../../.git && build-storybook --config-dir ./src -o dist --quiet && npx sb extract dist ./dist/stories.json",
+    "build": "mkdir -p ../../.git && build-storybook --config-dir ./src -o dist --quiet",
     "dev": "start-storybook --config-dir ./src -p 3000",
     "prepack": "run build",
     "start": "node server.js"

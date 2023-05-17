@@ -7,8 +7,17 @@ export interface LayoutProps extends CssLayoutProps, SpaceProps, FlexboxProps {
   children?: ReactNode
   className?: string
   style?: Record<string, string>
+  overflow?: CssLayoutProps['overflowY']
   px?: SpaceProps['paddingLeft']
   py?: SpaceProps['paddingTop']
+  pt?: SpaceProps['paddingTop']
+  pr?: SpaceProps['paddingRight']
+  pb?: SpaceProps['paddingBottom']
+  pl?: SpaceProps['paddingLeft']
   mx?: SpaceProps['marginLeft']
   my?: SpaceProps['marginTop']
+  mt?: SpaceProps['marginTop']
+  mr?: SpaceProps['marginRight']
+  mb?: SpaceProps['marginBottom']
+  ml?: SpaceProps['marginLeft']
 }

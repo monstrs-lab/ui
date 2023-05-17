@@ -18,8 +18,16 @@ export interface LayoutProps {
   display?:
     | Properties['display']
     | [Properties['display'], Properties['display'], Properties['display']]
-  verticalAlign?: Properties['verticalAlign']
-  overflowX?: Properties['overflowX']
-  overflowY?: Properties['overflowY']
-  overflow?: Properties['overflow']
+  verticalAlign?:
+    | Properties['verticalAlign']
+    | [Properties['verticalAlign'], Properties['verticalAlign'], Properties['verticalAlign']]
+  overflowX?:
+    | Properties['overflowX']
+    | [Properties['overflowX'], Properties['overflowX'], Properties['overflowX']]
+  overflowY?:
+    | Properties['overflowY']
+    | [Properties['overflowY'], Properties['overflowY'], Properties['overflowY']]
+  overflow?:
+    | Properties['overflow']
+    | [Properties['overflow'], Properties['overflow'], Properties['overflow']]
 }

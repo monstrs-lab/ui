@@ -1,5 +1,5 @@
 {
-  "name": "@ui-utils/responsive",
+  "name": "@css-primitives/responsive",
   "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.ts",
@@ -10,6 +10,15 @@
     "build": "yarn library build",
     "prepack": "yarn run build",
     "postpack": "rm -rf dist"
+  },
+  "dependencies": {
+    "@css-primitives/units": "workspace:^"
+  },
+  "devDependencies": {
+    "@vanilla-extract/css": "^1.11.0"
+  },
+  "peerDependencies": {
+    "@vanilla-extract/css": "^1"
   },
   "publishConfig": {
     "access": "public",

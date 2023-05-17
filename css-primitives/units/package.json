@@ -1,5 +1,5 @@
 {
-  "name": "@ui-utils/vanilla-extract",
+  "name": "@css-primitives/units",
   "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.ts",

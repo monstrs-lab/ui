@@ -16,8 +16,8 @@ export const Layout = ({ display, width, height }: LayoutProps) => (
 
 Layout.args = {
   display: 'flex',
-  width: ['300px', '200px', '100px'],
-  height: ['300px', '200px', '100px'],
+  width: [300, 200, 100],
+  height: [300, 200, 100],
 }
 
 Layout.argTypes = {}

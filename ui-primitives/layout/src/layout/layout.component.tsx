@@ -1,6 +1,8 @@
 import type { LayoutProps } from './layout.interfaces'
 import type { FC }          from 'react'
 
+import { assignInlineVars } from '@vanilla-extract/dynamic'
+
 import React                from 'react'
 
 import { layout }           from '@css-primitives/layout'
@@ -22,7 +24,7 @@ export const Layout: FC<LayoutProps> = ({
 }) => (
   <div
     className={layout}
-    style={{
+    style={assignInlineVars({
       ...assignLayoutVars({
         width,
         height,
@@ -36,7 +38,7 @@ export const Layout: FC<LayoutProps> = ({
         overflowY,
         overflow,
       }),
-    }}
+    })}
   >
     {children}
   </div>

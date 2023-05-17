@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/accordion",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -14,7 +14,7 @@
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.1",
     "@radix-ui/react-icons": "^1.2.0",
-    "@ui-proto/text": "workspace:0.1.12"
+    "@ui-proto/text": "workspace:0.1.13"
   },
   "devDependencies": {
     "@emotion/react": "^11.10.6",

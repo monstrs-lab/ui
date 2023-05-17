@@ -13,6 +13,8 @@ import { layout }            from './layout.css'
 
 export const Layout: FC<LayoutProps> = ({
   children,
+  className,
+  style = {},
   width,
   height,
   minWidth,
@@ -44,48 +46,55 @@ export const Layout: FC<LayoutProps> = ({
   justifySelf,
   alignSelf,
   order,
+  my,
+  mx,
+  py,
+  px,
 }) => (
   <div
-    className={layout}
-    style={assignInlineVars({
-      ...assignLayoutVars({
-        width,
-        height,
-        minWidth,
-        minHeight,
-        maxWidth,
-        maxHeight,
-        display,
-        verticalAlign,
-        overflowX,
-        overflowY,
-        boxSizing,
+    className={className ? `${layout} ${className}` : layout}
+    style={{
+      ...style,
+      ...assignInlineVars({
+        ...assignLayoutVars({
+          width,
+          height,
+          minWidth,
+          minHeight,
+          maxWidth,
+          maxHeight,
+          display,
+          verticalAlign,
+          overflowX,
+          overflowY,
+          boxSizing,
+        }),
+        ...assignSpaceVars({
+          marginTop: marginTop || my,
+          marginRight: marginRight || mx,
+          marginBottom: marginBottom || my,
+          marginLeft: marginLeft || mx,
+          paddingTop: paddingTop || py,
+          paddingRight: paddingRight || px,
+          paddingBottom: paddingBottom || py,
+          paddingLeft: paddingLeft || px,
+        }),
+        ...assignFlexboxVars({
+          alignItems,
+          alignContent,
+          justifyItems,
+          justifyContent,
+          flexWrap,
+          flexDirection,
+          flexGrow,
+          flexShrink,
+          flexBasis,
+          justifySelf,
+          alignSelf,
+          order,
+        }),
       }),
-      ...assignSpaceVars({
-        marginTop,
-        marginRight,
-        marginBottom,
-        marginLeft,
-        paddingTop,
-        paddingRight,
-        paddingBottom,
-        paddingLeft,
-      }),
-      ...assignFlexboxVars({
-        alignItems,
-        alignContent,
-        justifyItems,
-        justifyContent,
-        flexWrap,
-        flexDirection,
-        flexGrow,
-        flexShrink,
-        flexBasis,
-        justifySelf,
-        alignSelf,
-        order,
-      }),
-    })}
+    }}
   >
     {children}
   </div>

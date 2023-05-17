@@ -13,6 +13,7 @@ import { assignPositionVars } from '@css-primitives/position'
 import { assignShadowVars }   from '@css-primitives/shadow'
 import { assignSpaceVars }    from '@css-primitives/space'
 
+import { Layout }             from '../layout'
 import { box }                from './box.css'
 import { vars }               from './box.css'
 
@@ -68,7 +69,7 @@ export const Box: FC<BoxProps> = ({
   textShadow,
   cursor,
 }) => (
-  <div
+  <Layout
     className={box}
     style={assignInlineVars({
       [vars.cursor]: cursor!,
@@ -137,5 +138,5 @@ export const Box: FC<BoxProps> = ({
     })}
   >
     {children}
-  </div>
+  </Layout>
 )

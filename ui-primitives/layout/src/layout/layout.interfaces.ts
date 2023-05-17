@@ -5,4 +5,10 @@ import type { ReactNode }                     from 'react'
 
 export interface LayoutProps extends CssLayoutProps, SpaceProps, FlexboxProps {
   children?: ReactNode
+  className?: string
+  style?: Record<string, string>
+  px?: SpaceProps['paddingLeft']
+  py?: SpaceProps['paddingTop']
+  mx?: SpaceProps['marginLeft']
+  my?: SpaceProps['marginTop']
 }

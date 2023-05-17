@@ -12,7 +12,10 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
+    "@css-primitives/border": "workspace:^",
+    "@css-primitives/flexbox": "workspace:^",
     "@css-primitives/layout": "workspace:^",
+    "@css-primitives/space": "workspace:^",
     "@vanilla-extract/css": "^1.11.0",
     "@vanilla-extract/dynamic": "^2.0.3",
     "styled-system": "^5.1.5"

@@ -16,12 +16,40 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."\
       },\
       {\
+        "name": "@css-primitives/border",\
+        "reference": "workspace:css-primitives/border"\
+      },\
+      {\
+        "name": "@css-primitives/color",\
+        "reference": "workspace:css-primitives/color"\
+      },\
+      {\
+        "name": "@css-primitives/flexbox",\
+        "reference": "workspace:css-primitives/flexbox"\
+      },\
+      {\
         "name": "@css-primitives/layout",\
         "reference": "workspace:css-primitives/layout"\
       },\
       {\
+        "name": "@css-primitives/position",\
+        "reference": "workspace:css-primitives/position"\
+      },\
+      {\
         "name": "@css-primitives/responsive",\
         "reference": "workspace:css-primitives/responsive"\
+      },\
+      {\
+        "name": "@css-primitives/shadow",\
+        "reference": "workspace:css-primitives/shadow"\
+      },\
+      {\
+        "name": "@css-primitives/space",\
+        "reference": "workspace:css-primitives/space"\
+      },\
+      {\
+        "name": "@css-primitives/typography",\
+        "reference": "workspace:css-primitives/typography"\
       },\
       {\
         "name": "@css-primitives/units",\
@@ -171,8 +199,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["@css-primitives/border", ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/border", "workspace:css-primitives/border"]],\
+      ["@css-primitives/color", ["virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/color", "workspace:css-primitives/color"]],\
+      ["@css-primitives/flexbox", ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/flexbox", "workspace:css-primitives/flexbox"]],\
       ["@css-primitives/layout", ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout", "workspace:css-primitives/layout"]],\
-      ["@css-primitives/responsive", ["virtual:0e696a6413c5cb8aabf58343ac54f4b7af17a72822fe1e20e1b457b656ba4cedd3e142180121101d5b4bf2c633b24adc0c3a3811f8ae441be2885de5a321f1c8#workspace:css-primitives/responsive", "workspace:css-primitives/responsive"]],\
+      ["@css-primitives/position", ["workspace:css-primitives/position"]],\
+      ["@css-primitives/responsive", ["virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive", "workspace:css-primitives/responsive"]],\
+      ["@css-primitives/shadow", ["workspace:css-primitives/shadow"]],\
+      ["@css-primitives/space", ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space", "workspace:css-primitives/space"]],\
+      ["@css-primitives/typography", ["virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/typography", "workspace:css-primitives/typography"]],\
       ["@css-primitives/units", ["workspace:css-primitives/units"]],\
       ["@monstrs/storybook-google-fonts", ["workspace:storybook/google-fonts"]],\
       ["@ui-primitives/button", ["virtual:f76877f8b79328bdc70d1b80fcd54687ff1663cdd24da34fd5298382bc8e0b6cfea93ceb0532b480be102b40b3294efae4a14dd4b1ddff1ed2b464c40e23731b#workspace:ui-primitives/button", "workspace:ui-primitives/button"]],\
@@ -4572,12 +4607,93 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@css-primitives/border", [\
+        ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/border", {\
+          "packageLocation": "./.yarn/__virtual__/@css-primitives-border-virtual-8d9bd33930/1/css-primitives/border/",\
+          "packageDependencies": [\
+            ["@css-primitives/border", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/border"],\
+            ["@css-primitives/responsive", "virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive"],\
+            ["@types/vanilla-extract__css", null],\
+            ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["csstype", "npm:3.1.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/vanilla-extract__css",\
+            "@vanilla-extract/css"\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["workspace:css-primitives/border", {\
+          "packageLocation": "./css-primitives/border/",\
+          "packageDependencies": [\
+            ["@css-primitives/border", "workspace:css-primitives/border"],\
+            ["@css-primitives/responsive", "virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive"],\
+            ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["csstype", "npm:3.1.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@css-primitives/color", [\
+        ["virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/color", {\
+          "packageLocation": "./.yarn/__virtual__/@css-primitives-color-virtual-c8960a5264/1/css-primitives/color/",\
+          "packageDependencies": [\
+            ["@css-primitives/color", "virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/color"],\
+            ["@css-primitives/responsive", "virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive"],\
+            ["@types/vanilla-extract__css", null],\
+            ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["csstype", "npm:3.1.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/vanilla-extract__css",\
+            "@vanilla-extract/css"\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["workspace:css-primitives/color", {\
+          "packageLocation": "./css-primitives/color/",\
+          "packageDependencies": [\
+            ["@css-primitives/color", "workspace:css-primitives/color"],\
+            ["@css-primitives/responsive", "virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive"],\
+            ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["csstype", "npm:3.1.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@css-primitives/flexbox", [\
+        ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/flexbox", {\
+          "packageLocation": "./.yarn/__virtual__/@css-primitives-flexbox-virtual-ba42f1e2a5/1/css-primitives/flexbox/",\
+          "packageDependencies": [\
+            ["@css-primitives/flexbox", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/flexbox"],\
+            ["@css-primitives/responsive", "virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive"],\
+            ["@types/vanilla-extract__css", null],\
+            ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["csstype", "npm:3.1.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/vanilla-extract__css",\
+            "@vanilla-extract/css"\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["workspace:css-primitives/flexbox", {\
+          "packageLocation": "./css-primitives/flexbox/",\
+          "packageDependencies": [\
+            ["@css-primitives/flexbox", "workspace:css-primitives/flexbox"],\
+            ["@css-primitives/responsive", "virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive"],\
+            ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["csstype", "npm:3.1.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["@css-primitives/layout", [\
         ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout", {\
           "packageLocation": "./.yarn/__virtual__/@css-primitives-layout-virtual-2555759da2/1/css-primitives/layout/",\
           "packageDependencies": [\
             ["@css-primitives/layout", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout"],\
-            ["@css-primitives/responsive", "virtual:0e696a6413c5cb8aabf58343ac54f4b7af17a72822fe1e20e1b457b656ba4cedd3e142180121101d5b4bf2c633b24adc0c3a3811f8ae441be2885de5a321f1c8#workspace:css-primitives/responsive"],\
+            ["@css-primitives/responsive", "virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive"],\
             ["@types/vanilla-extract__css", null],\
             ["@vanilla-extract/css", "npm:1.11.0"],\
             ["csstype", "npm:3.1.2"]\
@@ -4592,7 +4708,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./css-primitives/layout/",\
           "packageDependencies": [\
             ["@css-primitives/layout", "workspace:css-primitives/layout"],\
-            ["@css-primitives/responsive", "virtual:0e696a6413c5cb8aabf58343ac54f4b7af17a72822fe1e20e1b457b656ba4cedd3e142180121101d5b4bf2c633b24adc0c3a3811f8ae441be2885de5a321f1c8#workspace:css-primitives/responsive"],\
+            ["@css-primitives/responsive", "virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive"],\
+            ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["csstype", "npm:3.1.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@css-primitives/position", [\
+        ["workspace:css-primitives/position", {\
+          "packageLocation": "./css-primitives/position/",\
+          "packageDependencies": [\
+            ["@css-primitives/position", "workspace:css-primitives/position"],\
+            ["@css-primitives/responsive", "virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive"],\
             ["@vanilla-extract/css", "npm:1.11.0"],\
             ["csstype", "npm:3.1.2"]\
           ],\
@@ -4600,10 +4728,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@css-primitives/responsive", [\
-        ["virtual:0e696a6413c5cb8aabf58343ac54f4b7af17a72822fe1e20e1b457b656ba4cedd3e142180121101d5b4bf2c633b24adc0c3a3811f8ae441be2885de5a321f1c8#workspace:css-primitives/responsive", {\
-          "packageLocation": "./.yarn/__virtual__/@css-primitives-responsive-virtual-46e524f268/1/css-primitives/responsive/",\
+        ["virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive", {\
+          "packageLocation": "./.yarn/__virtual__/@css-primitives-responsive-virtual-64dd4a1042/1/css-primitives/responsive/",\
           "packageDependencies": [\
-            ["@css-primitives/responsive", "virtual:0e696a6413c5cb8aabf58343ac54f4b7af17a72822fe1e20e1b457b656ba4cedd3e142180121101d5b4bf2c633b24adc0c3a3811f8ae441be2885de5a321f1c8#workspace:css-primitives/responsive"],\
+            ["@css-primitives/responsive", "virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive"],\
             ["@css-primitives/units", "workspace:css-primitives/units"],\
             ["@types/vanilla-extract__css", null],\
             ["@vanilla-extract/css", "npm:1.11.0"]\
@@ -4620,6 +4748,72 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@css-primitives/responsive", "workspace:css-primitives/responsive"],\
             ["@css-primitives/units", "workspace:css-primitives/units"],\
             ["@vanilla-extract/css", "npm:1.11.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@css-primitives/shadow", [\
+        ["workspace:css-primitives/shadow", {\
+          "packageLocation": "./css-primitives/shadow/",\
+          "packageDependencies": [\
+            ["@css-primitives/shadow", "workspace:css-primitives/shadow"],\
+            ["@css-primitives/responsive", "virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive"],\
+            ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["csstype", "npm:3.1.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@css-primitives/space", [\
+        ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space", {\
+          "packageLocation": "./.yarn/__virtual__/@css-primitives-space-virtual-f91c20ed52/1/css-primitives/space/",\
+          "packageDependencies": [\
+            ["@css-primitives/space", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space"],\
+            ["@css-primitives/responsive", "virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive"],\
+            ["@types/vanilla-extract__css", null],\
+            ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["csstype", "npm:3.1.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/vanilla-extract__css",\
+            "@vanilla-extract/css"\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["workspace:css-primitives/space", {\
+          "packageLocation": "./css-primitives/space/",\
+          "packageDependencies": [\
+            ["@css-primitives/space", "workspace:css-primitives/space"],\
+            ["@css-primitives/responsive", "virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive"],\
+            ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["csstype", "npm:3.1.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@css-primitives/typography", [\
+        ["virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/typography", {\
+          "packageLocation": "./.yarn/__virtual__/@css-primitives-typography-virtual-612eea100b/1/css-primitives/typography/",\
+          "packageDependencies": [\
+            ["@css-primitives/typography", "virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/typography"],\
+            ["@css-primitives/responsive", "virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive"],\
+            ["@types/vanilla-extract__css", null],\
+            ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["csstype", "npm:3.1.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/vanilla-extract__css",\
+            "@vanilla-extract/css"\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["workspace:css-primitives/typography", {\
+          "packageLocation": "./css-primitives/typography/",\
+          "packageDependencies": [\
+            ["@css-primitives/typography", "workspace:css-primitives/typography"],\
+            ["@css-primitives/responsive", "virtual:4c3c98c098766ac6286e3709299a1149dc6920071e8b2a655eca93296e91958d5e6de5a6e89086eed577b25e23e934acb2e9c6390beb73fdfc6481a63ef78a1d#workspace:css-primitives/responsive"],\
+            ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["csstype", "npm:3.1.2"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -10414,7 +10608,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@ui-primitives-layout-virtual-354a87d5c0/1/ui-primitives/layout/",\
           "packageDependencies": [\
             ["@ui-primitives/layout", "virtual:97b2cb373ec37787543e318bfab5e1d87a711e27c3deb5f35a8d36b0e953b1a158d124210c4ea30c589ec624f44787950bb3b74a127ad18072a41843c765f558#workspace:ui-primitives/layout"],\
+            ["@css-primitives/border", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/border"],\
+            ["@css-primitives/flexbox", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/flexbox"],\
             ["@css-primitives/layout", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout"],\
+            ["@css-primitives/space", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space"],\
             ["@emotion/styled", "virtual:dc6bbf758dc2f5eb3d4ed35eb15f292c00a4b8c5f29b9fd5632b261bbf543ba61b96ef78293074a641224165f0b6e188f21a781d366354c7912c7d54b5c90662#npm:11.10.6"],\
             ["@types/emotion__styled", null],\
             ["@types/react", "npm:17.0.39"],\
@@ -10437,7 +10634,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@ui-primitives-layout-virtual-1e562c3a88/1/ui-primitives/layout/",\
           "packageDependencies": [\
             ["@ui-primitives/layout", "virtual:daaf6397b55c2a9058d295a4abe72ed29ea1a96e8de81e5af076b3d55b8088c1b395111233bde1ac26562585fd4fd44f3df85a6ab5ce12d20ebe840baf5d814c#workspace:ui-primitives/layout"],\
+            ["@css-primitives/border", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/border"],\
+            ["@css-primitives/flexbox", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/flexbox"],\
             ["@css-primitives/layout", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout"],\
+            ["@css-primitives/space", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space"],\
             ["@emotion/styled", "virtual:0ad5e7d6d827bc148b1398f57fe3673fbfc09037037480452ac7cc4fb90c7e1c7a6e14d448b9e72bc04526ab2738cdee53f0e03125b294719542fb07c4f7160a#npm:11.10.6"],\
             ["@types/emotion__styled", null],\
             ["@types/react", "npm:17.0.39"],\
@@ -10457,7 +10657,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@ui-primitives-layout-virtual-585b7cd27d/1/ui-primitives/layout/",\
           "packageDependencies": [\
             ["@ui-primitives/layout", "virtual:ed6d24007d335dcb43fa93097d5788c8cd383a2ea6fd3e90f0eaf2bbd5445a3d181e65f1639fe47738faf753870f62624c53110ac4adee6d725a51e622fd1cb0#workspace:ui-primitives/layout"],\
+            ["@css-primitives/border", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/border"],\
+            ["@css-primitives/flexbox", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/flexbox"],\
             ["@css-primitives/layout", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout"],\
+            ["@css-primitives/space", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space"],\
             ["@emotion/styled", "virtual:0ad5e7d6d827bc148b1398f57fe3673fbfc09037037480452ac7cc4fb90c7e1c7a6e14d448b9e72bc04526ab2738cdee53f0e03125b294719542fb07c4f7160a#npm:11.10.6"],\
             ["@types/emotion__styled", null],\
             ["@types/react", "npm:17.0.39"],\
@@ -10480,7 +10683,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./ui-primitives/layout/",\
           "packageDependencies": [\
             ["@ui-primitives/layout", "workspace:ui-primitives/layout"],\
+            ["@css-primitives/border", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/border"],\
+            ["@css-primitives/flexbox", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/flexbox"],\
             ["@css-primitives/layout", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout"],\
+            ["@css-primitives/space", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space"],\
             ["@emotion/styled", "virtual:0ad5e7d6d827bc148b1398f57fe3673fbfc09037037480452ac7cc4fb90c7e1c7a6e14d448b9e72bc04526ab2738cdee53f0e03125b294719542fb07c4f7160a#npm:11.10.6"],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/styled-system", "npm:5.1.16"],\
@@ -10511,6 +10717,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@ui-primitives-text-virtual-21e0bc884e/1/ui-primitives/text/",\
           "packageDependencies": [\
             ["@ui-primitives/text", "virtual:3c2886bc71f1439c6a9975608675e178732f89951eeaba9270ed9187762c842e3ad00724ac49b228cf961038281c67a16e056d16f56c15a57531172840bfe1b2#workspace:ui-primitives/text"],\
+            ["@css-primitives/color", "virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/color"],\
+            ["@css-primitives/layout", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout"],\
+            ["@css-primitives/space", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space"],\
+            ["@css-primitives/typography", "virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/typography"],\
             ["@emotion/styled", "virtual:0ad5e7d6d827bc148b1398f57fe3673fbfc09037037480452ac7cc4fb90c7e1c7a6e14d448b9e72bc04526ab2738cdee53f0e03125b294719542fb07c4f7160a#npm:11.10.6"],\
             ["@types/emotion__styled", null],\
             ["@types/react", "npm:17.0.39"],\
@@ -10532,6 +10742,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@ui-primitives-text-virtual-d09e6f94da/1/ui-primitives/text/",\
           "packageDependencies": [\
             ["@ui-primitives/text", "virtual:63e9903d97148b689725b4912a9e2e5a3bc0f117dd0155e114704821ca6d7fb305747062a7b44fdf51004df9097cdf2c4c6f0ac42128c423331ad0339dae2fd0#workspace:ui-primitives/text"],\
+            ["@css-primitives/color", "virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/color"],\
+            ["@css-primitives/layout", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout"],\
+            ["@css-primitives/space", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space"],\
+            ["@css-primitives/typography", "virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/typography"],\
             ["@emotion/styled", "virtual:dc6bbf758dc2f5eb3d4ed35eb15f292c00a4b8c5f29b9fd5632b261bbf543ba61b96ef78293074a641224165f0b6e188f21a781d366354c7912c7d54b5c90662#npm:11.10.6"],\
             ["@types/emotion__styled", null],\
             ["@types/react", "npm:17.0.39"],\
@@ -10554,6 +10768,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@ui-primitives-text-virtual-83fa616d6d/1/ui-primitives/text/",\
           "packageDependencies": [\
             ["@ui-primitives/text", "virtual:aaec49526f1917893696dd5dd4e77715a17dc4959fcb93b2718a0c6b13e7ffe17c086a62e3446632e2b7402102ec0cc741c2c9fd0e2d423af51e632d015dc530#workspace:ui-primitives/text"],\
+            ["@css-primitives/color", "virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/color"],\
+            ["@css-primitives/layout", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout"],\
+            ["@css-primitives/space", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space"],\
+            ["@css-primitives/typography", "virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/typography"],\
             ["@emotion/styled", "virtual:a2613c2cbf551cbf82fc4412ccad17d0fed54f34c9493d4f5ec9ad6bf5bd334fb0226d1d82096ba242715408c25b708cbd908fde2d5e787331b9461a85c6a20b#npm:11.10.6"],\
             ["@types/emotion__styled", null],\
             ["@types/react", "npm:17.0.39"],\
@@ -10576,6 +10794,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@ui-primitives-text-virtual-8a36c4386a/1/ui-primitives/text/",\
           "packageDependencies": [\
             ["@ui-primitives/text", "virtual:b23dfc623ce2796268ec6ae5db0ff2b437ca03d96ad2b458b4f1a44eb402450e71cb9bf5e5695f453fac5dd8479979057d4a733f430efaeb77a890fb2b488002#workspace:ui-primitives/text"],\
+            ["@css-primitives/color", "virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/color"],\
+            ["@css-primitives/layout", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout"],\
+            ["@css-primitives/space", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space"],\
+            ["@css-primitives/typography", "virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/typography"],\
             ["@emotion/styled", "virtual:0ad5e7d6d827bc148b1398f57fe3673fbfc09037037480452ac7cc4fb90c7e1c7a6e14d448b9e72bc04526ab2738cdee53f0e03125b294719542fb07c4f7160a#npm:11.10.6"],\
             ["@types/emotion__styled", null],\
             ["@types/react", "npm:17.0.39"],\
@@ -10598,6 +10820,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./ui-primitives/text/",\
           "packageDependencies": [\
             ["@ui-primitives/text", "workspace:ui-primitives/text"],\
+            ["@css-primitives/color", "virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/color"],\
+            ["@css-primitives/layout", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout"],\
+            ["@css-primitives/space", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space"],\
+            ["@css-primitives/typography", "virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/typography"],\
             ["@emotion/styled", "virtual:0ad5e7d6d827bc148b1398f57fe3673fbfc09037037480452ac7cc4fb90c7e1c7a6e14d448b9e72bc04526ab2738cdee53f0e03125b294719542fb07c4f7160a#npm:11.10.6"],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/styled-system", "npm:5.1.16"],\

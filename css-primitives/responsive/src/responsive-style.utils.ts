@@ -10,17 +10,17 @@ export const createResponsiveStyle = (properties: Array<string>, vars: Record<st
   ),
 
   '@media': {
-    'screen and (min-width: 52em)': properties.reduce(
-      (result, property) => ({
-        ...result,
-        [property]: vars[`${property}${ResponsiveTarget.TABLET}`],
-      }),
-      {}
-    ),
     'screen and (min-width: 40em)': properties.reduce(
       (result, property) => ({
         ...result,
         [property]: vars[`${property}${ResponsiveTarget.PHONE}`],
+      }),
+      {}
+    ),
+    'screen and (min-width: 52em)': properties.reduce(
+      (result, property) => ({
+        ...result,
+        [property]: vars[`${property}${ResponsiveTarget.TABLET}`],
       }),
       {}
     ),

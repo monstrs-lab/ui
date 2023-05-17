@@ -26,11 +26,11 @@ export const createResponsiveAssign = (properties: Array<string>, vars) => (prop
         property,
         getBreakpointValue(value, 0)
       ),
-      [vars[`${property}${ResponsiveTarget.TABLET}`]]: getValueWithUnit(
+      [vars[`${property}${ResponsiveTarget.PHONE}`]]: getValueWithUnit(
         property,
         getBreakpointValue(value, 1)
       ),
-      [vars[`${property}${ResponsiveTarget.PHONE}`]]: getValueWithUnit(
+      [vars[`${property}${ResponsiveTarget.TABLET}`]]: getValueWithUnit(
         property,
         getBreakpointValue(value, 2)
       ),

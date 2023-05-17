@@ -6,13 +6,17 @@ export default {
   title: 'Components/Text',
 }
 
-export const Text = ({ children, cursor }) => (
-  <TextComponent cursor={cursor}>{children}</TextComponent>
+export const Text = ({ children, cursor, color, fontSize }) => (
+  <TextComponent cursor={cursor} color={color} fontSize={fontSize}>
+    {children}
+  </TextComponent>
 )
 
 Text.args = {
   children: 'Текст',
   cursor: 'pointer',
+  color: 'green',
+  fontSize: 20,
 }
 
 Text.argTypes = {

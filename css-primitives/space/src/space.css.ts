@@ -4,19 +4,16 @@ import { createResponsiveVars }  from '@css-primitives/responsive'
 import { createResponsiveStyle } from '@css-primitives/responsive'
 
 export const properties = [
-  'display',
-  'width',
-  'height',
-  'minWidth',
-  'minHeight',
-  'maxWidth',
-  'maxHeight',
-  'verticalAlign',
-  'overflowX',
-  'overflowY',
-  'boxSizing',
+  'marginTop',
+  'marginRight',
+  'marginBottom',
+  'marginLeft',
+  'paddingTop',
+  'paddingRight',
+  'paddingBottom',
+  'paddingLeft',
 ]
 
 export const vars = createResponsiveVars(properties)
 
-export const layout = style(createResponsiveStyle(properties, vars))
+export const space = style(createResponsiveStyle(properties, vars))

@@ -27,7 +27,7 @@ export interface LayoutProps {
   overflowY?:
     | Properties['overflowY']
     | [Properties['overflowY'], Properties['overflowY'], Properties['overflowY']]
-  overflow?:
-    | Properties['overflow']
-    | [Properties['overflow'], Properties['overflow'], Properties['overflow']]
+  boxSizing?:
+    | Properties['boxSizing']
+    | [Properties['boxSizing'], Properties['boxSizing'], Properties['boxSizing']]
 }

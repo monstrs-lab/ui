@@ -1,27 +1,104 @@
-import type { TextProps }   from './text.interfaces'
-import type { FC }          from 'react'
+import type { TextProps }          from './text.interfaces'
+import type { FC }                 from 'react'
 
-import { assignInlineVars } from '@vanilla-extract/dynamic'
+import { assignInlineVars }        from '@vanilla-extract/dynamic'
 
-import React                from 'react'
+import React                       from 'react'
 
-import { text }             from './text.css'
-import { vars }             from './text.css'
+import { color as primitiveColor } from '@css-primitives/color'
+import { assignColorVars }         from '@css-primitives/color'
+import { layout }                  from '@css-primitives/layout'
+import { assignLayoutVars }        from '@css-primitives/layout'
+import { space }                   from '@css-primitives/space'
+import { assignSpaceVars }         from '@css-primitives/space'
+import { typography }              from '@css-primitives/typography'
+import { assignTypographyVars }    from '@css-primitives/typography'
+
+import { text }                    from './text.css'
+import { vars }                    from './text.css'
 
 export const Text: FC<TextProps> = ({
   children,
   textTransform,
   textOverflow,
+  whiteSpace,
   wordBreak,
   cursor,
+  width,
+  height,
+  minWidth,
+  minHeight,
+  maxWidth,
+  maxHeight,
+  display,
+  verticalAlign,
+  overflowX,
+  overflowY,
+  boxSizing,
+  marginTop,
+  marginRight,
+  marginBottom,
+  marginLeft,
+  paddingTop,
+  paddingRight,
+  paddingBottom,
+  paddingLeft,
+  fontFamily,
+  fontSize,
+  fontWeight,
+  lineHeight,
+  textAlign,
+  letterSpacing,
+  fontStyle,
+  color,
+  backgroundColor,
+  opacity,
 }) => (
   <span
-    className={text}
+    className={`${text} ${space} ${layout} ${typography} ${primitiveColor}`}
     style={assignInlineVars({
       [vars.textTransform]: textTransform!,
       [vars.textOverflow]: textOverflow!,
       [vars.wordBreak]: wordBreak!,
       [vars.cursor]: cursor!,
+      [vars.whiteSpace]: whiteSpace!,
+      ...assignLayoutVars({
+        width,
+        height,
+        minWidth,
+        minHeight,
+        maxWidth,
+        maxHeight,
+        display,
+        verticalAlign,
+        overflowX,
+        overflowY,
+        boxSizing,
+      }),
+      ...assignSpaceVars({
+        marginTop,
+        marginRight,
+        marginBottom,
+        marginLeft,
+        paddingTop,
+        paddingRight,
+        paddingBottom,
+        paddingLeft,
+      }),
+      ...assignTypographyVars({
+        fontFamily,
+        fontSize,
+        fontWeight,
+        lineHeight,
+        textAlign,
+        letterSpacing,
+        fontStyle,
+      }),
+      ...assignColorVars({
+        color,
+        backgroundColor,
+        opacity,
+      }),
     })}
   >
     {children}

@@ -6,12 +6,12 @@ export const createResponsiveVars = (properties: Array<string>): Record<string, 
   properties.reduce<Record<string, string>>((result, property) => {
     const desktop = createVar()
     const tablet = createVar()
-    const PHONE = createVar()
+    const phone = createVar()
 
     return {
       ...result,
       [`${property}${ResponsiveTarget.DESKTOP}`]: desktop,
       [`${property}${ResponsiveTarget.TABLET}`]: tablet,
-      [`${property}${ResponsiveTarget.PHONE}`]: PHONE,
+      [`${property}${ResponsiveTarget.PHONE}`]: phone,
     }
   }, {})

@@ -8,16 +8,7 @@ import { Text }                              from '@ui-proto/text'
 import { RadioGroupRadio }                   from './radio-group-radio.component'
 import { RadioGroup as RadioGroupComponent } from './radio-group.component'
 
-const Label = Text.withComponent('label')
-
-Label.defaultProps = {
-  fontFamily: 'primary',
-  fontWeight: 'normal',
-  fontSize: 'normal',
-  color: 'text.primary',
-  lineHeight: 'normal',
-  display: 'inline-flex',
-}
+/* eslint-disable jsx-a11y/label-has-associated-control */
 
 export default {
   title: 'Components/RadioGroup',
@@ -29,23 +20,53 @@ export const RadioGroup = () => {
   return (
     <RadioGroupComponent value={value} onChange={onChange}>
       <Column>
-        <Layout my={10}>
+        <Layout marginTop={10} marginBottom={10}>
           <RadioGroupRadio value='default' id='r1' />
-          <Label fontSize='medium' ml={12} htmlFor='r1'>
-            Default
-          </Label>
+          <label htmlFor='r1'>
+            <Text
+              fontFamily='"Noto Sans"'
+              fontWeight={400}
+              fontSize={18}
+              color='black'
+              lineHeight='normal'
+              display='inline-flex'
+              marginLeft={12}
+            >
+              Default
+            </Text>
+          </label>
         </Layout>
-        <Layout my={10}>
+        <Layout marginTop={10} marginBottom={10}>
           <RadioGroupRadio value='comfortable' />
-          <Label fontSize='medium' ml={12} htmlFor='r1'>
-            Comfortable
-          </Label>
+          <label htmlFor='r1'>
+            <Text
+              fontFamily='"Noto Sans"'
+              fontWeight={400}
+              fontSize={18}
+              color='black'
+              lineHeight='normal'
+              display='inline-flex'
+              marginLeft={12}
+            >
+              Comfortable
+            </Text>
+          </label>
         </Layout>
-        <Layout my={10}>
+        <Layout marginTop={10} marginBottom={10}>
           <RadioGroupRadio value='compact' />
-          <Label fontSize='medium' ml={12} htmlFor='r1'>
-            Compact
-          </Label>
+          <label htmlFor='r1'>
+            <Text
+              fontFamily='"Noto Sans"'
+              fontWeight={400}
+              fontSize={18}
+              color='black'
+              lineHeight='normal'
+              display='inline-flex'
+              marginLeft={12}
+            >
+              Compact
+            </Text>
+          </label>
         </Layout>
       </Column>
     </RadioGroupComponent>

@@ -20,8 +20,8 @@ export const LogoPlaceholder: FC<LogoPlaceholderProps> = ({
   >
     <ImagePlaceholder color={color} size={size} />
     <Layout
-      ml={type === 'horizontal' ? size * 0.28 : 0}
-      mt={type === 'vertical' ? size * 0.28 : 0}
+      marginLeft={type === 'horizontal' ? size * 0.28 : 0}
+      marginTop={type === 'vertical' ? size * 0.28 : 0}
       display='inline-flex'
     >
       <Text color={color} fontWeight={600} fontSize={size * 0.56}>

@@ -12,7 +12,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-primitives/text": "workspace:0.2.15"
+    "@ui-primitives/text": "workspace:^"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

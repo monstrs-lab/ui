@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/layout",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,7 +12,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-primitives/layout": "workspace:0.3.0"
+    "@ui-primitives/layout": "workspace:0.3.1"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.1.5",

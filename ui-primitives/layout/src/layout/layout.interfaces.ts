@@ -8,12 +8,14 @@ export interface LayoutProps extends CssLayoutProps, SpaceProps, FlexboxProps {
   className?: string
   style?: Record<string, string>
   overflow?: CssLayoutProps['overflowY']
+  p?: SpaceProps['paddingLeft']
   px?: SpaceProps['paddingLeft']
   py?: SpaceProps['paddingTop']
   pt?: SpaceProps['paddingTop']
   pr?: SpaceProps['paddingRight']
   pb?: SpaceProps['paddingBottom']
   pl?: SpaceProps['paddingLeft']
+  m?: SpaceProps['marginLeft']
   mx?: SpaceProps['marginLeft']
   my?: SpaceProps['marginTop']
   mt?: SpaceProps['marginTop']

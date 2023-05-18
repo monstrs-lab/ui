@@ -15,8 +15,8 @@ export const Text = ({ children, cursor, color, fontSize }) => (
 Text.args = {
   children: 'Текст',
   cursor: 'pointer',
-  color: 'green',
-  fontSize: 20,
+  color: { mobile: 'green', tablet: 'blue', desktop: 'red' },
+  fontSize: { mobile: '16px', desktop: '32px' },
 }
 
 Text.argTypes = {

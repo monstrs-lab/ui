@@ -1,25 +1,44 @@
-import type { FlexboxProps }                  from '@css-primitives/flexbox'
-import type { LayoutProps as CssLayoutProps } from '@css-primitives/layout'
-import type { SpaceProps }                    from '@css-primitives/space'
-import type { ReactNode }                     from 'react'
+import type { ReactNode } from 'react'
 
-export interface LayoutProps extends CssLayoutProps, SpaceProps, FlexboxProps {
+import { SprinklesProps } from '@css-primitives/sprinkles'
+
+export interface LayoutProps
+  extends Omit<
+    SprinklesProps,
+    | 'fontFamily'
+    | 'fontSize'
+    | 'fontWeight'
+    | 'lineHeight'
+    | 'textAlign'
+    | 'letterSpacing'
+    | 'fontStyle'
+    | 'border'
+    | 'borderRadius'
+    | 'borderColor'
+    | 'borderTop'
+    | 'borderRight'
+    | 'borderBottom'
+    | 'borderLeft'
+    | 'boxShadow'
+    | 'textShadow'
+    | 'position'
+    | 'zIndex'
+    | 'top'
+    | 'right'
+    | 'bottom'
+    | 'left'
+    | 'color'
+    | 'background'
+    | 'cursor'
+    | 'textTransform'
+    | 'textOverflow'
+    | 'wordBreak'
+    | 'whiteSpace'
+    | 'outline'
+    | 'transform'
+    | 'transition'
+  > {
   children?: ReactNode
   className?: string
   style?: Record<string, string>
-  overflow?: CssLayoutProps['overflowY']
-  p?: SpaceProps['paddingLeft']
-  px?: SpaceProps['paddingLeft']
-  py?: SpaceProps['paddingTop']
-  pt?: SpaceProps['paddingTop']
-  pr?: SpaceProps['paddingRight']
-  pb?: SpaceProps['paddingBottom']
-  pl?: SpaceProps['paddingLeft']
-  m?: SpaceProps['marginLeft']
-  mx?: SpaceProps['marginLeft']
-  my?: SpaceProps['marginTop']
-  mt?: SpaceProps['marginTop']
-  mr?: SpaceProps['marginRight']
-  mb?: SpaceProps['marginBottom']
-  ml?: SpaceProps['marginLeft']
 }

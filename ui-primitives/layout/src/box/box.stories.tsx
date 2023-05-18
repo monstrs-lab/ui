@@ -28,10 +28,10 @@ export const Box = ({
 
 Box.args = {
   display: 'flex',
-  width: [300, 200, 100],
-  height: [300, 200, 100],
+  width: { mobile: '300px', tablet: '200px', desktop: '100px' },
+  height: { mobile: '300px', tablet: '200px', desktop: '100px' },
   backgroundColor: 'blue',
-  borderRadius: 10,
+  borderRadius: '10px',
   boxShadow: '0px 1px 12px rgba(0, 0, 0, 0.2)',
 }
 

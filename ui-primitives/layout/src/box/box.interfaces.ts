@@ -1,14 +1,23 @@
-import type { LayoutProps }   from '../layout'
-import type { BorderProps }   from '@css-primitives/border'
-import type { ColorProps }    from '@css-primitives/color'
-import type { PositionProps } from '@css-primitives/position'
-import type { ShadowProps }   from '@css-primitives/shadow'
-import type { Properties }    from 'csstype'
-import type { ReactNode }     from 'react'
+import type { ReactNode } from 'react'
 
-export interface BoxProps extends LayoutProps, ColorProps, PositionProps, BorderProps, ShadowProps {
+import { SprinklesProps } from '@css-primitives/sprinkles'
+
+export interface BoxProps
+  extends Omit<
+    SprinklesProps,
+    | 'fontFamily'
+    | 'fontSize'
+    | 'fontWeight'
+    | 'lineHeight'
+    | 'textAlign'
+    | 'letterSpacing'
+    | 'fontStyle'
+    | 'textTransform'
+    | 'textOverflow'
+    | 'wordBreak'
+    | 'whiteSpace'
+  > {
   children?: ReactNode
-  cursor?: Properties['cursor']
-  background?: ColorProps['backgroundColor']
-  bg?: ColorProps['backgroundColor']
+  className?: string
+  style?: Record<string, string>
 }

@@ -1821,7 +1821,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@css-primitives/border@workspace:^, @css-primitives/border@workspace:css-primitives/border":
+"@css-primitives/border@workspace:css-primitives/border":
   version: 0.0.0-use.local
   resolution: "@css-primitives/border@workspace:css-primitives/border"
   dependencies:
@@ -1833,7 +1833,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@css-primitives/color@workspace:^, @css-primitives/color@workspace:css-primitives/color":
+"@css-primitives/color@workspace:css-primitives/color":
   version: 0.0.0-use.local
   resolution: "@css-primitives/color@workspace:css-primitives/color"
   dependencies:
@@ -1845,7 +1845,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@css-primitives/flexbox@workspace:^, @css-primitives/flexbox@workspace:css-primitives/flexbox":
+"@css-primitives/flexbox@workspace:css-primitives/flexbox":
   version: 0.0.0-use.local
   resolution: "@css-primitives/flexbox@workspace:css-primitives/flexbox"
   dependencies:
@@ -1857,7 +1857,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@css-primitives/layout@workspace:^, @css-primitives/layout@workspace:css-primitives/layout":
+"@css-primitives/layout@workspace:css-primitives/layout":
   version: 0.0.0-use.local
   resolution: "@css-primitives/layout@workspace:css-primitives/layout"
   dependencies:
@@ -1869,7 +1869,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@css-primitives/position@workspace:^, @css-primitives/position@workspace:css-primitives/position":
+"@css-primitives/position@workspace:css-primitives/position":
   version: 0.0.0-use.local
   resolution: "@css-primitives/position@workspace:css-primitives/position"
   dependencies:
@@ -1890,7 +1890,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@css-primitives/shadow@workspace:^, @css-primitives/shadow@workspace:css-primitives/shadow":
+"@css-primitives/shadow@workspace:css-primitives/shadow":
   version: 0.0.0-use.local
   resolution: "@css-primitives/shadow@workspace:css-primitives/shadow"
   dependencies:
@@ -1902,7 +1902,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@css-primitives/space@workspace:^, @css-primitives/space@workspace:css-primitives/space":
+"@css-primitives/space@workspace:css-primitives/space":
   version: 0.0.0-use.local
   resolution: "@css-primitives/space@workspace:css-primitives/space"
   dependencies:
@@ -1914,7 +1914,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@css-primitives/typography@workspace:^, @css-primitives/typography@workspace:css-primitives/typography":
+"@css-primitives/sprinkles@workspace:^, @css-primitives/sprinkles@workspace:css-primitives/sprinkles":
+  version: 0.0.0-use.local
+  resolution: "@css-primitives/sprinkles@workspace:css-primitives/sprinkles"
+  dependencies:
+    "@vanilla-extract/css": ^1.11.0
+    "@vanilla-extract/dynamic": ^2.0.3
+    rainbow-sprinkles: ^0.16.2
+  peerDependencies:
+    "@vanilla-extract/css": ^1
+    "@vanilla-extract/dynamic": ^2
+  languageName: unknown
+  linkType: soft
+
+"@css-primitives/typography@workspace:css-primitives/typography":
   version: 0.0.0-use.local
   resolution: "@css-primitives/typography@workspace:css-primitives/typography"
   dependencies:
@@ -5840,17 +5853,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-primitives/layout@workspace:ui-primitives/layout"
   dependencies:
-    "@css-primitives/border": "workspace:^"
-    "@css-primitives/color": "workspace:^"
-    "@css-primitives/flexbox": "workspace:^"
-    "@css-primitives/layout": "workspace:^"
-    "@css-primitives/position": "workspace:^"
-    "@css-primitives/shadow": "workspace:^"
-    "@css-primitives/space": "workspace:^"
+    "@css-primitives/sprinkles": "workspace:^"
     "@types/react": ^18.0.28
-    "@vanilla-extract/css": ^1.11.0
-    "@vanilla-extract/dynamic": ^2.0.3
-    csstype: ^3.1.2
     react: ^18.2.0
   peerDependencies:
     react: ^18.2.0
@@ -5900,14 +5904,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-primitives/text@workspace:ui-primitives/text"
   dependencies:
-    "@css-primitives/color": "workspace:^"
-    "@css-primitives/layout": "workspace:^"
-    "@css-primitives/space": "workspace:^"
-    "@css-primitives/typography": "workspace:^"
+    "@css-primitives/sprinkles": "workspace:^"
     "@types/react": ^18.0.28
-    "@vanilla-extract/css": ^1.11.0
-    "@vanilla-extract/dynamic": ^2.0.3
-    csstype: ^3.1.2
     react: ^18.2.0
   peerDependencies:
     react: ^18
@@ -15094,6 +15092,16 @@ __metadata:
   version: 5.1.1
   resolution: "quick-lru@npm:5.1.1"
   checksum: a516faa25574be7947969883e6068dbe4aa19e8ef8e8e0fd96cddd6d36485e9106d85c0041a27153286b0770b381328f4072aa40d3b18a19f5f7d2b78b94b5ed
+  languageName: node
+  linkType: hard
+
+"rainbow-sprinkles@npm:^0.16.2":
+  version: 0.16.2
+  resolution: "rainbow-sprinkles@npm:0.16.2"
+  peerDependencies:
+    "@vanilla-extract/css": ^1
+    "@vanilla-extract/dynamic": ^2
+  checksum: 525ec87f909bfeadbca225d763f3d39b9dbdd5c093c963705b31e911ba44662d7bf1a9151b718344269f67c1fc747b62829a65def78b69025141da185028e575
   languageName: node
   linkType: hard
 

@@ -48,6 +48,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:css-primitives/space"\
       },\
       {\
+        "name": "@css-primitives/sprinkles",\
+        "reference": "workspace:css-primitives/sprinkles"\
+      },\
+      {\
         "name": "@css-primitives/typography",\
         "reference": "workspace:css-primitives/typography"\
       },\
@@ -203,15 +207,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["@css-primitives/border", ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/border", "workspace:css-primitives/border"]],\
-      ["@css-primitives/color", ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/color", "workspace:css-primitives/color"]],\
-      ["@css-primitives/flexbox", ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/flexbox", "workspace:css-primitives/flexbox"]],\
-      ["@css-primitives/layout", ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout", "workspace:css-primitives/layout"]],\
-      ["@css-primitives/position", ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/position", "workspace:css-primitives/position"]],\
+      ["@css-primitives/border", ["workspace:css-primitives/border"]],\
+      ["@css-primitives/color", ["workspace:css-primitives/color"]],\
+      ["@css-primitives/flexbox", ["workspace:css-primitives/flexbox"]],\
+      ["@css-primitives/layout", ["workspace:css-primitives/layout"]],\
+      ["@css-primitives/position", ["workspace:css-primitives/position"]],\
       ["@css-primitives/responsive", ["workspace:css-primitives/responsive"]],\
-      ["@css-primitives/shadow", ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/shadow", "workspace:css-primitives/shadow"]],\
-      ["@css-primitives/space", ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space", "workspace:css-primitives/space"]],\
-      ["@css-primitives/typography", ["virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/typography", "workspace:css-primitives/typography"]],\
+      ["@css-primitives/shadow", ["workspace:css-primitives/shadow"]],\
+      ["@css-primitives/space", ["workspace:css-primitives/space"]],\
+      ["@css-primitives/sprinkles", ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/sprinkles", "workspace:css-primitives/sprinkles"]],\
+      ["@css-primitives/typography", ["workspace:css-primitives/typography"]],\
       ["@css-primitives/units", ["workspace:css-primitives/units"]],\
       ["@monstrs/storybook-google-fonts", ["workspace:storybook/google-fonts"]],\
       ["@ui-primitives/button", ["virtual:f76877f8b79328bdc70d1b80fcd54687ff1663cdd24da34fd5298382bc8e0b6cfea93ceb0532b480be102b40b3294efae4a14dd4b1ddff1ed2b464c40e23731b#workspace:ui-primitives/button", "workspace:ui-primitives/button"]],\
@@ -4613,21 +4618,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@css-primitives/border", [\
-        ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/border", {\
-          "packageLocation": "./.yarn/__virtual__/@css-primitives-border-virtual-8d9bd33930/1/css-primitives/border/",\
-          "packageDependencies": [\
-            ["@css-primitives/border", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/border"],\
-            ["@css-primitives/responsive", "workspace:css-primitives/responsive"],\
-            ["@types/vanilla-extract__css", null],\
-            ["@vanilla-extract/css", "npm:1.11.0"],\
-            ["csstype", "npm:3.1.2"]\
-          ],\
-          "packagePeers": [\
-            "@types/vanilla-extract__css",\
-            "@vanilla-extract/css"\
-          ],\
-          "linkType": "SOFT"\
-        }],\
         ["workspace:css-primitives/border", {\
           "packageLocation": "./css-primitives/border/",\
           "packageDependencies": [\
@@ -4640,21 +4630,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@css-primitives/color", [\
-        ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/color", {\
-          "packageLocation": "./.yarn/__virtual__/@css-primitives-color-virtual-462d3b1246/1/css-primitives/color/",\
-          "packageDependencies": [\
-            ["@css-primitives/color", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/color"],\
-            ["@css-primitives/responsive", "workspace:css-primitives/responsive"],\
-            ["@types/vanilla-extract__css", null],\
-            ["@vanilla-extract/css", "npm:1.11.0"],\
-            ["csstype", "npm:3.1.2"]\
-          ],\
-          "packagePeers": [\
-            "@types/vanilla-extract__css",\
-            "@vanilla-extract/css"\
-          ],\
-          "linkType": "SOFT"\
-        }],\
         ["workspace:css-primitives/color", {\
           "packageLocation": "./css-primitives/color/",\
           "packageDependencies": [\
@@ -4667,21 +4642,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@css-primitives/flexbox", [\
-        ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/flexbox", {\
-          "packageLocation": "./.yarn/__virtual__/@css-primitives-flexbox-virtual-ba42f1e2a5/1/css-primitives/flexbox/",\
-          "packageDependencies": [\
-            ["@css-primitives/flexbox", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/flexbox"],\
-            ["@css-primitives/responsive", "workspace:css-primitives/responsive"],\
-            ["@types/vanilla-extract__css", null],\
-            ["@vanilla-extract/css", "npm:1.11.0"],\
-            ["csstype", "npm:3.1.2"]\
-          ],\
-          "packagePeers": [\
-            "@types/vanilla-extract__css",\
-            "@vanilla-extract/css"\
-          ],\
-          "linkType": "SOFT"\
-        }],\
         ["workspace:css-primitives/flexbox", {\
           "packageLocation": "./css-primitives/flexbox/",\
           "packageDependencies": [\
@@ -4694,21 +4654,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@css-primitives/layout", [\
-        ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout", {\
-          "packageLocation": "./.yarn/__virtual__/@css-primitives-layout-virtual-2555759da2/1/css-primitives/layout/",\
-          "packageDependencies": [\
-            ["@css-primitives/layout", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout"],\
-            ["@css-primitives/responsive", "workspace:css-primitives/responsive"],\
-            ["@types/vanilla-extract__css", null],\
-            ["@vanilla-extract/css", "npm:1.11.0"],\
-            ["csstype", "npm:3.1.2"]\
-          ],\
-          "packagePeers": [\
-            "@types/vanilla-extract__css",\
-            "@vanilla-extract/css"\
-          ],\
-          "linkType": "SOFT"\
-        }],\
         ["workspace:css-primitives/layout", {\
           "packageLocation": "./css-primitives/layout/",\
           "packageDependencies": [\
@@ -4721,21 +4666,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@css-primitives/position", [\
-        ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/position", {\
-          "packageLocation": "./.yarn/__virtual__/@css-primitives-position-virtual-3c418c09dc/1/css-primitives/position/",\
-          "packageDependencies": [\
-            ["@css-primitives/position", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/position"],\
-            ["@css-primitives/responsive", "workspace:css-primitives/responsive"],\
-            ["@types/vanilla-extract__css", null],\
-            ["@vanilla-extract/css", "npm:1.11.0"],\
-            ["csstype", "npm:3.1.2"]\
-          ],\
-          "packagePeers": [\
-            "@types/vanilla-extract__css",\
-            "@vanilla-extract/css"\
-          ],\
-          "linkType": "SOFT"\
-        }],\
         ["workspace:css-primitives/position", {\
           "packageLocation": "./css-primitives/position/",\
           "packageDependencies": [\
@@ -4759,21 +4689,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@css-primitives/shadow", [\
-        ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/shadow", {\
-          "packageLocation": "./.yarn/__virtual__/@css-primitives-shadow-virtual-fce4436217/1/css-primitives/shadow/",\
-          "packageDependencies": [\
-            ["@css-primitives/shadow", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/shadow"],\
-            ["@css-primitives/responsive", "workspace:css-primitives/responsive"],\
-            ["@types/vanilla-extract__css", null],\
-            ["@vanilla-extract/css", "npm:1.11.0"],\
-            ["csstype", "npm:3.1.2"]\
-          ],\
-          "packagePeers": [\
-            "@types/vanilla-extract__css",\
-            "@vanilla-extract/css"\
-          ],\
-          "linkType": "SOFT"\
-        }],\
         ["workspace:css-primitives/shadow", {\
           "packageLocation": "./css-primitives/shadow/",\
           "packageDependencies": [\
@@ -4786,21 +4701,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@css-primitives/space", [\
-        ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space", {\
-          "packageLocation": "./.yarn/__virtual__/@css-primitives-space-virtual-f91c20ed52/1/css-primitives/space/",\
-          "packageDependencies": [\
-            ["@css-primitives/space", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space"],\
-            ["@css-primitives/responsive", "workspace:css-primitives/responsive"],\
-            ["@types/vanilla-extract__css", null],\
-            ["@vanilla-extract/css", "npm:1.11.0"],\
-            ["csstype", "npm:3.1.2"]\
-          ],\
-          "packagePeers": [\
-            "@types/vanilla-extract__css",\
-            "@vanilla-extract/css"\
-          ],\
-          "linkType": "SOFT"\
-        }],\
         ["workspace:css-primitives/space", {\
           "packageLocation": "./css-primitives/space/",\
           "packageDependencies": [\
@@ -4812,22 +4712,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT"\
         }]\
       ]],\
-      ["@css-primitives/typography", [\
-        ["virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/typography", {\
-          "packageLocation": "./.yarn/__virtual__/@css-primitives-typography-virtual-612eea100b/1/css-primitives/typography/",\
+      ["@css-primitives/sprinkles", [\
+        ["virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/sprinkles", {\
+          "packageLocation": "./.yarn/__virtual__/@css-primitives-sprinkles-virtual-bf5619e9d3/1/css-primitives/sprinkles/",\
           "packageDependencies": [\
-            ["@css-primitives/typography", "virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/typography"],\
-            ["@css-primitives/responsive", "workspace:css-primitives/responsive"],\
+            ["@css-primitives/sprinkles", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/sprinkles"],\
             ["@types/vanilla-extract__css", null],\
+            ["@types/vanilla-extract__dynamic", null],\
             ["@vanilla-extract/css", "npm:1.11.0"],\
-            ["csstype", "npm:3.1.2"]\
+            ["@vanilla-extract/dynamic", "npm:2.0.3"],\
+            ["rainbow-sprinkles", "virtual:68d658cd0cf80e0bde0f7eeaecee679e5d573ce50b20c56c337f61ac00f318d74461822dd533a854a94b40af4318955047f8f3e679ef5a7ecb8e88c11de7b483#npm:0.16.2"]\
           ],\
           "packagePeers": [\
             "@types/vanilla-extract__css",\
-            "@vanilla-extract/css"\
+            "@types/vanilla-extract__dynamic"\
           ],\
           "linkType": "SOFT"\
         }],\
+        ["workspace:css-primitives/sprinkles", {\
+          "packageLocation": "./css-primitives/sprinkles/",\
+          "packageDependencies": [\
+            ["@css-primitives/sprinkles", "workspace:css-primitives/sprinkles"],\
+            ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["@vanilla-extract/dynamic", "npm:2.0.3"],\
+            ["rainbow-sprinkles", "virtual:68d658cd0cf80e0bde0f7eeaecee679e5d573ce50b20c56c337f61ac00f318d74461822dd533a854a94b40af4318955047f8f3e679ef5a7ecb8e88c11de7b483#npm:0.16.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@css-primitives/typography", [\
         ["workspace:css-primitives/typography", {\
           "packageLocation": "./css-primitives/typography/",\
           "packageDependencies": [\
@@ -10629,17 +10542,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@ui-primitives-layout-virtual-354a87d5c0/1/ui-primitives/layout/",\
           "packageDependencies": [\
             ["@ui-primitives/layout", "virtual:97b2cb373ec37787543e318bfab5e1d87a711e27c3deb5f35a8d36b0e953b1a158d124210c4ea30c589ec624f44787950bb3b74a127ad18072a41843c765f558#workspace:ui-primitives/layout"],\
-            ["@css-primitives/border", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/border"],\
-            ["@css-primitives/color", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/color"],\
-            ["@css-primitives/flexbox", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/flexbox"],\
-            ["@css-primitives/layout", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout"],\
-            ["@css-primitives/position", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/position"],\
-            ["@css-primitives/shadow", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/shadow"],\
-            ["@css-primitives/space", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space"],\
+            ["@css-primitives/sprinkles", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/sprinkles"],\
             ["@types/react", "npm:17.0.39"],\
-            ["@vanilla-extract/css", "npm:1.11.0"],\
-            ["@vanilla-extract/dynamic", "npm:2.0.3"],\
-            ["csstype", "npm:3.1.2"],\
             ["react", "npm:18.2.0"]\
           ],\
           "packagePeers": [\
@@ -10652,17 +10556,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./ui-primitives/layout/",\
           "packageDependencies": [\
             ["@ui-primitives/layout", "workspace:ui-primitives/layout"],\
-            ["@css-primitives/border", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/border"],\
-            ["@css-primitives/color", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/color"],\
-            ["@css-primitives/flexbox", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/flexbox"],\
-            ["@css-primitives/layout", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout"],\
-            ["@css-primitives/position", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/position"],\
-            ["@css-primitives/shadow", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/shadow"],\
-            ["@css-primitives/space", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space"],\
+            ["@css-primitives/sprinkles", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/sprinkles"],\
             ["@types/react", "npm:17.0.39"],\
-            ["@vanilla-extract/css", "npm:1.11.0"],\
-            ["@vanilla-extract/dynamic", "npm:2.0.3"],\
-            ["csstype", "npm:3.1.2"],\
             ["react", "npm:18.2.0"]\
           ],\
           "linkType": "SOFT"\
@@ -10697,14 +10592,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@ui-primitives-text-virtual-83fa616d6d/1/ui-primitives/text/",\
           "packageDependencies": [\
             ["@ui-primitives/text", "virtual:aaec49526f1917893696dd5dd4e77715a17dc4959fcb93b2718a0c6b13e7ffe17c086a62e3446632e2b7402102ec0cc741c2c9fd0e2d423af51e632d015dc530#workspace:ui-primitives/text"],\
-            ["@css-primitives/color", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/color"],\
-            ["@css-primitives/layout", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout"],\
-            ["@css-primitives/space", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space"],\
-            ["@css-primitives/typography", "virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/typography"],\
+            ["@css-primitives/sprinkles", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/sprinkles"],\
             ["@types/react", "npm:17.0.39"],\
-            ["@vanilla-extract/css", "npm:1.11.0"],\
-            ["@vanilla-extract/dynamic", "npm:2.0.3"],\
-            ["csstype", "npm:3.1.2"],\
             ["react", "npm:18.2.0"]\
           ],\
           "packagePeers": [\
@@ -10717,14 +10606,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./ui-primitives/text/",\
           "packageDependencies": [\
             ["@ui-primitives/text", "workspace:ui-primitives/text"],\
-            ["@css-primitives/color", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/color"],\
-            ["@css-primitives/layout", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/layout"],\
-            ["@css-primitives/space", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/space"],\
-            ["@css-primitives/typography", "virtual:cefbd5c12a151437ec8860b3b2b833f10d71ec48214af8c936c4093028ea78b24d7718c445e869541bcdee55bafd5b19cd5ca2c4b6265cb54d92210bdfa3c717#workspace:css-primitives/typography"],\
+            ["@css-primitives/sprinkles", "virtual:93f80257e2ada1334cb32746ae204eb720d6411d8befa8dc5c71056d25dda037d9a2d6d8f09f14736d427c4750ee2d0f9dc895f694508f345c470de7b3714f73#workspace:css-primitives/sprinkles"],\
             ["@types/react", "npm:17.0.39"],\
-            ["@vanilla-extract/css", "npm:1.11.0"],\
-            ["@vanilla-extract/dynamic", "npm:2.0.3"],\
-            ["csstype", "npm:3.1.2"],\
             ["react", "npm:18.2.0"]\
           ],\
           "linkType": "SOFT"\
@@ -21946,6 +21829,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/quick-lru-npm-5.1.1-e38e0edce3-a516faa255.zip/node_modules/quick-lru/",\
           "packageDependencies": [\
             ["quick-lru", "npm:5.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["rainbow-sprinkles", [\
+        ["npm:0.16.2", {\
+          "packageLocation": "./.yarn/cache/rainbow-sprinkles-npm-0.16.2-9417cb5dae-525ec87f90.zip/node_modules/rainbow-sprinkles/",\
+          "packageDependencies": [\
+            ["rainbow-sprinkles", "npm:0.16.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:68d658cd0cf80e0bde0f7eeaecee679e5d573ce50b20c56c337f61ac00f318d74461822dd533a854a94b40af4318955047f8f3e679ef5a7ecb8e88c11de7b483#npm:0.16.2", {\
+          "packageLocation": "./.yarn/__virtual__/rainbow-sprinkles-virtual-80d8ab215e/0/cache/rainbow-sprinkles-npm-0.16.2-9417cb5dae-525ec87f90.zip/node_modules/rainbow-sprinkles/",\
+          "packageDependencies": [\
+            ["rainbow-sprinkles", "virtual:68d658cd0cf80e0bde0f7eeaecee679e5d573ce50b20c56c337f61ac00f318d74461822dd533a854a94b40af4318955047f8f3e679ef5a7ecb8e88c11de7b483#npm:0.16.2"],\
+            ["@types/vanilla-extract__css", null],\
+            ["@types/vanilla-extract__dynamic", null],\
+            ["@vanilla-extract/css", "npm:1.11.0"],\
+            ["@vanilla-extract/dynamic", "npm:2.0.3"]\
+          ],\
+          "packagePeers": [\
+            "@types/vanilla-extract__css",\
+            "@types/vanilla-extract__dynamic",\
+            "@vanilla-extract/css",\
+            "@vanilla-extract/dynamic"\
           ],\
           "linkType": "HARD"\
         }]\

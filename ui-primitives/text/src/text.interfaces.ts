@@ -1,15 +1,42 @@
-import type { ColorProps }                    from '@css-primitives/color'
-import type { LayoutProps as CssLayoutProps } from '@css-primitives/layout'
-import type { SpaceProps }                    from '@css-primitives/space'
-import type { TypographyProps }               from '@css-primitives/typography'
-import type { Properties }                    from 'csstype'
-import type { ReactNode }                     from 'react'
+import type { ReactNode } from 'react'
 
-export interface TextProps extends CssLayoutProps, SpaceProps, TypographyProps, ColorProps {
+import { SprinklesProps } from '@css-primitives/sprinkles'
+
+export interface TextProps
+  extends Omit<
+    SprinklesProps,
+    | 'boxShadow'
+    | 'position'
+    | 'zIndex'
+    | 'top'
+    | 'right'
+    | 'bottom'
+    | 'left'
+    | 'border'
+    | 'borderRadius'
+    | 'borderColor'
+    | 'borderTop'
+    | 'borderRight'
+    | 'borderBottom'
+    | 'borderLeft'
+    | 'alignItems'
+    | 'alignContent'
+    | 'justifyItems'
+    | 'justifyContent'
+    | 'flex'
+    | 'flexWrap'
+    | 'flexDirection'
+    | 'flexGrow'
+    | 'flexShrink'
+    | 'flexBasis'
+    | 'justifySelf'
+    | 'alignSelf'
+    | 'order'
+    | 'outline'
+    | 'transform'
+    | 'transition'
+  > {
   children: ReactNode
-  wordBreak?: Properties['wordBreak']
-  whiteSpace?: Properties['whiteSpace']
-  textTransform?: Properties['textTransform']
-  textOverflow?: Properties['textOverflow']
-  cursor?: Properties['cursor']
+  className?: string
+  style?: Record<string, string>
 }

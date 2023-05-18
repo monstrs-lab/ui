@@ -30,8 +30,8 @@ export const Layout = ({
 
 Layout.args = {
   display: 'flex',
-  width: [300, 200, 100],
-  height: [300, 200, 100],
+  width: { mobile: '300px', tablet: '200px', desktop: '100px' },
+  height: { mobile: '300px', tablet: '200px', desktop: '100px' },
   flexDirection: 'column',
   justifyContent: 'flex-end',
   alignItems: 'flex-end',

@@ -1,0 +1,15 @@
+releases:
+  "@css-primitives/sprinkles": patch
+  "@ui-primitives/layout": patch
+  "@ui-primitives/text": patch
+  "@ui-proto/accordion": patch
+  "@ui-proto/label": patch
+  "@ui-proto/layout": patch
+  "@ui-proto/placeholder": patch
+  "@ui-proto/popover": patch
+  "@ui-proto/radio-group": patch
+  "@ui-proto/select": patch
+  "@ui-proto/switch": patch
+  "@ui-proto/tabs": patch
+  "@ui-proto/text": patch
+  "@ui-proto/tooltip": patch

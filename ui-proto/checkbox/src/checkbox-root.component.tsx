@@ -1,5 +1,5 @@
-import styled   from '@emotion/styled'
 import { Root } from '@radix-ui/react-checkbox'
+import styled   from '@emotion/styled'
 
 export const CheckboxRoot = styled(Root)({
   all: 'unset',

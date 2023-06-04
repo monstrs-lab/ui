@@ -1,12 +1,12 @@
-import type { ScopedProps }              from './root.context'
 import type { ComponentPropsWithoutRef } from '@radix-ui/react-primitive'
 import type { ElementRef }               from 'react'
 
-import { useLayoutEffect }               from '@radix-ui/react-use-layout-effect'
+import type { ScopedProps }              from './root.context'
 
-import React                             from 'react'
+import { useLayoutEffect }               from '@radix-ui/react-use-layout-effect'
 import { forwardRef }                    from 'react'
 import { useState }                      from 'react'
+import React                             from 'react'
 
 import { useInputContext }               from './root.context'
 
@@ -46,17 +46,19 @@ export const Control = forwardRef<ControlElement, ControlProps>((
   return (
     <input
       {...inputProps}
+      ref={forwardedRef}
       id={context.id}
       type={context.type}
       name={context.name}
       required={context.required}
       value={context.value}
       placeholder={context.placeholder}
-      ref={forwardedRef}
-      onChange={(event) => context.onValueChange(event?.target.value)}
       style={{
         paddingLeft: offsetLeft,
         paddingRight: offsetRight,
+      }}
+      onChange={(event) => {
+        context.onValueChange(event?.target.value)
       }}
     />
   )

@@ -1,5 +1,8 @@
-import React                                 from 'react'
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable react/hook-use-state */
+
 import { useState }                          from 'react'
+import React                                 from 'react'
 
 import { Column }                            from '@ui-proto/layout'
 import { Layout }                            from '@ui-proto/layout'
@@ -7,8 +10,6 @@ import { Text }                              from '@ui-proto/text'
 
 import { RadioGroupRadio }                   from './radio-group-radio.component'
 import { RadioGroup as RadioGroupComponent } from './radio-group.component'
-
-/* eslint-disable jsx-a11y/label-has-associated-control */
 
 export default {
   title: 'Components/RadioGroup',

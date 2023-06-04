@@ -1,5 +1,5 @@
-import styled    from '@emotion/styled'
 import { Thumb } from '@radix-ui/react-switch'
+import styled    from '@emotion/styled'
 
 export const SwitchThumb = styled(Thumb)({
   display: 'block',

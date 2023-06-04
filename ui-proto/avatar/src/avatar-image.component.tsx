@@ -1,5 +1,5 @@
-import styled    from '@emotion/styled'
 import { Image } from '@radix-ui/react-avatar'
+import styled    from '@emotion/styled'
 
 export const AvatarImage = styled(Image)({
   width: '100%',

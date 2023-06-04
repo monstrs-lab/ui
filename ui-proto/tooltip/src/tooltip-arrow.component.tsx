@@ -1,5 +1,4 @@
 import { Arrow } from '@radix-ui/react-tooltip'
-
 import React     from 'react'
 
 export const TooltipArrow = () => (

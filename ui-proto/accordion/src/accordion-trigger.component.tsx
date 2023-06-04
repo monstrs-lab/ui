@@ -2,11 +2,10 @@ import type { AccordionTriggerProps }         from '@radix-ui/react-accordion'
 import type { Trigger as CollapsibleTrigger } from '@radix-ui/react-collapsible'
 import type { ElementRef }                    from 'react'
 
-import styled                                 from '@emotion/styled'
 import { Trigger }                            from '@radix-ui/react-accordion'
-
-import React                                  from 'react'
+import styled                                 from '@emotion/styled'
 import { forwardRef }                         from 'react'
+import React                                  from 'react'
 
 import { Text }                               from '@ui-proto/text'
 

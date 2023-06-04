@@ -4,10 +4,10 @@ import type { ReactNode }         from 'react'
 import { Children }               from 'react'
 import { createElement }          from 'react'
 
-const combineChildern = (children: ReactNode): ReactNode[] => {
+const combineChildern = (children: ReactNode): Array<ReactNode> => {
   let isPrevChildPure: boolean = false
 
-  const childList: ReactNode[] = []
+  const childList: Array<ReactNode> = []
 
   Children.forEach(children, (child) => {
     const isCurrentChildPure = typeof child === 'string' || typeof child === 'number'
@@ -31,7 +31,7 @@ export const useDividedChildren = (
   children: ReactNode,
   Wrapper: FunctionComponent,
   props = {}
-): ReactNode | ReactNode[] => {
+): Array<ReactNode> | ReactNode => {
   if (Children.count(children) > 1) {
     const combinedChildren = combineChildern(children)
 

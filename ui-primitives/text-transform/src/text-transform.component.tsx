@@ -1,7 +1,7 @@
-import { FC }                 from 'react'
-import { ReactElement }       from 'react'
+import type { FC }                 from 'react'
+import type { ReactElement }       from 'react'
 
-import { TextTransformProps } from './text-transform.interfaces'
+import type { TextTransformProps } from './text-transform.interfaces'
 
 export const TextTransform: FC<TextTransformProps> = ({ children, ...props }) => {
   try {

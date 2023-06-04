@@ -1,5 +1,5 @@
-import styled      from '@emotion/styled'
 import { Content } from '@radix-ui/react-tabs'
+import styled      from '@emotion/styled'
 
 export const TabsContent = styled(Content)({
   flexGrow: 1,

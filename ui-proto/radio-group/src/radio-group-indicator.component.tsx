@@ -1,5 +1,5 @@
-import styled        from '@emotion/styled'
 import { Indicator } from '@radix-ui/react-radio-group'
+import styled        from '@emotion/styled'
 
 export const RadioGroupIndicator = styled(Indicator)({
   display: 'flex',

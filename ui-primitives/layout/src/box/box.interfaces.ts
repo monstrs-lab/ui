@@ -1,21 +1,20 @@
-import type { ReactNode } from 'react'
-
-import { SprinklesProps } from '@css-primitives/sprinkles'
+import type { ReactNode }      from 'react'
+import type { SprinklesProps } from '@css-primitives/sprinkles'
 
 export interface BoxProps
   extends Omit<
     SprinklesProps,
     | 'fontFamily'
     | 'fontSize'
+    | 'fontStyle'
     | 'fontWeight'
+    | 'letterSpacing'
     | 'lineHeight'
     | 'textAlign'
-    | 'letterSpacing'
-    | 'fontStyle'
-    | 'textTransform'
     | 'textOverflow'
-    | 'wordBreak'
+    | 'textTransform'
     | 'whiteSpace'
+    | 'wordBreak'
   > {
   children?: ReactNode
   className?: string

@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import React                          from 'react'
 
 import { Box }                        from '@ui-proto/layout'
@@ -31,6 +33,7 @@ export const Placeholder = ({ type, ...props }) => {
   if (type === 'image-box') {
     return (
       <Box width={320} height={160}>
+        {/* @ts-expect-error */}
         <ImageBoxPlaceholder />
       </Box>
     )

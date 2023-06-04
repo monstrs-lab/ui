@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import React                               from 'react'
 
 import { AccordionContent }                from './accordion-content.component'
@@ -10,7 +12,7 @@ export default {
 }
 
 export const Accordion = ({ type }) => (
-  <AccordionComponent type={type} defaultValue='item-1' collapsible>
+  <AccordionComponent collapsible type={type} defaultValue='item-1'>
     <AccordionItem value='item-1'>
       <AccordionTrigger>Is it accessible?</AccordionTrigger>
       <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>

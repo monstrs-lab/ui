@@ -1,12 +1,12 @@
-import type { SelectTriggerAttachPosition }    from './select-trigger.component'
 import type { SelectValueProps }               from '@radix-ui/react-select'
 import type { SelectProps as BaseSelectProps } from '@radix-ui/react-select'
 import type { FC }                             from 'react'
 
+import type { SelectTriggerAttachPosition }    from './select-trigger.component'
+
 import { ChevronDownIcon }                     from '@radix-ui/react-icons'
 import { ChevronUpIcon }                       from '@radix-ui/react-icons'
 import { Icon as SelectIcon }                  from '@radix-ui/react-select'
-
 import React                                   from 'react'
 
 import { SelectContent }                       from './select-content.component'

@@ -1,5 +1,8 @@
-import type { LayoutProps } from './layout.interfaces'
+/* eslint-disable react/jsx-no-leaked-render */
+
 import type { FC }          from 'react'
+
+import type { LayoutProps } from './layout.interfaces'
 
 import React                from 'react'
 
@@ -21,7 +24,7 @@ export const Layout: FC<LayoutProps> = ({
 
   return (
     <div
-      className={className ? `${sprinklesClassName} ${className}` : sprinklesClassName}
+      className={className && `${sprinklesClassName} ${className}`}
       style={{ ...style, ...sprinklesStyle }}
       {...otherProps}
     >

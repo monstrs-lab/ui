@@ -1,4 +1,3 @@
-// @ts-ignore
 const updateEmotionAliases = (config) => ({
   ...config,
   resolve: {

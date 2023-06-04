@@ -2,9 +2,9 @@ import { getValueWithUnit } from '@css-primitives/units'
 
 import { ResponsiveTarget } from './responsive-target.enum'
 
-type BreakpointValue = string | number | [string | number, string | number, string | number]
+type BreakpointValue = number | string | [number | string, number | string, number | string]
 
-export const getBreakpointValue = (value: BreakpointValue, index: number): string | number => {
+export const getBreakpointValue = (value: BreakpointValue, index: number): number | string => {
   if (Array.isArray(value)) {
     return value[index]
   }

@@ -1,10 +1,10 @@
+import type { UseScaleResult }  from './scalable-content.interfaces'
+
 import { useEffect }            from 'react'
 import { useRef }               from 'react'
 import { useState }             from 'react'
 
 import { getContentDimensions } from '@ui-utils/content-dimensions'
-
-import { UseScaleResult }       from './scalable-content.interfaces'
 
 export const useScale = (): UseScaleResult => {
   const ref = useRef<HTMLDivElement>(null)

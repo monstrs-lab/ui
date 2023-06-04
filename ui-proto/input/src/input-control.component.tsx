@@ -1,7 +1,6 @@
 import type { ControlProps } from '@ui-primitives/input'
 
 import styled                from '@emotion/styled'
-
 import { switchProp }        from 'styled-tools'
 import { prop }              from 'styled-tools'
 

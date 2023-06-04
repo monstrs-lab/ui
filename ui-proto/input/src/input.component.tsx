@@ -1,10 +1,11 @@
-import type { InputControlAttachPosition } from './input-control.component'
 import type { RootProps }                  from '@ui-primitives/input'
 import type { ControlElement }             from '@ui-primitives/input'
 import type { ReactNode }                  from 'react'
 
-import React                               from 'react'
+import type { InputControlAttachPosition } from './input-control.component'
+
 import { forwardRef }                      from 'react'
+import React                               from 'react'
 
 import { InputAttachmentsPrefix }          from './input-attachments.component'
 import { InputAttachmentsSuffix }          from './input-attachments.component'

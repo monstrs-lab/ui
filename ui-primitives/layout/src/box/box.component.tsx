@@ -1,5 +1,8 @@
-import type { BoxProps } from './box.interfaces'
+/* eslint-disable react/jsx-no-leaked-render */
+
 import type { FC }       from 'react'
+
+import type { BoxProps } from './box.interfaces'
 
 import React             from 'react'
 
@@ -21,7 +24,7 @@ export const Box: FC<BoxProps> = ({
 
   return (
     <div
-      className={className ? `${sprinklesClassName} ${className}` : sprinklesClassName}
+      className={className && `${sprinklesClassName} ${className}`}
       style={{ ...style, ...sprinklesStyle }}
       {...otherProps}
     >

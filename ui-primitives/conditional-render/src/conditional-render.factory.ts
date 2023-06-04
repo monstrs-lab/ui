@@ -1,9 +1,7 @@
-/* eslint-disable react/function-component-definition */
-
 import { createElement } from 'react'
 
 export type ConditionFunction = (props: any) => boolean
-export type Condition = string | ConditionFunction
+export type Condition = ConditionFunction | string
 
 export const ConditionalRender = (tag: string = 'div', condition: Condition = 'children') => {
   if (typeof condition === 'function') {

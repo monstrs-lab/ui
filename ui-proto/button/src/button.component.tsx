@@ -1,14 +1,13 @@
 import type { FC }                    from 'react'
 
-import styled                         from '@emotion/styled'
+import type { ButtonProps }           from './button.interfaces'
 
+import styled                         from '@emotion/styled'
 import { switchProp }                 from 'styled-tools'
 import { ifProp }                     from 'styled-tools'
 import { prop }                       from 'styled-tools'
 
 import { Button as PrimitivesButton } from '@ui-primitives/button'
-
-import { ButtonProps }                from './button.interfaces'
 
 const sizeMap = {
   small: 24,

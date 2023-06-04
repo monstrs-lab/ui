@@ -2,7 +2,6 @@ import type { SelectItemProps } from '@radix-ui/react-select'
 import type { FC }              from 'react'
 
 import { CheckIcon }            from '@radix-ui/react-icons'
-
 import React                    from 'react'
 
 import { SelectItemContainer }  from './select-item-container.component'

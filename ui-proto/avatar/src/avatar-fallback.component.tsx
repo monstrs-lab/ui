@@ -1,14 +1,13 @@
 import type { Theme } from '@ui-proto/theme'
 import type { FC }    from 'react'
 
-import styled         from '@emotion/styled'
 import { Fallback }   from '@radix-ui/react-avatar'
-
+import styled         from '@emotion/styled'
 import { switchProp } from 'styled-tools'
 import { prop }       from 'styled-tools'
 
 export interface AvatarFallbackProps {
-  size?: 'small' | 'normal' | 'large'
+  size?: 'large' | 'normal' | 'small'
 }
 
 export const AvatarFallback: FC<AvatarFallbackProps> = styled(Fallback)<AvatarFallbackProps>(

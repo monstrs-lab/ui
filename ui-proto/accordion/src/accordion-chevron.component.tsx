@@ -1,5 +1,5 @@
-import styled              from '@emotion/styled'
 import { ChevronDownIcon } from '@radix-ui/react-icons'
+import styled              from '@emotion/styled'
 
 export const AccordionChevron = styled(ChevronDownIcon)({
   color: 'black',

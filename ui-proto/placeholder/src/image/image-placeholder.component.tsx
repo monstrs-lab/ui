@@ -1,6 +1,6 @@
-import React                     from 'react'
+import type { ImagePlaceholderProps } from './image-placeholder.interfaces'
 
-import { ImagePlaceholderProps } from './image-placeholder.interfaces'
+import React                          from 'react'
 
 export const ImagePlaceholder = ({
   size = 80,

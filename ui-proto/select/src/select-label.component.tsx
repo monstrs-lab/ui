@@ -1,5 +1,5 @@
-import styled    from '@emotion/styled'
 import { Label } from '@radix-ui/react-select'
+import styled    from '@emotion/styled'
 
 export const SelectLabel = styled(Label)({
   padding: '0 25px',

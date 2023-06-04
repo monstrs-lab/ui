@@ -8,6 +8,10 @@ export const ImageBoxPlaceholder = ({
   size = 32,
   color = '#A0A4B3',
   backgroundColor = '#DADEED',
+}: {
+  size: number
+  color: string
+  backgroundColor: string
 }) => (
   <Box
     width='100%'

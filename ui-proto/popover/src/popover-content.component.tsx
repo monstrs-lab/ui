@@ -1,11 +1,10 @@
 import type { PopoverContentProps } from '@radix-ui/react-popover'
 import type { FC }                  from 'react'
 
-import styled                       from '@emotion/styled'
 import { Cross2Icon }               from '@radix-ui/react-icons'
 import { Content }                  from '@radix-ui/react-popover'
 import { keyframes }                from '@emotion/react'
-
+import styled                       from '@emotion/styled'
 import React                        from 'react'
 
 import { PopoverArrow }             from './popover-arrow.component'

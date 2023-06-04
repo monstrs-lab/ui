@@ -1,5 +1,5 @@
-import styled    from '@emotion/styled'
 import { Range } from '@radix-ui/react-slider'
+import styled    from '@emotion/styled'
 
 export const SliderRange = styled(Range)({
   position: 'absolute',

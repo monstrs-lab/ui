@@ -1,6 +1,7 @@
-import styled                          from '@emotion/styled'
-import { PlusIcon }                    from '@radix-ui/react-icons'
+/* eslint-disable react/prop-types */
 
+import { PlusIcon }                    from '@radix-ui/react-icons'
+import styled                          from '@emotion/styled'
 import React                           from 'react'
 
 import { Text }                        from '@ui-proto/text'

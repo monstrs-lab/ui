@@ -1,5 +1,5 @@
-import styled    from '@emotion/styled'
 import { Track } from '@radix-ui/react-slider'
+import styled    from '@emotion/styled'
 
 export const SliderTrack = styled(Track)({
   backgroundColor: 'black',

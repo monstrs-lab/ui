@@ -1,13 +1,14 @@
-import type { FC }        from 'react'
+import type { FC }          from 'react'
 
-import React              from 'react'
+import type { AvatarProps } from './avatar.interfaces'
 
-import { TextTransform }  from '@ui-primitives/text-transform'
+import React                from 'react'
 
-import { AvatarFallback } from './avatar-fallback.component'
-import { AvatarImage }    from './avatar-image.component'
-import { AvatarRoot }     from './avatar-root.component'
-import { AvatarProps }    from './avatar.interfaces'
+import { TextTransform }    from '@ui-primitives/text-transform'
+
+import { AvatarFallback }   from './avatar-fallback.component'
+import { AvatarImage }      from './avatar-image.component'
+import { AvatarRoot }       from './avatar-root.component'
 
 export const Avatar: FC<AvatarProps> = ({ size, image, fallback }) => (
   <AvatarRoot size={size}>

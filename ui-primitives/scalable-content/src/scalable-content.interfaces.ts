@@ -1,5 +1,5 @@
-import { ReactNode } from 'react'
-import { RefObject } from 'react'
+import type { ReactNode } from 'react'
+import type { RefObject } from 'react'
 
 export interface StyleResult {
   transform: string

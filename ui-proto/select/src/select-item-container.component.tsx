@@ -1,5 +1,5 @@
-import styled   from '@emotion/styled'
 import { Item } from '@radix-ui/react-select'
+import styled   from '@emotion/styled'
 
 export const SelectItemContainer = styled(Item)({
   all: 'unset',

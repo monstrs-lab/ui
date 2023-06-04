@@ -1,5 +1,5 @@
-import styled   from '@emotion/styled'
 import { List } from '@radix-ui/react-tabs'
+import styled   from '@emotion/styled'
 
 export const TabsList = styled(List)({
   flexShrink: 0,

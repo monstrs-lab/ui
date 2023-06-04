@@ -1,5 +1,5 @@
-import styled   from '@emotion/styled'
 import { Root } from '@radix-ui/react-tabs'
+import styled   from '@emotion/styled'
 
 export const TabsRoot = styled(Root)({
   display: 'flex',

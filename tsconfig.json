@@ -8,7 +8,7 @@
     "forceConsistentCasingInFileNames": true,
     "importHelpers": false,
     "isolatedModules": false,
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": false,
     "noImplicitReturns": false,
@@ -21,16 +21,18 @@
     "strict": true,
     "strictPropertyInitialization": false,
     "sourceMap": false,
-    "module": "esnext",
+    "module": "nodenext",
     "target": "es2021",
     "jsx": "react",
     "outDir": "./dist"
   },
   "include": [
+    "project.types.d.ts",
     "ui/**/*",
     "ui-proto/**/*",
     "css-primitives/**/*",
     "ui-primitives/**/*",
-    "ui-utils/**/*"
+    "ui-utils/**/*",
+    "storybook/**/*"
   ]
 }

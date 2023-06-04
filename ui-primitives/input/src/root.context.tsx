@@ -1,8 +1,8 @@
 import type { Scope }                  from '@radix-ui/react-context'
 import type { HTMLInputTypeAttribute } from 'react'
 import type { ElementRef }             from 'react'
+import type { Primitive }              from '@radix-ui/react-primitive'
 
-import { Primitive }                   from '@radix-ui/react-primitive'
 import { createContextScope }          from '@radix-ui/react-context'
 
 export const ROOT_NAME = 'Input'
@@ -16,11 +16,11 @@ export type InputContextValue = {
   required?: boolean
   value?: string
   placeholder?: string
-  onValueChange(value: string): void
+  onValueChange: (value: string) => void
   attachmentsPrefix: ElementRef<typeof Primitive.div> | null
-  onChangeAttachmentsPrefix(node: ElementRef<typeof Primitive.div> | null): void
+  onChangeAttachmentsPrefix: (node: ElementRef<typeof Primitive.div> | null) => void
   attachmentsSuffix: ElementRef<typeof Primitive.div> | null
-  onChangeAttachmentsSuffix(node: ElementRef<typeof Primitive.div> | null): void
+  onChangeAttachmentsSuffix: (node: ElementRef<typeof Primitive.div> | null) => void
 }
 
 const [createInputContext, createInputScope] = createContextScope(ROOT_NAME)

@@ -2,12 +2,11 @@ import type { AccordionContentProps }   from '@radix-ui/react-accordion'
 import type { Root as CollapsibleRoot } from '@radix-ui/react-collapsible'
 import type { ElementRef }              from 'react'
 
-import styled                           from '@emotion/styled'
 import { Content }                      from '@radix-ui/react-accordion'
 import { keyframes }                    from '@emotion/react'
-
-import React                            from 'react'
+import styled                           from '@emotion/styled'
 import { forwardRef }                   from 'react'
+import React                            from 'react'
 
 import { Text }                         from '@ui-proto/text'
 

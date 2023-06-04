@@ -1,9 +1,10 @@
-import type { FC }     from 'react'
+import type { FC }          from 'react'
 
-import React           from 'react'
+import type { LayoutProps } from '../layout'
 
-import { LayoutProps } from '../layout'
-import { Layout }      from '../layout'
+import React                from 'react'
+
+import { Layout }           from '../layout'
 
 export const Row: FC<LayoutProps> = ({
   boxSizing = 'border-box',

@@ -1,4 +1,4 @@
-export type AvatarSize = 'small' | 'normal' | 'large'
+export type AvatarSize = 'large' | 'normal' | 'small'
 
 export interface AvatarProps {
   children?: string

@@ -1,5 +1,5 @@
-import styled   from '@emotion/styled'
 import { Item } from '@radix-ui/react-accordion'
+import styled   from '@emotion/styled'
 
 export const AccordionItem = styled(Item)({
   overflow: 'hidden',

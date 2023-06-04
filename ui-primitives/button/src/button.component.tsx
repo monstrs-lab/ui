@@ -2,9 +2,8 @@ import type { ComponentPropsWithoutRef } from '@radix-ui/react-primitive'
 import type { ElementRef }               from 'react'
 
 import { Primitive }                     from '@radix-ui/react-primitive'
-
-import React                             from 'react'
 import { forwardRef }                    from 'react'
+import React                             from 'react'
 
 import { ContentDivider }                from '@ui-primitives/content-divider'
 

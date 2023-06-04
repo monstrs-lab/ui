@@ -13,7 +13,3 @@ export interface ProtoTheme {
     primary: string
   }
 }
-
-declare module '@emotion/react' {
-  export interface Theme extends ProtoTheme {}
-}

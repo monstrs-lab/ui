@@ -1,8 +1,7 @@
 import type { SelectTriggerProps as TriggerProps } from '@radix-ui/react-select'
 
-import styled                                      from '@emotion/styled'
 import { Trigger }                                 from '@radix-ui/react-select'
-
+import styled                                      from '@emotion/styled'
 import { switchProp }                              from 'styled-tools'
 import { prop }                                    from 'styled-tools'
 

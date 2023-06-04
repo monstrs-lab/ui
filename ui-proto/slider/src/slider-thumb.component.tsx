@@ -1,5 +1,5 @@
-import styled    from '@emotion/styled'
 import { Thumb } from '@radix-ui/react-slider'
+import styled    from '@emotion/styled'
 
 export const SliderThumb = styled(Thumb)({
   all: 'unset',

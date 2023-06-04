@@ -1,12 +1,12 @@
-import type { ScopedProps }              from './root.context'
 import type { ComponentPropsWithoutRef } from '@radix-ui/react-primitive'
 import type { ElementRef }               from 'react'
 
+import type { ScopedProps }              from './root.context'
+
 import { Primitive }                     from '@radix-ui/react-primitive'
 import { useComposedRefs }               from '@radix-ui/react-compose-refs'
-
-import React                             from 'react'
 import { forwardRef }                    from 'react'
+import React                             from 'react'
 
 import { useInputContext }               from './root.context'
 
@@ -16,7 +16,7 @@ const ATTACHMENTS_SUFFIX_NAME = 'AttachmentsSuffix'
 type AttachmentsElement = ElementRef<typeof Primitive.div>
 type PrimitiveDivProps = ComponentPropsWithoutRef<typeof Primitive.div>
 
-export interface AttachmentsProps extends PrimitiveDivProps {}
+export type AttachmentsProps = PrimitiveDivProps
 
 export const AttachmentsPrefix = forwardRef<AttachmentsElement, AttachmentsProps>((
   { __scopeInput, children, ...containerProps }: ScopedProps<AttachmentsProps>,

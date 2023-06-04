@@ -8,7 +8,7 @@ export const useGoogleFonts = (fontFamily: string, fontWeight: number) => {
     const font = fonts[fontFamily]
 
     if (font) {
-      if (font.variants.normal && font.variants.normal[fontWeight]) {
+      if (font.variants.normal?.[fontWeight]) {
         load({ [fontFamily]: [String(fontWeight)] })
       }
     }

@@ -1,5 +1,5 @@
-import styled      from '@emotion/styled'
 import { Trigger } from '@radix-ui/react-tabs'
+import styled      from '@emotion/styled'
 
 export const TabsTrigger = styled(Trigger)({
   all: 'unset',

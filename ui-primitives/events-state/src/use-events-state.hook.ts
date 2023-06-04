@@ -1,15 +1,17 @@
-import { MutableRefObject }   from 'react'
-import { useEffect }          from 'react'
-import { useState }           from 'react'
-import { useMemo }            from 'react'
+import type { MutableRefObject } from 'react'
 
-import { EventsState }        from './events-state.interfaces'
-import { fillOppositeEvents } from './events-state.utils'
-import { mergeState }         from './events-state.utils'
+import type { EventsState }      from './events-state.interfaces'
+
+import { useEffect }             from 'react'
+import { useState }              from 'react'
+import { useMemo }               from 'react'
+
+import { fillOppositeEvents }    from './events-state.utils'
+import { mergeState }            from './events-state.utils'
 
 export const useEventsState = (
   ref: MutableRefObject<HTMLElement>,
-  originalEvents: string[] = []
+  originalEvents: Array<string> = []
 ): EventsState => {
   const events = useMemo(() => fillOppositeEvents(originalEvents), [originalEvents])
 
@@ -28,7 +30,9 @@ export const useEventsState = (
     const callbacks = events.reduce(
       (result, event) => ({
         ...result,
-        [event]: () => setState((prev) => mergeState(prev, event)),
+        [event]: () => {
+          setState((prev) => mergeState(prev, event))
+        },
       }),
       {}
     )

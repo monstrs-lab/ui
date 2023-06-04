@@ -1,10 +1,9 @@
 import type { TooltipContentProps } from '@radix-ui/react-tooltip'
 import type { FC }                  from 'react'
 
-import styled                       from '@emotion/styled'
 import { Content }                  from '@radix-ui/react-tooltip'
 import { keyframes }                from '@emotion/react'
-
+import styled                       from '@emotion/styled'
 import React                        from 'react'
 
 import { TooltipArrow }             from './tooltip-arrow.component'

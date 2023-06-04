@@ -1,5 +1,5 @@
-import styled      from '@emotion/styled'
 import { Content } from '@radix-ui/react-select'
+import styled      from '@emotion/styled'
 
 export const SelectContent = styled(Content)({
   overflow: 'hidden',

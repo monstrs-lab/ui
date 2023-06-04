@@ -3,7 +3,9 @@
  */
 
 import { render }        from '@testing-library/react'
-
+import { describe }      from '@jest/globals'
+import { it }            from '@jest/globals'
+import { expect }        from '@jest/globals'
 import React             from 'react'
 
 import { TextTransform } from './text-transform.component'

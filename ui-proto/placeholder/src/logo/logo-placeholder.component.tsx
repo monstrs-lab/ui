@@ -1,11 +1,13 @@
-import React                    from 'react'
-import { FC }                   from 'react'
+import type { FC }                   from 'react'
 
-import { Layout }               from '@ui-proto/layout'
-import { Text }                 from '@ui-proto/text'
+import type { LogoPlaceholderProps } from './logo-placeholder.interfaces'
 
-import { ImagePlaceholder }     from '../image'
-import { LogoPlaceholderProps } from './logo-placeholder.interfaces'
+import React                         from 'react'
+
+import { Layout }                    from '@ui-proto/layout'
+import { Text }                      from '@ui-proto/text'
+
+import { ImagePlaceholder }          from '../image'
 
 export const LogoPlaceholder: FC<LogoPlaceholderProps> = ({
   type = 'horizontal',

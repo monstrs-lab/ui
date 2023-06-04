@@ -1,5 +1,5 @@
-import styled   from '@emotion/styled'
 import { Root } from '@radix-ui/react-switch'
+import styled   from '@emotion/styled'
 
 export const SwitchRoot = styled(Root)({
   all: 'unset',

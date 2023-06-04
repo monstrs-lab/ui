@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import React                         from 'react'
 
 import { Button as ButtonComponent } from './button.component'
@@ -9,9 +11,9 @@ export default {
 export const Button = ({ containerWith, childrenPrefix, childrenSuffix, children, ...props }) => (
   <div style={{ width: containerWith, display: 'flex', justifyContent: 'center' }}>
     <ButtonComponent {...props}>
-      {childrenPrefix && <span>{childrenPrefix}</span>}
+      {!!childrenPrefix && <span>{childrenPrefix}</span>}
       {children}
-      {childrenSuffix && <span>{childrenSuffix}</span>}
+      {!!childrenSuffix && <span>{childrenSuffix}</span>}
     </ButtonComponent>
   </div>
 )

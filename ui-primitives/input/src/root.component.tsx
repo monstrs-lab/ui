@@ -3,14 +3,14 @@ import type { FC }                       from 'react'
 import type { ReactNode }                from 'react'
 import type { ElementRef }               from 'react'
 
+import type { InputContextValue }        from './root.context'
+import type { ScopedProps }              from './root.context'
+
 import { Primitive }                     from '@radix-ui/react-primitive'
 import { useControllableState }          from '@radix-ui/react-use-controllable-state'
-
-import React                             from 'react'
 import { useState }                      from 'react'
+import React                             from 'react'
 
-import { InputContextValue }             from './root.context'
-import { ScopedProps }                   from './root.context'
 import { InputProvider }                 from './root.context'
 
 type PrimitiveDivProps = ComponentPropsWithoutRef<typeof Primitive.div>

@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import React                     from 'react'
 
 import { Text as TextComponent } from './text.component'

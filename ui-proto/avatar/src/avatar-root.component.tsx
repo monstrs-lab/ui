@@ -1,13 +1,12 @@
 import type { FC }    from 'react'
 
-import styled         from '@emotion/styled'
 import { Root }       from '@radix-ui/react-avatar'
-
+import styled         from '@emotion/styled'
 import { switchProp } from 'styled-tools'
 import { prop }       from 'styled-tools'
 
 export interface AvatarRootProps {
-  size?: 'small' | 'normal' | 'large'
+  size?: 'large' | 'normal' | 'small'
 }
 
 export const AvatarRoot: FC<AvatarRootProps> = styled(Root)<AvatarRootProps>(

@@ -1,6 +1,6 @@
-import styled               from '@emotion/styled'
 import { ScrollDownButton } from '@radix-ui/react-select'
 import { ScrollUpButton }   from '@radix-ui/react-select'
+import styled               from '@emotion/styled'
 
 const scrollButtonStyles = {
   display: 'flex',

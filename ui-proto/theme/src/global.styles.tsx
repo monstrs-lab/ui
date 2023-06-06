@@ -1,8 +1,10 @@
-import { Global } from '@emotion/react'
-import { css }    from '@emotion/react'
-import React      from 'react'
+import type { JSX } from 'react'
 
-export const GlobalStyles = () => (
+import { Global }   from '@emotion/react'
+import { css }      from '@emotion/react'
+import React        from 'react'
+
+export const GlobalStyles = (): JSX.Element => (
   <Global
     styles={css`
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');

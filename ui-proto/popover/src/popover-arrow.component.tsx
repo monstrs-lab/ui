@@ -1,7 +1,9 @@
-import { Arrow } from '@radix-ui/react-popover'
-import React     from 'react'
+import type { JSX } from 'react'
 
-export const PopoverArrow = () => (
+import { Arrow }    from '@radix-ui/react-popover'
+import React        from 'react'
+
+export const PopoverArrow = (): JSX.Element => (
   <Arrow asChild>
     <svg viewBox='0 0 300 100' fill='none'>
       <polygon points='0,0 300,0 150,100' fill='white' />

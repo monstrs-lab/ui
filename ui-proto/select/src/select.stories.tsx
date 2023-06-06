@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import type { JSX }                  from 'react'
+
 import React                         from 'react'
 
 import { Box }                       from '@ui-proto/layout'
@@ -14,7 +16,7 @@ export default {
   title: 'Components/Select',
 }
 
-export const Select = ({ containerWith }) => (
+export const Select = ({ containerWith }): JSX.Element => (
   <Box width={containerWith}>
     <SelectComponent defaultValue='blueberry'>
       <SelectGroup>

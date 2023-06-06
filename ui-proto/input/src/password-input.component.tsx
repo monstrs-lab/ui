@@ -1,4 +1,4 @@
-import type { FC }         from 'react'
+import type { JSX }        from 'react'
 
 import type { InputProps } from './input.component'
 
@@ -11,7 +11,7 @@ import { Input }           from './input.component'
 
 export type PasswordInputProps = Omit<InputProps, 'suffix'>
 
-export const PasswordInput: FC<PasswordInputProps> = (props) => {
+export const PasswordInput = (props: PasswordInputProps): JSX.Element => {
   const [showPassword, setShowPassword] = useState(false)
 
   return (
@@ -21,13 +21,13 @@ export const PasswordInput: FC<PasswordInputProps> = (props) => {
       suffix={
         showPassword ? (
           <EyeNoneIcon
-            onClick={() => {
+            onClick={(): void => {
               setShowPassword((prevState) => !prevState)
             }}
           />
         ) : (
           <EyeOpenIcon
-            onClick={() => {
+            onClick={(): void => {
               setShowPassword((prevState) => !prevState)
             }}
           />

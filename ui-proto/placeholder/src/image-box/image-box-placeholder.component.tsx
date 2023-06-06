@@ -1,3 +1,5 @@
+import type { JSX }         from 'react'
+
 import React                from 'react'
 
 import { Box }              from '@ui-proto/layout'
@@ -12,7 +14,7 @@ export const ImageBoxPlaceholder = ({
   size: number
   color: string
   backgroundColor: string
-}) => (
+}): JSX.Element => (
   <Box
     width='100%'
     height='100%'

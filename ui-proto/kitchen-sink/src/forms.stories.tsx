@@ -1,3 +1,5 @@
+import type { JSX }        from 'react'
+
 import React               from 'react'
 
 import { Button }          from '@ui-proto/button'
@@ -21,7 +23,7 @@ export default {
   title: 'KitchenSink/Forms',
 }
 
-export const Forms = () => (
+export const Forms = (): JSX.Element => (
   <Column width={400}>
     <Layout marginBottom={30} justifyContent='center'>
       <Text fontSize='medium'>Create New Account</Text>

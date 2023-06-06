@@ -32,6 +32,6 @@ export const TextTransform: FC<TextTransformProps> = ({ children, ...props }) =>
       throw error
     }
 
-    return children as ReactElement
+    return children
   }
 }

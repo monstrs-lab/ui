@@ -1,3 +1,5 @@
+import type { JSX }                  from 'react'
+
 import type { LayoutProps }          from './layout.interfaces'
 
 import React                         from 'react'
@@ -15,7 +17,7 @@ export const Layout = ({
   flexDirection,
   justifyContent,
   alignItems,
-}: LayoutProps) => (
+}: LayoutProps): JSX.Element => (
   <LayoutComponent
     display={display}
     width={width}

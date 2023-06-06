@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import type { JSX }                            from 'react'
+
 import React                                   from 'react'
 
 import { ToggleGroupItem }                     from './toggle-group-item.component'
@@ -9,7 +11,7 @@ export default {
   title: 'Components/ToggleGroup',
 }
 
-export const ToggleGroup = ({ type }) => (
+export const ToggleGroup = ({ type }): JSX.Element => (
   <ToggleGroupComponent type={type} defaultValue='center' aria-label='Text alignment'>
     <ToggleGroupItem value='left' aria-label='Left aligned'>
       First

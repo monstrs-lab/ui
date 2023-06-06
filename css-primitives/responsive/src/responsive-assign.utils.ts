@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+
 import { getValueWithUnit } from '@css-primitives/units'
 
 import { ResponsiveTarget } from './responsive-target.enum'

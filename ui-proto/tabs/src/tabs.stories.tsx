@@ -1,3 +1,5 @@
+import type { JSX }              from 'react'
+
 import React                     from 'react'
 
 import { Box }                   from '@ui-proto/layout'
@@ -12,7 +14,7 @@ export default {
   title: 'Components/Tabs',
 }
 
-export const Tabs = () => (
+export const Tabs = (): JSX.Element => (
   <Box width={300}>
     <TabsComponent defaultValue='tab1'>
       <TabsList aria-label='Manage your account'>

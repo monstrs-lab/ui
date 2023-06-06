@@ -10,7 +10,7 @@ module.exports = {
   },
   stories: ['../../**/*.stories.@(ts|tsx|mdx)'],
   addons: ['@storybook/addon-essentials'],
-  webpackFinal: async (config) => {
+  webpackFinal: async (config): Promise<any> => {
     // eslint-disable-next-line no-param-reassign
     config.resolve.fallback.assert = false
 

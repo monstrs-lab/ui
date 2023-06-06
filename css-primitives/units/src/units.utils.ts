@@ -1,8 +1,8 @@
 import { unitless } from './unitless.keys'
 
-const isCustomProperty = (property: string) => property.charCodeAt(1) === 45
+const isCustomProperty = (property: string): boolean => property.charCodeAt(1) === 45
 
-export const getValueWithUnit = (property, value) => {
+export const getValueWithUnit = (property, value: number | string): number | string => {
   if (
     unitless[property] !== 1 &&
     !isCustomProperty(property) &&
@@ -11,5 +11,6 @@ export const getValueWithUnit = (property, value) => {
   ) {
     return `${value}px`
   }
+
   return value
 }

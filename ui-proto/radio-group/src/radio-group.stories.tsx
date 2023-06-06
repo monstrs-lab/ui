@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/hook-use-state */
 
+import type { JSX }                          from 'react'
+
 import { useState }                          from 'react'
 import React                                 from 'react'
 
@@ -15,7 +17,7 @@ export default {
   title: 'Components/RadioGroup',
 }
 
-export const RadioGroup = () => {
+export const RadioGroup = (): JSX.Element => {
   const [value, onChange] = useState('default')
 
   return (

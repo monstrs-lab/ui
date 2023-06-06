@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 
 import { fonts }     from './fonts'
 
-export const useGoogleFonts = (fontFamily: string, fontWeight: number) => {
+export const useGoogleFonts = (fontFamily: string, fontWeight: number): void => {
   useEffect(() => {
     const font = fonts[fontFamily]
 

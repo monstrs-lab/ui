@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import type { JSX }                        from 'react'
+
 import React                               from 'react'
 
 import { AccordionContent }                from './accordion-content.component'
@@ -11,7 +13,7 @@ export default {
   title: 'Components/Accordion',
 }
 
-export const Accordion = ({ type }) => (
+export const Accordion = ({ type }): JSX.Element => (
   <AccordionComponent collapsible type={type} defaultValue='item-1'>
     <AccordionItem value='item-1'>
       <AccordionTrigger>Is it accessible?</AccordionTrigger>

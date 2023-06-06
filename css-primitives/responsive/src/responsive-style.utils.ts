@@ -1,6 +1,9 @@
 import { ResponsiveTarget } from './responsive-target.enum'
 
-export const createResponsiveStyle = (properties: Array<string>, vars: Record<string, string>) => ({
+export const createResponsiveStyle = (
+  properties: Array<string>,
+  vars: Record<string, string>
+): any => ({
   ...properties.reduce(
     (result, property) => ({
       ...result,

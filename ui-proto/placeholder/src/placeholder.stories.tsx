@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import type { JSX }                   from 'react'
+
 import React                          from 'react'
 
 import { Box }                        from '@ui-proto/layout'
@@ -13,7 +15,7 @@ export default {
   title: 'Components/Placeholder',
 }
 
-export const Placeholder = ({ type, ...props }) => {
+export const Placeholder = ({ type, ...props }): JSX.Element => {
   if (type === 'background-image') {
     return (
       <Box position='absolute' top={0} right={0} bottom={0} left={0}>

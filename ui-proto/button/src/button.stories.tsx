@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import type { JSX }                  from 'react'
+
 import React                         from 'react'
 
 import { Button as ButtonComponent } from './button.component'
@@ -8,7 +10,13 @@ export default {
   title: 'Components/Button',
 }
 
-export const Button = ({ containerWith, childrenPrefix, childrenSuffix, children, ...props }) => (
+export const Button = ({
+  containerWith,
+  childrenPrefix,
+  childrenSuffix,
+  children,
+  ...props
+}): JSX.Element => (
   <div style={{ width: containerWith, display: 'flex', justifyContent: 'center' }}>
     <ButtonComponent {...props}>
       {!!childrenPrefix && <span>{childrenPrefix}</span>}

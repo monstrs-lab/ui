@@ -1,3 +1,5 @@
+import type { JSX }            from 'react'
+
 import type { BoxProps }       from './box.interfaces'
 
 import React                   from 'react'
@@ -15,7 +17,7 @@ export const Box = ({
   backgroundColor,
   borderRadius,
   boxShadow,
-}: BoxProps) => (
+}: BoxProps): JSX.Element => (
   <BoxComponent
     display={display}
     width={width}

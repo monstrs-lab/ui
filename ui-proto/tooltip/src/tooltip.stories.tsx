@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import type { JSX }                    from 'react'
+
 import { PlusIcon }                    from '@radix-ui/react-icons'
 import styled                          from '@emotion/styled'
 import React                           from 'react'
@@ -30,7 +32,7 @@ export default {
   title: 'Components/Tooltip',
 }
 
-export const Tooltip = ({ side, sideOffset }) => (
+export const Tooltip = ({ side, sideOffset }): JSX.Element => (
   <TooltipComponent>
     <TooltipTrigger asChild>
       <IconButton>

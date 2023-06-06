@@ -1,3 +1,5 @@
+import type { JSX }              from 'react'
+
 import React                     from 'react'
 
 import { Text as TextComponent } from './index'
@@ -6,7 +8,7 @@ export default {
   title: 'Components/Text',
 }
 
-export const Text = (props) => <TextComponent {...props} />
+export const Text = (props): JSX.Element => <TextComponent {...props} />
 
 Text.args = {
   children: 'Almost before we knew it, we had left the ground.',

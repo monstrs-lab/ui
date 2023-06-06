@@ -30,7 +30,7 @@ export const useEventsState = (
     const callbacks = events.reduce(
       (result, event) => ({
         ...result,
-        [event]: () => {
+        [event]: (): void => {
           setState((prev) => mergeState(prev, event))
         },
       }),

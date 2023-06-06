@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import type { JSX }                from 'react'
+
 import React                       from 'react'
 
 import { Input }                   from '@ui-proto/input'
@@ -12,7 +14,7 @@ export default {
   title: 'Components/Label',
 }
 
-export const Label = ({ type }) => (
+export const Label = ({ type }): JSX.Element => (
   <Row alignItems='center'>
     <Layout marginRight={16}>
       <LabelComponent htmlFor='id'>First Name</LabelComponent>

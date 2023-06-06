@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 
+import type { JSX }                  from 'react'
+
 import React                         from 'react'
 
 import { Row }                       from '@ui-proto/layout'
@@ -12,7 +14,7 @@ export default {
   title: 'Components/Switch',
 }
 
-export const Switch = () => (
+export const Switch = (): JSX.Element => (
   <Row alignItems='center'>
     <Layout>
       <label htmlFor='s1'>

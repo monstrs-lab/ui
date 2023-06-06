@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import type { JSX }              from 'react'
+
 import React                     from 'react'
 
 import { Text as TextComponent } from './text.component'
@@ -8,7 +10,7 @@ export default {
   title: 'Components/Text',
 }
 
-export const Text = ({ children, cursor, color, fontSize }) => (
+export const Text = ({ children, cursor, color, fontSize }): JSX.Element => (
   <TextComponent cursor={cursor} color={color} fontSize={fontSize}>
     {children}
   </TextComponent>

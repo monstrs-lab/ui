@@ -1,8 +1,10 @@
+import type { JSX }      from 'react'
+
 import React             from 'react'
 
 import { ThemeProvider } from '@ui-proto/theme'
 
-const withThemeProvider = (Story, context) => (
+const withThemeProvider = (Story, context): JSX.Element => (
   <ThemeProvider>
     <Story {...context} />
   </ThemeProvider>

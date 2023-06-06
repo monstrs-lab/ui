@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import type { JSX }                from 'react'
+
 import { useState }                from 'react'
 import React                       from 'react'
 
@@ -9,7 +11,7 @@ export default {
   title: 'Components/Input',
 }
 
-export const Input = ({ containerWith, ...props }) => {
+export const Input = ({ containerWith, ...props }): JSX.Element => {
   const [value, setValue] = useState('Контент')
 
   return (

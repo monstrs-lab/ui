@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import type { JSX }                    from 'react'
+
 import { PlusIcon }                    from '@radix-ui/react-icons'
 import styled                          from '@emotion/styled'
 import React                           from 'react'
@@ -30,7 +32,7 @@ export default {
   title: 'Components/Popover',
 }
 
-export const Popover = ({ side, sideOffset }) => (
+export const Popover = ({ side, sideOffset }): JSX.Element => (
   <PopoverComponent>
     <PopoverTrigger asChild>
       <IconButton>

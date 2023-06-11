@@ -2861,9 +2861,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/config-eslint@npm:0.3.1":
-  version: 0.3.1
-  resolution: "@monstrs/config-eslint@npm:0.3.1"
+"@monstrs/config-eslint@npm:0.3.5":
+  version: 0.3.5
+  resolution: "@monstrs/config-eslint@npm:0.3.5"
   dependencies:
     "@monstrs/config-prettier": "npm:0.4.1"
     "@next/eslint-plugin-next": "npm:^13.4.4"
@@ -2883,17 +2883,17 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: e184e743c6ad5220955826c562ed0b0c2ff8af7fddb11a73b349801758e39df93c712de4f336789dd31aa3b8221cc491ba10587fdd720199af744225ec0d87e4
+  checksum: bfc64919726f7a911cd49cb5dd5f7400d14798019c9034bf6105051843cc6b6874b273ed6c58b54a8cdff8d73b831bd6b637b012fcc33c1cef3b2d2b341993c9
   languageName: node
   linkType: hard
 
-"@monstrs/config-jest@npm:0.3.1":
-  version: 0.3.1
-  resolution: "@monstrs/config-jest@npm:0.3.1"
+"@monstrs/config-jest@npm:0.3.3":
+  version: 0.3.3
+  resolution: "@monstrs/config-jest@npm:0.3.3"
   dependencies:
     "@emotion/jest": "npm:^11.11.0"
     "@monstrs/config-typescript": "npm:0.3.1"
-    "@monstrs/jest-resolver": "npm:0.3.1"
+    "@monstrs/jest-resolver": "npm:0.3.3"
     jest-static-stubs: "npm:^0.0.1"
     ts-jest: "npm:^29.1.0"
   peerDependenciesMeta:
@@ -2901,7 +2901,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: 6b06584e8a88da032c3fde8180fe97bd9711443296aa9c8df5c0b8459e0610101f23d3e9572049895370b503b0da31a65a071ce5ffb343b3b58fec5a4967b67c
+  checksum: 627472b8957b2b44f2fc152ae4518878d34b0462b3abc797304653aa1a70b715e0f497a5529a2f52f779db7afd11c95289d09c11a18e19f41f81d3c9b1e028a5
   languageName: node
   linkType: hard
 
@@ -2921,12 +2921,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/jest-resolver@npm:0.3.1":
-  version: 0.3.1
-  resolution: "@monstrs/jest-resolver@npm:0.3.1"
+"@monstrs/jest-resolver@npm:0.3.3":
+  version: 0.3.3
+  resolution: "@monstrs/jest-resolver@npm:0.3.3"
   dependencies:
     ts-jest-resolver: "npm:^2.0.1"
-  checksum: 7b08d6142302aed965bde85f091934c2808515f11a423231f1c88c28ad4408e51fcceb9967497948149ffda602007d48c133b2f923d864478dd5c945c983d936
+  checksum: dd3c347b47736e99b75040b491a9cbdcbedcf78234e1a3b9e052f430c3071ddb344741f4bc6ab292c56a590aa1a9683c7f95f8434a3d4ed1f0bcdbde84dcdc9b
   languageName: node
   linkType: hard
 
@@ -2942,13 +2942,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/tools-runtime@npm:^0.2.1":
-  version: 0.2.1
-  resolution: "@monstrs/tools-runtime@npm:0.2.1"
+"@monstrs/tools-runtime@npm:^0.2.5":
+  version: 0.2.5
+  resolution: "@monstrs/tools-runtime@npm:0.2.5"
   dependencies:
     "@jest/core": "npm:^29.5.0"
-    "@monstrs/config-eslint": "npm:0.3.1"
-    "@monstrs/config-jest": "npm:0.3.1"
+    "@monstrs/config-eslint": "npm:0.3.5"
+    "@monstrs/config-jest": "npm:0.3.3"
     "@svgr/core": "npm:^8.0.0"
     "@svgr/plugin-jsx": "npm:^8.0.1"
     eslint: "npm:^8.42.0"
@@ -2956,7 +2956,7 @@ __metadata:
     ts-loader: "npm:^9.4.3"
     typescript: "npm:^5.1.3"
     webpack: "npm:^5.85.0"
-  checksum: 03db19b075d044314014151593eb5f67b8f9faf0b009fba8e459668eb80614eac0791332906e06e1c6a87d9df7688ce182e727067a89ce6127e387f9cb46ba69
+  checksum: 55bb41bce063cd84cc69e6318332111e03617498c61a9e7e7be271762a46d8b26449d3ee2ec2b24a5aae298cca777311e90d7c99257c8993fb0a2d63c098d6b8
   languageName: node
   linkType: hard
 
@@ -17406,7 +17406,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ui@workspace:."
   dependencies:
-    "@monstrs/tools-runtime": "npm:^0.2.1"
+    "@monstrs/tools-runtime": "npm:^0.2.5"
     "@types/node": "npm:^18.14.6"
     jest-environment-jsdom: "npm:^29.5.0"
     typescript: "npm:^5.1.3"

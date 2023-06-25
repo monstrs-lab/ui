@@ -14,9 +14,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
-    "@emotion/babel-plugin": "^11.10.6",
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-docs": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",
@@ -27,6 +24,7 @@
     "@types/express": "^4.17.17",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "@vanilla-extract/css": "^1.11.1",
     "@vanilla-extract/webpack-plugin": "^2.2.0",
     "babel-loader": "^8.2.5",
     "core-js": "^3.29.0",

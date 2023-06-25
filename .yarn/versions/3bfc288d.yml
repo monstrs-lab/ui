@@ -1,8 +1,0 @@
-releases:
-  "@ui-primitives/button": patch
-  "@ui-primitives/conditional-render": patch
-  "@ui-primitives/content-divider": patch
-  "@ui-primitives/events-state": patch
-  "@ui-primitives/input": patch
-  "@ui-primitives/scalable-content": patch
-  "@ui-primitives/text-transform": patch

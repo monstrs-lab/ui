@@ -57,7 +57,7 @@ export const Control = forwardRef<ControlElement, ControlProps>((
         paddingLeft: offsetLeft,
         paddingRight: offsetRight,
       }}
-      onChange={(event) => {
+      onChange={(event): void => {
         context.onValueChange(event?.target.value)
       }}
     />

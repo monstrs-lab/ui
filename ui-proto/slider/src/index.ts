@@ -1,5 +1,0 @@
-export * from './slider-range.component'
-export * from './slider-root.component'
-export * from './slider-thumb.component'
-export * from './slider-track.component'
-export * from './slider.component'

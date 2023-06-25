@@ -1,6 +1,19 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -10,9 +23,9 @@
     "isolatedModules": false,
     "moduleResolution": "nodenext",
     "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": false,
-    "noImplicitReturns": false,
-    "noImplicitThis": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "pretty": true,

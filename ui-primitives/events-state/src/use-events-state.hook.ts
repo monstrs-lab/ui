@@ -30,7 +30,7 @@ export const useEventsState = (
     const callbacks = events.reduce(
       (result, event) => ({
         ...result,
-        [event]: () => {
+        [event]: (): void => {
           setState((prev) => mergeState(prev, event))
         },
       }),
@@ -39,14 +39,14 @@ export const useEventsState = (
 
     if (node) {
       Object.keys(callbacks).forEach((event) => {
-        node.addEventListener(event, callbacks[event])
+        node.addEventListener(event, callbacks[event as keyof typeof callbacks])
       })
     }
 
     return () => {
       if (node) {
         Object.keys(callbacks).forEach((event) => {
-          node.removeEventListener(event, callbacks[event])
+          node.removeEventListener(event, callbacks[event as keyof typeof callbacks])
         })
       }
     }

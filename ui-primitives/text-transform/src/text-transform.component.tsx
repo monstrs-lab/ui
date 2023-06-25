@@ -5,8 +5,9 @@ import type { TextTransformProps } from './text-transform.interfaces'
 
 export const TextTransform: FC<TextTransformProps> = ({ children, ...props }) => {
   try {
-    const transformed = Object.keys(props).reduce((result, key) => {
-      const args = props[key]
+    const transformed = Object.keys(props).reduce((result: string, key) => {
+      const args: TextTransformProps[keyof Omit<TextTransformProps, 'children'>] =
+        props[key as keyof Omit<TextTransformProps, 'children'>]
 
       switch (key) {
         case 'upperCase':
@@ -18,9 +19,11 @@ export const TextTransform: FC<TextTransformProps> = ({ children, ...props }) =>
         case 'lastLetter':
           return result.substr(-1)
         case 'substr':
-          return Array.isArray(args) ? result.substr(args[0], args[1]) : result.substr(args)
+          return Array.isArray(args)
+            ? result.substr((args as [number, number])[0], (args as [number, number])[1])
+            : result.substr(args as number)
         case 'replace':
-          return result.replace(args[0], args[1])
+          return result.replace((args as [string, string])[0], (args as [string, string])[1])
         default:
           return result
       }

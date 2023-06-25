@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
+/* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 
 const { VanillaExtractPlugin } = require('@vanilla-extract/webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -10,7 +12,7 @@ module.exports = {
   },
   stories: ['../../**/*.stories.@(ts|tsx|mdx)'],
   addons: ['@storybook/addon-essentials'],
-  webpackFinal: async (config): Promise<any> => {
+  webpackFinal: async (config: any): Promise<any> => {
     // eslint-disable-next-line no-param-reassign
     config.resolve.fallback.assert = false
 
@@ -21,7 +23,7 @@ module.exports = {
       new MiniCssExtractPlugin()
     )
 
-    config.module?.rules?.forEach((rule) => {
+    config.module?.rules?.forEach((rule: any) => {
       if (typeof rule !== 'string' && rule.test instanceof RegExp && rule.test.test('test.css')) {
         // eslint-disable-next-line no-param-reassign
         rule.exclude = /\.vanilla\.css$/i

@@ -20,12 +20,12 @@
     "webpack-virtual-modules": "^0.4.2"
   },
   "devDependencies": {
-    "@monstrs/tools-runtime": "^0.2.11",
+    "@monstrs/tools-runtime": "^0.2.13",
     "@types/node": "^18.14.6",
     "jest-environment-jsdom": "^29.5.0",
     "typescript": "^5.1.6"
   },
-  "packageManager": "yarn@3.6.0",
+  "packageManager": "yarn@3.6.1",
   "tools": {
     "schematic": {
       "collection": "@monstrs/schematics",

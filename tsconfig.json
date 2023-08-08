@@ -46,6 +46,7 @@
     "ui-proto/**/*",
     "css-primitives/**/*",
     "ui-primitives/**/*",
+    "ui-admin/**/*",
     "ui-utils/**/*",
     "storybook/**/*"
   ]

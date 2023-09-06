@@ -15,7 +15,7 @@ import { InputProvider }                 from './root.context'
 
 type PrimitiveDivProps = ComponentPropsWithoutRef<typeof Primitive.div>
 
-export interface RootProps extends PrimitiveDivProps {
+export interface RootProps extends Omit<PrimitiveDivProps, 'prefix'> {
   defaultValue?: string
   type?: InputContextValue['type']
   name?: InputContextValue['name']

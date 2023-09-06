@@ -1,0 +1,28 @@
+{
+  "name": "@ui-admin/kitchen-sink",
+  "version": "0.0.12",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./src/index.ts"
+  },
+  "main": "src/index.ts",
+  "dependencies": {
+    "@ui-admin/input": "workspace:0.0.12",
+    "@ui-admin/layout": "workspace:0.0.12",
+    "@ui-admin/sprinkles": "workspace:0.0.12",
+    "@ui-admin/table": "workspace:0.0.12",
+    "@ui-admin/text": "workspace:0.0.12"
+  },
+  "devDependencies": {
+    "@storybook/react": "^7.4.0",
+    "@types/react": "^18.2.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": "^18"
+  }
+}

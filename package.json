@@ -5,25 +5,25 @@
     "storybook/*",
     "css-primitives/*",
     "ui-primitives/*",
+    "ui-admin/*",
     "ui-proto/*",
     "ui-utils/*",
     "ui/*"
   ],
   "resolutions": {
-    "css-loader": "^5.0.0",
-    "dotenv-webpack": "^6.0.0",
-    "html-webpack-plugin": "^5.0.0",
-    "style-loader": "^2.0.0",
-    "terser-webpack-plugin": "^5.0.0",
-    "webpack": "^5.0.0",
-    "webpack-dev-middleware": "^4.1.0",
-    "webpack-virtual-modules": "^0.4.2"
+    "@types/react": "^18.2.21",
+    "webpack": "5.88.2"
   },
   "devDependencies": {
     "@monstrs/tools-runtime": "^0.2.15",
-    "@types/node": "^18.14.6",
-    "jest-environment-jsdom": "^29.5.0",
+    "@types/node": "^20.5.9",
+    "jest-environment-jsdom": "^29.6.4",
     "typescript": "^5.1.6"
+  },
+  "dependenciesMeta": {
+    "@glideapps/glide-data-grid@5.2.1": {
+      "unplugged": true
+    }
   },
   "packageManager": "yarn@3.6.1",
   "tools": {

@@ -15,17 +15,17 @@
     "webpack": "5.88.2"
   },
   "devDependencies": {
-    "@monstrs/tools-runtime": "^0.2.15",
+    "@monstrs/tools-runtime": "^0.2.16",
     "@types/node": "^20.5.9",
     "jest-environment-jsdom": "^29.6.4",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   },
   "dependenciesMeta": {
     "@glideapps/glide-data-grid@5.2.1": {
       "unplugged": true
     }
   },
-  "packageManager": "yarn@3.6.1",
+  "packageManager": "yarn@3.6.3",
   "tools": {
     "schematic": {
       "collection": "@monstrs/schematics",

@@ -10,5 +10,5 @@ export interface TableCellProps {
 }
 
 export const TableCell = (props: TableCellProps): ReactElement => (
-  <tr {...props} className={tableCellStyles} />
+  <td {...props} className={tableCellStyles} />
 )

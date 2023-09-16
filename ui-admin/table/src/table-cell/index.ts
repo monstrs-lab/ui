@@ -1,1 +1,1 @@
-export * from './table-cell.component.js'
+export * from './table-cell.component.jsx'

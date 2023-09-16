@@ -1,7 +1,7 @@
 import type { Scope }                  from '@radix-ui/react-context'
+import type { Primitive }              from '@radix-ui/react-primitive'
 import type { HTMLInputTypeAttribute } from 'react'
 import type { ElementRef }             from 'react'
-import type { Primitive }              from '@radix-ui/react-primitive'
 
 import { createContextScope }          from '@radix-ui/react-context'
 

@@ -1,9 +1,9 @@
 import type { TransformOptions } from '@babel/core'
 import type { Configuration }    from 'webpack'
 
+import { createRequire }         from 'node:module'
 import { join }                  from 'node:path'
 import { dirname }               from 'node:path'
-import { createRequire }         from 'node:module'
 
 import { VanillaExtractPlugin }  from '@vanilla-extract/webpack-plugin'
 import MiniCssExtractPlugin      from 'mini-css-extract-plugin'

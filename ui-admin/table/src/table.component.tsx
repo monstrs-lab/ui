@@ -1,5 +1,5 @@
-import type { ReactElement } from 'react'
 import type { ColumnDef }    from '@tanstack/react-table'
+import type { ReactElement } from 'react'
 
 import { flexRender }        from '@tanstack/react-table'
 import { getCoreRowModel }   from '@tanstack/react-table'
@@ -9,14 +9,14 @@ import { useCallback }       from 'react'
 import { useVirtual }        from 'react-virtual'
 import React                 from 'react'
 
+import { TableBody }         from './table-body/index.js'
+import { TableCell }         from './table-cell/index.js'
 import { TableContainer }    from './table-container/index.js'
 import { TableElement }      from './table-element/index.js'
-import { TableHeader }       from './table-header/index.js'
-import { TableHeaderRow }    from './table-header-row/index.js'
 import { TableHeaderCell }   from './table-header-cell/index.js'
-import { TableBody }         from './table-body/index.js'
+import { TableHeaderRow }    from './table-header-row/index.js'
+import { TableHeader }       from './table-header/index.js'
 import { TableRow }          from './table-row/index.js'
-import { TableCell }         from './table-cell/index.js'
 
 export interface TableProps {
   columns: Array<ColumnDef<object, any>>

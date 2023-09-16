@@ -1,0 +1,9 @@
+releases:
+  "@ui-admin/input": patch
+  "@ui-admin/layout": patch
+  "@ui-admin/sprinkles": patch
+  "@ui-admin/table": patch
+  "@ui-admin/text": patch
+  "@ui-admin/theme": patch
+  "@ui-primitives/input": patch
+  "@ui-primitives/text-transform": patch

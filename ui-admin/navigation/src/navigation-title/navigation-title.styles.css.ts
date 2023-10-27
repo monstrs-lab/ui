@@ -7,12 +7,14 @@ export const navigationTitleStyles = style({
   fontFamily: vars.fonts.primary,
   color: '#ffffff',
   fontSize: 12,
-  textAlign: 'center',
   width: '100%',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
 
   '@media': {
     'screen and (min-width: 40em)': {
-      textAlign: 'left',
+      justifyContent: 'start',
     },
   },
 })

@@ -11,6 +11,7 @@
   "main": "src/index.ts",
   "dependencies": {
     "@ui-admin/avatar": "workspace:0.0.12",
+    "@ui-admin/button": "workspace:0.0.12",
     "@ui-admin/input": "workspace:0.0.14",
     "@ui-admin/layout": "workspace:0.0.13",
     "@ui-admin/navigation": "workspace:0.0.12",

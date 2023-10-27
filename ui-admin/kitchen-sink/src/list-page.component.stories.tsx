@@ -13,6 +13,7 @@ import { faker }             from '@faker-js/faker'
 import React                 from 'react'
 
 import { Avatar }            from '@ui-admin/avatar'
+import { IconButton }        from '@ui-admin/button'
 import { Column }            from '@ui-admin/layout'
 import { Layout }            from '@ui-admin/layout'
 import { Navigation }        from '@ui-admin/navigation'
@@ -40,8 +41,16 @@ const ListPage = ({ data, columns }: TableProps<unknown>): ReactElement => (
     <Layout>
       <Navigation
         title='Пользователи'
-        left={<PlusIcon color='white' />}
-        right={<GearIcon color='white' />}
+        left={
+          <IconButton>
+            <PlusIcon color='white' />
+          </IconButton>
+        }
+        right={
+          <IconButton>
+            <GearIcon color='white' />
+          </IconButton>
+        }
       />
     </Layout>
     <Layout>

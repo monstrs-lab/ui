@@ -18,13 +18,13 @@ import { TableHeaderRow }    from './table-header-row/index.js'
 import { TableHeader }       from './table-header/index.js'
 import { TableRow }          from './table-row/index.js'
 
-export interface TableProps {
-  columns: Array<ColumnDef<object, any>>
-  data: Array<object>
+export interface TableProps<T> {
+  data: Array<T>
+  columns: Array<ColumnDef<T>>
   onLoadMore?: () => void
 }
 
-export const Table = ({ columns, data, onLoadMore }: TableProps): ReactElement => {
+export const Table = ({ columns, data, onLoadMore }: TableProps<unknown>): ReactElement => {
   const tableContainerRef = React.useRef<HTMLDivElement>(null)
 
   const table = useReactTable({

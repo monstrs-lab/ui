@@ -1,40 +1,42 @@
-import type { Meta }            from '@storybook/react'
-import type { StoryObj }        from '@storybook/react'
+import type { Meta }         from '@storybook/react'
+import type { ReactElement } from 'react'
 
-import type { NavigationProps } from './navigation.component.jsx'
+import { PlusIcon }          from '@radix-ui/react-icons'
+import { GearIcon }          from '@radix-ui/react-icons'
+import React                 from 'react'
 
-import { PlusIcon }             from '@radix-ui/react-icons'
-import { GearIcon }             from '@radix-ui/react-icons'
-import React                    from 'react'
+import { IconButton }        from '@ui-admin/button'
 
-import { IconButton }           from '@ui-admin/button'
+import { NavigationActions } from './navigation-actions/index.js'
+import { NavigationTitle }   from './navigation-title/index.js'
+import { Navigation }        from './navigation.component.jsx'
 
-import { Navigation }           from './navigation.component.jsx'
+const NavigationStory = (): ReactElement => (
+  <Navigation>
+    <NavigationActions>
+      <IconButton>
+        <PlusIcon color='white' />
+      </IconButton>
+    </NavigationActions>
+    <NavigationTitle>Пользователи</NavigationTitle>
+    <NavigationActions>
+      <IconButton>
+        <GearIcon color='white' />
+      </IconButton>
+    </NavigationActions>
+  </Navigation>
+)
 
-const meta: Meta<NavigationProps> = {
+const meta: Meta<typeof NavigationStory> = {
   title: 'Navigation',
 
   parameters: {
     layout: 'fullscreen',
   },
 
-  component: Navigation,
+  component: NavigationStory,
 }
 
-export const Base: StoryObj<NavigationProps> = {
-  args: {
-    title: 'Пользователи',
-    left: (
-      <IconButton>
-        <PlusIcon color='white' />
-      </IconButton>
-    ),
-    right: (
-      <IconButton>
-        <GearIcon color='white' />
-      </IconButton>
-    ),
-  },
-}
+export const Base = {}
 
 export default meta

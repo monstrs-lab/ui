@@ -10,6 +10,7 @@ export const navigationTitleStyles = style({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
+  flexGrow: 1,
 
   '@media': {
     'screen and (min-width: 40em)': {

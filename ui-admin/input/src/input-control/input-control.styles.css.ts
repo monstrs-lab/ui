@@ -9,6 +9,10 @@ export const inputControlBaseStyles = style({
   display: 'flex',
   alignItems: 'center',
   cursor: 'text',
+  borderRadius: 8,
+  background: '#1d1e20',
+  border: 0,
+  color: '#ffffff',
 })
 
 export const inputControlStyles = recipe({
@@ -17,10 +21,13 @@ export const inputControlStyles = recipe({
   variants: {
     controlSize: {
       normal: {
-        height: 40,
-        paddingLeft: 12,
-        paddingRight: 12,
-        fontSize: '14px',
+        height: 48,
+        paddingLeft: 16,
+        paddingRight: 16,
+        fontSize: 14,
+        '::placeholder': {
+          color: '#798186',
+        },
       },
     },
     attach: {

@@ -4,6 +4,7 @@
 import type { Meta }                  from '@storybook/react'
 import type { StoryObj }              from '@storybook/react'
 import type { BottomNavigationProps } from '@ui-admin/bottom-navigation'
+import type { SidebarProps }          from '@ui-admin/sidebar'
 import type { TableProps }            from '@ui-admin/table'
 import type { ReactElement }          from 'react'
 
@@ -21,8 +22,10 @@ import { Avatar }                     from '@ui-admin/avatar'
 import { BottomNavigation }           from '@ui-admin/bottom-navigation'
 import { IconButton }                 from '@ui-admin/button'
 import { Column }                     from '@ui-admin/layout'
+import { Row }                        from '@ui-admin/layout'
 import { Layout }                     from '@ui-admin/layout'
 import { Navigation }                 from '@ui-admin/navigation'
+import { Sidebar }                    from '@ui-admin/sidebar'
 import { Table }                      from '@ui-admin/table'
 import { Text }                       from '@ui-admin/text'
 
@@ -45,33 +48,40 @@ const ListPage = ({
   items,
   data,
   columns,
-}: BottomNavigationProps & TableProps<unknown>): ReactElement => (
-  <Column height='100%'>
-    <Layout>
-      <Navigation
-        title='Пользователи'
-        left={
-          <IconButton size='large'>
-            <PlusIcon color='white' height={18} width={18} />
-          </IconButton>
-        }
-        right={
-          <IconButton size='large'>
-            <GearIcon color='white' height={18} width={18} />
-          </IconButton>
-        }
-      />
+}: BottomNavigationProps & SidebarProps & TableProps<unknown>): ReactElement => (
+  <Row height='100%'>
+    <Layout display={['none', 'flex', 'flex']}>
+      <Sidebar items={items} />
     </Layout>
-    <Layout flexGrow={1} overflow='hidden'>
-      <Table data={data} columns={columns} />
+    <Layout flexGrow={1}>
+      <Column height='100%'>
+        <Layout>
+          <Navigation
+            title='Пользователи'
+            left={
+              <IconButton size='large'>
+                <PlusIcon color='white' height={18} width={18} />
+              </IconButton>
+            }
+            right={
+              <IconButton size='large'>
+                <GearIcon color='white' height={18} width={18} />
+              </IconButton>
+            }
+          />
+        </Layout>
+        <Layout flexGrow={1} overflow='hidden'>
+          <Table data={data} columns={columns} />
+        </Layout>
+        <Layout display={['flex', 'none', 'none']}>
+          <BottomNavigation items={items} />
+        </Layout>
+      </Column>
     </Layout>
-    <Layout display={['flex', 'none', 'none']}>
-      <BottomNavigation items={items} />
-    </Layout>
-  </Column>
+  </Row>
 )
 
-const meta: Meta<BottomNavigationProps & TableProps<unknown>> = {
+const meta: Meta<BottomNavigationProps & SidebarProps & TableProps<unknown>> = {
   title: 'List page',
 
   parameters: {
@@ -81,7 +91,7 @@ const meta: Meta<BottomNavigationProps & TableProps<unknown>> = {
   component: ListPage,
 }
 
-export const Base: StoryObj<BottomNavigationProps & TableProps<Person>> = {
+export const Base: StoryObj<BottomNavigationProps & SidebarProps & TableProps<Person>> = {
   args: {
     items: [
       {

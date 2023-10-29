@@ -5,17 +5,18 @@ import React                                  from 'react'
 
 import { Button as Primitives }               from '@ui-primitives/button'
 
-import { iconButtonStyles }                   from './icon-button.styles.css.js'
+import { buttonStyles }                       from './button.styles.css.js'
 
-export interface IconButtonProps extends PrimitiveProps {
+export interface ButtonProps extends PrimitiveProps {
   size?: 'large' | 'normal' | 'small'
+  variant?: 'primary' | 'secondary'
 }
 
-export const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>((
-  { size, children, ...props },
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>((
+  { size, variant, children, ...props },
   ref
 ) => (
-  <Primitives ref={ref} className={iconButtonStyles({ size })} {...props}>
+  <Primitives ref={ref} className={buttonStyles({ size, variant })} {...props}>
     {children}
   </Primitives>
 ))

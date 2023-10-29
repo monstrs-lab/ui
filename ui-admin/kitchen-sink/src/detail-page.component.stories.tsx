@@ -9,12 +9,13 @@ import { MixerHorizontalIcon }        from '@radix-ui/react-icons'
 import { PersonIcon }                 from '@radix-ui/react-icons'
 import { ReaderIcon }                 from '@radix-ui/react-icons'
 import { RowsIcon }                   from '@radix-ui/react-icons'
-import { GearIcon }                   from '@radix-ui/react-icons'
+import { PlayIcon }                   from '@radix-ui/react-icons'
 import { ArrowLeftIcon }              from '@radix-ui/react-icons'
 import React                          from 'react'
 
 import { BottomNavigation }           from '@ui-admin/bottom-navigation'
 import { IconButton }                 from '@ui-admin/button'
+import { Button }                     from '@ui-admin/button'
 import { Input }                      from '@ui-admin/input'
 import { Column }                     from '@ui-admin/layout'
 import { Row }                        from '@ui-admin/layout'
@@ -42,16 +43,22 @@ const DetailPage = ({
       <Column height='100%'>
         <Layout>
           <Navigation>
-            <NavigationActions>
+            <NavigationActions mr='1x'>
               <IconButton size='large'>
                 <ArrowLeftIcon color='white' height={18} width={18} />
               </IconButton>
             </NavigationActions>
             <NavigationTitle>Пользователь</NavigationTitle>
-            <NavigationActions>
+            <NavigationActions display={['flex', 'none', 'none']}>
               <IconButton size='large'>
-                <GearIcon color='white' height={18} width={18} />
+                <PlayIcon color='white' height={18} width={18} />
               </IconButton>
+            </NavigationActions>
+            <NavigationActions display={['none', 'flex', 'flex']}>
+              <Button>
+                <PlayIcon color='black' height={18} width={18} />
+                Сохранить
+              </Button>
             </NavigationActions>
           </Navigation>
         </Layout>
@@ -82,7 +89,7 @@ const DetailPage = ({
 )
 
 const meta: Meta<BottomNavigationProps & SidebarProps & TableProps<unknown>> = {
-  title: 'Detail page',
+  title: 'KitchenSink/Detail page',
 
   parameters: {
     layout: 'fullscreen',

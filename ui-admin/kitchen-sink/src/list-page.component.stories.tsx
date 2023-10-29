@@ -21,6 +21,7 @@ import React                          from 'react'
 import { Avatar }                     from '@ui-admin/avatar'
 import { BottomNavigation }           from '@ui-admin/bottom-navigation'
 import { IconButton }                 from '@ui-admin/button'
+import { Button }                     from '@ui-admin/button'
 import { Column }                     from '@ui-admin/layout'
 import { Row }                        from '@ui-admin/layout'
 import { Layout }                     from '@ui-admin/layout'
@@ -65,15 +66,22 @@ const ListPage = ({
               </IconButton>
             </NavigationActions>
             <NavigationTitle>Пользователи</NavigationTitle>
-            <NavigationActions display={['none', 'flex', 'flex']}>
-              <IconButton size='large'>
-                <PlusIcon color='white' height={18} width={18} />
-              </IconButton>
-            </NavigationActions>
-            <NavigationActions>
+            <NavigationActions display={['flex', 'none', 'none']}>
               <IconButton size='large'>
                 <GearIcon color='white' height={18} width={18} />
               </IconButton>
+            </NavigationActions>
+            <NavigationActions display={['none', 'flex', 'flex']}>
+              <Button>
+                <PlusIcon color='black' height={18} width={18} />
+                Добавить
+              </Button>
+            </NavigationActions>
+            <NavigationActions ml='1x' display={['none', 'flex', 'flex']}>
+              <Button variant='secondary'>
+                <GearIcon color='white' height={18} width={18} />
+                Фильтр
+              </Button>
             </NavigationActions>
           </Navigation>
         </Layout>
@@ -89,7 +97,7 @@ const ListPage = ({
 )
 
 const meta: Meta<BottomNavigationProps & SidebarProps & TableProps<unknown>> = {
-  title: 'List page',
+  title: 'KitchenSink/List page',
 
   parameters: {
     layout: 'fullscreen',

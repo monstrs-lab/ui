@@ -1,25 +1,30 @@
 /* eslint-disable  @next/next/no-img-element */
 /* eslint-disable react/jsx-no-leaked-render */
 
-import type { Meta }         from '@storybook/react'
-import type { StoryObj }     from '@storybook/react'
-import type { TableProps }   from '@ui-admin/table'
-import type { ReactElement } from 'react'
+import type { Meta }                  from '@storybook/react'
+import type { StoryObj }              from '@storybook/react'
+import type { BottomNavigationProps } from '@ui-admin/bottom-navigation'
+import type { TableProps }            from '@ui-admin/table'
+import type { ReactElement }          from 'react'
 
-import { PlusIcon }          from '@radix-ui/react-icons'
-import { GearIcon }          from '@radix-ui/react-icons'
-import { ChevronRightIcon }  from '@radix-ui/react-icons'
-import { faker }             from '@faker-js/faker'
-import React                 from 'react'
+import { MixerHorizontalIcon }        from '@radix-ui/react-icons'
+import { PersonIcon }                 from '@radix-ui/react-icons'
+import { ReaderIcon }                 from '@radix-ui/react-icons'
+import { RowsIcon }                   from '@radix-ui/react-icons'
+import { PlusIcon }                   from '@radix-ui/react-icons'
+import { GearIcon }                   from '@radix-ui/react-icons'
+import { ChevronRightIcon }           from '@radix-ui/react-icons'
+import { faker }                      from '@faker-js/faker'
+import React                          from 'react'
 
-import { Avatar }            from '@ui-admin/avatar'
-import { IconButton }        from '@ui-admin/button'
-import { Column }            from '@ui-admin/layout'
-import { Layout }            from '@ui-admin/layout'
-import { Navigation }        from '@ui-admin/navigation'
-import { TableRowAction }    from '@ui-admin/table'
-import { Table }             from '@ui-admin/table'
-import { Text }              from '@ui-admin/text'
+import { Avatar }                     from '@ui-admin/avatar'
+import { BottomNavigation }           from '@ui-admin/bottom-navigation'
+import { IconButton }                 from '@ui-admin/button'
+import { Column }                     from '@ui-admin/layout'
+import { Layout }                     from '@ui-admin/layout'
+import { Navigation }                 from '@ui-admin/navigation'
+import { Table }                      from '@ui-admin/table'
+import { Text }                       from '@ui-admin/text'
 
 interface Person {
   firstName: string
@@ -36,30 +41,37 @@ const generate = (length: number = 20): Array<Person> =>
     avatar: Math.round(Math.random() * 1 + 0) === 0 ? faker.image.avatar() : undefined,
   }))
 
-const ListPage = ({ data, columns }: TableProps<unknown>): ReactElement => (
-  <Column>
+const ListPage = ({
+  items,
+  data,
+  columns,
+}: BottomNavigationProps & TableProps<unknown>): ReactElement => (
+  <Column height='100%'>
     <Layout>
       <Navigation
         title='Пользователи'
         left={
-          <IconButton>
-            <PlusIcon color='white' />
+          <IconButton size='large'>
+            <PlusIcon color='white' height={18} width={18} />
           </IconButton>
         }
         right={
-          <IconButton>
-            <GearIcon color='white' />
+          <IconButton size='large'>
+            <GearIcon color='white' height={18} width={18} />
           </IconButton>
         }
       />
     </Layout>
-    <Layout>
+    <Layout flexGrow={1} overflow='hidden'>
       <Table data={data} columns={columns} />
+    </Layout>
+    <Layout display={['flex', 'none', 'none']}>
+      <BottomNavigation items={items} />
     </Layout>
   </Column>
 )
 
-const meta: Meta<TableProps<unknown>> = {
+const meta: Meta<BottomNavigationProps & TableProps<unknown>> = {
   title: 'List page',
 
   parameters: {
@@ -69,8 +81,22 @@ const meta: Meta<TableProps<unknown>> = {
   component: ListPage,
 }
 
-export const Base: StoryObj<TableProps<Person>> = {
+export const Base: StoryObj<BottomNavigationProps & TableProps<Person>> = {
   args: {
+    items: [
+      {
+        icon: MixerHorizontalIcon,
+      },
+      {
+        icon: PersonIcon,
+      },
+      {
+        icon: ReaderIcon,
+      },
+      {
+        icon: RowsIcon,
+      },
+    ],
     data: generate(),
     columns: [
       {
@@ -93,7 +119,7 @@ export const Base: StoryObj<TableProps<Person>> = {
         cell: (props) => (
           <Column>
             <Layout mb='1x'>
-              <Text fontSize='extra'>{`${props.row.original.firstName} ${props.row.original.lastName}`}</Text>
+              <Text fontSize='normal'>{`${props.row.original.firstName} ${props.row.original.lastName}`}</Text>
             </Layout>
             <Layout>
               <Text color='gray1' fontSize='extra'>
@@ -108,9 +134,9 @@ export const Base: StoryObj<TableProps<Person>> = {
         header: '',
         size: 16,
         cell: () => (
-          <TableRowAction>
-            <ChevronRightIcon />
-          </TableRowAction>
+          <IconButton size='large'>
+            <ChevronRightIcon color='white' width={16} height={16} />
+          </IconButton>
         ),
       },
     ],

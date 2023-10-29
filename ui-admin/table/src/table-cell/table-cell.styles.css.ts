@@ -6,6 +6,6 @@ export const tableCellStyles = style({
   color: '#ffffff',
   borderBottom: '1px solid #1E1E1E',
   fontFamily: vars.fonts.primary,
-  fontSize: 12,
+  fontSize: 14,
   padding: 16,
 })

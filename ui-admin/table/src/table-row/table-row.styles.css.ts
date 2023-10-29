@@ -2,8 +2,8 @@ import { style } from '@vanilla-extract/css'
 
 export const tableRowStyles = style({
   boxSizing: 'border-box',
-  background: '#040404',
+  background: '#101213',
   ':hover': {
-    background: 'rgba(48, 48, 48, 0.8)',
+    background: '#5a5d62',
   },
 })

@@ -16,7 +16,7 @@ export const iconButtonStyles = recipe({
     position: 'relative',
     background: 'transparent',
     ':hover': {
-      background: '#2F2E33',
+      background: '#28282B',
     },
     ':active': {
       background: '#000000',

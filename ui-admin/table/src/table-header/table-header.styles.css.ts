@@ -5,4 +5,5 @@ export const tableHeaderStyles = style({
   margin: 0,
   top: 0,
   zIndex: 1,
+  background: '#101213',
 })

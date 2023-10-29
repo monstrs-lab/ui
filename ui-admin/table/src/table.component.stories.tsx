@@ -11,11 +11,11 @@ import { faker }            from '@faker-js/faker'
 import React                from 'react'
 
 import { Avatar }           from '@ui-admin/avatar'
+import { IconButton }       from '@ui-admin/button'
 import { Column }           from '@ui-admin/layout'
 import { Layout }           from '@ui-admin/layout'
 import { Text }             from '@ui-admin/text'
 
-import { TableRowAction }   from './table-row-actions/index.js'
 import { Table }            from './table.component.jsx'
 
 interface Person {
@@ -67,7 +67,7 @@ export const Base: StoryObj<TableProps<Person>> = {
         cell: (props) => (
           <Column>
             <Layout mb='1x'>
-              <Text fontSize='extra'>{`${props.row.original.firstName} ${props.row.original.lastName}`}</Text>
+              <Text>{`${props.row.original.firstName} ${props.row.original.lastName}`}</Text>
             </Layout>
             <Layout>
               <Text color='gray1' fontSize='extra'>
@@ -82,9 +82,9 @@ export const Base: StoryObj<TableProps<Person>> = {
         header: '',
         size: 16,
         cell: () => (
-          <TableRowAction>
-            <ChevronRightIcon />
-          </TableRowAction>
+          <IconButton size='large'>
+            <ChevronRightIcon color='white' width={16} height={16} />
+          </IconButton>
         ),
       },
     ],

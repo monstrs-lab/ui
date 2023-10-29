@@ -1,11 +1,11 @@
 import { style } from '@vanilla-extract/css'
 
-export const navigationRootStyles = style({
+export const bottomNavigationRootStyles = style({
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center',
+  justifyContent: 'space-between',
   boxSizing: 'border-box',
   background: '#09090A',
-  padding: 16,
   width: '100%',
+  height: 64,
 })

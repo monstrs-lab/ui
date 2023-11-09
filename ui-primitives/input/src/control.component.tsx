@@ -25,9 +25,9 @@ export const Control = forwardRef<ControlElement, ControlProps>((
 
   useLayoutEffect(() => {
     if (context.attachmentsPrefix) {
-      const rect = context.attachmentsPrefix.getBoundingClientRect()
+      const width = context.attachmentsPrefix.offsetWidth
 
-      setOffsetLeft(rect.width ? rect.width : undefined)
+      setOffsetLeft(width || undefined)
     } else {
       setOffsetLeft(undefined)
     }
@@ -35,9 +35,9 @@ export const Control = forwardRef<ControlElement, ControlProps>((
 
   useLayoutEffect(() => {
     if (context.attachmentsSuffix) {
-      const rect = context.attachmentsSuffix.getBoundingClientRect()
+      const width = context.attachmentsSuffix.offsetWidth
 
-      setOffsetRight(rect.width ? rect.width : undefined)
+      setOffsetRight(width || undefined)
     } else {
       setOffsetRight(undefined)
     }

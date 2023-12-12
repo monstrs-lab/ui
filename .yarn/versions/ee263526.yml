@@ -1,0 +1,11 @@
+releases:
+  "@ui-admin/input": patch
+  "@ui-admin/layout": patch
+  "@ui-admin/sprinkles": patch
+  "@ui-admin/table": patch
+  "@ui-admin/text": patch
+  "@ui-admin/theme": patch
+  "@ui-primitives/button": patch
+  "@ui-primitives/conditional-render": patch
+  "@ui-primitives/content-divider": patch
+  "@ui-proto/button": patch

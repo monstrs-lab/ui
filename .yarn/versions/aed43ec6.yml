@@ -1,8 +1,0 @@
-releases:
-  "@ui-proto/button": patch
-  "@ui-proto/input": patch
-  "@ui-proto/layout": patch
-  "@ui-proto/placeholder": patch
-  "@ui-proto/sprinkles": patch
-  "@ui-proto/text": patch
-  "@ui-proto/theme": patch

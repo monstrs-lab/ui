@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/placeholder",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -17,7 +17,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-proto/theme": "workspace:0.2.3",
+    "@ui-proto/theme": "workspace:0.2.4",
     "@vanilla-extract/css": "^1.14.0"
   },
   "devDependencies": {

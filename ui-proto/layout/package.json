@@ -11,6 +11,11 @@
   "files": [
     "dist"
   ],
+  "scripts": {
+    "build": "yarn library build",
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist"
+  },
   "dependencies": {
     "@ui-proto/sprinkles": "workspace:0.2.2",
     "@vanilla-extract/css": "^1.14.0",

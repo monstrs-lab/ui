@@ -11,6 +11,11 @@
   "files": [
     "dist"
   ],
+  "scripts": {
+    "build": "yarn library build",
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist"
+  },
   "dependencies": {
     "@ui-primitives/button": "workspace:0.1.3",
     "@ui-proto/theme": "workspace:0.2.2",

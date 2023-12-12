@@ -5490,7 +5490,7 @@ __metadata:
     "@storybook/react": "npm:^7.6.4"
     "@types/react": "npm:^18.2.43"
     "@ui-primitives/button": "workspace:0.1.3"
-    "@ui-proto/theme": "workspace:0.2.4"
+    "@ui-proto/theme": "workspace:0.2.5"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/recipes": "npm:^0.5.1"
     react: "npm:^18.2.0"
@@ -5539,7 +5539,7 @@ __metadata:
     "@storybook/react": "npm:^7.6.4"
     "@types/react": "npm:^18.2.43"
     "@ui-primitives/input": "workspace:0.1.3"
-    "@ui-proto/theme": "workspace:0.2.4"
+    "@ui-proto/theme": "workspace:0.2.5"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/recipes": "npm:^0.5.1"
     react: "npm:^18.2.0"
@@ -5556,7 +5556,7 @@ __metadata:
   dependencies:
     "@storybook/react": "npm:^7.6.4"
     "@types/react": "npm:^18.2.43"
-    "@ui-proto/sprinkles": "workspace:0.2.4"
+    "@ui-proto/sprinkles": "workspace:0.2.5"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/sprinkles": "npm:^1.6.1"
     react: "npm:^18.2.0"
@@ -5573,7 +5573,7 @@ __metadata:
   dependencies:
     "@storybook/react": "npm:^7.6.4"
     "@types/react": "npm:^18.2.43"
-    "@ui-proto/theme": "workspace:0.2.4"
+    "@ui-proto/theme": "workspace:0.2.5"
     "@vanilla-extract/css": "npm:^1.14.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -5583,11 +5583,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/sprinkles@workspace:0.2.4, @ui-proto/sprinkles@workspace:ui-proto/sprinkles":
+"@ui-proto/sprinkles@workspace:0.2.5, @ui-proto/sprinkles@workspace:ui-proto/sprinkles":
   version: 0.0.0-use.local
   resolution: "@ui-proto/sprinkles@workspace:ui-proto/sprinkles"
   dependencies:
-    "@ui-proto/theme": "workspace:0.2.4"
+    "@ui-proto/theme": "workspace:0.2.5"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/sprinkles": "npm:^1.6.1"
   languageName: unknown
@@ -5599,7 +5599,7 @@ __metadata:
   dependencies:
     "@storybook/react": "npm:^7.6.4"
     "@types/react": "npm:^18.2.43"
-    "@ui-proto/sprinkles": "workspace:0.2.4"
+    "@ui-proto/sprinkles": "workspace:0.2.5"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/sprinkles": "npm:^1.6.1"
     react: "npm:^18.2.0"
@@ -5610,7 +5610,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/theme@workspace:0.2.4, @ui-proto/theme@workspace:ui-proto/theme":
+"@ui-proto/theme@workspace:0.2.5, @ui-proto/theme@workspace:ui-proto/theme":
   version: 0.0.0-use.local
   resolution: "@ui-proto/theme@workspace:ui-proto/theme"
   dependencies:

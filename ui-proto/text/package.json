@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/text",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -17,7 +17,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-proto/sprinkles": "workspace:0.2.4"
+    "@ui-proto/sprinkles": "workspace:0.2.5"
   },
   "devDependencies": {
     "@storybook/react": "^7.6.4",

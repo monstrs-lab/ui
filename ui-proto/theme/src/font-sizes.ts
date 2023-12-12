@@ -1,0 +1,18 @@
+export const fontSizes = {
+  tiny: '8px',
+  small: '9px',
+  little: '10px',
+  low: '11px',
+  extra: '12px',
+  less: '13px',
+  normal: '14px',
+  average: '15px',
+  regular: '16px',
+  medium: '17px',
+  standard: '18px',
+  massive: '19px',
+  great: '20px',
+  increased: '22.5px',
+  big: '24px',
+  large: '27px',
+}

@@ -24,8 +24,8 @@
     "@vanilla-extract/recipes": "^0.5.1"
   },
   "devDependencies": {
-    "@storybook/react": "^7.6.4",
-    "@types/react": "^18.2.43",
+    "@storybook/react": "^7.6.7",
+    "@types/react": "^18.2.46",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

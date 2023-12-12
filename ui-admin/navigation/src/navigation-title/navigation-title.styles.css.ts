@@ -1,10 +1,11 @@
-import { style } from '@vanilla-extract/css'
+import { style }  from '@vanilla-extract/css'
 
-import { vars }  from '@ui-admin/theme'
+import { colors } from '@ui-admin/theme'
+import { vars }   from '@ui-admin/theme'
 
 export const navigationTitleStyles = style({
   fontFamily: vars.fonts.primary,
-  color: '#ffffff',
+  color: colors.white,
   fontSize: 16,
   width: '100%',
   display: 'flex',

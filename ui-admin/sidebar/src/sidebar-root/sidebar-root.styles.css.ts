@@ -1,12 +1,16 @@
-import { style } from '@vanilla-extract/css'
+import { style }  from '@vanilla-extract/css'
+
+import { colors } from '@ui-admin/theme'
 
 export const sidebarRootStyles = style({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   boxSizing: 'border-box',
-  background: '#09090A',
+  background: colors.blackblue,
   height: '100%',
   width: 64,
-  borderRight: '1px solid #272a2f',
+  borderRightColor: colors.gray,
+  borderRightWidth: 1,
+  borderRightStyle: 'solid',
 })

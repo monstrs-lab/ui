@@ -1,4 +1,6 @@
-import { style } from '@vanilla-extract/css'
+import { style }  from '@vanilla-extract/css'
+
+import { colors } from '@ui-admin/theme'
 
 export const avatarFallbackStyles = style({
   width: '100%',
@@ -8,7 +10,7 @@ export const avatarFallbackStyles = style({
   alignItems: 'center',
   justifyContent: 'center',
   borderRadius: 'inherit',
-  background: '#ffffff',
-  color: '#000000',
+  background: colors.white,
+  color: colors.black,
   fontSize: 16,
 })

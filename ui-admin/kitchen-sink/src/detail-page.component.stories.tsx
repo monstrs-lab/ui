@@ -24,6 +24,7 @@ import { Navigation }                 from '@ui-admin/navigation'
 import { NavigationActions }          from '@ui-admin/navigation'
 import { NavigationTitle }            from '@ui-admin/navigation'
 import { Sidebar }                    from '@ui-admin/sidebar'
+import { colors }                     from '@ui-admin/theme'
 
 interface Person {
   firstName: string
@@ -56,7 +57,7 @@ const DetailPage = ({
             </NavigationActions>
             <NavigationActions display={['none', 'flex', 'flex']}>
               <Button>
-                <PlayIcon color='black' height={18} width={18} />
+                <PlayIcon color='white' height={18} width={18} />
                 Сохранить
               </Button>
             </NavigationActions>
@@ -99,7 +100,7 @@ const meta: Meta<BottomNavigationProps & SidebarProps & TableProps<unknown>> = {
       values: [
         {
           name: 'dark',
-          value: '#101213',
+          value: colors.black,
         },
       ],
     },

@@ -1,6 +1,8 @@
 import { style }  from '@vanilla-extract/css'
 import { recipe } from '@vanilla-extract/recipes'
 
+import { colors } from '@ui-admin/theme'
+
 export const iconButtonStyles = recipe({
   base: style({
     boxSizing: 'border-box',
@@ -16,10 +18,10 @@ export const iconButtonStyles = recipe({
     position: 'relative',
     background: 'transparent',
     ':hover': {
-      background: '#28282B',
+      background: colors.lightblack,
     },
     ':active': {
-      background: '#000000',
+      background: colors.black,
     },
   }),
 

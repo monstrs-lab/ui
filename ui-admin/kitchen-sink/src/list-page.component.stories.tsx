@@ -12,7 +12,6 @@ import { MixerHorizontalIcon }        from '@radix-ui/react-icons'
 import { PersonIcon }                 from '@radix-ui/react-icons'
 import { ReaderIcon }                 from '@radix-ui/react-icons'
 import { RowsIcon }                   from '@radix-ui/react-icons'
-import { PlusIcon }                   from '@radix-ui/react-icons'
 import { GearIcon }                   from '@radix-ui/react-icons'
 import { ChevronRightIcon }           from '@radix-ui/react-icons'
 import { faker }                      from '@faker-js/faker'
@@ -22,6 +21,8 @@ import { Avatar }                     from '@ui-admin/avatar'
 import { BottomNavigation }           from '@ui-admin/bottom-navigation'
 import { IconButton }                 from '@ui-admin/button'
 import { Button }                     from '@ui-admin/button'
+import { PlusIcon }                   from '@ui-admin/icons'
+import { FilterIcon }                 from '@ui-admin/icons'
 import { Column }                     from '@ui-admin/layout'
 import { Row }                        from '@ui-admin/layout'
 import { Layout }                     from '@ui-admin/layout'
@@ -73,13 +74,13 @@ const ListPage = ({
             </NavigationActions>
             <NavigationActions display={['none', 'flex', 'flex']}>
               <Button>
-                <PlusIcon color='black' height={18} width={18} />
+                <PlusIcon color='white' height={18} width={18} />
                 Добавить
               </Button>
             </NavigationActions>
             <NavigationActions ml='1x' display={['none', 'flex', 'flex']}>
               <Button variant='secondary'>
-                <GearIcon color='white' height={18} width={18} />
+                <FilterIcon color='blue' height={18} width={18} />
                 Фильтр
               </Button>
             </NavigationActions>
@@ -147,7 +148,7 @@ export const Base: StoryObj<BottomNavigationProps & SidebarProps & TableProps<Pe
               <Text fontSize='normal'>{`${props.row.original.firstName} ${props.row.original.lastName}`}</Text>
             </Layout>
             <Layout>
-              <Text color='gray1' fontSize='extra'>
+              <Text color='lightgray' fontSize='extra'>
                 {props.row.original.email}
               </Text>
             </Layout>

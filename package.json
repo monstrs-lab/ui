@@ -16,8 +16,8 @@
     "webpack": "5.88.2"
   },
   "devDependencies": {
-    "@monstrs/tools-runtime": "^0.2.18",
-    "@types/node": "^20.10.4",
+    "@monstrs/tools-runtime": "^0.2.19",
+    "@types/node": "^20.10.6",
     "jest-environment-jsdom": "^29.7.0",
     "typescript": "^5.3.3"
   },

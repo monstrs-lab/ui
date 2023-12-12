@@ -70,7 +70,7 @@ export const Base: StoryObj<TableProps<Person>> = {
               <Text>{`${props.row.original.firstName} ${props.row.original.lastName}`}</Text>
             </Layout>
             <Layout>
-              <Text color='gray1' fontSize='extra'>
+              <Text color='lightgray' fontSize='extra'>
                 {props.row.original.email}
               </Text>
             </Layout>

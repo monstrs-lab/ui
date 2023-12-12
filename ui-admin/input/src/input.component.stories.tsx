@@ -3,6 +3,8 @@ import type { StoryObj }   from '@storybook/react'
 
 import type { InputProps } from './input.component.jsx'
 
+import { colors }          from '@ui-admin/theme'
+
 import { Input }           from './input.component.jsx'
 
 const meta: Meta<InputProps> = {
@@ -14,7 +16,7 @@ const meta: Meta<InputProps> = {
       values: [
         {
           name: 'dark',
-          value: '#101213',
+          value: colors.black,
         },
       ],
     },

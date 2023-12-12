@@ -15,8 +15,8 @@
     "@jest/globals": "^29.7.0",
     "@testing-library/react": "^14.1.2",
     "@types/jest": "^29.5.11",
-    "@types/node": "^20.10.4",
-    "@types/react": "^18.2.43",
+    "@types/node": "^20.10.6",
+    "@types/react": "^18.2.46",
     "react": "^18.2.0"
   },
   "peerDependencies": {

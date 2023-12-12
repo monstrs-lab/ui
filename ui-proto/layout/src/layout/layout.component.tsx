@@ -67,6 +67,8 @@ export const Layout = ({
   justifySelf,
   alignSelf,
   order,
+  background,
+  backgroundColor,
   ...props
 }: LayoutProps): ReactElement => {
   const className = layoutSprinkles({
@@ -123,6 +125,8 @@ export const Layout = ({
     justifySelf,
     alignSelf,
     order,
+    background,
+    backgroundColor,
   })
 
   return (

@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/input",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -15,7 +15,7 @@
   "devDependencies": {
     "@storybook/react": "^7.6.4",
     "@types/react": "^18.2.43",
-    "@ui-proto/theme": "workspace:0.2.0",
+    "@ui-proto/theme": "workspace:0.2.1",
     "@vanilla-extract/css": "^1.14.0",
     "@vanilla-extract/recipes": "^0.5.1",
     "react": "^18.2.0",

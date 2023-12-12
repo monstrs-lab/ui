@@ -22,7 +22,14 @@
     "@vanilla-extract/sprinkles": "^1.6.1"
   },
   "publishConfig": {
-    "access": "public",
+    "exports": {
+      "./package.json": "./package.json",
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
     "main": "dist/index.js",
     "typings": "dist/index.d.ts"
   }

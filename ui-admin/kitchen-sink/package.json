@@ -10,11 +10,11 @@
   },
   "main": "src/index.ts",
   "dependencies": {
-    "@ui-admin/input": "workspace:0.0.13",
-    "@ui-admin/layout": "workspace:0.0.12",
-    "@ui-admin/sprinkles": "workspace:0.0.12",
-    "@ui-admin/table": "workspace:0.0.12",
-    "@ui-admin/text": "workspace:0.0.12"
+    "@ui-admin/input": "workspace:0.0.14",
+    "@ui-admin/layout": "workspace:0.0.13",
+    "@ui-admin/sprinkles": "workspace:0.0.13",
+    "@ui-admin/table": "workspace:0.0.13",
+    "@ui-admin/text": "workspace:0.0.13"
   },
   "devDependencies": {
     "@storybook/react": "^7.6.4",

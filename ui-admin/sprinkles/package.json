@@ -1,6 +1,6 @@
 {
   "name": "@ui-admin/sprinkles",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -9,7 +9,7 @@
   },
   "main": "src/index.ts",
   "dependencies": {
-    "@ui-admin/theme": "workspace:0.0.12"
+    "@ui-admin/theme": "workspace:0.0.13"
   },
   "devDependencies": {
     "@vanilla-extract/css": "^1.14.0",

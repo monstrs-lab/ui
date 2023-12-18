@@ -16,7 +16,7 @@
     "webpack": "5.88.2"
   },
   "devDependencies": {
-    "@monstrs/tools-runtime": "^0.2.17",
+    "@monstrs/tools-runtime": "^0.2.18",
     "@types/node": "^20.10.4",
     "jest-environment-jsdom": "^29.7.0",
     "typescript": "^5.3.3"
@@ -26,7 +26,7 @@
       "unplugged": true
     }
   },
-  "packageManager": "yarn@4.0.1",
+  "packageManager": "yarn@4.0.2",
   "tools": {
     "schematic": {
       "collection": "@monstrs/schematics",

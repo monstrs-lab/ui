@@ -8,6 +8,14 @@
     ".": "./src/index.ts"
   },
   "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn library build",
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist"
+  },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
     "@tanstack/react-table": "^8.11.2",

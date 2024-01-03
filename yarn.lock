@@ -5518,11 +5518,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui-admin/theme@workspace:ui-admin/theme"
   dependencies:
-    "@storybook/react": "npm:^7.6.7"
-    "@types/react": "npm:^18.2.46"
     "@vanilla-extract/css": "npm:^1.14.0"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
   languageName: unknown
   linkType: soft
 

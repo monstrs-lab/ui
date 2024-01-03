@@ -14697,6 +14697,10 @@ __metadata:
   dependenciesMeta:
     "@glideapps/glide-data-grid@5.2.1":
       unplugged: true
+    open@8.4.2:
+      unplugged: true
+    open@9.1.0:
+      unplugged: true
   languageName: unknown
   linkType: soft
 

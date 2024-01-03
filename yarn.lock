@@ -3802,7 +3802,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/components@npm:7.6.7":
+"@storybook/components@npm:7.6.7, @storybook/components@npm:^7.6.7":
   version: 7.6.7
   resolution: "@storybook/components@npm:7.6.7"
   dependencies:
@@ -5320,6 +5320,7 @@ __metadata:
     "@storybook/addon-links": "npm:^7.6.7"
     "@storybook/addon-onboarding": "npm:^1.0.10"
     "@storybook/blocks": "npm:^7.6.7"
+    "@storybook/components": "npm:^7.6.7"
     "@storybook/react": "npm:^7.6.7"
     "@storybook/react-webpack5": "npm:^7.6.7"
     "@storybook/testing-library": "npm:^0.2.2"

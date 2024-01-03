@@ -1,0 +1,13 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks'
+import { TabsState } from '@storybook/components'
+import { colors } from '@ui-admin/theme'
+
+<Meta title="Дизайн система/Цвета" />
+
+# Цвета
+
+<ColorPalette>
+  {Object.keys(colors).map((name) => (
+    <ColorItem key={name} title={name} subtitle={name} colors={[colors[name]]} />
+  ))}
+</ColorPalette>

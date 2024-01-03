@@ -1,12 +1,9 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
-/* eslint-disable @typescript-eslint/no-var-requires */
-
-const express = require('express')
+import express from 'express'
 
 const app = express()
 const port = 3000
 
-app.use(express.static('dist'))
+app.use(express.static('dist/static'))
 
 app.listen(port, () => {
   // eslint-disable-next-line no-console

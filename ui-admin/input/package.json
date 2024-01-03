@@ -8,6 +8,14 @@
     ".": "./src/index.ts"
   },
   "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn library build",
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist"
+  },
   "dependencies": {
     "@radix-ui/react-primitive": "^1.0.3",
     "@ui-primitives/input": "workspace:0.1.3"

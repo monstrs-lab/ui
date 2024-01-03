@@ -8,8 +8,14 @@
     ".": "./src/index.ts"
   },
   "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "generate": "yarn ui icons generate"
+    "build": "yarn library build",
+    "generate": "yarn ui icons generate",
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",

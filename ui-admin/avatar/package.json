@@ -8,6 +8,14 @@
     ".": "./src/index.ts"
   },
   "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn library build",
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist"
+  },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.4",
     "@ui-primitives/text-transform": "workspace:0.2.16"

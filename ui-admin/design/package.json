@@ -28,6 +28,7 @@
     "@storybook/testing-library": "^0.2.2",
     "@types/babel__core": "7.20.5",
     "@types/prop-types": "^15.7.11",
+    "@ui-admin/theme": "workspace:0.0.13",
     "@vanilla-extract/webpack-plugin": "^2.3.1",
     "css-loader": "^6.8.1",
     "mini-css-extract-plugin": "^2.7.6",

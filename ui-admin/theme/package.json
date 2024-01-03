@@ -17,7 +17,11 @@
     "postpack": "rm -rf dist"
   },
   "devDependencies": {
-    "@vanilla-extract/css": "^1.14.0"
+    "@storybook/react": "^7.6.7",
+    "@types/react": "^18.2.46",
+    "@vanilla-extract/css": "^1.14.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "publishConfig": {
     "exports": {

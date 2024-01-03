@@ -1,3 +1,14 @@
-import { style } from '@vanilla-extract/css'
+import { style }  from '@vanilla-extract/css'
 
-export const tableCellStyles = style({})
+import { vars }   from '@ui-admin/theme'
+import { colors } from '@ui-admin/theme'
+
+export const tableCellStyles = style({
+  color: colors.white,
+  borderBottomColor: colors.gray,
+  borderBottomWidth: 1,
+  borderBottomStyle: 'solid',
+  fontFamily: vars.fonts.primary,
+  fontSize: 14,
+  padding: 16,
+})

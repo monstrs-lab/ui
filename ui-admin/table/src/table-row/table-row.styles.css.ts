@@ -1,3 +1,11 @@
-import { style } from '@vanilla-extract/css'
+import { style }  from '@vanilla-extract/css'
 
-export const tableRowStyles = style({})
+import { colors } from '@ui-admin/theme'
+
+export const tableRowStyles = style({
+  boxSizing: 'border-box',
+  background: colors.black,
+  ':hover': {
+    background: colors.gray,
+  },
+})

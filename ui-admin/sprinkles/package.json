@@ -14,5 +14,17 @@
   "devDependencies": {
     "@vanilla-extract/css": "^1.14.0",
     "@vanilla-extract/sprinkles": "^1.6.1"
+  },
+  "publishConfig": {
+    "exports": {
+      "./package.json": "./package.json",
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
   }
 }

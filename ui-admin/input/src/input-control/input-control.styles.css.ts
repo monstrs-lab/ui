@@ -1,6 +1,8 @@
 import { style }  from '@vanilla-extract/css'
 import { recipe } from '@vanilla-extract/recipes'
 
+import { colors } from '@ui-admin/theme'
+
 export const inputControlBaseStyles = style({
   boxSizing: 'border-box',
   boxShadow: 'none',
@@ -9,6 +11,21 @@ export const inputControlBaseStyles = style({
   display: 'flex',
   alignItems: 'center',
   cursor: 'text',
+  borderRadius: 8,
+  borderWidth: 1,
+  borderStyle: 'solid',
+  borderColor: colors.grayblue,
+  color: colors.white,
+  background: 'transparent',
+  '::placeholder': {
+    color: colors.lightgray,
+  },
+  ':hover': {
+    borderColor: colors.lightgray,
+  },
+  ':focus': {
+    borderColor: colors.white,
+  },
 })
 
 export const inputControlStyles = recipe({
@@ -17,10 +34,10 @@ export const inputControlStyles = recipe({
   variants: {
     controlSize: {
       normal: {
-        height: 40,
-        paddingLeft: 12,
-        paddingRight: 12,
-        fontSize: '14px',
+        height: 48,
+        paddingLeft: 16,
+        paddingRight: 16,
+        fontSize: 14,
       },
     },
     attach: {

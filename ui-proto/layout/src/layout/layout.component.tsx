@@ -1,0 +1,137 @@
+import type { ReactElement } from 'react'
+import type { ReactNode }    from 'react'
+
+import React                 from 'react'
+
+import { layoutSprinkles }   from './layout.sprinkles.css.js'
+
+export type LayoutSprinklesProps = Parameters<typeof layoutSprinkles>[0]
+
+export interface LayoutProps extends LayoutSprinklesProps {
+  children?: ReactNode
+  style?: Record<string, string>
+}
+
+export const Layout = ({
+  children,
+  margin,
+  marginTop,
+  marginLeft,
+  marginRight,
+  marginBottom,
+  padding,
+  paddingTop,
+  paddingLeft,
+  paddingRight,
+  paddingBottom,
+  m,
+  mr,
+  ml,
+  mt,
+  mb,
+  marginX,
+  marginY,
+  mx,
+  my,
+  p,
+  pr,
+  pl,
+  pt,
+  pb,
+  paddingX,
+  paddingY,
+  px,
+  py,
+  display = 'flex',
+  boxSizing = 'border-box',
+  width,
+  height,
+  minWidth,
+  minHeight,
+  maxWidth,
+  maxHeight,
+  verticalAlign,
+  overflow,
+  overflowX,
+  overflowY,
+  alignItems,
+  alignContent,
+  justifyItems,
+  justifyContent,
+  flex,
+  flexWrap,
+  flexDirection,
+  flexGrow,
+  flexShrink,
+  flexBasis,
+  justifySelf,
+  alignSelf,
+  order,
+  background,
+  backgroundColor,
+  ...props
+}: LayoutProps): ReactElement => {
+  const className = layoutSprinkles({
+    margin,
+    marginTop,
+    marginLeft,
+    marginRight,
+    marginBottom,
+    padding,
+    paddingTop,
+    paddingLeft,
+    paddingRight,
+    paddingBottom,
+    m,
+    mr,
+    ml,
+    mt,
+    mb,
+    marginX,
+    marginY,
+    mx,
+    my,
+    p,
+    pr,
+    pl,
+    pt,
+    pb,
+    paddingX,
+    paddingY,
+    px,
+    py,
+    display,
+    boxSizing,
+    width,
+    height,
+    minWidth,
+    minHeight,
+    maxWidth,
+    maxHeight,
+    verticalAlign,
+    overflow,
+    overflowX,
+    overflowY,
+    alignItems,
+    alignContent,
+    justifyItems,
+    justifyContent,
+    flex,
+    flexWrap,
+    flexDirection,
+    flexGrow,
+    flexShrink,
+    flexBasis,
+    justifySelf,
+    alignSelf,
+    order,
+    background,
+    backgroundColor,
+  })
+
+  return (
+    <div className={className} {...props}>
+      {children}
+    </div>
+  )
+}

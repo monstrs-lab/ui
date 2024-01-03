@@ -1,0 +1,38 @@
+{
+  "name": "ui",
+  "private": true,
+  "workspaces": [
+    "storybook/*",
+    "css-primitives/*",
+    "ui-primitives/*",
+    "ui-admin/*",
+    "ui-proto/*",
+    "ui-utils/*",
+    "ui/*"
+  ],
+  "resolutions": {
+    "@types/react": "^18.2.21",
+    "typescript": "5.2.2",
+    "webpack": "5.88.2"
+  },
+  "devDependencies": {
+    "@monstrs/tools-runtime": "^0.2.19",
+    "@types/node": "^20.10.6",
+    "jest-environment-jsdom": "^29.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependenciesMeta": {
+    "@glideapps/glide-data-grid@5.2.1": {
+      "unplugged": true
+    }
+  },
+  "packageManager": "yarn@4.0.2",
+  "tools": {
+    "schematic": {
+      "collection": "@monstrs/schematics",
+      "schematic": "project",
+      "type": "libraries",
+      "migration": "1653826505519"
+    }
+  }
+}

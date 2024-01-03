@@ -1,0 +1,27 @@
+releases:
+  "@ui-admin/avatar": patch
+  "@ui-admin/bottom-navigation": patch
+  "@ui-admin/button": patch
+  "@ui-admin/icons": patch
+  "@ui-admin/input": patch
+  "@ui-admin/layout": patch
+  "@ui-admin/navigation": patch
+  "@ui-admin/sidebar": patch
+  "@ui-admin/sprinkles": patch
+  "@ui-admin/table": patch
+  "@ui-admin/text": patch
+  "@ui-admin/theme": patch
+  "@ui-primitives/button": patch
+  "@ui-primitives/conditional-render": patch
+  "@ui-primitives/content-divider": patch
+  "@ui-primitives/events-state": patch
+  "@ui-primitives/input": patch
+  "@ui-primitives/scalable-content": patch
+  "@ui-primitives/space": patch
+  "@ui-primitives/text-transform": patch
+  "@ui-proto/button": patch
+  "@ui-proto/input": patch
+  "@ui-proto/layout": patch
+  "@ui-proto/placeholder": patch
+  "@ui-proto/text": patch
+  "@ui-utils/use-window-size": patch

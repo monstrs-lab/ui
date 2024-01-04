@@ -1,6 +1,6 @@
 {
   "name": "@ui-admin/input",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@radix-ui/react-primitive": "^1.0.3",
-    "@ui-admin/theme": "workspace:0.0.14",
+    "@ui-admin/theme": "workspace:0.0.15",
     "@ui-primitives/input": "workspace:0.1.4",
     "@vanilla-extract/css": "^1.14.0",
     "@vanilla-extract/recipes": "^0.5.1"

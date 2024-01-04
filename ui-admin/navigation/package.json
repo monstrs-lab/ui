@@ -1,6 +1,6 @@
 {
   "name": "@ui-admin/navigation",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -17,16 +17,16 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-admin/layout": "workspace:0.0.13",
-    "@ui-admin/sprinkles": "workspace:0.0.13"
+    "@ui-admin/layout": "workspace:0.0.14",
+    "@ui-admin/sprinkles": "workspace:0.0.14"
   },
   "devDependencies": {
     "@radix-ui/react-icons": "^1.3.0",
     "@storybook/react": "^7.6.7",
     "@types/react": "^18.2.46",
-    "@ui-admin/button": "workspace:0.0.12",
-    "@ui-admin/icons": "workspace:0.0.1",
-    "@ui-admin/theme": "workspace:0.0.13",
+    "@ui-admin/button": "workspace:0.0.13",
+    "@ui-admin/icons": "workspace:0.0.2",
+    "@ui-admin/theme": "workspace:0.0.14",
     "@vanilla-extract/css": "^1.14.0",
     "@vanilla-extract/recipes": "^0.5.1",
     "@vanilla-extract/sprinkles": "^1.6.1",

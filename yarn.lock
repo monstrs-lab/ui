@@ -5250,15 +5250,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ui-admin/avatar@workspace:0.0.12, @ui-admin/avatar@workspace:ui-admin/avatar":
+"@ui-admin/avatar@workspace:0.0.13, @ui-admin/avatar@workspace:ui-admin/avatar":
   version: 0.0.0-use.local
   resolution: "@ui-admin/avatar@workspace:ui-admin/avatar"
   dependencies:
     "@radix-ui/react-avatar": "npm:^1.0.4"
     "@storybook/react": "npm:^7.6.7"
     "@types/react": "npm:^18.2.46"
-    "@ui-admin/theme": "workspace:0.0.13"
-    "@ui-primitives/text-transform": "workspace:0.2.16"
+    "@ui-admin/theme": "workspace:0.0.14"
+    "@ui-primitives/text-transform": "workspace:0.2.17"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/recipes": "npm:^0.5.1"
     react: "npm:^18.2.0"
@@ -5269,16 +5269,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/bottom-navigation@workspace:0.0.12, @ui-admin/bottom-navigation@workspace:ui-admin/bottom-navigation":
+"@ui-admin/bottom-navigation@workspace:0.0.13, @ui-admin/bottom-navigation@workspace:ui-admin/bottom-navigation":
   version: 0.0.0-use.local
   resolution: "@ui-admin/bottom-navigation@workspace:ui-admin/bottom-navigation"
   dependencies:
     "@radix-ui/react-icons": "npm:^1.3.0"
     "@storybook/react": "npm:^7.6.7"
     "@types/react": "npm:^18.2.46"
-    "@ui-admin/layout": "workspace:0.0.13"
-    "@ui-admin/theme": "workspace:0.0.13"
-    "@ui-primitives/button": "workspace:0.1.3"
+    "@ui-admin/layout": "workspace:0.0.14"
+    "@ui-admin/theme": "workspace:0.0.14"
+    "@ui-primitives/button": "workspace:0.1.4"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/recipes": "npm:^0.5.1"
     react: "npm:^18.2.0"
@@ -5289,14 +5289,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/button@workspace:0.0.12, @ui-admin/button@workspace:ui-admin/button":
+"@ui-admin/button@workspace:0.0.13, @ui-admin/button@workspace:ui-admin/button":
   version: 0.0.0-use.local
   resolution: "@ui-admin/button@workspace:ui-admin/button"
   dependencies:
     "@storybook/react": "npm:^7.6.7"
     "@types/react": "npm:^18.2.46"
-    "@ui-admin/theme": "workspace:0.0.13"
-    "@ui-primitives/button": "workspace:0.1.3"
+    "@ui-admin/theme": "workspace:0.0.14"
+    "@ui-primitives/button": "workspace:0.1.4"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/recipes": "npm:^0.5.1"
     react: "npm:^18.2.0"
@@ -5326,7 +5326,7 @@ __metadata:
     "@storybook/testing-library": "npm:^0.2.2"
     "@types/babel__core": "npm:7.20.5"
     "@types/prop-types": "npm:^15.7.11"
-    "@ui-admin/theme": "workspace:0.0.13"
+    "@ui-admin/theme": "workspace:0.0.14"
     "@vanilla-extract/webpack-plugin": "npm:^2.3.1"
     css-loader: "npm:^6.8.1"
     express: "npm:^4.18.2"
@@ -5339,7 +5339,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/icons@workspace:0.0.1, @ui-admin/icons@workspace:ui-admin/icons":
+"@ui-admin/icons@workspace:0.0.2, @ui-admin/icons@workspace:ui-admin/icons":
   version: 0.0.0-use.local
   resolution: "@ui-admin/icons@workspace:ui-admin/icons"
   dependencies:
@@ -5348,22 +5348,22 @@ __metadata:
     "@types/babel__core": "npm:^7.20.5"
     "@types/babel__template": "npm:^7.4.4"
     "@types/react": "npm:^18.2.46"
-    "@ui-admin/theme": "npm:0.0.13"
+    "@ui-admin/theme": "npm:0.0.14"
     react: "npm:^18.2.0"
   peerDependencies:
     react: ^18
   languageName: unknown
   linkType: soft
 
-"@ui-admin/input@workspace:0.0.14, @ui-admin/input@workspace:ui-admin/input":
+"@ui-admin/input@workspace:0.0.15, @ui-admin/input@workspace:ui-admin/input":
   version: 0.0.0-use.local
   resolution: "@ui-admin/input@workspace:ui-admin/input"
   dependencies:
     "@radix-ui/react-primitive": "npm:^1.0.3"
     "@storybook/react": "npm:^7.6.7"
     "@types/react": "npm:^18.2.46"
-    "@ui-admin/theme": "workspace:0.0.13"
-    "@ui-primitives/input": "workspace:0.1.3"
+    "@ui-admin/theme": "workspace:0.0.14"
+    "@ui-primitives/input": "workspace:0.1.4"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/recipes": "npm:^0.5.1"
     react: "npm:^18.2.0"
@@ -5382,18 +5382,18 @@ __metadata:
     "@radix-ui/react-icons": "npm:^1.3.0"
     "@storybook/react": "npm:^7.6.7"
     "@types/react": "npm:^18.2.46"
-    "@ui-admin/avatar": "workspace:0.0.12"
-    "@ui-admin/bottom-navigation": "workspace:0.0.12"
-    "@ui-admin/button": "workspace:0.0.12"
-    "@ui-admin/icons": "workspace:0.0.1"
-    "@ui-admin/input": "workspace:0.0.14"
-    "@ui-admin/layout": "workspace:0.0.13"
-    "@ui-admin/navigation": "workspace:0.0.12"
-    "@ui-admin/sidebar": "workspace:0.0.12"
-    "@ui-admin/sprinkles": "workspace:0.0.13"
-    "@ui-admin/table": "workspace:0.0.13"
-    "@ui-admin/text": "workspace:0.0.13"
-    "@ui-admin/theme": "workspace:0.0.13"
+    "@ui-admin/avatar": "workspace:0.0.13"
+    "@ui-admin/bottom-navigation": "workspace:0.0.13"
+    "@ui-admin/button": "workspace:0.0.13"
+    "@ui-admin/icons": "workspace:0.0.2"
+    "@ui-admin/input": "workspace:0.0.15"
+    "@ui-admin/layout": "workspace:0.0.14"
+    "@ui-admin/navigation": "workspace:0.0.13"
+    "@ui-admin/sidebar": "workspace:0.0.13"
+    "@ui-admin/sprinkles": "workspace:0.0.14"
+    "@ui-admin/table": "workspace:0.0.14"
+    "@ui-admin/text": "workspace:0.0.14"
+    "@ui-admin/theme": "workspace:0.0.14"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
   peerDependencies:
@@ -5401,13 +5401,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/layout@workspace:0.0.13, @ui-admin/layout@workspace:ui-admin/layout":
+"@ui-admin/layout@workspace:0.0.14, @ui-admin/layout@workspace:ui-admin/layout":
   version: 0.0.0-use.local
   resolution: "@ui-admin/layout@workspace:ui-admin/layout"
   dependencies:
     "@storybook/react": "npm:^7.6.7"
     "@types/react": "npm:^18.2.46"
-    "@ui-admin/sprinkles": "workspace:0.0.13"
+    "@ui-admin/sprinkles": "workspace:0.0.14"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/sprinkles": "npm:^1.6.1"
     react: "npm:^18.2.0"
@@ -5418,18 +5418,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/navigation@workspace:0.0.12, @ui-admin/navigation@workspace:ui-admin/navigation":
+"@ui-admin/navigation@workspace:0.0.13, @ui-admin/navigation@workspace:ui-admin/navigation":
   version: 0.0.0-use.local
   resolution: "@ui-admin/navigation@workspace:ui-admin/navigation"
   dependencies:
     "@radix-ui/react-icons": "npm:^1.3.0"
     "@storybook/react": "npm:^7.6.7"
     "@types/react": "npm:^18.2.46"
-    "@ui-admin/button": "workspace:0.0.12"
-    "@ui-admin/icons": "workspace:0.0.1"
-    "@ui-admin/layout": "workspace:0.0.13"
-    "@ui-admin/sprinkles": "workspace:0.0.13"
-    "@ui-admin/theme": "workspace:0.0.13"
+    "@ui-admin/button": "workspace:0.0.13"
+    "@ui-admin/icons": "workspace:0.0.2"
+    "@ui-admin/layout": "workspace:0.0.14"
+    "@ui-admin/sprinkles": "workspace:0.0.14"
+    "@ui-admin/theme": "workspace:0.0.14"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/recipes": "npm:^0.5.1"
     "@vanilla-extract/sprinkles": "npm:^1.6.1"
@@ -5441,16 +5441,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/sidebar@workspace:0.0.12, @ui-admin/sidebar@workspace:ui-admin/sidebar":
+"@ui-admin/sidebar@workspace:0.0.13, @ui-admin/sidebar@workspace:ui-admin/sidebar":
   version: 0.0.0-use.local
   resolution: "@ui-admin/sidebar@workspace:ui-admin/sidebar"
   dependencies:
     "@radix-ui/react-icons": "npm:^1.3.0"
     "@storybook/react": "npm:^7.6.7"
     "@types/react": "npm:^18.2.46"
-    "@ui-admin/layout": "workspace:0.0.13"
-    "@ui-admin/theme": "workspace:0.0.13"
-    "@ui-primitives/button": "workspace:0.1.3"
+    "@ui-admin/layout": "workspace:0.0.14"
+    "@ui-admin/theme": "workspace:0.0.14"
+    "@ui-primitives/button": "workspace:0.1.4"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/recipes": "npm:^0.5.1"
     react: "npm:^18.2.0"
@@ -5461,17 +5461,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/sprinkles@workspace:0.0.13, @ui-admin/sprinkles@workspace:ui-admin/sprinkles":
+"@ui-admin/sprinkles@workspace:0.0.14, @ui-admin/sprinkles@workspace:ui-admin/sprinkles":
   version: 0.0.0-use.local
   resolution: "@ui-admin/sprinkles@workspace:ui-admin/sprinkles"
   dependencies:
-    "@ui-admin/theme": "workspace:0.0.13"
+    "@ui-admin/theme": "workspace:0.0.14"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/sprinkles": "npm:^1.6.1"
   languageName: unknown
   linkType: soft
 
-"@ui-admin/table@workspace:0.0.13, @ui-admin/table@workspace:ui-admin/table":
+"@ui-admin/table@workspace:0.0.14, @ui-admin/table@workspace:ui-admin/table":
   version: 0.0.0-use.local
   resolution: "@ui-admin/table@workspace:ui-admin/table"
   dependencies:
@@ -5481,12 +5481,12 @@ __metadata:
     "@storybook/react": "npm:^7.6.7"
     "@tanstack/react-table": "npm:^8.11.2"
     "@types/react": "npm:^18.2.46"
-    "@ui-admin/avatar": "workspace:0.0.12"
-    "@ui-admin/button": "workspace:0.0.12"
-    "@ui-admin/layout": "workspace:0.0.13"
-    "@ui-admin/text": "workspace:0.0.13"
-    "@ui-admin/theme": "workspace:0.0.13"
-    "@ui-primitives/button": "workspace:0.1.3"
+    "@ui-admin/avatar": "workspace:0.0.13"
+    "@ui-admin/button": "workspace:0.0.13"
+    "@ui-admin/layout": "workspace:0.0.14"
+    "@ui-admin/text": "workspace:0.0.14"
+    "@ui-admin/theme": "workspace:0.0.14"
+    "@ui-primitives/button": "workspace:0.1.4"
     "@vanilla-extract/css": "npm:^1.14.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -5497,13 +5497,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/text@workspace:0.0.13, @ui-admin/text@workspace:ui-admin/text":
+"@ui-admin/text@workspace:0.0.14, @ui-admin/text@workspace:ui-admin/text":
   version: 0.0.0-use.local
   resolution: "@ui-admin/text@workspace:ui-admin/text"
   dependencies:
     "@storybook/react": "npm:^7.6.7"
     "@types/react": "npm:^18.2.46"
-    "@ui-admin/sprinkles": "workspace:0.0.13"
+    "@ui-admin/sprinkles": "workspace:0.0.14"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/sprinkles": "npm:^1.6.1"
     react: "npm:^18.2.0"
@@ -5514,7 +5514,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/theme@npm:0.0.13, @ui-admin/theme@workspace:0.0.13, @ui-admin/theme@workspace:ui-admin/theme":
+"@ui-admin/theme@npm:0.0.14, @ui-admin/theme@workspace:0.0.14, @ui-admin/theme@workspace:ui-admin/theme":
   version: 0.0.0-use.local
   resolution: "@ui-admin/theme@workspace:ui-admin/theme"
   dependencies:
@@ -5522,13 +5522,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-primitives/button@workspace:0.1.3, @ui-primitives/button@workspace:ui-primitives/button":
+"@ui-primitives/button@workspace:0.1.4, @ui-primitives/button@workspace:ui-primitives/button":
   version: 0.0.0-use.local
   resolution: "@ui-primitives/button@workspace:ui-primitives/button"
   dependencies:
     "@radix-ui/react-primitive": "npm:^1.0.3"
     "@types/react": "npm:^18.2.46"
-    "@ui-primitives/content-divider": "workspace:0.2.12"
+    "@ui-primitives/content-divider": "workspace:0.2.13"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
   peerDependencies:
@@ -5547,7 +5547,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-primitives/content-divider@workspace:0.2.12, @ui-primitives/content-divider@workspace:ui-primitives/content-divider":
+"@ui-primitives/content-divider@workspace:0.2.13, @ui-primitives/content-divider@workspace:ui-primitives/content-divider":
   version: 0.0.0-use.local
   resolution: "@ui-primitives/content-divider@workspace:ui-primitives/content-divider"
   dependencies:
@@ -5599,7 +5599,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-primitives/input@workspace:0.1.3, @ui-primitives/input@workspace:ui-primitives/input":
+"@ui-primitives/input@workspace:0.1.4, @ui-primitives/input@workspace:ui-primitives/input":
   version: 0.0.0-use.local
   resolution: "@ui-primitives/input@workspace:ui-primitives/input"
   dependencies:
@@ -5642,7 +5642,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-primitives/text-transform@workspace:0.2.16, @ui-primitives/text-transform@workspace:ui-primitives/text-transform":
+"@ui-primitives/text-transform@workspace:0.2.17, @ui-primitives/text-transform@workspace:ui-primitives/text-transform":
   version: 0.0.0-use.local
   resolution: "@ui-primitives/text-transform@workspace:ui-primitives/text-transform"
   dependencies:
@@ -5663,7 +5663,7 @@ __metadata:
   dependencies:
     "@storybook/react": "npm:^7.6.7"
     "@types/react": "npm:^18.2.46"
-    "@ui-primitives/button": "workspace:0.1.3"
+    "@ui-primitives/button": "workspace:0.1.4"
     "@ui-proto/theme": "workspace:0.2.5"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/recipes": "npm:^0.5.1"
@@ -5712,7 +5712,7 @@ __metadata:
     "@radix-ui/react-primitive": "npm:^1.0.3"
     "@storybook/react": "npm:^7.6.7"
     "@types/react": "npm:^18.2.46"
-    "@ui-primitives/input": "workspace:0.1.3"
+    "@ui-primitives/input": "workspace:0.1.4"
     "@ui-proto/theme": "workspace:0.2.5"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/recipes": "npm:^0.5.1"

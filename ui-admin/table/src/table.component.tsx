@@ -5,8 +5,8 @@ import { flexRender }        from '@tanstack/react-table'
 import { getCoreRowModel }   from '@tanstack/react-table'
 import { getSortedRowModel } from '@tanstack/react-table'
 import { useReactTable }     from '@tanstack/react-table'
+import { useVirtualizer }    from '@tanstack/react-virtual'
 import { useCallback }       from 'react'
-import { useVirtual }        from 'react-virtual'
 import React                 from 'react'
 
 import { TableBody }         from './table-body/index.js'
@@ -21,10 +21,16 @@ import { TableRow }          from './table-row/index.js'
 export interface TableProps<T> {
   data: Array<T>
   columns: Array<ColumnDef<T>>
+  size?: number
   onLoadMore?: () => void
 }
 
-export const Table = ({ columns, data, onLoadMore }: TableProps<unknown>): ReactElement => {
+export const Table = ({
+  columns,
+  data,
+  size = 67,
+  onLoadMore,
+}: TableProps<unknown>): ReactElement => {
   const tableContainerRef = React.useRef<HTMLDivElement>(null)
 
   const table = useReactTable({
@@ -35,20 +41,20 @@ export const Table = ({ columns, data, onLoadMore }: TableProps<unknown>): React
   })
 
   const { rows } = table.getRowModel()
-
-  const { virtualItems: virtualRows } = useVirtual({
-    parentRef: tableContainerRef,
-    size: rows.length,
-    overscan: 10,
+  const virtualizer = useVirtualizer({
+    estimateSize: () => size,
+    getScrollElement: () => tableContainerRef?.current,
+    count: rows.length,
+    overscan: 20,
   })
 
   const fetchMoreOnBottomReached = useCallback(
     (containerRefElement?: HTMLDivElement | null) => {
-      if (containerRefElement) {
+      if (containerRefElement && onLoadMore) {
         const { scrollHeight, scrollTop, clientHeight } = containerRefElement
 
         if (scrollHeight - scrollTop - clientHeight < 300) {
-          onLoadMore?.()
+          onLoadMore()
         }
       }
     },
@@ -62,40 +68,48 @@ export const Table = ({ columns, data, onLoadMore }: TableProps<unknown>): React
         fetchMoreOnBottomReached(event.target as HTMLDivElement)
       }}
     >
-      <TableElement>
-        <TableHeader>
-          {table.getHeaderGroups().map((headerGroup) => (
-            <TableHeaderRow key={headerGroup.id}>
-              {headerGroup.headers.map((header) => (
-                <TableHeaderCell
-                  key={header.id}
-                  colSpan={header.colSpan}
-                  style={{ width: header.getSize() }}
-                >
-                  {header.isPlaceholder ? null : (
-                    <div>{flexRender(header.column.columnDef.header, header.getContext())}</div>
-                  )}
-                </TableHeaderCell>
-              ))}
-            </TableHeaderRow>
-          ))}
-        </TableHeader>
-        <TableBody>
-          {virtualRows.map((virtualRow) => {
-            const row = rows[virtualRow.index]
-
-            return (
-              <TableRow key={row.id}>
-                {row.getVisibleCells().map((cell) => (
-                  <TableCell key={cell.id}>
-                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                  </TableCell>
+      <div style={{ height: `${virtualizer.getTotalSize()}px` }}>
+        <TableElement>
+          <TableHeader>
+            {table.getHeaderGroups().map((headerGroup) => (
+              <TableHeaderRow key={headerGroup.id}>
+                {headerGroup.headers.map((header) => (
+                  <TableHeaderCell
+                    key={header.id}
+                    colSpan={header.colSpan}
+                    style={{ width: header.getSize() }}
+                  >
+                    {header.isPlaceholder ? null : (
+                      <div>{flexRender(header.column.columnDef.header, header.getContext())}</div>
+                    )}
+                  </TableHeaderCell>
                 ))}
-              </TableRow>
-            )
-          })}
-        </TableBody>
-      </TableElement>
+              </TableHeaderRow>
+            ))}
+          </TableHeader>
+          <TableBody>
+            {virtualizer.getVirtualItems().map((virtualRow, index) => {
+              const row = rows[virtualRow.index]
+
+              return (
+                <TableRow
+                  key={row.id}
+                  style={{
+                    height: `${virtualRow.size}px`,
+                    transform: `translateY(${virtualRow.start - index * virtualRow.size}px)`,
+                  }}
+                >
+                  {row.getVisibleCells().map((cell) => (
+                    <TableCell key={cell.id}>
+                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                    </TableCell>
+                  ))}
+                </TableRow>
+              )
+            })}
+          </TableBody>
+        </TableElement>
+      </div>
     </TableContainer>
   )
 }

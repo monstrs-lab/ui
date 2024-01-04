@@ -17,9 +17,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-admin/theme": "workspace:0.0.14"
-  },
-  "devDependencies": {
+    "@ui-admin/theme": "workspace:0.0.14",
     "@vanilla-extract/css": "^1.14.0",
     "@vanilla-extract/sprinkles": "^1.6.1"
   },

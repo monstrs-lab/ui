@@ -16,7 +16,7 @@
     "prepack": "yarn run build",
     "postpack": "rm -rf dist"
   },
-  "devDependencies": {
+  "dependencies": {
     "@vanilla-extract/css": "^1.14.0"
   },
   "publishConfig": {

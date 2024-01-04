@@ -8,6 +8,7 @@ import type { TableProps }  from './table.component.jsx'
 
 import { ChevronRightIcon } from '@radix-ui/react-icons'
 import { faker }            from '@faker-js/faker'
+import { useArgs }          from '@storybook/preview-api'
 import React                from 'react'
 
 import { Avatar }           from '@ui-admin/avatar'
@@ -88,6 +89,17 @@ export const Base: StoryObj<TableProps<Person>> = {
         ),
       },
     ],
+  },
+  render: function Render(args) {
+    const [{ data, columns }, updateArgs] = useArgs()
+
+    const onLoadMore = (): void => {
+      updateArgs({
+        data: [...data, ...generate()],
+      })
+    }
+
+    return <Table {...args} columns={columns} onLoadMore={onLoadMore} />
   },
 }
 

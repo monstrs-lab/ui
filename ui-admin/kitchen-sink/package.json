@@ -17,7 +17,7 @@
     "@ui-admin/input": "workspace:0.0.16",
     "@ui-admin/layout": "workspace:0.0.15",
     "@ui-admin/navigation": "workspace:0.0.16",
-    "@ui-admin/sidebar": "workspace:0.0.14",
+    "@ui-admin/sidebar": "workspace:0.0.15",
     "@ui-admin/sprinkles": "workspace:0.0.15",
     "@ui-admin/table": "workspace:0.0.15",
     "@ui-admin/text": "workspace:0.0.15",

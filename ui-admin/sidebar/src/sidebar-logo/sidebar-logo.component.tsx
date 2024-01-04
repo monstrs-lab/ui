@@ -1,11 +1,15 @@
-/* eslint-disable @next/next/no-img-element */
+import type { ReactElement }            from 'react'
 
-import type { ReactElement } from 'react'
+import type { ReactNode } from 'react'
 
-import React                 from 'react'
+import React                            from 'react'
 
-import { sidebarLogoStyles } from './sidebar-logo.styles.css.js'
+import { sidebarLogoStyles }            from './sidebar-logo.styles.css.js'
 
-export const SidebarLogo = (): ReactElement => (
-  <img className={sidebarLogoStyles} src='/images/admin-logos_transparent.png' alt='logo' />
+export interface SidebarLogoProps {
+  children: ReactNode
+}
+
+export const SidebarLogo = ({ children }: SidebarLogoProps): ReactElement => (
+  <div className={sidebarLogoStyles}>{children}</div>
 )

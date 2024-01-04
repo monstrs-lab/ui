@@ -1,6 +1,6 @@
 {
   "name": "@ui-admin/layout",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -17,7 +17,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-admin/sprinkles": "workspace:0.0.13"
+    "@ui-admin/sprinkles": "workspace:0.0.14"
   },
   "devDependencies": {
     "@storybook/react": "^7.6.7",

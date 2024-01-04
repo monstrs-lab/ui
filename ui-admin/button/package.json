@@ -1,6 +1,6 @@
 {
   "name": "@ui-admin/button",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -17,12 +17,12 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ui-primitives/button": "workspace:0.1.3"
+    "@ui-primitives/button": "workspace:0.1.4"
   },
   "devDependencies": {
     "@storybook/react": "^7.6.7",
     "@types/react": "^18.2.46",
-    "@ui-admin/theme": "workspace:0.0.13",
+    "@ui-admin/theme": "workspace:0.0.14",
     "@vanilla-extract/css": "^1.14.0",
     "@vanilla-extract/recipes": "^0.5.1",
     "react": "^18.2.0",

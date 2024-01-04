@@ -1,6 +1,6 @@
 {
   "name": "@ui-admin/avatar",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -18,12 +18,12 @@
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.4",
-    "@ui-primitives/text-transform": "workspace:0.2.16"
+    "@ui-primitives/text-transform": "workspace:0.2.17"
   },
   "devDependencies": {
     "@storybook/react": "^7.6.7",
     "@types/react": "^18.2.46",
-    "@ui-admin/theme": "workspace:0.0.13",
+    "@ui-admin/theme": "workspace:0.0.14",
     "@vanilla-extract/css": "^1.14.0",
     "@vanilla-extract/recipes": "^0.5.1",
     "react": "^18.2.0",

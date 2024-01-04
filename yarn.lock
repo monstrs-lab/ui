@@ -5339,7 +5339,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/icons@workspace:0.0.3, @ui-admin/icons@workspace:ui-admin/icons":
+"@ui-admin/icons@workspace:0.0.4, @ui-admin/icons@workspace:ui-admin/icons":
   version: 0.0.0-use.local
   resolution: "@ui-admin/icons@workspace:ui-admin/icons"
   dependencies:
@@ -5385,10 +5385,10 @@ __metadata:
     "@ui-admin/avatar": "workspace:0.0.14"
     "@ui-admin/bottom-navigation": "workspace:0.0.14"
     "@ui-admin/button": "workspace:0.0.14"
-    "@ui-admin/icons": "workspace:0.0.3"
+    "@ui-admin/icons": "workspace:0.0.4"
     "@ui-admin/input": "workspace:0.0.16"
     "@ui-admin/layout": "workspace:0.0.15"
-    "@ui-admin/navigation": "workspace:0.0.14"
+    "@ui-admin/navigation": "workspace:0.0.15"
     "@ui-admin/sidebar": "workspace:0.0.14"
     "@ui-admin/sprinkles": "workspace:0.0.15"
     "@ui-admin/table": "workspace:0.0.15"
@@ -5418,7 +5418,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/navigation@workspace:0.0.14, @ui-admin/navigation@workspace:ui-admin/navigation":
+"@ui-admin/navigation@workspace:0.0.15, @ui-admin/navigation@workspace:ui-admin/navigation":
   version: 0.0.0-use.local
   resolution: "@ui-admin/navigation@workspace:ui-admin/navigation"
   dependencies:
@@ -5426,7 +5426,7 @@ __metadata:
     "@storybook/react": "npm:^7.6.7"
     "@types/react": "npm:^18.2.46"
     "@ui-admin/button": "workspace:0.0.14"
-    "@ui-admin/icons": "workspace:0.0.3"
+    "@ui-admin/icons": "workspace:0.0.4"
     "@ui-admin/layout": "workspace:0.0.15"
     "@ui-admin/sprinkles": "workspace:0.0.15"
     "@ui-admin/theme": "workspace:0.0.15"

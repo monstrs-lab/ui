@@ -19,7 +19,9 @@ export const dropdownMenuItemStyles = style({
       color: colors.blue,
     },
     '&:not(:last-of-type)': {
-      borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
+      borderBottomWidth: 1,
+      borderBottomStyle: 'solid',
+      borderBottomColor: colors.black,
     },
   },
 })

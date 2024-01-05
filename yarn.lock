@@ -5403,7 +5403,7 @@ __metadata:
     "@ui-admin/navigation": "workspace:0.0.17"
     "@ui-admin/sidebar": "workspace:0.0.16"
     "@ui-admin/sprinkles": "workspace:0.0.15"
-    "@ui-admin/table": "workspace:0.0.16"
+    "@ui-admin/table": "workspace:0.0.17"
     "@ui-admin/text": "workspace:0.0.15"
     "@ui-admin/theme": "workspace:0.0.15"
     react: "npm:^18.2.0"
@@ -5483,7 +5483,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/table@workspace:0.0.16, @ui-admin/table@workspace:ui-admin/table":
+"@ui-admin/table@workspace:0.0.17, @ui-admin/table@workspace:ui-admin/table":
   version: 0.0.0-use.local
   resolution: "@ui-admin/table@workspace:ui-admin/table"
   dependencies:

@@ -25,12 +25,12 @@ export interface TableProps<T> {
   onLoadMore?: () => void
 }
 
-export const Table = ({
+export const Table = <T,>({
   columns,
   data,
   size = 67,
   onLoadMore,
-}: TableProps<unknown>): ReactElement => {
+}: TableProps<T>): ReactElement => {
   const tableContainerRef = React.useRef<HTMLDivElement>(null)
 
   const table = useReactTable({

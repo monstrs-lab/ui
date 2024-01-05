@@ -2,6 +2,8 @@ import { style }     from '@vanilla-extract/css'
 import { keyframes } from '@vanilla-extract/css'
 import { recipe }    from '@vanilla-extract/recipes'
 
+import { colors }    from '@ui-admin/theme'
+
 const slideUpAndFade = keyframes({
   '0%': { opacity: 0, transform: 'translateY(2px)' },
   '100%': { opacity: 1, transform: 'translateY(0)' },
@@ -27,8 +29,7 @@ export const dropdownMenuContentBaseStyles = style({
   flexDirection: 'column',
   minWidth: 192,
   borderRadius: 12,
-  backgroundColor: '#303037',
-  boxShadow: '0px 0px 64px 0px rgba(0, 0, 0, 0.40)',
+  backgroundColor: colors.gray,
   zIndex: 100,
   overflow: 'hidden',
   maxWidth: '100vw',

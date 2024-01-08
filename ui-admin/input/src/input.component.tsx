@@ -21,17 +21,18 @@ export interface InputProps extends RootProps {
   prefix?: ReactNode
   suffix?: ReactNode
   label?: ReactNode
+  disabled?: boolean
 }
 
 export const Input = forwardRef<ControlElement, InputProps>((
-  { prefix, suffix, attach, size, label, ...props },
+  { prefix, suffix, attach, size, label, disabled, ...props },
   forwardedRef
 ) => (
   <InputContainer>
     {!!label && <InputLabel>{label}</InputLabel>}
     <InputRoot {...props}>
       <InputAttachmentsPrefix>{prefix}</InputAttachmentsPrefix>
-      <InputControl ref={forwardedRef} attach={attach} controlSize={size} />
+      <InputControl ref={forwardedRef} attach={attach} controlSize={size} disabled={disabled} />
       <InputAttachmentsSuffix>{suffix}</InputAttachmentsSuffix>
     </InputRoot>
   </InputContainer>

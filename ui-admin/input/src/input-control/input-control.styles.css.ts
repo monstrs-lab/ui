@@ -78,6 +78,11 @@ export const inputControlStyles = recipe({
         },
       },
     },
+    disabled: {
+      true: {
+        cursor: 'not-allowed',
+      },
+    },
   },
 
   defaultVariants: {

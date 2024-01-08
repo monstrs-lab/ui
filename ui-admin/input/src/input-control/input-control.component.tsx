@@ -20,7 +20,12 @@ export interface InputControlProps extends ControlProps {
 export const InputControl = ({
   controlSize,
   attach,
+  disabled,
   ...props
 }: InputControlProps): ReactElement => (
-  <Control className={inputControlStyles({ attach, controlSize })} {...props} />
+  <Control
+    disabled={disabled}
+    className={inputControlStyles({ attach, controlSize, disabled })}
+    {...props}
+  />
 )

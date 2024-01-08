@@ -5637,7 +5637,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/input@workspace:0.0.16, @ui-admin/input@workspace:ui-admin/input":
+"@ui-admin/input@workspace:0.0.17, @ui-admin/input@workspace:ui-admin/input":
   version: 0.0.0-use.local
   resolution: "@ui-admin/input@workspace:ui-admin/input"
   dependencies:
@@ -5668,7 +5668,7 @@ __metadata:
     "@ui-admin/bottom-navigation": "workspace:0.0.14"
     "@ui-admin/button": "workspace:0.0.14"
     "@ui-admin/icons": "workspace:0.0.6"
-    "@ui-admin/input": "workspace:0.0.16"
+    "@ui-admin/input": "workspace:0.0.17"
     "@ui-admin/layout": "workspace:0.0.15"
     "@ui-admin/navigation": "workspace:0.0.17"
     "@ui-admin/sidebar": "workspace:0.0.16"

@@ -2,6 +2,7 @@ import { style }  from '@vanilla-extract/css'
 import { recipe } from '@vanilla-extract/recipes'
 
 import { colors } from '@ui-admin/theme'
+import { vars }   from '@ui-admin/theme'
 
 export const inputControlBaseStyles = style({
   boxSizing: 'border-box',
@@ -17,6 +18,7 @@ export const inputControlBaseStyles = style({
   borderColor: colors.grayblue,
   color: colors.white,
   background: 'transparent',
+  fontFamily: vars.fonts.primary,
   '::placeholder': {
     color: colors.lightgray,
   },

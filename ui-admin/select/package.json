@@ -1,6 +1,6 @@
 {
   "name": "@ui-admin/select",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@radix-ui/react-select": "^2.0.0",
-    "@ui-admin/icons": "workspace:0.0.6",
+    "@ui-admin/icons": "workspace:0.0.7",
     "@ui-admin/theme": "workspace:0.0.15",
     "@vanilla-extract/css": "^1.14.0",
     "@vanilla-extract/recipes": "^0.5.1"

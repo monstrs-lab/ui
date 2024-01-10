@@ -1,5 +1,0 @@
-releases:
-  "@ui-admin/drawer": patch
-  "@ui-admin/icons": patch
-  "@ui-admin/navigation": patch
-  "@ui-admin/select": patch

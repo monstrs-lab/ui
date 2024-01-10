@@ -5627,7 +5627,7 @@ __metadata:
     "@storybook/react": "npm:^7.6.7"
     "@types/react": "npm:^18.2.46"
     "@ui-admin/button": "workspace:0.0.14"
-    "@ui-admin/icons": "workspace:0.0.6"
+    "@ui-admin/icons": "workspace:0.0.7"
     "@ui-admin/layout": "workspace:0.0.15"
     "@ui-admin/theme": "workspace:0.0.15"
     "@vanilla-extract/css": "npm:^1.14.0"
@@ -5661,7 +5661,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/icons@workspace:0.0.6, @ui-admin/icons@workspace:ui-admin/icons":
+"@ui-admin/icons@workspace:0.0.7, @ui-admin/icons@workspace:ui-admin/icons":
   version: 0.0.0-use.local
   resolution: "@ui-admin/icons@workspace:ui-admin/icons"
   dependencies:
@@ -5707,10 +5707,10 @@ __metadata:
     "@ui-admin/avatar": "workspace:0.0.14"
     "@ui-admin/bottom-navigation": "workspace:0.0.14"
     "@ui-admin/button": "workspace:0.0.14"
-    "@ui-admin/icons": "workspace:0.0.6"
+    "@ui-admin/icons": "workspace:0.0.7"
     "@ui-admin/input": "workspace:0.0.18"
     "@ui-admin/layout": "workspace:0.0.15"
-    "@ui-admin/navigation": "workspace:0.0.17"
+    "@ui-admin/navigation": "workspace:0.0.18"
     "@ui-admin/sidebar": "workspace:0.0.16"
     "@ui-admin/sprinkles": "workspace:0.0.15"
     "@ui-admin/table": "workspace:0.0.17"
@@ -5740,7 +5740,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/navigation@workspace:0.0.17, @ui-admin/navigation@workspace:ui-admin/navigation":
+"@ui-admin/navigation@workspace:0.0.18, @ui-admin/navigation@workspace:ui-admin/navigation":
   version: 0.0.0-use.local
   resolution: "@ui-admin/navigation@workspace:ui-admin/navigation"
   dependencies:
@@ -5748,7 +5748,7 @@ __metadata:
     "@storybook/react": "npm:^7.6.7"
     "@types/react": "npm:^18.2.46"
     "@ui-admin/button": "workspace:0.0.14"
-    "@ui-admin/icons": "workspace:0.0.6"
+    "@ui-admin/icons": "workspace:0.0.7"
     "@ui-admin/layout": "workspace:0.0.15"
     "@ui-admin/sprinkles": "workspace:0.0.15"
     "@ui-admin/theme": "workspace:0.0.15"
@@ -5770,7 +5770,7 @@ __metadata:
     "@radix-ui/react-select": "npm:^2.0.0"
     "@storybook/react": "npm:^7.6.7"
     "@types/react": "npm:^18.2.46"
-    "@ui-admin/icons": "workspace:0.0.6"
+    "@ui-admin/icons": "workspace:0.0.7"
     "@ui-admin/layout": "workspace:0.0.15"
     "@ui-admin/theme": "workspace:0.0.15"
     "@vanilla-extract/css": "npm:^1.14.0"

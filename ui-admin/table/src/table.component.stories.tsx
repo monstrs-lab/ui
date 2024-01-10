@@ -47,6 +47,7 @@ const meta: Meta<TableProps<unknown>> = {
 export const Base: StoryObj<TableProps<Person>> = {
   args: {
     data: generate(),
+    hideColumnsOnMobile: ['avatar', 'visit'],
     columns: [
       {
         id: 'avatar',

@@ -196,7 +196,7 @@ const RAW_RUNTIME_STATE =
     ["@ui-proto/text", ["workspace:ui-proto/text"]],\
     ["@ui-proto/theme", ["workspace:ui-proto/theme"]],\
     ["@ui-utils/content-dimensions", ["workspace:ui-utils/content-dimensions"]],\
-    ["@ui-utils/use-window-size", ["workspace:ui-utils/use-window-size"]],\
+    ["@ui-utils/use-window-size", ["virtual:93451916490b907eb8da8420f4acf88294e5f15f79f747d774024d60e5eef866007d71a36f223d32ecb471ed67a92a2bcb7cb1a0e0c08f4b57ab975dfb5f8a33#workspace:ui-utils/use-window-size", "workspace:ui-utils/use-window-size"]],\
     ["ui", ["workspace:."]]\
   ],\
   "fallbackPool": [\
@@ -11039,6 +11039,7 @@ const RAW_RUNTIME_STATE =
           ["@ui-admin/text", "virtual:6ae749a70c7ba55916c0bfd9da9ba947f03e5c2b482799d6d92186aa13ac5b30263de8e1d9e0e5424cd869a3e1e9b315da4f0ebb290cf10036aab76ce90aff73#workspace:ui-admin/text"],\
           ["@ui-admin/theme", "workspace:ui-admin/theme"],\
           ["@ui-primitives/button", "virtual:78b1c8f11fc93a6e036d10a599cf81b70ea5232e50ebabfd8696d0fa056600266a272ab33f7823918f86cdd8c6476adb8752de81d4fcfac5ba7f6d6f72c7441f#workspace:ui-primitives/button"],\
+          ["@ui-utils/use-window-size", "virtual:93451916490b907eb8da8420f4acf88294e5f15f79f747d774024d60e5eef866007d71a36f223d32ecb471ed67a92a2bcb7cb1a0e0c08f4b57ab975dfb5f8a33#workspace:ui-utils/use-window-size"],\
           ["@vanilla-extract/css", "npm:1.14.0"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:6853eaa08679f3454caf5e88c7885130eb199fe17115a3d7ffc1448fcc4f8554f5e741053707db60ec4f839c94401185f8184f455497da19250dcf0412f59141#npm:18.2.0"]\
@@ -11069,6 +11070,7 @@ const RAW_RUNTIME_STATE =
           ["@ui-admin/text", "virtual:6ae749a70c7ba55916c0bfd9da9ba947f03e5c2b482799d6d92186aa13ac5b30263de8e1d9e0e5424cd869a3e1e9b315da4f0ebb290cf10036aab76ce90aff73#workspace:ui-admin/text"],\
           ["@ui-admin/theme", "workspace:ui-admin/theme"],\
           ["@ui-primitives/button", "virtual:78b1c8f11fc93a6e036d10a599cf81b70ea5232e50ebabfd8696d0fa056600266a272ab33f7823918f86cdd8c6476adb8752de81d4fcfac5ba7f6d6f72c7441f#workspace:ui-primitives/button"],\
+          ["@ui-utils/use-window-size", "virtual:93451916490b907eb8da8420f4acf88294e5f15f79f747d774024d60e5eef866007d71a36f223d32ecb471ed67a92a2bcb7cb1a0e0c08f4b57ab975dfb5f8a33#workspace:ui-utils/use-window-size"],\
           ["@vanilla-extract/css", "npm:1.14.0"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:6853eaa08679f3454caf5e88c7885130eb199fe17115a3d7ffc1448fcc4f8554f5e741053707db60ec4f839c94401185f8184f455497da19250dcf0412f59141#npm:18.2.0"]\
@@ -11472,6 +11474,19 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@ui-utils/use-window-size", [\
+      ["virtual:93451916490b907eb8da8420f4acf88294e5f15f79f747d774024d60e5eef866007d71a36f223d32ecb471ed67a92a2bcb7cb1a0e0c08f4b57ab975dfb5f8a33#workspace:ui-utils/use-window-size", {\
+        "packageLocation": "./.yarn/__virtual__/@ui-utils-use-window-size-virtual-a361a09dcc/1/ui-utils/use-window-size/",\
+        "packageDependencies": [\
+          ["@ui-utils/use-window-size", "virtual:93451916490b907eb8da8420f4acf88294e5f15f79f747d774024d60e5eef866007d71a36f223d32ecb471ed67a92a2bcb7cb1a0e0c08f4b57ab975dfb5f8a33#workspace:ui-utils/use-window-size"],\
+          ["@types/react", "npm:18.2.21"],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "SOFT"\
+      }],\
       ["workspace:ui-utils/use-window-size", {\
         "packageLocation": "./ui-utils/use-window-size/",\
         "packageDependencies": [\

@@ -9,4 +9,8 @@ export default {
   ArrowRightIcon: color('#1F1F27'),
   ArrowDownIcon: color('#1F1F27'),
   ArrowLeftIcon: color('#1F1F27'),
+  GiftIcon: color('#6B6F81'),
+  MailIcon: color('#1F1F27'),
+  MoreIcon: color('#1F1F27'),
+  UserIcon: color('#1F1F27'),
 }

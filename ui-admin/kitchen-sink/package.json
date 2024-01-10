@@ -19,7 +19,7 @@
     "@ui-admin/navigation": "workspace:0.0.18",
     "@ui-admin/sidebar": "workspace:0.0.16",
     "@ui-admin/sprinkles": "workspace:0.0.15",
-    "@ui-admin/table": "workspace:0.0.17",
+    "@ui-admin/table": "workspace:0.0.18",
     "@ui-admin/text": "workspace:0.0.15",
     "@ui-admin/theme": "workspace:0.0.15"
   },

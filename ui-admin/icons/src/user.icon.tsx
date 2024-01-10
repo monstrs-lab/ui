@@ -1,0 +1,34 @@
+/* eslint-disable @typescript-eslint/no-redundant-type-constituents */
+import type { ReactElement } from 'react'
+import type { SVGProps }     from 'react'
+
+import React                 from 'react'
+
+import { vars }              from '@ui-admin/theme'
+
+const getColor = (color: string | keyof typeof vars.colors | undefined): string | undefined => {
+  if (color) {
+    return vars?.colors[color as keyof typeof vars.colors] as keyof typeof vars.colors as string
+  }
+  return undefined
+}
+export interface UserIconProps extends Omit<SVGProps<SVGSVGElement>, 'color'> {
+  color?: string | `$${keyof typeof vars.colors}`
+}
+export const UserIcon = ({ color, ...props }: UserIconProps): ReactElement => (
+  <svg
+    width='1em'
+    height='1em'
+    viewBox='0 0 24 24'
+    fill='none'
+    xmlns='http://www.w3.org/2000/svg'
+    {...props}
+  >
+    <path
+      fillRule='evenodd'
+      clipRule='evenodd'
+      d='M12 3.25C9.65279 3.25 7.75 5.15279 7.75 7.5C7.75 9.84721 9.65279 11.75 12 11.75C14.3472 11.75 16.25 9.84721 16.25 7.5C16.25 5.15279 14.3472 3.25 12 3.25ZM9.25 7.5C9.25 5.98122 10.4812 4.75 12 4.75C13.5188 4.75 14.75 5.98122 14.75 7.5C14.75 9.01878 13.5188 10.25 12 10.25C10.4812 10.25 9.25 9.01878 9.25 7.5ZM9.7963 13.25C6.45702 13.25 3.75 15.957 3.75 19.2963C3.75 20.3753 4.6247 21.25 5.7037 21.25H18.2963C19.3753 21.25 20.25 20.3753 20.25 19.2963C20.25 15.957 17.543 13.25 14.2037 13.25H9.7963ZM14.2037 14.75C16.7146 14.75 18.75 16.7854 18.75 19.2963C18.75 19.5469 18.5469 19.75 18.2963 19.75H5.7037C5.45313 19.75 5.25 19.5469 5.25 19.2963C5.25 16.7854 7.28545 14.75 9.7963 14.75H14.2037Z'
+      fill={getColor(color) || '#1F1F27'}
+    />
+  </svg>
+)

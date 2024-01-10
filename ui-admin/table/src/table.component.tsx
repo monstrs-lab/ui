@@ -1,28 +1,35 @@
-import type { ColumnDef }    from '@tanstack/react-table'
-import type { ReactElement } from 'react'
+import type { ColumnDef }       from '@tanstack/react-table'
+import type { VisibilityState } from '@tanstack/react-table'
+import type { ReactElement }    from 'react'
 
-import { flexRender }        from '@tanstack/react-table'
-import { getCoreRowModel }   from '@tanstack/react-table'
-import { getSortedRowModel } from '@tanstack/react-table'
-import { useReactTable }     from '@tanstack/react-table'
-import { useVirtualizer }    from '@tanstack/react-virtual'
-import { useCallback }       from 'react'
-import React                 from 'react'
+import { flexRender }           from '@tanstack/react-table'
+import { getCoreRowModel }      from '@tanstack/react-table'
+import { getSortedRowModel }    from '@tanstack/react-table'
+import { useReactTable }        from '@tanstack/react-table'
+import { useVirtualizer }       from '@tanstack/react-virtual'
+import { useCallback }          from 'react'
+import { useEffect }            from 'react'
+import { useRef }               from 'react'
+import { useState }             from 'react'
+import React                    from 'react'
 
-import { TableBody }         from './table-body/index.js'
-import { TableCell }         from './table-cell/index.js'
-import { TableContainer }    from './table-container/index.js'
-import { TableElement }      from './table-element/index.js'
-import { TableHeaderCell }   from './table-header-cell/index.js'
-import { TableHeaderRow }    from './table-header-row/index.js'
-import { TableHeader }       from './table-header/index.js'
-import { TableRow }          from './table-row/index.js'
+import { useWindowSize }        from '@ui-utils/use-window-size'
+
+import { TableBody }            from './table-body/index.js'
+import { TableCell }            from './table-cell/index.js'
+import { TableContainer }       from './table-container/index.js'
+import { TableElement }         from './table-element/index.js'
+import { TableHeaderCell }      from './table-header-cell/index.js'
+import { TableHeaderRow }       from './table-header-row/index.js'
+import { TableHeader }          from './table-header/index.js'
+import { TableRow }             from './table-row/index.js'
 
 export interface TableProps<T> {
   data: Array<T>
   columns: Array<ColumnDef<T>>
   size?: number
   onLoadMore?: () => void
+  hideColumnsOnMobile?: Array<string>
 }
 
 export const Table = <T,>({
@@ -30,15 +37,38 @@ export const Table = <T,>({
   data,
   size = 67,
   onLoadMore,
+  hideColumnsOnMobile,
 }: TableProps<T>): ReactElement => {
-  const tableContainerRef = React.useRef<HTMLDivElement>(null)
+  const tableContainerRef = useRef<HTMLDivElement>(null)
+  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({})
+  const { innerWidth } = useWindowSize()
 
   const table = useReactTable({
+    state: {
+      columnVisibility,
+    },
+    onColumnVisibilityChange: setColumnVisibility,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     columns,
     data,
   })
+
+  useEffect(() => {
+    if (!hideColumnsOnMobile?.length) return
+
+    if (innerWidth < 832) {
+      setColumnVisibility((prev) => ({
+        ...prev,
+        ...hideColumnsOnMobile.reduce((result, item) => ({ ...result, [item]: false }), {}),
+      }))
+    } else {
+      setColumnVisibility((prev) => ({
+        ...prev,
+        ...hideColumnsOnMobile.reduce((result, item) => ({ ...result, [item]: true }), {}),
+      }))
+    }
+  }, [table, innerWidth, hideColumnsOnMobile, setColumnVisibility])
 
   const { rows } = table.getRowModel()
   const virtualizer = useVirtualizer({

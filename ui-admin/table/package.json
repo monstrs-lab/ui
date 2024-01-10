@@ -22,6 +22,7 @@
     "@tanstack/react-virtual": "^3.0.1",
     "@ui-admin/theme": "workspace:0.0.15",
     "@ui-primitives/button": "workspace:0.1.4",
+    "@ui-utils/use-window-size": "workspace:0.1.2",
     "@vanilla-extract/css": "^1.14.0"
   },
   "devDependencies": {

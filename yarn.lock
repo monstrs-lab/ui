@@ -5831,6 +5831,7 @@ __metadata:
     "@ui-admin/text": "workspace:0.0.15"
     "@ui-admin/theme": "workspace:0.0.15"
     "@ui-primitives/button": "workspace:0.1.4"
+    "@ui-utils/use-window-size": "workspace:0.1.2"
     "@vanilla-extract/css": "npm:^1.14.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -6141,7 +6142,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-utils/use-window-size@workspace:ui-utils/use-window-size":
+"@ui-utils/use-window-size@workspace:0.1.2, @ui-utils/use-window-size@workspace:ui-utils/use-window-size":
   version: 0.0.0-use.local
   resolution: "@ui-utils/use-window-size@workspace:ui-utils/use-window-size"
   dependencies:

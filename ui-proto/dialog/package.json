@@ -1,6 +1,6 @@
 {
   "name": "@ui-proto/dialog",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -28,7 +28,7 @@
     "@storybook/react": "^7.6.7",
     "@types/react": "^18.2.46",
     "@ui-proto/button": "workspace:0.2.6",
-    "@ui-proto/icons": "workspace:0.0.7",
+    "@ui-proto/icons": "workspace:0.0.8",
     "@ui-proto/layout": "workspace:0.2.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

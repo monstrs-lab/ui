@@ -1,0 +1,5 @@
+export * from './arrow-down.icon.jsx'
+export * from './arrow-left.icon.jsx'
+export * from './arrow-right.icon.jsx'
+export * from './arrow-up.icon.jsx'
+export * from './close.icon.jsx'

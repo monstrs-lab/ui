@@ -6317,6 +6317,29 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui-admin/dialog@workspace:ui-admin/dialog":
+  version: 0.0.0-use.local
+  resolution: "@ui-admin/dialog@workspace:ui-admin/dialog"
+  dependencies:
+    "@radix-ui/react-dialog": "npm:^1.0.5"
+    "@storybook/react": "npm:^7.6.7"
+    "@types/react": "npm:^18.2.46"
+    "@ui-admin/button": "workspace:0.0.14"
+    "@ui-admin/icons": "workspace:0.0.7"
+    "@ui-admin/layout": "workspace:0.0.15"
+    "@ui-admin/theme": "workspace:0.0.15"
+    "@ui-utils/use-window-size": "workspace:0.1.2"
+    "@vanilla-extract/css": "npm:^1.14.0"
+    "@vanilla-extract/recipes": "npm:^0.5.1"
+    framer-motion: "npm:^10.17.9"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
+  languageName: unknown
+  linkType: soft
+
 "@ui-admin/drawer@workspace:ui-admin/drawer":
   version: 0.0.0-use.local
   resolution: "@ui-admin/drawer@workspace:ui-admin/drawer"
@@ -6699,7 +6722,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/button@workspace:ui-proto/button":
+"@ui-proto/button@workspace:0.2.6, @ui-proto/button@workspace:ui-proto/button":
   version: 0.0.0-use.local
   resolution: "@ui-proto/button@workspace:ui-proto/button"
   dependencies:
@@ -6747,6 +6770,45 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui-proto/dialog@workspace:ui-proto/dialog":
+  version: 0.0.0-use.local
+  resolution: "@ui-proto/dialog@workspace:ui-proto/dialog"
+  dependencies:
+    "@radix-ui/react-dialog": "npm:^1.0.5"
+    "@storybook/react": "npm:^7.6.7"
+    "@types/react": "npm:^18.2.46"
+    "@ui-proto/button": "workspace:0.2.6"
+    "@ui-proto/icons": "workspace:0.0.7"
+    "@ui-proto/layout": "workspace:0.2.6"
+    "@ui-proto/theme": "workspace:0.2.5"
+    "@ui-utils/use-window-size": "workspace:0.1.2"
+    "@vanilla-extract/css": "npm:^1.14.0"
+    "@vanilla-extract/recipes": "npm:^0.5.1"
+    framer-motion: "npm:^10.17.9"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
+  languageName: unknown
+  linkType: soft
+
+"@ui-proto/icons@workspace:0.0.7, @ui-proto/icons@workspace:ui-proto/icons":
+  version: 0.0.0-use.local
+  resolution: "@ui-proto/icons@workspace:ui-proto/icons"
+  dependencies:
+    "@babel/core": "npm:^7.23.7"
+    "@babel/template": "npm:^7.22.15"
+    "@types/babel__core": "npm:^7.20.5"
+    "@types/babel__template": "npm:^7.4.4"
+    "@types/react": "npm:^18.2.46"
+    "@ui-proto/theme": "npm:0.2.5"
+    react: "npm:^18.2.0"
+  peerDependencies:
+    react: ^18
+  languageName: unknown
+  linkType: soft
+
 "@ui-proto/input@workspace:ui-proto/input":
   version: 0.0.0-use.local
   resolution: "@ui-proto/input@workspace:ui-proto/input"
@@ -6766,7 +6828,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/layout@workspace:ui-proto/layout":
+"@ui-proto/layout@workspace:0.2.6, @ui-proto/layout@workspace:ui-proto/layout":
   version: 0.0.0-use.local
   resolution: "@ui-proto/layout@workspace:ui-proto/layout"
   dependencies:
@@ -6826,7 +6888,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-proto/theme@workspace:0.2.5, @ui-proto/theme@workspace:ui-proto/theme":
+"@ui-proto/theme@npm:0.2.5, @ui-proto/theme@workspace:0.2.5, @ui-proto/theme@workspace:ui-proto/theme":
   version: 0.0.0-use.local
   resolution: "@ui-proto/theme@workspace:ui-proto/theme"
   dependencies:

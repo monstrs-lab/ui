@@ -24,6 +24,10 @@ import { Navigation }                 from '@ui-admin/navigation'
 import { NavigationActions }          from '@ui-admin/navigation'
 import { NavigationTitle }            from '@ui-admin/navigation'
 import { Sidebar }                    from '@ui-admin/sidebar'
+import { TabsContent }                from '@ui-admin/tabs'
+import { TabsRoot }                   from '@ui-admin/tabs'
+import { TabsList }                   from '@ui-admin/tabs'
+import { TabsTrigger }                from '@ui-admin/tabs'
 import { colors }                     from '@ui-admin/theme'
 
 interface Person {
@@ -64,22 +68,29 @@ const DetailPage = ({
           </Navigation>
         </Layout>
         <Layout flexGrow={1} overflow='auto'>
-          <Row>
-            <Layout flexBasis={['2x', '3x', '3x']} />
-            <Layout flexGrow={1}>
-              <Column>
-                <Layout flexBasis={['3x', '4x', '4x']} />
-                <Layout>
-                  <Input label='Имя' placeholder='Введите имя' />
+          <TabsRoot defaultValue='main'>
+            <TabsList>
+              <TabsTrigger value='main'>Основная информация</TabsTrigger>
+            </TabsList>
+            <TabsContent value='main'>
+              <Row>
+                <Layout flexBasis={['2x', '3x', '3x']} />
+                <Layout flexGrow={1}>
+                  <Column>
+                    <Layout flexBasis={['3x', '4x', '4x']} />
+                    <Layout>
+                      <Input label='Имя' placeholder='Введите имя' />
+                    </Layout>
+                    <Layout flexBasis={['3x', '4x', '4x']} />
+                    <Layout>
+                      <Input label='Фамилия' placeholder='Введите фамилию' />
+                    </Layout>
+                  </Column>
                 </Layout>
-                <Layout flexBasis={['3x', '4x', '4x']} />
-                <Layout>
-                  <Input label='Фамилия' placeholder='Введите фамилию' />
-                </Layout>
-              </Column>
-            </Layout>
-            <Layout flexBasis={['2x', '3x', '3x']} />
-          </Row>
+                <Layout flexBasis={['2x', '3x', '3x']} />
+              </Row>
+            </TabsContent>
+          </TabsRoot>
         </Layout>
         <Layout display={['flex', 'none', 'none']}>
           <BottomNavigation items={items} />

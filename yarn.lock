@@ -7219,6 +7219,26 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui-proto/select@workspace:ui-proto/select":
+  version: 0.0.0-use.local
+  resolution: "@ui-proto/select@workspace:ui-proto/select"
+  dependencies:
+    "@radix-ui/react-select": "npm:^2.0.0"
+    "@storybook/react": "npm:^7.6.7"
+    "@types/react": "npm:^18.2.46"
+    "@ui-proto/icons": "workspace:0.0.8"
+    "@ui-proto/layout": "workspace:0.2.6"
+    "@ui-proto/theme": "workspace:0.2.5"
+    "@vanilla-extract/css": "npm:^1.14.0"
+    "@vanilla-extract/recipes": "npm:^0.5.1"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
+  languageName: unknown
+  linkType: soft
+
 "@ui-proto/sprinkles@workspace:0.2.5, @ui-proto/sprinkles@workspace:ui-proto/sprinkles":
   version: 0.0.0-use.local
   resolution: "@ui-proto/sprinkles@workspace:ui-proto/sprinkles"

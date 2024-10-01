@@ -18,14 +18,16 @@ const meta: Meta = {
 
 export const Base: StoryObj = {
   render: () => (
-    <TabsRoot>
-      <TabsList>
-        <TabsTrigger value='1'>Tab 1</TabsTrigger>
-        <TabsTrigger value='2'>Tab 2</TabsTrigger>
-      </TabsList>
-      <TabsContent value='1'>Content 1</TabsContent>
-      <TabsContent value='2'>Content 2</TabsContent>
-    </TabsRoot>
+    <div style={{ width: '100%', height: '100%', boxSizing: 'border-box', padding: 40 }}>
+      <TabsRoot value='1'>
+        <TabsList>
+          <TabsTrigger value='1'>Tab 1</TabsTrigger>
+          <TabsTrigger value='2'>Tab 2</TabsTrigger>
+        </TabsList>
+        <TabsContent value='1'>Content 1</TabsContent>
+        <TabsContent value='2'>Content 2</TabsContent>
+      </TabsRoot>
+    </div>
   ),
 }
 

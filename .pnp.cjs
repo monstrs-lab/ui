@@ -167,6 +167,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:ui-proto/table"\
     },\
     {\
+      "name": "@ui-proto/tabs",\
+      "reference": "workspace:ui-proto/tabs"\
+    },\
+    {\
       "name": "@ui-proto/text",\
       "reference": "workspace:ui-proto/text"\
     },\
@@ -228,6 +232,7 @@ const RAW_RUNTIME_STATE =
     ["@ui-proto/select", ["workspace:ui-proto/select"]],\
     ["@ui-proto/sprinkles", ["workspace:ui-proto/sprinkles"]],\
     ["@ui-proto/table", ["workspace:ui-proto/table"]],\
+    ["@ui-proto/tabs", ["workspace:ui-proto/tabs"]],\
     ["@ui-proto/text", ["virtual:d3eee0f49a923bb690de6d8caa36fba5c5cec4e6faac8c3934d77e9be59bd7644f4dbd915d2bdfb5dd9f1f1e58d6dc8840855748dc0be023f8905488f5f3c6a1#workspace:ui-proto/text", "workspace:ui-proto/text"]],\
     ["@ui-proto/theme", ["workspace:ui-proto/theme"]],\
     ["@ui-proto/toast", ["workspace:ui-proto/toast"]],\
@@ -12871,6 +12876,24 @@ const RAW_RUNTIME_STATE =
           ["@ui-proto/theme", "workspace:ui-proto/theme"],\
           ["@ui-utils/use-window-size", "virtual:8b1f56b327eaea7c59c2c494b44f6ff65a55a690cc77d622b63ff79d6d5cd5faee8dfb291a62ac14be2359c858ebf32012344ef540bb9d49fd0691ca9b2afb73#workspace:ui-utils/use-window-size"],\
           ["@vanilla-extract/css", "npm:1.14.0"],\
+          ["react", "npm:18.2.0"],\
+          ["react-dom", "virtual:6853eaa08679f3454caf5e88c7885130eb199fe17115a3d7ffc1448fcc4f8554f5e741053707db60ec4f839c94401185f8184f455497da19250dcf0412f59141#npm:18.2.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@ui-proto/tabs", [\
+      ["workspace:ui-proto/tabs", {\
+        "packageLocation": "./ui-proto/tabs/",\
+        "packageDependencies": [\
+          ["@ui-proto/tabs", "workspace:ui-proto/tabs"],\
+          ["@radix-ui/react-tabs", "virtual:7951ba242c02276828bf769f8ca74f6fd55d056a97cf61bbd203af543aeb6b082b42c7865e5c7e9c9d8be241d40e409517c2510a97ad4fb803bff51a52d8eb03#npm:1.1.0"],\
+          ["@storybook/react", "virtual:6853eaa08679f3454caf5e88c7885130eb199fe17115a3d7ffc1448fcc4f8554f5e741053707db60ec4f839c94401185f8184f455497da19250dcf0412f59141#npm:7.6.7"],\
+          ["@types/react", "npm:18.2.21"],\
+          ["@ui-proto/layout", "virtual:a5bc6356414d7cf01c03e3d03bd80ad132ebbd53735bb2031c605c35971ce617868712eb7e483748eda4f07ea222607bf5f1a6f7cdbd8205c20f8d8a27a7be9b#workspace:ui-proto/layout"],\
+          ["@ui-proto/theme", "workspace:ui-proto/theme"],\
+          ["@vanilla-extract/css", "npm:1.14.0"],\
+          ["@vanilla-extract/recipes", "virtual:6853eaa08679f3454caf5e88c7885130eb199fe17115a3d7ffc1448fcc4f8554f5e741053707db60ec4f839c94401185f8184f455497da19250dcf0412f59141#npm:0.5.1"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:6853eaa08679f3454caf5e88c7885130eb199fe17115a3d7ffc1448fcc4f8554f5e741053707db60ec4f839c94401185f8184f455497da19250dcf0412f59141#npm:18.2.0"]\
         ],\

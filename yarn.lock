@@ -6773,7 +6773,7 @@ __metadata:
     "@ui-admin/sidebar": "workspace:0.0.17"
     "@ui-admin/sprinkles": "workspace:0.0.16"
     "@ui-admin/table": "workspace:0.0.19"
-    "@ui-admin/tabs": "workspace:0.0.5"
+    "@ui-admin/tabs": "workspace:0.0.6"
     "@ui-admin/text": "workspace:0.0.16"
     "@ui-admin/theme": "workspace:0.0.16"
     react: "npm:^18.2.0"
@@ -6901,7 +6901,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui-admin/tabs@workspace:0.0.5, @ui-admin/tabs@workspace:ui-admin/tabs":
+"@ui-admin/tabs@workspace:0.0.6, @ui-admin/tabs@workspace:ui-admin/tabs":
   version: 0.0.0-use.local
   resolution: "@ui-admin/tabs@workspace:ui-admin/tabs"
   dependencies:

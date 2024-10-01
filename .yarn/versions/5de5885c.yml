@@ -1,0 +1,3 @@
+releases:
+  "@ui-admin/tabs": patch
+  "@ui-proto/tabs": patch

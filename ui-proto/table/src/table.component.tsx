@@ -1,5 +1,6 @@
 import type { ColumnDef }       from '@tanstack/react-table'
 import type { VisibilityState } from '@tanstack/react-table'
+import type { TableMeta }       from '@tanstack/react-table'
 import type { ReactElement }    from 'react'
 
 import { flexRender }           from '@tanstack/react-table'
@@ -24,9 +25,15 @@ export interface TableProps<T> {
   data: Array<T>
   columns: Array<ColumnDef<T>>
   hideColumnsOnMobile?: Array<string>
+  meta?: TableMeta<any>
 }
 
-export const Table = <T,>({ columns, data, hideColumnsOnMobile }: TableProps<T>): ReactElement => {
+export const Table = <T,>({
+  columns,
+  data,
+  hideColumnsOnMobile,
+  meta,
+}: TableProps<T>): ReactElement => {
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({})
   const { innerWidth } = useWindowSize()
 
@@ -39,6 +46,7 @@ export const Table = <T,>({ columns, data, hideColumnsOnMobile }: TableProps<T>)
     getSortedRowModel: getSortedRowModel(),
     columns,
     data,
+    meta,
   })
 
   useEffect(() => {

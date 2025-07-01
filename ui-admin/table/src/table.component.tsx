@@ -30,6 +30,7 @@ export interface TableProps<T> {
   size?: number
   onLoadMore?: () => void
   hideColumnsOnMobile?: Array<string>
+  meta?: any
 }
 
 export const Table = <T,>({
@@ -38,6 +39,7 @@ export const Table = <T,>({
   size = 67,
   onLoadMore,
   hideColumnsOnMobile,
+  meta,
 }: TableProps<T>): ReactElement => {
   const tableContainerRef = useRef<HTMLDivElement>(null)
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({})
@@ -52,6 +54,7 @@ export const Table = <T,>({
     getSortedRowModel: getSortedRowModel(),
     columns,
     data,
+    meta,
   })
 
   useEffect(() => {
